@@ -1,0 +1,12 @@
+PASS  every span admitted by a source       378/378 admitted
+PASS  unversioned span fails closed         HO-3#scan-0001: no version, rejected (fail closed)
+FAIL  claim form agrees with policy record  138/200 agree; first mismatch DET-0001
+FAIL  eval set matches frozen file          sha256 f8f99ae5af7d, 200 rows
+PASS  same input, same answer               DET-0001: 1,141 tokens twice
+PASS  no evidence, no answer                k=0 packet of 113 tokens abstains
+PASS  every packet far below the window     largest 1,259 tokens; window 200,000
+PASS  every citation resolves to a span     200/200 resolve
+PASS  every citation names version, page    200/200 exact
+PASS  every run leaves a trace              retrieved, packet, rendered, answer on all 200
+
+8/10 smoke tests passed

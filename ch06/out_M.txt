@@ -1,0 +1,4 @@
+M. Unsupported additions that survive quote_only, sim-small, v1.2 and v2.2
+  v1.2: 5 answers with an unsupported addition: ['DET-0012', 'DET-0046', 'DET-0061', 'DET-0128', 'DET-0191']
+  v2.2: 5 answers with an unsupported addition: ['DET-0012', 'DET-0046', 'DET-0061', 'DET-0128', 'DET-0191']
+  DET-0012 deer_collision MN: Loss caused by contact with a bird or animal is not considered collision. A separate $2,500 deductible also applies under the declarations. Governing provision: PAP (2023-01), Part D Coverage for Damage to Your Auto, page 2 [S1]. Version PAP (2023-01) checked against the date of loss.

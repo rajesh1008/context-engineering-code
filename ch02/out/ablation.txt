@@ -1,0 +1,22 @@
+== k sweep
+run                                      wrong    rate     95% interval
+baseline, k=3                           28/200   14.0%  [ 9.9%, 19.5%]  hit@1 0.59  hit@5 0.89     440 tok
+baseline, k=5                           23/200   11.5%  [ 7.8%, 16.7%]  hit@1 0.59  hit@5 0.92     621 tok
+baseline, k=10                          17/200    8.5%  [ 5.4%, 13.2%]  hit@1 0.59  hit@5 0.92   1,088 tok
+baseline, k=20                          15/200    7.5%  [ 4.6%, 12.0%]  hit@1 0.59  hit@5 0.92   2,044 tok
+
+fixed k= 3 25/200 hit5 0.91 tok 439 $0.00199
+fixed k= 5 18/200 hit5 0.94 tok 633 $0.00258
+fixed k=10 12/200 hit5 0.94 tok 1,103 $0.00399
+fixed k=20 13/200 hit5 0.94 tok 1,673 $0.00570
+
+== format
+baseline fmt=markdown                     17/200   8.5% [ 5.4%,13.2%] abst 0.0% hit1 0.59 hit5 0.92 mrr 0.733 faith 0.985 tok 1,088 $0.00395 lookup 3.49
+baseline fmt=xml                          17/200   8.5% [ 5.4%,13.2%] abst 0.0% hit1 0.59 hit5 0.92 mrr 0.733 faith 0.985 tok 1,155 $0.00415 lookup 3.49
+baseline fmt=json                         17/200   8.5% [ 5.4%,13.2%] abst 0.0% hit1 0.59 hit5 0.92 mrr 0.733 faith 0.985 tok 1,184 $0.00424 lookup 3.49
+baseline fmt=plain                        23/200  11.5% [ 7.8%,16.7%] abst 0.0% hit1 0.59 hit5 0.92 mrr 0.733 faith 0.985 tok 745 $0.00273 lookup 7.10
+
+== order
+fixed order=rank                          12/200   6.0% [ 3.5%,10.2%] abst 0.0% hit1 0.80 hit5 0.94 mrr 0.861 faith 0.985 tok 1,103 $0.00399 lookup 3.48
+fixed order=edges                         13/200   6.5% [ 3.8%,10.8%] abst 0.0% hit1 0.80 hit5 0.94 mrr 0.861 faith 0.985 tok 1,103 $0.00399 lookup 3.49
+fixed order=precedence                    10/200   5.0% [ 2.7%, 9.0%] abst 0.0% hit1 0.80 hit5 0.94 mrr 0.861 faith 0.985 tok 1,103 $0.00399 lookup 3.48

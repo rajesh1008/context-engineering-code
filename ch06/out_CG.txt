@@ -1,0 +1,11 @@
+C. Ablation on v1.2 (rules), eval 200
+  v1.2      sim-large  wrong  4.0%  faithful 0.998  instr tok  135  fp 560d9d9973f0
+  v1.2      sim-small  wrong  4.0%  faithful 0.988  instr tok  135  fp 560d9d9973f0
+  v1.2+ex   sim-large  wrong  3.5%  faithful 0.998  instr tok  394  fp 8b26f05c70d8
+  v1.2+ex   sim-small  wrong  4.5%  faithful 0.988  instr tok  394  fp 8b26f05c70d8
+  v1.2+sk   sim-large  wrong  4.0%  faithful 0.998  instr tok  168  fp d7bd37d2f6b6
+  v1.2+sk   sim-small  wrong  4.0%  faithful 0.988  instr tok  168  fp d7bd37d2f6b6
+  v2.0      sim-large  wrong  3.5%  faithful 0.998  instr tok  427  fp 6bc1f97b940b
+  v2.0      sim-small  wrong  4.5%  faithful 0.988  instr tok  427  fp 6bc1f97b940b
+  v2.2-noA  sim-large  wrong  3.0%  faithful 0.998  instr tok  341  fp efe141c690b2
+  v2.2-noA  sim-small  wrong  4.0%  faithful 0.988  instr tok  341  fp efe141c690b2

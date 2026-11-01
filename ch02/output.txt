@@ -1,0 +1,84 @@
+== DET-0001, baseline and fixed packets
+baseline ['HO 04 95@2024-06#schedule', 'HO 04 95@2024-06#water_backup', 'HO 04 95@2019-03#water_backup', 'HO-3@2024-06#water_backup', 'HO 04 95@2019-03#schedule', 'UW-NOTE-0002', 'HO-3@2019-03#water_backup', 'HO-3@2022-01#water_backup', 'HO-3@2024-06#flood', 'HO-3@2019-03#flood']
+fixed    ['HO 04 95@2024-06#schedule', 'HO 04 95@2024-06#water_backup', 'HO-3@2024-06#water_backup', 'HO-3@2024-06#flood', 'HO-3@2024-06#hail_cosmetic', 'HO-3@2024-06#cond-11', 'HO-3@2024-06#ice_dam', 'HO-3@2024-06#wind_hail', 'HO-3@2024-06#tree_debris', 'HO-3@2024-06#mold']
+removed ['HO 04 95@2019-03#water_backup', 'HO 04 95@2019-03#schedule', 'UW-NOTE-0002', 'HO-3@2019-03#water_backup', 'HO-3@2022-01#water_backup', 'HO-3@2019-03#flood']
+added ['HO-3@2024-06#hail_cosmetic', 'HO-3@2024-06#cond-11', 'HO-3@2024-06#ice_dam', 'HO-3@2024-06#wind_hail', 'HO-3@2024-06#tree_debris', 'HO-3@2024-06#mold']
+tokens 1141 1182 cited HO 04 95 (2024-06), Coverage, page 1 | HO 04 95 (2024-06), Coverage, page 1
+
+Claim facts: Claim CLM-2026-01187, claimant Emily Carter, policy LMH-WI-0048213. Policy form: HO-3 (2024-06). Endorsements: HO 04 95 (2024-06). State: WI. Date of loss: 2026-03-14. Adjuster: tbrennan.
+
+We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump. Governing provision: HO 04 95 (2024-06), Coverage, page 1 [S2].
+
+== packet hygiene
+baseline   superseded/packet 3.84 inapplicable/packet 4.58 packets with uw note 91/200
+fixed      superseded/packet 2.87 inapplicable/packet 0.00 packets with uw note 0/200
+
+run                                      wrong    rate     95% interval
+baseline                                17/200    8.5%  [ 5.4%, 13.2%]  hit@1 0.59  hit@5 0.92   1,088 tok
+
+== paired comparison baseline vs fixed
+Counter({(False, False): 181, (True, True): 10, (True, False): 7, (False, True): 2})
+exact sign test two-sided p 0.1797
+if 9 discordant split 8 p= 0.0391
+if 9 discordant split 9 p= 0.0039
+
+run                                      wrong    rate     95% interval
+baseline                                17/200    8.5%  [ 5.4%, 13.2%]  hit@1 0.59  hit@5 0.92   1,088 tok
+stale pointer                           57/200   28.5%  [22.7%, 35.1%]  hit@1 0.56  hit@5 0.92   1,091 tok
+stale + filter (no reconcile)           53/200   26.5%  [20.9%, 33.0%]  hit@1 0.63  hit@5 0.73   1,095 tok
+stale + reconcile (no filter)           17/200    8.5%  [ 5.4%, 13.2%]  hit@1 0.59  hit@5 0.92   1,088 tok
+stale + reconcile + filter              12/200    6.0%  [ 3.5%, 10.2%]  hit@1 0.80  hit@5 0.94   1,103 tok
+
+DET-0008 stale + filter: form HO-3 (2022-01); cited HO-3 (2022-01), Section I Conditions D.3, page 4
+  dropped LM HO 17@2024-06#roof_settlement endorsement not on policy
+  dropped HO-3@2024-06#roof_settlement     not on policy
+  dropped HO-3@2019-03#roof_settlement     superseded
+  dropped HO-3@2024-06#hail_cosmetic       not on policy
+
+Lakeshore scoreboard, 200-determination evaluation set (simulated model sim-large)
+
+run                           wrong  lookup  hit@5  faith  tokens    $/det
+baseline                       8.5%    3.5m   0.92  0.985   1,088  0.00395
+stale form pointer            28.5%    3.7m   0.92  0.985   1,091  0.00396
+stale + reconcile + filter     6.0%    3.5m   0.94  0.985   1,103  0.00399
+
+HO-3 (2024-06) claims in the set: 62
+  baseline                     wrong   4  cites a superseded version   0
+  stale form pointer           wrong  44  cites a superseded version  40
+  stale + reconcile + filter   wrong   5  cites a superseded version   0
+
+Example DET-0008 (Eric Reid, MN, 2025-08-14): How do we settle the roof surfacing loss on an older roof after the windstorm?
+  gold                      : HO-3 (2024-06) -> actual cash value if roof over 15 years
+  baseline                  : actual cash value if roof over 15 years | HO-3 (2024-06), Section I Conditions D.3, page 4
+  stale form pointer        : replacement cost | HO-3 (2022-01), Section I Conditions D.3, page 4
+  stale + reconcile + filter: actual cash value if roof over 15 years | HO-3 (2024-06), Section I Conditions D.3, page 4
+  reconcile                 : HO-3 (2022-01) -> HO-3 (2024-06)
+
+Median lookup (proxy) by difficulty, baseline vs. manual 11.0 min:
+  simple   n=153  3.5 min
+  complex  n= 47  3.6 min
+
+== fixed pipeline by slice
+simple           153 wrong  5   3.3% [1.4%, 7.4%]
+complex           47 wrong  7  14.9% [7.4%, 27.7%]
+no endorsements   92 wrong  0   0.0% [0.0%, 4.0%]
+endorsements     108 wrong 12  11.1% [6.5%, 18.4%]
+
+== second injection: endorsement list missing from claim facts
+fixed, endorsements intact       12/108 complex 7/44 hit5 0.93
+fixed, endorsements blanked      46/108 complex 41/44 hit5 0.56
+baseline blanked 50 108
+policy record endorsements agree with claim facts: 108 of 108
+
+== models
+baseline sim-large  wrong 17/200 faith 0.985 $0.00395 per 3,200 a day $12.64
+fixed    sim-large  wrong 12/200 faith 0.985 $0.00399 per 3,200 a day $12.77
+baseline sim-mid    wrong 20/200 faith 0.988 $0.00132 per 3,200 a day $4.22
+fixed    sim-mid    wrong 15/200 faith 0.988 $0.00133 per 3,200 a day $4.26
+baseline sim-small  wrong 16/200 faith 0.955 $0.00033 per 3,200 a day $1.06
+fixed    sim-small  wrong 16/200 faith 0.955 $0.00033 per 3,200 a day $1.07
+
+== holdout once
+baseline all 18 300 | no-end 5 126 | with end 13 174 | simple 8 232 | complex 10 68
+fixed all 12 300 | no-end 0 126 | with end 12 174 | simple 2 232 | complex 10 68
+holdout pair Counter({(False, False): 278, (True, False): 10, (True, True): 8, (False, True): 4})

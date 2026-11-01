@@ -1,6 +1,6 @@
-# Context Engineering: The Practical Guide — companion code
+# The Context Engineering Handbook for LLMs and AI Agents — companion code
 
-Code for the book **Context Engineering: The Practical Guide** (AI at Work series) by **Rajesh Ranjan Mahapatra**.
+Code for the book **The Context Engineering Handbook for LLMs and AI Agents** (AI at Work series) by **Rajesh Ranjan Mahapatra**.
 
 Repository: <https://github.com/rajesh1008/context-engineering-code>
 
@@ -63,13 +63,13 @@ Running labs from inside the chapter folder with `PYTHONPATH=..:.` works for eve
 | Ch | Title | Code | Tests |
 |---:|---|---|---|
 | 1 | From Prompts to Context | [`ch01/`](ch01/) | yes |
-| 2 | An End-to-End Context Project | coming soon | - |
-| 3 | How the Model Reads the Window | coming soon | - |
+| 2 | An End-to-End Context Project | [`ch02/`](ch02/) | yes |
+| 3 | How the Model Reads the Window | [`ch03/`](ch03/) | yes |
 | 4 | Context Rot, Measured | [`ch04/`](ch04/) | yes |
-| 5 | Long Context or Retrieval: When the Window Is Enough | coming soon | - |
-| 6 | Instructions | [`ch06/`](ch06/) | no |
-| 7 | How Instructions Break | coming soon | - |
-| 8 | Writing Instructions With the Experts: The Rulebook as Context | [`ch08/`](ch08/) | yes |
+| 5 | Long Context or Retrieval: When the Window Is Enough | [`ch05/`](ch05/) | yes |
+| 6 | Instructions | [`ch06/`](ch06/) | yes |
+| 7 | How Instructions Break | [`ch07/`](ch07/) | yes |
+| 8 | Writing Instructions with the Experts: The Rulebook as Context | [`ch08/`](ch08/) | yes |
 | 9 | External Knowledge: What Counts as Evidence | [`ch09/`](ch09/) | yes |
 | 10 | Parsing and Chunking: The Unglamorous Half | [`ch10/`](ch10/) | yes |
 | 11 | Documents at Scale: Fifty Formats, Quality Scores and Confidence | [`ch11/`](ch11/) | yes |
@@ -110,11 +110,9 @@ Running labs from inside the chapter folder with `PYTHONPATH=..:.` works for eve
 | 46 | The Context Layer as a Platform: Serving Many Teams | [`ch46/`](ch46/) | yes |
 | 47 | Context in Multi-Step and Multi-Agent Systems | [`ch47/`](ch47/) | yes |
 | 48 | Patterns and Anti-Patterns | [`ch48/`](ch48/) | yes |
-| 49 | The Context Engineer's Interview, From Both Sides | [`ch49/`](ch49/) | yes |
+| 49 | The Context Engineer's Interview, from Both Sides | [`ch49/`](ch49/) | yes |
 | 50 | End-to-End Case Studies | [`ch50/`](ch50/) | yes |
 | 51 | The Last Twenty Percent, and Where This Is Going | [`ch51/`](ch51/) | yes |
-
-> Code for ch02, ch03, ch05, ch07 is still being prepared and will be added in a later update.
 
 ## Errata and corrections
 

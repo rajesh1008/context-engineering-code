@@ -371,7 +371,7 @@ def main():
 
     section("9. Instruction file check (Listing 6.9 against 04-code)")
     agents = (HERE / "fixtures" / "AGENTS_ch06.md").read_text()
-    code_root = HERE.parent
+    code_root = SNAP
     refs = sorted({r.rstrip(".") for r in re.findall(r"(?<![\w/])((?:contextlab|fixtures|chNN|CODEOWNERS)[\w./*]*)", agents)})
     bad = []
     for r0 in refs:

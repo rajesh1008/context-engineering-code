@@ -1,0 +1,7 @@
+version,model,eval,roof,roof_bulletin
+v2.0,sim-large,3.5,0.0,0.0
+v2.0,sim-small,4.5,0.0,0.0
+v2.1,sim-large,4.5,16.0,66.6667
+v2.1,sim-small,5.5,20.0,83.3333
+v2.2,sim-large,3.5,0.0,0.0
+v2.2,sim-small,4.5,0.0,0.0

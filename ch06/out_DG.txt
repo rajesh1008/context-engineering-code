@@ -1,0 +1,40 @@
+D. Example selection, v1.2 rules + skills, eval 200
+  selected  sim-large  wrong 12.5%  prompt tok  1,329
+  selected  sim-small  wrong 13.5%  prompt tok  1,330
+  topics in eval 200 with a pool example: 200 of 200
+  pool examples: 34; lint problems 0
+  sim-large selected: wrong 25; example governed by a different document than the claim: 47 of 200; wrong answers citing the example's document: 25
+  facts-matched sim-large  wrong  3.5%  claims with an example 65
+  facts-matched sim-small  wrong  3.5%  claims with an example 65
+  none      sim-large  wrong  4.0%
+  fixed 3   sim-large  wrong  3.5%
+  none      sim-small  wrong  4.0%
+  fixed 3   sim-small  wrong  4.5%
+
+E. Second setting: deer swerve
+  source DET-0252 Laura Anderson WI PAP (2023-01) loss 2025-01-11 gold WI-OCI-2024-11 (2024-11)
+  bad example cites PAP (2023-01), Part D Definitions, page 2
+  deer hold-out 28, bulletin-governed 4
+  v2.2         sim-large  deer all  0.0%  deer WI bulletin  0.0%
+  v2.2         sim-small  deer all  0.0%  deer WI bulletin  0.0%
+  v2.2+D good  sim-large  deer all  0.0%  deer WI bulletin  0.0%
+  v2.2+D good  sim-small  deer all  0.0%  deer WI bulletin  0.0%
+  v2.2+D bad   sim-large  deer all 14.3%  deer WI bulletin 100.0%
+  v2.2+D bad   sim-small  deer all 14.3%  deer WI bulletin 100.0%
+    lint: ['D: cites PAP (2023-01), Part D Definitions, page 2, but WI-OCI-2024-11 (2024-11), Requirements, page 1 (bulletin) governs a WI claim on 2025-01-11']
+
+G. Three models
+  v1.0 sim-large  wrong  6.0% faithful 0.985 unsupported   6 lookup 3.5 cost $0.00399
+  v1.0 sim-mid    wrong  7.5% faithful 0.988 unsupported   5 lookup 3.5 cost $0.00133
+  v1.0 sim-small  wrong  8.0% faithful 0.955 unsupported  18 lookup 3.5 cost $0.00033
+  v1.2 sim-large  wrong  4.0% faithful 0.998 unsupported   1 lookup 1.3 cost $0.00454
+  v1.2 sim-mid    wrong  4.0% faithful 0.995 unsupported   2 lookup 1.3 cost $0.00151
+  v1.2 sim-small  wrong  4.0% faithful 0.988 unsupported   5 lookup 1.3 cost $0.00038
+  v2.2 sim-large  wrong  3.5% faithful 0.998 unsupported   1 lookup 1.3 cost $0.00541
+  v2.2 sim-mid    wrong  4.5% faithful 0.995 unsupported   2 lookup 1.3 cost $0.00181
+  v2.2 sim-small  wrong  4.5% faithful 0.988 unsupported   5 lookup 1.3 cost $0.00045
+
+F. Gate, second setting: v2.3b drops applicability
+  -rule applicability: Use only documents that apply to this policy: its form edition, its endorsements, and bulletins for its state. Ignore underwriting notes.
+  sim-large  eval  3.5% ->  3.5%  hold-out  0.0% ->  0.0%  gate pass
+  sim-small  eval  4.5% ->  4.5%  hold-out  3.0% ->  3.0%  gate pass

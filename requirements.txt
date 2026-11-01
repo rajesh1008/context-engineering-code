@@ -1,4 +1,4 @@
-# Context Engineering: The Practical Guide - companion code
+# The Context Engineering Handbook for LLMs and AI Agents - companion code
 # Consolidated requirements for every lab and test (Python 3.11+; tested on 3.13).
 # Most labs use only the standard library plus numpy; the rest are needed by specific chapters.
 

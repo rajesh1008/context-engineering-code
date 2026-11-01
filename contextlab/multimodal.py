@@ -6,7 +6,7 @@ a confidence. Provenance (hash, uploader, capture time and place) travels in
 the header because the model never sees an image's metadata. An audio span
 keeps per-segment confidence so that a decisive sentence heard badly can be
 sent to a person to listen to, rather than trusted or dropped.
-Chapter 19 of Context Engineering: The Practical Guide.
+Chapter 19 of The Context Engineering Handbook for LLMs and AI Agents.
 """
 from __future__ import annotations
 

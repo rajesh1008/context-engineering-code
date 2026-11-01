@@ -1,0 +1,6 @@
+| Retrieval mode | Wrong of 200 | hit@1 | hit@5 | Note |
+| --- | --- | --- | --- | --- |
+| BM25 (baseline) | 17 | 0.59 | 0.92 | Keyword, length-normalised |
+| TF-IDF | 20 | 0.67 | 0.90 | Keyword, simpler weighting |
+| Dense | 65 | 0.30 | 0.58 | **Hashing stand-in embedder**, not a trained model |
+| Hybrid (BM25 plus dense) | 31 | 0.67 | 0.85 | Fusion of the two lists |

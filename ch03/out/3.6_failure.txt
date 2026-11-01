@@ -1,0 +1,2 @@
+Failure injection: governing clause at 50% depth of a 60,000-token packet (sim-large): 15% cite it
+  DET-0002 (Robert Weber): gold BOAT (2021-05) at token 30,377 of 60,031; cited BOAT (2025-03), Declarations Navigation Warranty, page 3

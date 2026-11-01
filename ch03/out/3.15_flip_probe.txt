@@ -1,0 +1,6 @@
+order-flip probe (rank vs reversed), fixed pipeline, sim-large, 200 determinations
+  flagged: 7  wrong in rank order: 12
+  flagged and wrong: 3  precision 43%  recall 25%
+  extra model calls: 200 (one per determination), extra input tokens = 1x packet
+precedence vs rank order, paired: fixed 3, broke 1, net 2
+flagged by topic: roof_settlement 2, navigation_limits 1, personal_property_rc 1, food_spoilage 1, roof_matching 1, frozen_pipes 1

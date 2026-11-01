@@ -1,0 +1,43 @@
+1. Instruction versions (200 determinations)
+version  model       wrong  faithful  unsupported  instr tok  prompt tok  fingerprint
+v1.0     sim-large    6.0%     0.985            6         27       1,103  ca0d1f284a19
+v1.0     sim-small    8.0%     0.955           18         27       1,104  ca0d1f284a19
+v1.1     sim-large    4.0%     0.985            6        109       1,200  6aa36fe51271
+v1.1     sim-small    4.0%     0.955           18        109       1,201  6aa36fe51271
+v1.2     sim-large    4.0%     0.998            1        135       1,226  560d9d9973f0
+v1.2     sim-small    4.0%     0.988            5        135       1,227  560d9d9973f0
+v2.0     sim-large    3.5%     0.998            1        427       1,517  6bc1f97b940b
+v2.0     sim-small    4.5%     0.988            5        427       1,518  6bc1f97b940b
+unsupported = answers that add a sentence the cited provision does not support
+
+2. Skills: always loaded vs progressive disclosure (v2.0)
+  all          sim-large  skills/claim 5.00  instruction tokens   576  prompt  1,667  wrong  3.5%
+  all          sim-small  skills/claim 5.00  instruction tokens   576  prompt  1,668  wrong  4.0%
+  progressive  sim-large  skills/claim 0.88  instruction tokens   427  prompt  1,517  wrong  3.5%
+  progressive  sim-small  skills/claim 0.88  instruction tokens   427  prompt  1,518  wrong  4.5%
+  progressive disclosure cuts instruction tokens by 26%
+
+3. Failure injection: a few-shot example that contradicts a bulletin
+  version  model       eval 200  roof (all)  roof (WI bulletin)
+  v2.0     sim-large       3.5%        0.0%                0.0%
+  v2.0     sim-small       4.5%        0.0%                0.0%
+  v2.1     sim-large       4.5%       16.0%               66.7%
+  v2.1     sim-small       5.5%       20.0%               83.3%
+  v2.2     sim-large       3.5%        0.0%                0.0%
+  v2.2     sim-small       4.5%        0.0%                0.0%
+  example: DET-0074 Olivia Hoffman, WI, HO-3 (2024-06), loss 2025-04-30; gold WI-OCI-2025-03 (2025-03)
+    v2.1 cited HO-3 (2024-06), Section I Conditions D.5, page 4
+    v2.2 cited WI-OCI-2025-03 (2025-03), Requirements, page 1
+
+  lint v2.1:
+    C: cites HO-3 (2024-06), Section I Conditions D.5, page 4, but WI-OCI-2025-03 (2025-03), Requirements, page 1 (bulletin) governs a WI claim on 2025-07-11
+  lint v2.2: no problems
+  v2.2 fingerprint 6bc1f97b940b matches v2.0 (6bc1f97b940b)
+
+4. Versioning incident: v2.3 tidies the rules
+  fingerprints: v2.2 6bc1f97b940b  v2.3 91a37cb95c66
+  diff v2.2 -> v2.3:
+    -rule precedence: When documents conflict, a state bulletin in force on the date of loss overrides an endorsement, and an endorsement overrides the policy form.
+  sim-large  eval  3.5% ->  6.5%  hold-out  0.0% -> 12.1%  gate: BLOCK
+  sim-small  eval  4.5% ->  8.0%  hold-out  3.0% -> 18.2%  gate: BLOCK
+  v2.3 is blocked; production stays on v2.2

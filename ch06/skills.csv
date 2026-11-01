@@ -1,0 +1,5 @@
+disclosure,model,skills_per_claim,instr_tok,prompt_tok,wrong
+all,sim-large,5.0,576.0,1666.6,3.5
+all,sim-small,5.0,576.0,1667.6,4.0
+progressive,sim-large,0.875,426.825,1517.425,3.5
+progressive,sim-small,0.875,426.825,1518.425,4.5

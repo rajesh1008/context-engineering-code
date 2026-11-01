@@ -1,0 +1,8 @@
+fixed pipeline on 200: mean 1,046 tokens in, 57 out
+Cost of one determination (57 output tokens), US dollars, illustrative prices:
+ packet tokens  sim-large    sim-mid  sim-small
+         1,046    0.00399    0.00133    0.00033
+        15,000    0.04585    0.01528    0.00382
+        60,000    0.18085    0.06028        n/a
+       180,000    0.54085        n/a        n/a
+per day at 3,200 determinations, sim-large: 1,046 tokens $12.78; 60,000 tokens $578.74

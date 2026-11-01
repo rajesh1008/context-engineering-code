@@ -13,6 +13,7 @@ ch10/corpus/*.pdf
 ch10/corpus/truth.json
 ch13/out/frozen/
 ch13/out/lancedb_*/
+ch05/ch05-benchmark/
 
 # Editors / OS
 .DS_Store

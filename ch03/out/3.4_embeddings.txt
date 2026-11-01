@@ -1,0 +1,14 @@
+embedder hash-embed-v1, dim 384
+cosine with the question:
+  HO 04 95 (2019-03), Schedule, page 1    0.253
+  HO 04 95 (2019-03), Coverage, page 1    0.302
+  HO 04 95 (2024-06), Schedule, page 1    0.278
+  HO 04 95 (2024-06), Coverage, page 1    0.224
+cosine between editions:
+  HO 04 95 (2019-03), Schedule, page 1 vs HO 04 95 (2019-03), Coverage, page 1: 0.307
+  HO 04 95 (2019-03), Schedule, page 1 vs HO 04 95 (2024-06), Schedule, page 1: 0.813
+  HO 04 95 (2019-03), Schedule, page 1 vs HO 04 95 (2024-06), Coverage, page 1: 0.297
+  HO 04 95 (2019-03), Coverage, page 1 vs HO 04 95 (2024-06), Schedule, page 1: 0.312
+  HO 04 95 (2019-03), Coverage, page 1 vs HO 04 95 (2024-06), Coverage, page 1: 0.865
+  HO 04 95 (2024-06), Schedule, page 1 vs HO 04 95 (2024-06), Coverage, page 1: 0.347
+characters: HO 04 95 (2019-03), Schedule, page 1 153, HO 04 95 (2019-03), Coverage, page 1 281, HO 04 95 (2024-06), Schedule, page 1 132, HO 04 95 (2024-06), Coverage, page 1 455

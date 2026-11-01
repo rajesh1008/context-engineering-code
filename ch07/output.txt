@@ -1,0 +1,214 @@
+1. Failure injection: the roof skill is updated (v2.2 -> v3.0)
+  diff:
+    -Roof claims: check whether the policy settles roofs at actual cash value by an endorsement, and whether a state bulletin requires matching of undamaged roofing or limits cosmetic hail exclusions. Name the bulletin when one is in force.
+    +Roof claims (underwriting guidance, updated): settle by the policy as written. State bulletins on matching and cosmetic hail are guidance for complaint handling, not coverage terms; follow the policy form.
+  numbered rules changed: no
+
+2. Detection
+  clash check v2.2: no clashes
+  clash check v3.0: skill roof (roof_matching, roof_settlement, hail_cosmetic, wind_hail, ice_dam) countermands rule precedence
+  clash check v3.1: skill roof (roof_matching, roof_settlement, hail_cosmetic, wind_hail, ice_dam) countermands rule precedence (hierarchy rule present)
+  clash check v3.2: no clashes
+
+3. Clash and repairs, seed 2026: roof probes (15) and all precedence probes (115) answered correctly
+  v2.2  sim-large  clashes 0  roof 15/15 (100.0%)  precedence 113/115 (98.3%)  eval wrong 3.5%  prompt tokens 1,517
+  v2.2  sim-mid    clashes 0  roof 15/15 (100.0%)  precedence 111/115 (96.5%)  eval wrong 4.5%  prompt tokens 1,518
+  v2.2  sim-small  clashes 0  roof 15/15 (100.0%)  precedence 109/115 (94.8%)  eval wrong 4.5%  prompt tokens 1,518
+  v3.0  sim-large  clashes 1  roof 12/15 ( 80.0%)  precedence 110/115 (95.7%)  eval wrong 4.5%  prompt tokens 1,517
+  v3.0  sim-mid    clashes 1  roof 11/15 ( 73.3%)  precedence 107/115 (93.0%)  eval wrong 6.0%  prompt tokens 1,518
+  v3.0  sim-small  clashes 1  roof 12/15 ( 80.0%)  precedence 106/115 (92.2%)  eval wrong 6.0%  prompt tokens 1,518
+  v3.1  sim-large  clashes 1  roof 15/15 (100.0%)  precedence 113/115 (98.3%)  eval wrong 3.5%  prompt tokens 1,543
+  v3.1  sim-mid    clashes 1  roof 15/15 (100.0%)  precedence 111/115 (96.5%)  eval wrong 4.5%  prompt tokens 1,544
+  v3.1  sim-small  clashes 1  roof 14/15 ( 93.3%)  precedence 108/115 (93.9%)  eval wrong 5.0%  prompt tokens 1,544
+  v3.2  sim-large  clashes 0  roof 15/15 (100.0%)  precedence 113/115 (98.3%)  eval wrong 3.5%  prompt tokens 1,550
+  v3.2  sim-mid    clashes 0  roof 15/15 (100.0%)  precedence 111/115 (96.5%)  eval wrong 4.5%  prompt tokens 1,551
+  v3.2  sim-small  clashes 0  roof 15/15 (100.0%)  precedence 109/115 (94.8%)  eval wrong 4.5%  prompt tokens 1,551
+
+4. The incident (sim-large, eval set)
+  DET-0116 Robert Nelson, MI, roof_settlement, loss 2026-08-14; gold LM HO 17 (2024-06)
+    v2.2 cited LM HO 17 (2024-06), Coverage, page 1
+    v3.0 cited HO-3 (2024-06), Section I Conditions D.3, page 4
+    skills loaded: roof; rule the model dropped: precedence
+  DET-0188 Daniel Becker, WI, roof_settlement, loss 2026-04-28; gold LM HO 17 (2024-06)
+    v2.2 cited LM HO 17 (2024-06), Coverage, page 1
+    v3.0 cited HO-3 (2024-06), Section I Conditions D.3, page 4
+    skills loaded: roof; rule the model dropped: precedence
+  claims newly wrong under v3.0: 2
+
+A. v3.0 roof adherence (15 probes) over seeds 2026-2035
+  v3.0 sim-large  correct of 15: [12, 13, 10, 11, 11, 11, 12, 13, 11, 12]  mean 11.6  min 10 max 13
+  v3.1 sim-large  correct of 15: [15, 15, 15, 15, 15, 15, 15, 15, 14, 14]  mean 14.8  min 14 max 15
+  v3.2 sim-large  correct of 15: [15, 15, 15, 15, 15, 15, 15, 15, 15, 15]  mean 15.0  min 15 max 15
+  v3.0 sim-mid    correct of 15: [11, 12, 11, 12, 12, 12, 12, 12, 11, 13]  mean 11.8  min 11 max 13
+  v3.1 sim-mid    correct of 15: [15, 15, 15, 15, 15, 15, 15, 14, 14, 15]  mean 14.8  min 14 max 15
+  v3.2 sim-mid    correct of 15: [15, 15, 15, 15, 15, 15, 15, 15, 15, 15]  mean 15.0  min 15 max 15
+  v3.0 sim-small  correct of 15: [12, 11, 12, 12, 12, 11, 14, 11, 13, 11]  mean 11.9  min 11 max 14
+  v3.1 sim-small  correct of 15: [14, 14, 15, 14, 15, 14, 15, 14, 15, 15]  mean 14.5  min 14 max 15
+  v3.2 sim-small  correct of 15: [15, 15, 15, 14, 15, 15, 15, 15, 15, 15]  mean 14.9  min 14 max 15
+
+B. Leak: water skill countermands quote_only
+  clash check: ['skill water (water_backup, frozen_pipes, flood, mold) countermands rule quote_only']
+  water determinations: claims 1-500 77, eval set 35
+  v2.2        sim-large  water additions   1/77  eval additions  1/200  eval wrong 3.5%  faithfulness 0.998
+  v3.0-water  sim-large  water additions   1/77  eval additions  1/200  eval wrong 3.5%  faithfulness 0.998
+  v3.1-water  sim-large  water additions   1/77  eval additions  1/200  eval wrong 3.5%  faithfulness 0.998
+  v2.2        sim-mid    water additions   1/77  eval additions  2/200  eval wrong 4.5%  faithfulness 0.995
+  v3.0-water  sim-mid    water additions   2/77  eval additions  2/200  eval wrong 4.5%  faithfulness 0.995
+  v3.1-water  sim-mid    water additions   1/77  eval additions  2/200  eval wrong 4.5%  faithfulness 0.995
+  v2.2        sim-small  water additions   2/77  eval additions  5/200  eval wrong 4.5%  faithfulness 0.988
+  v3.0-water  sim-small  water additions   4/77  eval additions  5/200  eval wrong 4.5%  faithfulness 0.988
+  v3.1-water  sim-small  water additions   2/77  eval additions  5/200  eval wrong 4.5%  faithfulness 0.988
+
+C. Version history (sim-large)
+  version  fingerprint  rules skills  ex clash eval wrong  probes  roof  holdout
+  v1.0     ca0d1f284a19     0      0   0     0       6.0%  98/115 13/15    15.2%
+  v1.1     6aa36fe51271     3      0   0     0       4.0% 111/115 15/15     1.5%
+  v1.2     560d9d9973f0     4      0   0     0       4.0% 111/115 15/15     1.5%
+  v2.0     6bc1f97b940b     4      5   3     0       3.5% 113/115 15/15     0.0%
+  v2.1     334aee811204     4      5   3     0       4.5% 108/115 10/15     6.1%
+  v2.2     6bc1f97b940b     4      5   3     0       3.5% 113/115 15/15     0.0%
+  v2.3     91a37cb95c66     3      5   3     0       6.5%  99/115 13/15    12.1%
+  v3.0     a84d0f106ca6     4      5   3     1       4.5% 110/115 12/15     1.5%
+  v3.1     4ae5de6cdc10     5      5   3     1       3.5% 113/115 15/15     0.0%
+  v3.2     40a0ad22ae1b     5      5   3     0       3.5% 113/115 15/15     0.0%
+  holdout n=66
+
+D. Hot edit: deployed text differs from the registered version
+  registered v3.2 fingerprint 40a0ad22ae1b
+  deployed   v3.2 fingerprint 3848805dd4bb
+  version labels equal: True; fingerprints equal: False
+    -Roof claims (underwriting guidance, updated): settle by the policy as written. State bulletins on matching and cosmetic hail are guidance for complaint handling, not coverage terms; follow the policy form. Where a bulletin in force on the date of loss differs from the form, the bulletin controls (rule 1); underwriting's settlement guidance applies only where no bulletin speaks.
+    +Roof claims (underwriting guidance, updated): settle by the policy as written. State bulletins on matching and cosmetic hail are guidance for complaint handling, not coverage terms; follow the policy form. Where a bulletin in force on the date of loss differs from the form, the bulletin is considered; underwriting's settlement guidance applies only where no bulletin speaks.
+
+E. What each test set sees for v2.2 -> v3.0 (sim-large and sim-mid)
+  sim-large: eval wrong 7 -> 9 (newly wrong 2, newly right 0); roof-topic dets in eval 39
+  sim-large: probes wrong 2 -> 5 (newly wrong 3, newly right 0)
+  sim-mid: eval wrong 9 -> 12 (newly wrong 3, newly right 0); roof-topic dets in eval 39
+  sim-mid: probes wrong 4 -> 8 (newly wrong 4, newly right 0)
+
+F. Leak at scale: water claims 1-500 (77) x seeds 2026-2035 = 770 answers per cell
+  v2.2        sim-large  answers with an unsupported addition   5/770 (0.6%)
+  v3.0-water  sim-large  answers with an unsupported addition  11/770 (1.4%)
+  v3.1-water  sim-large  answers with an unsupported addition   5/770 (0.6%)
+  v2.2        sim-mid    answers with an unsupported addition   4/770 (0.5%)
+  v3.0-water  sim-mid    answers with an unsupported addition  18/770 (2.3%)
+  v3.1-water  sim-mid    answers with an unsupported addition   4/770 (0.5%)
+  v2.2        sim-small  answers with an unsupported addition  13/770 (1.7%)
+  v3.0-water  sim-small  answers with an unsupported addition  39/770 (5.1%)
+  v3.1-water  sim-small  answers with an unsupported addition  15/770 (1.9%)
+  top additions under v3.0-water, sim-small:
+    "The insured's prior claim history voids " 14
+    "A separate $2,500 deductible also applie" 10
+
+G. One leaked answer, side by side (sim-small, seed 2026)
+  DET-0259 Karen Novak, WI, mold; gold HO-3 (2022-01)
+  v2.2:       The policy form itself answers this question for the loss as described in the claim file. Governing provision: HO-3 (2022-01), Section I Exclusions A.6, page 8 [S1]. Version HO-3 (2022-01) checked against the date of loss.
+  v3.0-water: The policy form itself answers this question for the loss as described in the claim file. A separate $2,500 deductible also applies under the declarations. Governing provision: HO-3 (2022-01), Section I Exclusions A.6, page 8 [S1]. Version HO-3 (2022-01) checked against the date of loss.
+  rules in force under v3.0-water: ['applicability', 'cite_exact', 'precedence']
+
+H. Release gate (floor 95% on the probes a change touches) and cost
+  v2.2: FAIL
+    clashes: 0
+    example lint problems: 0
+    precedence    sim-large  all  98.3% (n=115)  scoped  98.3% (n=115)
+    precedence    sim-mid    all  96.5% (n=115)  scoped  96.5% (n=115)
+    precedence    sim-small  all  94.8% (n=115)  scoped  94.8% (n=115)  BELOW FLOOR
+    applicability sim-large  all  97.1% (n=208)  scoped  97.1% (n=208)
+    applicability sim-mid    all  97.1% (n=208)  scoped  97.1% (n=208)
+    applicability sim-small  all  96.6% (n=208)  scoped  96.6% (n=208)
+  v3.0: FAIL
+    clashes: 1 (UNGUARDED)
+    example lint problems: 0
+    precedence    sim-large  all  95.7% (n=115)  scoped  80.0% (n=15)  BELOW FLOOR
+    precedence    sim-mid    all  93.0% (n=115)  scoped  73.3% (n=15)  BELOW FLOOR
+    precedence    sim-small  all  92.2% (n=115)  scoped  80.0% (n=15)  BELOW FLOOR
+    applicability sim-large  all  97.1% (n=208)  scoped 100.0% (n=36)
+    applicability sim-mid    all  97.1% (n=208)  scoped 100.0% (n=36)
+    applicability sim-small  all  96.6% (n=208)  scoped 100.0% (n=36)
+  v3.1: FAIL
+    clashes: 1
+    example lint problems: 0
+    precedence    sim-large  all  98.3% (n=115)  scoped 100.0% (n=15)
+    precedence    sim-mid    all  96.5% (n=115)  scoped 100.0% (n=15)
+    precedence    sim-small  all  93.9% (n=115)  scoped  93.3% (n=15)  BELOW FLOOR
+    applicability sim-large  all  97.1% (n=208)  scoped 100.0% (n=36)
+    applicability sim-mid    all  97.1% (n=208)  scoped 100.0% (n=36)
+    applicability sim-small  all  96.6% (n=208)  scoped 100.0% (n=36)
+  v3.2: FAIL
+    clashes: 0
+    example lint problems: 0
+    precedence    sim-large  all  98.3% (n=115)  scoped 100.0% (n=15)
+    precedence    sim-mid    all  96.5% (n=115)  scoped 100.0% (n=15)
+    precedence    sim-small  all  94.8% (n=115)  scoped 100.0% (n=15)  BELOW FLOOR
+    applicability sim-large  all  97.1% (n=208)  scoped 100.0% (n=36)
+    applicability sim-mid    all  97.1% (n=208)  scoped 100.0% (n=36)
+    applicability sim-small  all  96.6% (n=208)  scoped 100.0% (n=36)
+  prompt tokens and cost per determination, sim-large, eval set:
+    v2.2  tokens 1,517  cost $0.00541
+    v3.1  tokens 1,543  cost $0.00549
+    v3.2  tokens 1,550  cost $0.00551
+
+I. Release gate v2: per model, against production v2.2, on the skills a change touches
+  v3.0: FAIL
+    clashes: 1
+    example lint problems: 0
+    precedence    sim-large  scoped n= 15  production  15  candidate  12  drop +20.0%  REGRESSION
+    precedence    sim-mid    scoped n= 15  production  15  candidate  11  drop +26.7%  REGRESSION
+    precedence    sim-small  scoped n= 15  production  15  candidate  12  drop +20.0%  REGRESSION
+    applicability sim-large  scoped n= 36  production  36  candidate  36  drop +0.0%
+    applicability sim-mid    scoped n= 36  production  36  candidate  36  drop +0.0%
+    applicability sim-small  scoped n= 36  production  36  candidate  36  drop +0.0%
+  v3.1: FAIL
+    clashes: 1
+    example lint problems: 0
+    precedence    sim-large  scoped n= 15  production  15  candidate  15  drop +0.0%
+    precedence    sim-mid    scoped n= 15  production  15  candidate  15  drop +0.0%
+    precedence    sim-small  scoped n= 15  production  15  candidate  14  drop +6.7%  REGRESSION
+    applicability sim-large  scoped n= 36  production  36  candidate  36  drop +0.0%
+    applicability sim-mid    scoped n= 36  production  36  candidate  36  drop +0.0%
+    applicability sim-small  scoped n= 36  production  36  candidate  36  drop +0.0%
+  v3.2: PASS
+    clashes: 0
+    example lint problems: 0
+    precedence    sim-large  scoped n= 15  production  15  candidate  15  drop +0.0%
+    precedence    sim-mid    scoped n= 15  production  15  candidate  15  drop +0.0%
+    precedence    sim-small  scoped n= 15  production  15  candidate  15  drop +0.0%
+    applicability sim-large  scoped n= 36  production  36  candidate  36  drop +0.0%
+    applicability sim-mid    scoped n= 36  production  36  candidate  36  drop +0.0%
+    applicability sim-small  scoped n= 36  production  36  candidate  36  drop +0.0%
+  v3.0-water: FAIL
+    clashes: 1
+    example lint problems: 0
+    precedence    sim-large  scoped n= 20  production  19  candidate  19  drop +0.0%
+    precedence    sim-mid    scoped n= 20  production  19  candidate  19  drop +0.0%
+    precedence    sim-small  scoped n= 20  production  19  candidate  19  drop +0.0%
+    applicability sim-large  scoped n= 40  production  34  candidate  34  drop +0.0%
+    applicability sim-mid    scoped n= 40  production  34  candidate  34  drop +0.0%
+    applicability sim-small  scoped n= 40  production  34  candidate  34  drop +0.0%
+  v3.1-water: FAIL
+    clashes: 1
+    example lint problems: 0
+    precedence    sim-large  scoped n= 20  production  19  candidate  19  drop +0.0%
+    precedence    sim-mid    scoped n= 20  production  19  candidate  19  drop +0.0%
+    precedence    sim-small  scoped n= 20  production  19  candidate  19  drop +0.0%
+    applicability sim-large  scoped n= 40  production  34  candidate  34  drop +0.0%
+    applicability sim-mid    scoped n= 40  production  34  candidate  34  drop +0.0%
+    applicability sim-small  scoped n= 40  production  34  candidate  34  drop +0.0%
+
+J. resolve(): conflicts settled in code before assembly (fall back to last clean skill)
+  v3.0 -> v3.0+resolved; clashes after: 0; fingerprint 6bc1f97b940b (v2.2 is 6bc1f97b940b)
+    rule precedence (tier 0) beats skill roof (tier 1): skill withheld for topics roof_matching, roof_settlement, hail_cosmetic, wind_hail, ice_dam; owner must rewrite it
+    roof probes 15/15; eval wrong 3.5%
+  v3.0-water -> v3.0-water+resolved; clashes after: 0; fingerprint 6bc1f97b940b (v2.2 is 6bc1f97b940b)
+    rule quote_only (tier 0) beats skill water (tier 1): skill withheld for topics water_backup, frozen_pipes, flood, mold; owner must rewrite it
+    roof probes 15/15; eval wrong 3.5%
+
+K. Probe inventory (claims 1-500; example sources excluded)
+  precedence    all 115  roof topics  15  water topics  20
+  applicability all 208  roof topics  36  water topics  40
+
+L. Scoreboard, sim-large, v2.2 and v3.2 (Chapter 6 format)
+  v2.2 eval 200     wrong-clause 3.5%  hit@5 0.94  faithfulness 0.998  tokens 1,517  cost $0.00541
+  v2.2 holdout 300  wrong-clause 0.7%  hit@5 0.95  faithfulness 0.998  tokens 1,522  cost $0.00544
+  v3.2 eval 200     wrong-clause 3.5%  hit@5 0.94  faithfulness 0.998  tokens 1,550  cost $0.00551
+  v3.2 holdout 300  wrong-clause 0.7%  hit@5 0.95  faithfulness 0.998  tokens 1,554  cost $0.00554

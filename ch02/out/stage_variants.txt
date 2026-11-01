@@ -1,0 +1,1 @@
+baseline query_facts=False                27/200  13.5% [ 9.4%,18.9%] abst 0.0% hit1 0.21 hit5 0.86 mrr 0.472 faith 0.985 tok 1,089 $0.00395 lookup 3.55

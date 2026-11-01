@@ -1,0 +1,7 @@
+text                 contextlab  cl100k_base   o200k_base
+endorsement title             9           10           10
+policy number                 5            8            8
+form label                    8            9            9
+dollar limit                 11           11           11
+date                          5            6            6
+whole corpus             22,326       22,487       22,442

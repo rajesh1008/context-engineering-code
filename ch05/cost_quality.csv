@@ -1,0 +1,13 @@
+model,strategy,wrong_rate,list_usd,cached_usd,cache_hit,latency_s,cached_latency_s
+sim-large,retrieve,0.06,0.003991,0.003991,0.0,1.627,1.627
+sim-large,stuff all,0.275,0.103041,0.012259,0.9873,8.263,2.21
+sim-large,stuff family,0.165,0.044252,0.008295,0.9207,4.321,1.924
+sim-large,hybrid,0.015,0.011861,0.006815,0.5098,2.164,1.827
+sim-mid,retrieve,0.075,0.001332,0.001332,0.0,0.909,0.909
+sim-mid,stuff all,0.565,0.034342,0.004082,0.9873,4.216,1.19
+sim-mid,stuff family,0.3,0.014747,0.002762,0.9207,2.247,1.049
+sim-mid,hybrid,0.03,0.003953,0.002271,0.5098,1.175,1.007
+sim-small,retrieve,0.08,0.000333,0.000333,0.0,0.533,0.533
+sim-small,stuff all,1.0,,,,,
+sim-small,stuff family,0.425,0.003686,0.00069,0.9207,1.197,0.598
+sim-small,hybrid,0.02,0.000988,0.000568,0.5098,0.667,0.583

@@ -1,0 +1,30 @@
+stuff all: 55 wrong
+    9  endorsement not on policy
+    7  superseded
+    7  applies (wrong clause)
+    7  wrong state #WI#
+    6  wrong state #IA#
+    6  wrong state #MN#
+    5  wrong state #IL#
+    4  wrong state #MI#
+    2  bulletin not in force on date of loss
+    2  not on policy
+  gold span present in 55 of the wrong packets; in the middle half for 42
+stuff family: 33 wrong
+    7  wrong state #IA#
+    7  endorsement not on policy
+    5  wrong state #WI#
+    4  wrong state #IL#
+    2  applies (wrong clause)
+    2  wrong state #MI#
+    2  bulletin not in force on date of loss
+    2  wrong state #IN#
+    1  superseded
+    1  wrong state #MN#
+  gold span present in 33 of the wrong packets; in the middle half for 33
+hybrid: 3 wrong
+    3  applies (wrong clause)
+  gold span present in 3 of the wrong packets; in the middle half for 1
+retrieve: 12 wrong
+   12  applies (wrong clause)
+  gold span present in 7 of the wrong packets; in the middle half for 3

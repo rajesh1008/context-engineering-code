@@ -1,0 +1,201 @@
+determination_id,state,form,topic,gold_label,gold_span_id,gold_kind,verdict,difficulty
+DET-0001,WI,HO-3 (2024-06),water_backup,HO 04 95 (2024-06),HO 04 95@2024-06#water_backup,endorsement,"covered up to $10,000",complex
+DET-0002,MI,BOAT (2021-05),navigation_limits,BOAT (2021-05),BOAT@2021-05#navigation_limits,form,Great Lakes only,simple
+DET-0003,IL,BOP (2020-04),employee_dishonesty,BOP (2020-04),BOP@2020-04#employee_dishonesty,form,excluded,simple
+DET-0004,IA,BOP (2025-01),employee_dishonesty,BOP (2025-01),BOP@2025-01#employee_dishonesty,form,excluded,simple
+DET-0005,WI,HO-3 (2022-01),tree_debris,HO-3 (2022-01),HO-3@2022-01#tree_debris,form,"covered up to $1,000",simple
+DET-0006,IN,BOP (2020-04),employee_dishonesty,BP 04 50 (2025-01),BP 04 50@2025-01#employee_dishonesty,endorsement,"covered up to $25,000",complex
+DET-0007,MI,HO-3 (2024-06),vandalism_vacancy,HO 04 50 (2019-03),HO 04 50@2019-03#vandalism_vacancy,endorsement,covered during the permission period,complex
+DET-0008,MN,HO-3 (2024-06),roof_settlement,HO-3 (2024-06),HO-3@2024-06#roof_settlement,form,actual cash value if roof over 15 years,simple
+DET-0009,WI,HO-3 (2022-01),roof_settlement,LM HO 17 (2024-06),LM HO 17@2024-06#roof_settlement,endorsement,replacement cost regardless of age,complex
+DET-0010,WI,HO-3 (2024-06),hail_cosmetic,LM HO 33 (2024-06),LM HO 33@2024-06#hail_cosmetic,endorsement,covered subject to a 2% deductible,complex
+DET-0011,WI,PAP (2023-01),glass,PP 03 13 (2018-09),PP 03 13@2018-09#glass,endorsement,no deductible,complex
+DET-0012,MN,HO-3 (2024-06),hail_cosmetic,MN Bulletin 24-09 (2024-09),MN Bulletin 24-09@2024-09#hail_cosmetic,bulletin,covered (exclusion unenforceable),complex
+DET-0013,MN,HO-3 (2024-06),mold,LM HO 12 (2022-01),LM HO 12@2022-01#mold,endorsement,"covered up to $10,000",complex
+DET-0014,IA,HO-3 (2022-01),mold,LM HO 12 (2022-01),LM HO 12@2022-01#mold,endorsement,"covered up to $10,000",complex
+DET-0015,MI,HO-3 (2024-06),roof_settlement,LM HO 17 (2024-06),LM HO 17@2024-06#roof_settlement,endorsement,replacement cost regardless of age,complex
+DET-0016,IA,HO-3 (2022-01),earth_movement,HO 04 54 (2022-01),HO 04 54@2022-01#earth_movement,endorsement,covered (earthquake),complex
+DET-0017,IL,BOAT (2025-03),theft_boat,BOAT (2025-03),BOAT@2025-03#theft_boat,form,covered with evidence of forced entry,simple
+DET-0018,WI,HO-3 (2024-06),vandalism_vacancy,HO 04 50 (2019-03),HO 04 50@2019-03#vandalism_vacancy,endorsement,covered during the permission period,complex
+DET-0019,MN,PAP (2023-01),rental_reimbursement,PP 03 02 (2023-01),PP 03 02@2023-01#rental_reimbursement,endorsement,up to $50 a day,complex
+DET-0020,WI,PAP (2023-01),deer_strike,PAP (2023-01),PAP@2023-01#deer_strike,form,"other than collision, no collision deductible",simple
+DET-0021,WI,PAP (2023-01),rideshare,LM PP 40 (2023-01),LM PP 40@2023-01#rideshare,endorsement,covered while logged in and unmatched,complex
+DET-0022,WI,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0023,WI,BOAT (2021-05),theft_boat,BOAT (2021-05),BOAT@2021-05#theft_boat,form,covered with evidence of forced entry,simple
+DET-0024,IN,HO-3 (2024-06),freezing,HO-3 (2024-06),HO-3@2024-06#freezing,form,covered if heat maintained,simple
+DET-0025,MI,HO-3 (2024-06),dog_bite,LM HO 30 (2024-06),LM HO 30@2024-06#dog_bite,endorsement,"limited to $25,000",complex
+DET-0026,WI,PAP (2023-01),collision,PAP (2023-01),PAP@2023-01#collision,form,covered less deductible,simple
+DET-0027,WI,PAP (2018-09),towing,PP 03 03 (2018-09),PP 03 03@2018-09#towing,endorsement,up to $150 a disablement,complex
+DET-0028,IA,HO-3 (2024-06),wind_hail,HO-3 (2024-06),HO-3@2024-06#wind_hail,form,covered,simple
+DET-0029,MN,BOAT (2021-05),ice_damage,BT 12 (2021-05),BT 12@2021-05#ice_damage,endorsement,covered with a de-icer,complex
+DET-0030,WI,HO-3 (2022-01),wind_hail,HO-3 (2022-01),HO-3@2022-01#wind_hail,form,covered,simple
+DET-0031,IN,PAP (2018-09),towing,PP 03 03 (2018-09),PP 03 03@2018-09#towing,endorsement,up to $150 a disablement,complex
+DET-0032,IL,BOP (2020-04),employee_dishonesty,BP 04 50 (2025-01),BP 04 50@2025-01#employee_dishonesty,endorsement,"covered up to $25,000",complex
+DET-0033,MN,HO-3 (2022-01),roof_settlement,LM HO 17 (2024-06),LM HO 17@2024-06#roof_settlement,endorsement,replacement cost regardless of age,complex
+DET-0034,IA,HO-3 (2024-06),jewelry_limit,HO 04 61 (2019-03),HO 04 61@2019-03#jewelry_limit,endorsement,scheduled amount,complex
+DET-0035,WI,HO-3 (2022-01),wind_hail,HO-3 (2022-01),HO-3@2022-01#wind_hail,form,covered,simple
+DET-0036,MI,HO-3 (2024-06),roof_settlement,LM HO 17 (2024-06),LM HO 17@2024-06#roof_settlement,endorsement,replacement cost regardless of age,complex
+DET-0037,WI,HO-3 (2024-06),roof_matching,WI Bulletin 25-03 (2025-03),WI Bulletin 25-03@2025-03#roof_matching,bulletin,matching required on adjoining slopes,complex
+DET-0038,IL,HO-3 (2024-06),vandalism_vacancy,HO-3 (2024-06),HO-3@2024-06#vandalism_vacancy,form,excluded after 60 days vacant,simple
+DET-0039,MI,HO-3 (2024-06),flood,HO-3 (2024-06),HO-3@2024-06#flood,form,excluded,simple
+DET-0040,IA,HO-3 (2022-01),hail_cosmetic,LM HO 33 (2024-06),LM HO 33@2024-06#hail_cosmetic,endorsement,covered subject to a 2% deductible,complex
+DET-0041,MI,HO-3 (2024-06),dog_bite,HO-3 (2024-06),HO-3@2024-06#dog_bite,form,covered up to the liability limit,simple
+DET-0042,MI,BOAT (2025-03),ice_damage,BT 12 (2021-05),BT 12@2021-05#ice_damage,endorsement,covered with a de-icer,complex
+DET-0043,WI,PAP (2023-01),collision,PAP (2023-01),PAP@2023-01#collision,form,covered less deductible,simple
+DET-0044,IL,HO-3 (2022-01),tree_debris,HO-3 (2022-01),HO-3@2022-01#tree_debris,form,"covered up to $1,000",simple
+DET-0045,IL,PAP (2023-01),towing,PP 03 03 (2018-09),PP 03 03@2018-09#towing,endorsement,up to $150 a disablement,complex
+DET-0046,IN,HO-3 (2024-06),theft,HO-3 (2024-06),HO-3@2024-06#theft,form,covered,simple
+DET-0047,WI,PAP (2023-01),rental_reimbursement,PAP (2023-01),PAP@2023-01#rental_reimbursement,form,up to $30 a day,simple
+DET-0048,IL,HO-3 (2022-01),roof_matching,HO-3 (2022-01),HO-3@2022-01#roof_matching,form,matching required,simple
+DET-0049,WI,BOAT (2025-03),navigation_limits,BT 05 (2021-05),BT 05@2021-05#navigation_limits,endorsement,coastal waters within 50 miles,complex
+DET-0050,WI,HO-3 (2024-06),jewelry_limit,HO-3 (2024-06),HO-3@2024-06#jewelry_limit,form,"limited to $1,500",simple
+DET-0051,WI,BOAT (2025-03),ice_damage,BT 12 (2021-05),BT 12@2021-05#ice_damage,endorsement,covered with a de-icer,complex
+DET-0052,MN,PAP (2023-01),glass,PAP (2023-01),PAP@2023-01#glass,form,your choice of coverage,simple
+DET-0053,IN,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0054,WI,PAP (2023-01),rideshare,PAP (2023-01),PAP@2023-01#rideshare,form,excluded,simple
+DET-0055,WI,HO-3 (2024-06),hail_cosmetic,HO-3 (2024-06),HO-3@2024-06#hail_cosmetic,form,excluded for metal roofs,simple
+DET-0056,WI,PAP (2018-09),glass,PAP (2018-09),PAP@2018-09#glass,form,your choice of coverage,simple
+DET-0057,WI,HO-3 (2022-01),food_spoilage,HO 04 98 (2022-01),HO 04 98@2022-01#food_spoilage,endorsement,covered up to $500,complex
+DET-0058,IA,PAP (2023-01),towing,PAP (2023-01),PAP@2023-01#towing,form,up to $75 a disablement,simple
+DET-0059,MN,HO-3 (2024-06),jewelry_limit,HO-3 (2024-06),HO-3@2024-06#jewelry_limit,form,"limited to $1,500",simple
+DET-0060,WI,PAP (2023-01),collision,PAP (2023-01),PAP@2023-01#collision,form,covered less deductible,simple
+DET-0061,WI,HO-3 (2024-06),food_spoilage,HO-3 (2024-06),HO-3@2024-06#food_spoilage,form,excluded,simple
+DET-0062,MN,PAP (2018-09),deer_strike,PAP (2018-09),PAP@2018-09#deer_strike,form,other than collision,simple
+DET-0063,WI,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0064,WI,PAP (2023-01),rental_reimbursement,PAP (2023-01),PAP@2023-01#rental_reimbursement,form,up to $30 a day,simple
+DET-0065,IL,HO-3 (2024-06),theft,HO-3 (2024-06),HO-3@2024-06#theft,form,covered,simple
+DET-0066,MI,HO-3 (2022-01),ale,HO 04 81 (2022-01),HO 04 81@2022-01#ale,endorsement,up to 24 months,complex
+DET-0067,MI,PAP (2023-01),rideshare,PAP (2023-01),PAP@2023-01#rideshare,form,excluded,simple
+DET-0068,WI,BOAT (2021-05),navigation_limits,BOAT (2021-05),BOAT@2021-05#navigation_limits,form,Great Lakes only,simple
+DET-0069,MN,HO-3 (2022-01),water_backup,HO 04 95 (2019-03),HO 04 95@2019-03#water_backup,endorsement,"covered up to $5,000",complex
+DET-0070,WI,HO-3 (2024-06),roof_settlement,HO-3 (2024-06),HO-3@2024-06#roof_settlement,form,actual cash value if roof over 15 years,simple
+DET-0071,IL,HO-3 (2024-06),earth_movement,HO 04 54 (2022-01),HO 04 54@2022-01#earth_movement,endorsement,covered (earthquake),complex
+DET-0072,IL,HO-3 (2022-01),roof_matching,HO-3 (2022-01),HO-3@2022-01#roof_matching,form,matching required,simple
+DET-0073,WI,BOP (2020-04),equipment_breakdown,BP 04 30 (2020-04),BP 04 30@2020-04#equipment_breakdown,endorsement,covered,complex
+DET-0074,WI,PAP (2023-01),collision,PAP (2023-01),PAP@2023-01#collision,form,covered less deductible,simple
+DET-0075,IN,HO-3 (2024-06),roof_matching,HO-3 (2024-06),HO-3@2024-06#roof_matching,form,matching limited to damaged slopes,simple
+DET-0076,WI,BOP (2025-01),equipment_breakdown,BOP (2025-01),BOP@2025-01#equipment_breakdown,form,excluded,simple
+DET-0077,IN,PAP (2023-01),glass,PAP (2023-01),PAP@2023-01#glass,form,your choice of coverage,simple
+DET-0078,WI,HO-3 (2024-06),water_backup,HO-3 (2024-06),HO-3@2024-06#water_backup,form,excluded,simple
+DET-0079,IL,BOAT (2025-03),ice_damage,BOAT (2025-03),BOAT@2025-03#ice_damage,form,excluded unless laid up,simple
+DET-0080,WI,HO-3 (2024-06),earth_movement,HO-3 (2024-06),HO-3@2024-06#earth_movement,form,excluded,simple
+DET-0081,IA,BOP (2025-01),business_income,BOP (2025-01),BOP@2025-01#business_income,form,up to 12 months,simple
+DET-0082,MN,BOP (2025-01),employee_dishonesty,BOP (2025-01),BOP@2025-01#employee_dishonesty,form,excluded,simple
+DET-0083,IN,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0084,IA,PAP (2023-01),rental_reimbursement,PAP (2023-01),PAP@2023-01#rental_reimbursement,form,up to $30 a day,simple
+DET-0085,WI,PAP (2023-01),glass,PAP (2023-01),PAP@2023-01#glass,form,your choice of coverage,simple
+DET-0086,WI,PAP (2023-01),comprehensive,PAP (2023-01),PAP@2023-01#comprehensive,form,covered,simple
+DET-0087,WI,HO-3 (2022-01),roof_settlement,LM HO 17 (2024-06),LM HO 17@2024-06#roof_settlement,endorsement,replacement cost regardless of age,complex
+DET-0088,MI,HO-3 (2022-01),flood,HO-3 (2022-01),HO-3@2022-01#flood,form,excluded,simple
+DET-0089,WI,PAP (2023-01),rental_reimbursement,PAP (2023-01),PAP@2023-01#rental_reimbursement,form,up to $30 a day,simple
+DET-0090,IL,HO-3 (2024-06),theft,HO-3 (2024-06),HO-3@2024-06#theft,form,covered,simple
+DET-0091,IL,HO-3 (2024-06),freezing,IL Bulletin 25-05 (2025-05),IL Bulletin 25-05@2025-05#freezing,bulletin,covered if heating failed unknowingly,complex
+DET-0092,MN,BOAT (2021-05),towing_assistance,BOAT (2021-05),BOAT@2021-05#towing_assistance,form,up to $500,simple
+DET-0093,IA,HO-3 (2022-01),water_backup,HO 04 95 (2019-03),HO 04 95@2019-03#water_backup,endorsement,"covered up to $5,000",complex
+DET-0094,MN,HO-3 (2024-06),roof_settlement,HO-3 (2024-06),HO-3@2024-06#roof_settlement,form,actual cash value if roof over 15 years,simple
+DET-0095,IN,HO-3 (2024-06),ale,HO-3 (2024-06),HO-3@2024-06#ale,form,covered for the shortest repair time,simple
+DET-0096,IN,PAP (2023-01),towing,PAP (2023-01),PAP@2023-01#towing,form,up to $75 a disablement,simple
+DET-0097,WI,BOP (2025-01),business_income,BOP (2025-01),BOP@2025-01#business_income,form,up to 12 months,simple
+DET-0098,MN,PAP (2018-09),deer_strike,PAP (2018-09),PAP@2018-09#deer_strike,form,other than collision,simple
+DET-0099,IL,PAP (2023-01),collision,PAP (2023-01),PAP@2023-01#collision,form,covered less deductible,simple
+DET-0100,IL,PAP (2023-01),rideshare,PAP (2023-01),PAP@2023-01#rideshare,form,excluded,simple
+DET-0101,MN,HO-3 (2024-06),tree_debris,HO-3 (2024-06),HO-3@2024-06#tree_debris,form,"covered up to $1,500",simple
+DET-0102,WI,HO-3 (2022-01),hail_cosmetic,LM HO 33 (2024-06),LM HO 33@2024-06#hail_cosmetic,endorsement,covered subject to a 2% deductible,complex
+DET-0103,MI,PAP (2023-01),deer_strike,PAP (2023-01),PAP@2023-01#deer_strike,form,"other than collision, no collision deductible",simple
+DET-0104,WI,HO-3 (2024-06),earth_movement,HO-3 (2024-06),HO-3@2024-06#earth_movement,form,excluded,simple
+DET-0105,WI,HO-3 (2024-06),water_backup,HO-3 (2024-06),HO-3@2024-06#water_backup,form,excluded,simple
+DET-0106,MN,BOP (2020-04),business_income,BOP (2020-04),BOP@2020-04#business_income,form,up to 12 months,simple
+DET-0107,IN,HO-3 (2022-01),water_backup,HO 04 95 (2019-03),HO 04 95@2019-03#water_backup,endorsement,"covered up to $5,000",complex
+DET-0108,WI,HO-3 (2022-01),wind_hail,HO-3 (2022-01),HO-3@2022-01#wind_hail,form,covered,simple
+DET-0109,IL,HO-3 (2022-01),roof_settlement,LM HO 17 (2024-06),LM HO 17@2024-06#roof_settlement,endorsement,replacement cost regardless of age,complex
+DET-0110,IL,BOP (2025-01),business_income,BOP (2025-01),BOP@2025-01#business_income,form,up to 12 months,simple
+DET-0111,WI,HO-3 (2024-06),freezing,HO-3 (2024-06),HO-3@2024-06#freezing,form,covered if heat maintained,simple
+DET-0112,MN,BOAT (2021-05),ice_damage,BOAT (2021-05),BOAT@2021-05#ice_damage,form,excluded unless laid up,simple
+DET-0113,IL,HO-3 (2022-01),earth_movement,HO 04 54 (2022-01),HO 04 54@2022-01#earth_movement,endorsement,covered (earthquake),complex
+DET-0114,IA,PAP (2023-01),collision,PAP (2023-01),PAP@2023-01#collision,form,covered less deductible,simple
+DET-0115,MI,HO-3 (2022-01),roof_matching,HO-3 (2022-01),HO-3@2022-01#roof_matching,form,matching required,simple
+DET-0116,MI,HO-3 (2022-01),roof_matching,HO-3 (2022-01),HO-3@2022-01#roof_matching,form,matching required,simple
+DET-0117,MI,BOAT (2025-03),towing_assistance,BOAT (2025-03),BOAT@2025-03#towing_assistance,form,up to $500,simple
+DET-0118,IL,PAP (2023-01),rental_reimbursement,PAP (2023-01),PAP@2023-01#rental_reimbursement,form,up to $30 a day,simple
+DET-0119,IA,HO-3 (2022-01),jewelry_limit,HO-3 (2022-01),HO-3@2022-01#jewelry_limit,form,"limited to $1,500",simple
+DET-0120,IL,HO-3 (2022-01),ice_dam,HO-3 (2022-01),HO-3@2022-01#ice_dam,form,interior water damage covered,simple
+DET-0121,IL,PAP (2023-01),comprehensive,PAP (2023-01),PAP@2023-01#comprehensive,form,covered,simple
+DET-0122,WI,HO-3 (2024-06),food_spoilage,HO-3 (2024-06),HO-3@2024-06#food_spoilage,form,excluded,simple
+DET-0123,WI,HO-3 (2022-01),dog_bite,HO-3 (2022-01),HO-3@2022-01#dog_bite,form,covered up to the liability limit,simple
+DET-0124,WI,HO-3 (2024-06),ice_dam,HO-3 (2024-06),HO-3@2024-06#ice_dam,form,interior water damage covered,simple
+DET-0125,MN,PAP (2023-01),rideshare,PAP (2023-01),PAP@2023-01#rideshare,form,excluded,simple
+DET-0126,IL,BOAT (2025-03),towing_assistance,BOAT (2025-03),BOAT@2025-03#towing_assistance,form,up to $500,simple
+DET-0127,MI,HO-3 (2024-06),ice_dam,MI Bulletin 25-01 (2025-01),MI Bulletin 25-01@2025-01#ice_dam,bulletin,removal covered,complex
+DET-0128,IN,BOP (2020-04),equipment_breakdown,BOP (2020-04),BOP@2020-04#equipment_breakdown,form,excluded,simple
+DET-0129,WI,BOAT (2021-05),navigation_limits,BOAT (2021-05),BOAT@2021-05#navigation_limits,form,Great Lakes only,simple
+DET-0130,MI,HO-3 (2022-01),mold,HO-3 (2022-01),HO-3@2022-01#mold,form,excluded unless from a covered water loss,simple
+DET-0131,WI,HO-3 (2024-06),earth_movement,HO 04 54 (2022-01),HO 04 54@2022-01#earth_movement,endorsement,covered (earthquake),complex
+DET-0132,WI,PAP (2023-01),comprehensive,PAP (2023-01),PAP@2023-01#comprehensive,form,covered,simple
+DET-0133,WI,HO-3 (2022-01),flood,HO-3 (2022-01),HO-3@2022-01#flood,form,excluded,simple
+DET-0134,WI,BOP (2020-04),employee_dishonesty,BOP (2020-04),BOP@2020-04#employee_dishonesty,form,excluded,simple
+DET-0135,MN,PAP (2023-01),collision,PAP (2023-01),PAP@2023-01#collision,form,covered less deductible,simple
+DET-0136,WI,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0137,IA,HO-3 (2024-06),ice_dam,HO-3 (2024-06),HO-3@2024-06#ice_dam,form,interior water damage covered,simple
+DET-0138,WI,HO-3 (2024-06),roof_settlement,HO-3 (2024-06),HO-3@2024-06#roof_settlement,form,actual cash value if roof over 15 years,simple
+DET-0139,WI,BOP (2025-01),employee_dishonesty,BOP (2025-01),BOP@2025-01#employee_dishonesty,form,excluded,simple
+DET-0140,WI,HO-3 (2022-01),water_backup,HO-3 (2022-01),HO-3@2022-01#water_backup,form,excluded,simple
+DET-0141,WI,HO-3 (2022-01),dog_bite,HO-3 (2022-01),HO-3@2022-01#dog_bite,form,covered up to the liability limit,simple
+DET-0142,WI,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0143,MI,HO-3 (2024-06),roof_settlement,HO-3 (2024-06),HO-3@2024-06#roof_settlement,form,actual cash value if roof over 15 years,simple
+DET-0144,MI,BOAT (2025-03),towing_assistance,BOAT (2025-03),BOAT@2025-03#towing_assistance,form,up to $500,simple
+DET-0145,WI,HO-3 (2024-06),food_spoilage,HO 04 98 (2022-01),HO 04 98@2022-01#food_spoilage,endorsement,covered up to $500,complex
+DET-0146,WI,BOP (2025-01),equipment_breakdown,BOP (2025-01),BOP@2025-01#equipment_breakdown,form,excluded,simple
+DET-0147,MI,PAP (2023-01),glass,PAP (2023-01),PAP@2023-01#glass,form,your choice of coverage,simple
+DET-0148,IL,HO-3 (2022-01),hail_cosmetic,HO-3 (2022-01),HO-3@2022-01#hail_cosmetic,form,covered,simple
+DET-0149,IL,BOP (2020-04),equipment_breakdown,BOP (2020-04),BOP@2020-04#equipment_breakdown,form,excluded,simple
+DET-0150,IA,PAP (2023-01),deer_strike,IA Bulletin 23-07 (2023-07),IA Bulletin 23-07@2023-07#deer_strike,bulletin,"other than collision, no collision deductible",complex
+DET-0151,WI,HO-3 (2024-06),vandalism_vacancy,HO-3 (2024-06),HO-3@2024-06#vandalism_vacancy,form,excluded after 60 days vacant,simple
+DET-0152,WI,HO-3 (2024-06),ice_dam,HO-3 (2024-06),HO-3@2024-06#ice_dam,form,interior water damage covered,simple
+DET-0153,IL,HO-3 (2024-06),flood,HO-3 (2024-06),HO-3@2024-06#flood,form,excluded,simple
+DET-0154,WI,HO-3 (2024-06),tree_debris,HO-3 (2024-06),HO-3@2024-06#tree_debris,form,"covered up to $1,500",simple
+DET-0155,IN,PAP (2018-09),deer_strike,PAP (2018-09),PAP@2018-09#deer_strike,form,other than collision,simple
+DET-0156,MN,HO-3 (2024-06),water_backup,HO-3 (2024-06),HO-3@2024-06#water_backup,form,excluded,simple
+DET-0157,WI,BOAT (2021-05),navigation_limits,BOAT (2021-05),BOAT@2021-05#navigation_limits,form,Great Lakes only,simple
+DET-0158,WI,PAP (2023-01),comprehensive,PAP (2023-01),PAP@2023-01#comprehensive,form,covered,simple
+DET-0159,WI,HO-3 (2022-01),hail_cosmetic,HO-3 (2022-01),HO-3@2022-01#hail_cosmetic,form,covered,simple
+DET-0160,IL,PAP (2018-09),collision,PAP (2018-09),PAP@2018-09#collision,form,covered less deductible,simple
+DET-0161,MI,PAP (2018-09),towing,PAP (2018-09),PAP@2018-09#towing,form,up to $75 a disablement,simple
+DET-0162,IA,HO-3 (2022-01),collapse,HO-3 (2022-01),HO-3@2022-01#collapse,form,covered,simple
+DET-0163,WI,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0164,MN,BOAT (2021-05),towing_assistance,BOAT (2021-05),BOAT@2021-05#towing_assistance,form,up to $500,simple
+DET-0165,WI,HO-3 (2024-06),water_backup,HO-3 (2024-06),HO-3@2024-06#water_backup,form,excluded,simple
+DET-0166,IA,PAP (2023-01),comprehensive,PAP (2023-01),PAP@2023-01#comprehensive,form,covered,simple
+DET-0167,IL,HO-3 (2024-06),water_backup,HO-3 (2024-06),HO-3@2024-06#water_backup,form,excluded,simple
+DET-0168,IL,PAP (2018-09),rental_reimbursement,PAP (2018-09),PAP@2018-09#rental_reimbursement,form,up to $20 a day after theft,simple
+DET-0169,WI,PAP (2023-01),deer_strike,PAP (2023-01),PAP@2023-01#deer_strike,form,"other than collision, no collision deductible",simple
+DET-0170,MN,HO-3 (2024-06),theft,HO-3 (2024-06),HO-3@2024-06#theft,form,covered,simple
+DET-0171,MI,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0172,MI,BOAT (2025-03),navigation_limits,MI Bulletin 23-10 (2023-10),MI Bulletin 23-10@2023-10#navigation_limits,bulletin,inland lakes covered,complex
+DET-0173,WI,BOAT (2025-03),theft_boat,BOAT (2025-03),BOAT@2025-03#theft_boat,form,covered with evidence of forced entry,simple
+DET-0174,WI,HO-3 (2022-01),water_backup,HO-3 (2022-01),HO-3@2022-01#water_backup,form,excluded,simple
+DET-0175,WI,HO-3 (2024-06),water_backup,HO-3 (2024-06),HO-3@2024-06#water_backup,form,excluded,simple
+DET-0176,WI,HO-3 (2022-01),flood,HO-3 (2022-01),HO-3@2022-01#flood,form,excluded,simple
+DET-0177,WI,BOAT (2021-05),theft_boat,BOAT (2021-05),BOAT@2021-05#theft_boat,form,covered with evidence of forced entry,simple
+DET-0178,WI,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0179,IN,PAP (2023-01),deer_strike,PAP (2023-01),PAP@2023-01#deer_strike,form,"other than collision, no collision deductible",simple
+DET-0180,MI,HO-3 (2024-06),earth_movement,HO-3 (2024-06),HO-3@2024-06#earth_movement,form,excluded,simple
+DET-0181,IL,HO-3 (2022-01),freezing,HO-3 (2022-01),HO-3@2022-01#freezing,form,covered if heat maintained,simple
+DET-0182,WI,BOP (2025-01),business_income,BOP (2025-01),BOP@2025-01#business_income,form,up to 12 months,simple
+DET-0183,MN,HO-3 (2024-06),flood,HO-3 (2024-06),HO-3@2024-06#flood,form,excluded,simple
+DET-0184,IA,PAP (2023-01),rideshare,PAP (2023-01),PAP@2023-01#rideshare,form,excluded,simple
+DET-0185,MI,HO-3 (2024-06),food_spoilage,HO 04 98 (2022-01),HO 04 98@2022-01#food_spoilage,endorsement,covered up to $500,complex
+DET-0186,WI,PAP (2018-09),comprehensive,PAP (2018-09),PAP@2018-09#comprehensive,form,covered,simple
+DET-0187,MN,BOAT (2021-05),navigation_limits,BOAT (2021-05),BOAT@2021-05#navigation_limits,form,Great Lakes only,simple
+DET-0188,WI,HO-3 (2024-06),roof_settlement,LM HO 17 (2024-06),LM HO 17@2024-06#roof_settlement,endorsement,replacement cost regardless of age,complex
+DET-0189,MN,HO-3 (2024-06),water_backup,HO-3 (2024-06),HO-3@2024-06#water_backup,form,excluded,simple
+DET-0190,IN,HO-3 (2022-01),roof_matching,HO-3 (2022-01),HO-3@2022-01#roof_matching,form,matching required,simple
+DET-0191,MI,HO-3 (2022-01),earth_movement,HO-3 (2022-01),HO-3@2022-01#earth_movement,form,excluded,simple
+DET-0192,MN,HO-3 (2024-06),mold,HO-3 (2024-06),HO-3@2024-06#mold,form,excluded unless from a covered water loss,simple
+DET-0193,WI,HO-3 (2022-01),wind_hail,HO-3 (2022-01),HO-3@2022-01#wind_hail,form,covered,simple
+DET-0194,WI,HO-3 (2022-01),ale,HO-3 (2022-01),HO-3@2022-01#ale,form,covered for the shortest repair time,simple
+DET-0195,IN,PAP (2023-01),comprehensive,PAP (2023-01),PAP@2023-01#comprehensive,form,covered,simple
+DET-0196,WI,HO-3 (2024-06),roof_settlement,HO-3 (2024-06),HO-3@2024-06#roof_settlement,form,actual cash value if roof over 15 years,simple
+DET-0197,WI,BOAT (2021-05),navigation_limits,BOAT (2021-05),BOAT@2021-05#navigation_limits,form,Great Lakes only,simple
+DET-0198,WI,HO-3 (2022-01),food_spoilage,HO-3 (2022-01),HO-3@2022-01#food_spoilage,form,excluded,simple
+DET-0199,IA,HO-3 (2024-06),mold,HO-3 (2024-06),HO-3@2024-06#mold,form,excluded unless from a covered water loss,simple
+DET-0200,WI,HO-3 (2024-06),ale,HO-3 (2024-06),HO-3@2024-06#ale,form,covered for the shortest repair time,simple

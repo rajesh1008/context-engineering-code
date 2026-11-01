@@ -1,0 +1,8 @@
+Layout test, retrieved packets (filter on, k=10), 200 calls in a row
+  rank order: instructions, facts, evidence       1,046 tokens  cached   0.0%  $0.00399/det
+  cache order: instructions, documents, facts     1,046 tokens  cached   0.5%  $0.00398/det
+  cache order, timestamp in the instructions      1,060 tokens  cached   0.0%  $0.00403/det
+Layout test, stuffed packets (the policy's whole form family), 200 calls in a row
+  rank order: instructions, facts, evidence      14,463 tokens  cached   0.0%  $0.04424/det
+  cache order: instructions, documents, facts    14,463 tokens  cached  92.1%  $0.00826/det
+  cache order, timestamp in the instructions     14,477 tokens  cached   0.0%  $0.04429/det

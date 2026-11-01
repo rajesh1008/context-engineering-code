@@ -1,0 +1,4 @@
+model,knee_prompt_tokens,window
+sim-large,36336,200000
+sim-mid,14447,128000
+sim-small,14447,32000

@@ -1,0 +1,8 @@
+retrieve      200 prompts  mean    1,046 tokens    0.9 MB
+stuff_all     200 prompts  mean   34,054 tokens   30.7 MB
+stuff_family  200 prompts  mean   14,463 tokens   13.1 MB
+hybrid        200 prompts  mean    3,666 tokens    3.3 MB
+retrieve      simulated reader, scored from its reply text: wrong 12/200
+stuff_all     simulated reader, scored from its reply text: wrong 55/200
+stuff_family  simulated reader, scored from its reply text: wrong 33/200
+hybrid        simulated reader, scored from its reply text: wrong 3/200

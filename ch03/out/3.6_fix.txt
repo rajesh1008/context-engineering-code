@@ -1,0 +1,1 @@
+Fix: applicable spans only, edges order: 98% cite it, 1,046 tokens per packet

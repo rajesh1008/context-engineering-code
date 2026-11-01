@@ -1,0 +1,76 @@
+1. Quality: wrong-clause rate (rejected calls count as wrong)
+model      strategy       wrong  form clause  endorse/bull  rejected  prompt tokens
+sim-large  retrieve        6.0%         3.3%         14.9%         0          1,046
+sim-large  stuff all      27.5%        31.4%         14.9%         0         34,054
+sim-large  stuff family   16.5%        20.3%          4.3%         0         14,463
+sim-large  hybrid          1.5%         0.0%          6.4%         0          3,666
+sim-mid    retrieve        7.5%         3.3%         21.3%         0          1,046
+sim-mid    stuff all      56.5%        54.9%         61.7%         0         34,054
+sim-mid    stuff family   30.0%        36.6%          8.5%         0         14,463
+sim-mid    hybrid          3.0%         0.7%         10.6%         0          3,666
+sim-small  retrieve        8.0%         3.3%         23.4%         0          1,046
+sim-small  stuff all     100.0%       100.0%        100.0%       200              0
+sim-small  stuff family   42.5%        43.1%         40.4%         0         14,463
+sim-small  hybrid          2.0%         0.0%          8.5%         0          3,666
+  form clause: 153 determinations governed by a form clause (the needle); endorse/bull: 47 governed by an endorsement or bulletin
+  sim-large, stuff all: 55 wrong, 48 of them cite a span that does not apply to the policy (other edition, state or endorsement)
+
+2. Cost and latency per determination (same runs; simulated prompt cache)
+model      strategy       wrong    list $  cached $ cache hit latency s  cached s
+sim-large  retrieve        6.0%   0.00399   0.00399        0%      1.63      1.63
+sim-large  stuff all      27.5%   0.10304   0.01226       99%      8.26      2.21
+sim-large  stuff family   16.5%   0.04425   0.00830       92%      4.32      1.92
+sim-large  hybrid          1.5%   0.01186   0.00681       51%      2.16      1.83
+sim-mid    retrieve        7.5%   0.00133   0.00133        0%      0.91      0.91
+sim-mid    stuff all      56.5%   0.03434   0.00408       99%      4.22      1.19
+sim-mid    stuff family   30.0%   0.01475   0.00276       92%      2.25      1.05
+sim-mid    hybrid          3.0%   0.00395   0.00227       51%      1.17      1.01
+sim-small  retrieve        8.0%   0.00033   0.00033        0%      0.53      0.53
+sim-small  stuff all                   all calls rejected: prompt over the window
+sim-small  stuff family   42.5%   0.00369   0.00069       92%      1.20      0.60
+sim-small  hybrid          2.0%   0.00099   0.00057       51%      0.67      0.58
+  sim-large: stuff all costs 26x retrieval at list price and 3.1x with the cache (99% of input tokens cached)
+
+3. By product family: size, versions, and wrong-clause rate per strategy
+  bulletins: 10 across 6 states, 1,513 tokens, stuffed with every family
+family    n  docs  editions  text tok model       retrieve  family  hybrid  stuff ok?
+HO-3    113    15         3    10,026 sim-large       9.7%   23.9%    1.8%         no
+HO-3    113    15         3    10,026 sim-mid        11.5%   46.0%    3.5%         no
+HO-3    113    15         3    10,026 sim-small      11.5%   58.4%    1.8%         no
+PAP      48    10         2     5,958 sim-large       0.0%    8.3%    0.0%         no
+PAP      48    10         2     5,958 sim-mid         0.0%   12.5%    0.0%         no
+PAP      48    10         2     5,958 sim-small       2.1%   29.2%    0.0%         no
+BOAT     22     3         2     1,806 sim-large       4.5%    9.1%    4.5%        yes
+BOAT     22     3         2     1,806 sim-mid         9.1%    4.5%    9.1%        yes
+BOAT     22     3         2     1,806 sim-small       9.1%    9.1%    9.1%        yes
+BOP      17     4         2     2,051 sim-large       0.0%    0.0%    0.0%        yes
+BOP      17     4         2     2,051 sim-mid         0.0%    5.9%    0.0%        yes
+BOP      17     4         2     2,051 sim-small       0.0%   17.6%    0.0%         no
+  stuff ok? = stuffing the family is wrong on at most max(1 claim, 2 points) more claims than retrieval
+  decision (stuff the family only if it holds on all three models):
+    HO-3  -> stay retrieved (or hybrid)
+    PAP   -> stay retrieved (or hybrid)
+    BOAT  -> whole-family context
+    BOP   -> stay retrieved (or hybrid)
+
+4. Failure injection: HO-3 family stuffed, cut at 6,000 tokens (sim-small rot onset 6,000)
+  HO-3 family: 183 spans, 11,539 tokens of text; the cut keeps 100 and drops 30 bulletin spans, 53 endorsement spans
+  gold clause cut away for 18 of 113 HO-3 determinations (31 are governed by an endorsement or bulletin)
+model      variant                    HO-3 wrong  endorse/bull  prompt tok
+sim-large  stuff family (full)             23.9%          0.0%      18,483
+sim-large  stuff family, cut 6,000         23.0%         64.5%       9,820
+sim-large  hybrid (fix)                     1.8%          6.5%       4,518
+sim-large  retrieve                         9.7%         19.4%       1,097
+sim-mid    stuff family (full)             46.0%          9.7%      18,483
+sim-mid    stuff family, cut 6,000         23.9%         61.3%       9,820
+sim-mid    hybrid (fix)                     3.5%          9.7%       4,518
+sim-mid    retrieve                        11.5%         25.8%       1,097
+sim-small  stuff family (full)             58.4%         35.5%      18,483
+sim-small  stuff family, cut 6,000         40.7%         67.7%       9,820
+sim-small  hybrid (fix)                     1.8%          6.5%       4,518
+sim-small  retrieve                        11.5%         25.8%       1,097
+
+example DET-0026 (David Larson, IA, HO-3 (2024-06), endorsements HO 04 54 (2022-01), topic tree_debris)
+  gold:   IA-ID-2024-08 (2024-08) (bulletin)
+  cut:    cited HO-3 (2024-06), Section I Additional Coverages 1.b, page 9 (9,822 tokens; gold cut: past the 6,000-token stuffing cap)
+  hybrid: cited IA-ID-2024-08 (2024-08), Requirements, page 1 (4,531 tokens, 44 spans from 4 documents)

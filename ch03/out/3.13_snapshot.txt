@@ -1,0 +1,11 @@
+cache identity (hash of tenant, corpus, model, tokenizer, instructions, policy):
+  current corpus 0fb8591d8e4b -> key 69ef4a249729
+  2024-05-31 snapshot b156256734ad -> key 3e2c02842af6
+  spans effective after 2024-05-31 missing from the snapshot: 99 of 378
+
+preloaded whole corpus, cache order, 200 determinations (sim-large)
+  current corpus                     wrong  55/200 (27.5%)  gold not in packet   0   34,054 tokens  cached  98.7%  $0.01224  2.21 s
+  stale snapshot (name-keyed cache)  wrong  84/200 (42.0%)  gold not in packet  79   25,047 tokens  cached  97.6%  $0.00998  2.07 s
+  retrieve (filter, k=10), for comparison   1,046 tokens  1.66 s
+
+one cold call on the preloaded corpus $0.10302, one warm call $0.01178; latency cold 8.26 s, warm 2.18 s

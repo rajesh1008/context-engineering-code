@@ -1,0 +1,15 @@
+A. Where the v2.2 errors on sim-large come from (eval 200)
+  retrieval miss (governing span not in the packet): 5
+  example on the claim's topic cites another document: 1 ['DET-0061']
+  governing span in the packet, passed over: 1 ['DET-0071']
+
+B. v2.2 sim-large errors on eval 200
+  DET-0022 WI frozen_pipes     gold HO-3 (2022-01) (form); cited HO-3 (2022-01), Conditions 4, page 13; gold in packet False
+  DET-0061 IL frozen_pipes     gold IL-DOI-2025-05 (2025-05) (bulletin); cited HO-3 (2024-06), Section I Perils Insured Against 12, page 2; gold in packet True
+  DET-0063 WI frozen_pipes     gold HO-3 (2022-01) (form); cited HO-3 (2022-01), Conditions 4, page 13; gold in packet False
+  DET-0071 IL earth_movement   gold HO 04 54 (2022-01) (endorsement); cited HO-3 (2024-06), Section I Exclusions A.2, page 5; gold in packet True
+  DET-0163 WI frozen_pipes     gold HO-3 (2022-01) (form); cited HO-3 (2022-01), Conditions 1, page 12; gold in packet False
+  DET-0178 WI frozen_pipes     gold HO-3 (2022-01) (form); cited HO-3 (2022-01), Conditions 1, page 12; gold in packet False
+  DET-0181 IL frozen_pipes     gold HO-3 (2022-01) (form); cited HO-3 (2022-01), Conditions 11, page 15; gold in packet False
+  v1.0 wrong 12, v2.2 wrong 7, fixed 6, broken 1, both 6
+  broken: ['DET-0061']

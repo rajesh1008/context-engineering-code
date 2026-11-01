@@ -1,0 +1,18 @@
+DET-0008  MN  form HO-3 (2024-06)  reconcile: HO-3 (2022-01) -> HO-3 (2024-06)
+retrieved (top 12 of 30):
+   1. LM HO 17@2024-06#roof_settlement       endorsement not on policy
+   2. HO-3@2024-06#roof_settlement           kept
+   3. HO-3@2024-06#hail_cosmetic             kept
+   4. HO-3@2022-01#roof_settlement           superseded
+   5. HO 04 54@2022-01#schedule              kept
+   6. LM HO 17@2024-06#schedule              endorsement not on policy
+   7. HO-3@2024-06#wind_hail                 kept
+   8. HO 04 54@2022-01#earth_movement        kept
+   9. HO-3@2024-06#ice_dam                   kept
+  10. HO-3@2019-03#roof_settlement           superseded
+  11. HO-3@2024-06#roof_matching             kept
+  12. HO-3@2022-01#hail_cosmetic             superseded
+packet: 10 spans, 1,102 tokens in, 52 out, version checked: False
+answer: Loss to roof surfacing is settled at actual cash value when the roof surfacing is more than 15 years old at the time of loss. Governing provision: HO-3 (2024-06), Section I Conditions D.3, page 4 [S1].
+cited : [S1] HO-3 (2024-06), Section I Conditions D.3, page 4
+gold  : HO-3@2024-06#roof_settlement  match: True

@@ -1,0 +1,4 @@
+15 roof-topic probes where a state bulletin governs (sim-large)
+  v2.2 rules only, no clash               cites the bulletin 15/15  static check: none
+  v3.0 clashing skill after the rules     cites the bulletin 12/15  static check: ['skill roof (roof_matching, roof_settlement, hail_cosmetic, wind_hail, ice_dam) countermands rule precedence']
+  v3.1 same clash, hierarchy rule stated  cites the bulletin 15/15  static check: ['skill roof (roof_matching, roof_settlement, hail_cosmetic, wind_hail, ice_dam) countermands rule precedence (hierarchy rule present)']

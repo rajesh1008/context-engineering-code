@@ -1,0 +1,47 @@
+A. eval200, sim-large
+retrieve                                      12/200   6.0% [ 3.5%, 10.2%]  tok mean   1,046 p95   1,203 max   1,234
+hybrid                                         3/200   1.5% [ 0.5%,  4.3%]  tok mean   3,666 p95   5,014 max   5,248
+
+B. slices, sim-large
+retrieve no endorsements                       0/92   0.0% [ 0.0%,  4.0%]  tok mean   1,030 p95   1,216 max   1,234
+hybrid no endorsements                         0/92   0.0% [ 0.0%,  4.0%]  tok mean   3,038 p95   4,367 max   4,660
+retrieve with endorsements                    12/108  11.1% [ 6.5%, 18.4%]  tok mean   1,060 p95   1,169 max   1,226
+hybrid with endorsements                       3/108   2.8% [ 0.9%,  7.9%]  tok mean   4,201 p95   5,034 max   5,248
+retrieve form-governed                         5/153   3.3% [ 1.4%,  7.4%]  tok mean   1,046 p95   1,215 max   1,234
+hybrid form-governed                           0/153   0.0% [ 0.0%,  2.4%]  tok mean   3,529 p95   4,832 max   5,248
+retrieve endorse/bulletin                      7/47  14.9% [ 7.4%, 27.7%]  tok mean   1,047 p95   1,137 max   1,203
+hybrid endorse/bulletin                        3/47   6.4% [ 2.2%, 17.2%]  tok mean   4,113 p95   5,034 max   5,189
+
+C. paired retrieve vs hybrid, sim-large
+  hybrid fixes 9, breaks 0, wrong in both 3
+  retrieve errors with gold in packet: 7 of 12
+  hybrid errors with gold in packet: 3 of 3
+
+D. holdout 300 (determinations 201-500), sim-large
+retrieve holdout                              12/300   4.0% [ 2.3%,  6.9%]  tok mean   1,053 p95   1,184 max   1,247
+hybrid holdout                                 5/300   1.7% [ 0.7%,  3.8%]  tok mean   3,646 p95   4,997 max   5,250
+
+E. stale form pointer (Ch2 injection), sim-large
+retrieve, stale                               53/200  26.5% [20.9%, 33.0%]  tok mean   1,038 p95   1,215 max   1,234
+hybrid, stale                                 45/200  22.5% [17.3%, 28.8%]  tok mean   3,646 p95   4,948 max   5,182
+hybrid, stale + reconcile                      3/200   1.5% [ 0.5%,  4.3%]  tok mean   3,666 p95   5,014 max   5,248
+
+F. hybrid under the Ch4 evidence budget 3,000 (does the budget bite?)
+  hybrid packets with evidence over 3,000 tokens: 14 of 200
+  hybrid evidence tokens: median 2,552, max 3,226
+retrieve sim-mid                              15/200   7.5% [ 4.6%, 12.0%]  tok mean   1,046 p95   1,203 max   1,234
+hybrid sim-mid                                 6/200   3.0% [ 1.4%,  6.4%]  tok mean   3,666 p95   5,014 max   5,248
+retrieve sim-small                            16/200   8.0% [ 5.0%, 12.6%]  tok mean   1,046 p95   1,203 max   1,234
+hybrid sim-small                               4/200   2.0% [ 0.8%,  5.0%]  tok mean   3,666 p95   5,014 max   5,248
+
+   hybrid wrong DET-0049 BOAT endorsement gold BT 05 (2025-03) cited BOAT (2025-03), Declarations Navigation Warranty, page 3
+   hybrid wrong DET-0113 HO-3 endorsement gold HO 04 54 (2022-01) cited HO-3 (2022-01), Section I Exclusions A.2, page 5
+   hybrid wrong DET-0131 HO-3 endorsement gold HO 04 54 (2022-01) cited HO-3 (2024-06), Section I Exclusions A.2, page 5
+  hybrid documents per packet: median 3.0, max 7; spans median 41.0
+
+G. Carter DET-0001 under each strategy, sim-large
+  retrieve     right cited HO 04 95 (2024-06), Coverage, page 1; 1,182 tok, 10 spans
+  stuff all    WRONG cited HO 04 95 (2019-03), Coverage, page 1; 34,059 tok, 351 spans
+  stuff family right cited HO 04 95 (2024-06), Coverage, page 1; 18,484 tok, 183 spans
+  hybrid       right cited HO 04 95 (2024-06), Coverage, page 1; 4,883 tok, 47 spans
+  gold HO 04 95 (2024-06); claimant Emily Carter form HO-3 (2024-06) end ['HO 04 95 (2024-06)']

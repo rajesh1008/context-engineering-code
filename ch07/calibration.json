@@ -1,0 +1,8636 @@
+{
+ "note": "Chapter 7 stand-in calibration: Chapter 6's calibration with the adjustments listed in ch07/calibrate.py, recorded clash draws, per-seed additions and gold ranks. Illustrative.",
+ "determinations": [
+  {
+   "id": "DET-0001",
+   "name": "Emily Carter",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2026-03-14"
+  },
+  {
+   "id": "DET-0002",
+   "name": "Robert Weber",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2024-05-15"
+  },
+  {
+   "id": "DET-0003",
+   "name": "Robert Jensen",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2024-10-21"
+  },
+  {
+   "id": "DET-0004",
+   "name": "Grace Murphy",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2025-11-09"
+  },
+  {
+   "id": "DET-0005",
+   "name": "Paul Sorensen",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-02-06"
+  },
+  {
+   "id": "DET-0006",
+   "name": "Steven Anderson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2024-05-02"
+  },
+  {
+   "id": "DET-0007",
+   "name": "Emily Becker",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "personal_property_rc",
+   "loss": "2025-02-10"
+  },
+  {
+   "id": "DET-0008",
+   "name": "Eric Reid",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2025-08-14"
+  },
+  {
+   "id": "DET-0009",
+   "name": "Daniel Johnson",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2024-01-19"
+  },
+  {
+   "id": "DET-0010",
+   "name": "Karen Reid",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "snow_load",
+   "loss": "2025-11-25"
+  },
+  {
+   "id": "DET-0011",
+   "name": "Paul Larson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "wear_tear",
+   "loss": "2025-09-17"
+  },
+  {
+   "id": "DET-0012",
+   "name": "Thomas Becker",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-04-26"
+  },
+  {
+   "id": "DET-0013",
+   "name": "Kelly Becker",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2025-03-17"
+  },
+  {
+   "id": "DET-0014",
+   "name": "Anna Schmidt",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2026-07-23"
+  },
+  {
+   "id": "DET-0015",
+   "name": "James Wagner",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "mold",
+   "loss": "2023-03-24"
+  },
+  {
+   "id": "DET-0016",
+   "name": "Amy Hoffman",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_collision",
+   "loss": "2024-12-06"
+  },
+  {
+   "id": "DET-0017",
+   "name": "Robert Klein",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "spoilage",
+   "loss": "2023-04-21"
+  },
+  {
+   "id": "DET-0018",
+   "name": "Emily Kraus",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2024-03-24"
+  },
+  {
+   "id": "DET-0019",
+   "name": "Laura Fischer",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2024-03-01"
+  },
+  {
+   "id": "DET-0020",
+   "name": "Linda Johnson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2024-10-07"
+  },
+  {
+   "id": "DET-0021",
+   "name": "Jason Jensen",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ],
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2025-03-24"
+  },
+  {
+   "id": "DET-0022",
+   "name": "Daniel Weber",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2026-03-14"
+  },
+  {
+   "id": "DET-0023",
+   "name": "Julie Wagner",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2023-04-12"
+  },
+  {
+   "id": "DET-0024",
+   "name": "Nicole Klein",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "water_backup",
+   "loss": "2026-07-19"
+  },
+  {
+   "id": "DET-0025",
+   "name": "Thomas Lund",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2024-05-04"
+  },
+  {
+   "id": "DET-0026",
+   "name": "David Larson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2026-06-02"
+  },
+  {
+   "id": "DET-0027",
+   "name": "Megan Nelson",
+   "state": "IL",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2026-03-24"
+  },
+  {
+   "id": "DET-0028",
+   "name": "Laura Lund",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-05-20"
+  },
+  {
+   "id": "DET-0029",
+   "name": "Amy Sorensen",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "wear_tear",
+   "loss": "2026-07-29"
+  },
+  {
+   "id": "DET-0030",
+   "name": "Grace Morgan",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2025-11-17"
+  },
+  {
+   "id": "DET-0031",
+   "name": "Anna Novak",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2024-11-02"
+  },
+  {
+   "id": "DET-0032",
+   "name": "Sarah Becker",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2025-01-27"
+  },
+  {
+   "id": "DET-0033",
+   "name": "Paul Hoffman",
+   "state": "MN",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2026-07-19"
+  },
+  {
+   "id": "DET-0034",
+   "name": "Paul Carter",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "flood",
+   "loss": "2024-03-04"
+  },
+  {
+   "id": "DET-0035",
+   "name": "Kevin Berg",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "flood",
+   "loss": "2026-05-28"
+  },
+  {
+   "id": "DET-0036",
+   "name": "Rachel Murphy",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2026-01-28"
+  },
+  {
+   "id": "DET-0037",
+   "name": "Michael Nelson",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-09-16"
+  },
+  {
+   "id": "DET-0038",
+   "name": "Megan Kowalski",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2025-03-17"
+  },
+  {
+   "id": "DET-0039",
+   "name": "Kelly Becker",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2026-07-06"
+  },
+  {
+   "id": "DET-0040",
+   "name": "Emily Peterson",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2023-05-20"
+  },
+  {
+   "id": "DET-0041",
+   "name": "Linda Hoffman",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "personal_property_rc",
+   "loss": "2026-03-20"
+  },
+  {
+   "id": "DET-0042",
+   "name": "Anna Berg",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2018-09",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_swerve",
+   "loss": "2024-05-19"
+  },
+  {
+   "id": "DET-0043",
+   "name": "Nicole Dahl",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-02-08"
+  },
+  {
+   "id": "DET-0044",
+   "name": "Laura Brennan",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2026-04-21"
+  },
+  {
+   "id": "DET-0045",
+   "name": "Anna Olson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2024-10-18"
+  },
+  {
+   "id": "DET-0046",
+   "name": "Anna Carter",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2024-04-09"
+  },
+  {
+   "id": "DET-0047",
+   "name": "Laura Hoffman",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2024-02-21"
+  },
+  {
+   "id": "DET-0048",
+   "name": "Olivia Berg",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2025-11-16"
+  },
+  {
+   "id": "DET-0049",
+   "name": "Brian Morgan",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [
+    [
+     "BT 05",
+     "2025-03"
+    ]
+   ],
+   "topic": "navigation_limits",
+   "loss": "2026-08-08"
+  },
+  {
+   "id": "DET-0050",
+   "name": "Linda Weber",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "wind_hail",
+   "loss": "2025-06-29"
+  },
+  {
+   "id": "DET-0051",
+   "name": "Michael Berg",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2026-04-30"
+  },
+  {
+   "id": "DET-0052",
+   "name": "Steven Brennan",
+   "state": "MI",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "spoilage",
+   "loss": "2024-05-26"
+  },
+  {
+   "id": "DET-0053",
+   "name": "Linda Meyer",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2024-11-16"
+  },
+  {
+   "id": "DET-0054",
+   "name": "Nicole Brennan",
+   "state": "MN",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2024-02-12"
+  },
+  {
+   "id": "DET-0055",
+   "name": "Daniel Lund",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2026-02-04"
+  },
+  {
+   "id": "DET-0056",
+   "name": "Kevin Novak",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "dog_bite",
+   "loss": "2026-02-20"
+  },
+  {
+   "id": "DET-0057",
+   "name": "Paul Olson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2024-04-09"
+  },
+  {
+   "id": "DET-0058",
+   "name": "Eric Hoffman",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2025-07-16"
+  },
+  {
+   "id": "DET-0059",
+   "name": "Jason Hansen",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2026-09-01"
+  },
+  {
+   "id": "DET-0060",
+   "name": "Kevin Johnson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "water_backup",
+   "loss": "2023-03-23"
+  },
+  {
+   "id": "DET-0061",
+   "name": "Linda Nelson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2025-08-26"
+  },
+  {
+   "id": "DET-0062",
+   "name": "Emily Becker",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2024-11-17"
+  },
+  {
+   "id": "DET-0063",
+   "name": "Kevin Peterson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2026-10-07"
+  },
+  {
+   "id": "DET-0064",
+   "name": "Linda Olson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-04-22"
+  },
+  {
+   "id": "DET-0065",
+   "name": "Rachel Jensen",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2024-02-08"
+  },
+  {
+   "id": "DET-0066",
+   "name": "Erin Novak",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "wind_hail",
+   "loss": "2023-08-02"
+  },
+  {
+   "id": "DET-0067",
+   "name": "Kelly Reid",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2024-05-02"
+  },
+  {
+   "id": "DET-0068",
+   "name": "Kelly Novak",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2023-12-21"
+  },
+  {
+   "id": "DET-0069",
+   "name": "Erin Hoffman",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-09-18"
+  },
+  {
+   "id": "DET-0070",
+   "name": "Rachel Nelson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2024-04-29"
+  },
+  {
+   "id": "DET-0071",
+   "name": "Hannah Morgan",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2023-07-29"
+  },
+  {
+   "id": "DET-0072",
+   "name": "Linda Miller",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2024-04-02"
+  },
+  {
+   "id": "DET-0073",
+   "name": "Kevin Jensen",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2025-05-29"
+  },
+  {
+   "id": "DET-0074",
+   "name": "Olivia Hoffman",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2025-04-30"
+  },
+  {
+   "id": "DET-0075",
+   "name": "Amy Morgan",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2024-05-11"
+  },
+  {
+   "id": "DET-0076",
+   "name": "Linda Schmidt",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2024-01-01"
+  },
+  {
+   "id": "DET-0077",
+   "name": "Kevin Lund",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-09-19"
+  },
+  {
+   "id": "DET-0078",
+   "name": "Erin Berg",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2025-09-11"
+  },
+  {
+   "id": "DET-0079",
+   "name": "Hannah Klein",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2024-04-21"
+  },
+  {
+   "id": "DET-0080",
+   "name": "Michael Morgan",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2023-08-05"
+  },
+  {
+   "id": "DET-0081",
+   "name": "Thomas Larson",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2025-04-24"
+  },
+  {
+   "id": "DET-0082",
+   "name": "Anna Nelson",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2025-03-22"
+  },
+  {
+   "id": "DET-0083",
+   "name": "Laura Walsh",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2024-02-29"
+  },
+  {
+   "id": "DET-0084",
+   "name": "Rachel Wagner",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2025-12-11"
+  },
+  {
+   "id": "DET-0085",
+   "name": "Sarah Hansen",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2025-01-03"
+  },
+  {
+   "id": "DET-0086",
+   "name": "Megan Kowalski",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2023-09-26"
+  },
+  {
+   "id": "DET-0087",
+   "name": "David Schmidt",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_swerve",
+   "loss": "2024-09-03"
+  },
+  {
+   "id": "DET-0088",
+   "name": "Emily Dahl",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2025-03-29"
+  },
+  {
+   "id": "DET-0089",
+   "name": "Laura Peterson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2024-05-29"
+  },
+  {
+   "id": "DET-0090",
+   "name": "Jason Weber",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "flood",
+   "loss": "2026-03-05"
+  },
+  {
+   "id": "DET-0091",
+   "name": "David Murphy",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2025-12-13"
+  },
+  {
+   "id": "DET-0092",
+   "name": "Amy Becker",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "tree_debris",
+   "loss": "2024-01-17"
+  },
+  {
+   "id": "DET-0093",
+   "name": "Steven Sorensen",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2024-10-20"
+  },
+  {
+   "id": "DET-0094",
+   "name": "Thomas Becker",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2024-01-14"
+  },
+  {
+   "id": "DET-0095",
+   "name": "Grace Larson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "wind_hail",
+   "loss": "2025-01-13"
+  },
+  {
+   "id": "DET-0096",
+   "name": "Jason Walsh",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2023-08-23"
+  },
+  {
+   "id": "DET-0097",
+   "name": "Megan Hansen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2026-09-04"
+  },
+  {
+   "id": "DET-0098",
+   "name": "Laura Johnson",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_collision",
+   "loss": "2025-09-19"
+  },
+  {
+   "id": "DET-0099",
+   "name": "Erin Schmidt",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "mold",
+   "loss": "2026-07-22"
+  },
+  {
+   "id": "DET-0100",
+   "name": "Julie Lund",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "flood",
+   "loss": "2023-06-14"
+  },
+  {
+   "id": "DET-0101",
+   "name": "Amy Hansen",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2024-01-06"
+  },
+  {
+   "id": "DET-0102",
+   "name": "Steven Anderson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "tree_debris",
+   "loss": "2023-09-04"
+  },
+  {
+   "id": "DET-0103",
+   "name": "Scott Morgan",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-02-02"
+  },
+  {
+   "id": "DET-0104",
+   "name": "Karen Carter",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "flood",
+   "loss": "2024-08-20"
+  },
+  {
+   "id": "DET-0105",
+   "name": "Grace Reid",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_collision",
+   "loss": "2026-04-22"
+  },
+  {
+   "id": "DET-0106",
+   "name": "Eric Wagner",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2025-09-10"
+  },
+  {
+   "id": "DET-0107",
+   "name": "Emily Nelson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2025-08-02"
+  },
+  {
+   "id": "DET-0108",
+   "name": "Laura Hoffman",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2023-06-10"
+  },
+  {
+   "id": "DET-0109",
+   "name": "Eric Carter",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2025-12-04"
+  },
+  {
+   "id": "DET-0110",
+   "name": "Amy Miller",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2026-05-27"
+  },
+  {
+   "id": "DET-0111",
+   "name": "Anna Lund",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2024-07-13"
+  },
+  {
+   "id": "DET-0112",
+   "name": "Anna Miller",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "dog_bite",
+   "loss": "2025-09-21"
+  },
+  {
+   "id": "DET-0113",
+   "name": "Rachel Larson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2023-01-14"
+  },
+  {
+   "id": "DET-0114",
+   "name": "Linda Peterson",
+   "state": "MI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2025-05-20"
+  },
+  {
+   "id": "DET-0115",
+   "name": "Paul Kowalski",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2025-08-12"
+  },
+  {
+   "id": "DET-0116",
+   "name": "Robert Nelson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2026-08-14"
+  },
+  {
+   "id": "DET-0117",
+   "name": "Amy Walsh",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2025-12-04"
+  },
+  {
+   "id": "DET-0118",
+   "name": "Amy Kraus",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2026-10-10"
+  },
+  {
+   "id": "DET-0119",
+   "name": "Grace Dahl",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2025-03-14"
+  },
+  {
+   "id": "DET-0120",
+   "name": "Rachel Wagner",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2026-08-08"
+  },
+  {
+   "id": "DET-0121",
+   "name": "Anna Wagner",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2024-03-26"
+  },
+  {
+   "id": "DET-0122",
+   "name": "Julie Walsh",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2024-02-28"
+  },
+  {
+   "id": "DET-0123",
+   "name": "Emily Morgan",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2023-07-12"
+  },
+  {
+   "id": "DET-0124",
+   "name": "Kelly Lund",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-03-15"
+  },
+  {
+   "id": "DET-0125",
+   "name": "Daniel Larson",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2023-02-14"
+  },
+  {
+   "id": "DET-0126",
+   "name": "Sarah Hansen",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2025-01-11"
+  },
+  {
+   "id": "DET-0127",
+   "name": "Scott Klein",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-03-31"
+  },
+  {
+   "id": "DET-0128",
+   "name": "Paul Fischer",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "tree_debris",
+   "loss": "2023-02-02"
+  },
+  {
+   "id": "DET-0129",
+   "name": "Brian Johnson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2023-06-05"
+  },
+  {
+   "id": "DET-0130",
+   "name": "Amy Miller",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "hail_cosmetic",
+   "loss": "2024-01-20"
+  },
+  {
+   "id": "DET-0131",
+   "name": "Megan Becker",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-11-10"
+  },
+  {
+   "id": "DET-0132",
+   "name": "Erin Johnson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "wind_hail",
+   "loss": "2023-09-18"
+  },
+  {
+   "id": "DET-0133",
+   "name": "Karen Brennan",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2024-10-08"
+  },
+  {
+   "id": "DET-0134",
+   "name": "Eric Klein",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2024-08-07"
+  },
+  {
+   "id": "DET-0135",
+   "name": "Erin Sorensen",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_swerve",
+   "loss": "2026-07-06"
+  },
+  {
+   "id": "DET-0136",
+   "name": "Amy Peterson",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2026-04-07"
+  },
+  {
+   "id": "DET-0137",
+   "name": "Megan Anderson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2023-10-22"
+  },
+  {
+   "id": "DET-0138",
+   "name": "Anna Nelson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "mold",
+   "loss": "2025-01-19"
+  },
+  {
+   "id": "DET-0139",
+   "name": "Rachel Larson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2024-08-15"
+  },
+  {
+   "id": "DET-0140",
+   "name": "Kelly Jensen",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2023-02-13"
+  },
+  {
+   "id": "DET-0141",
+   "name": "Michael Murphy",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2025-08-14"
+  },
+  {
+   "id": "DET-0142",
+   "name": "Kelly Hansen",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-02-27"
+  },
+  {
+   "id": "DET-0143",
+   "name": "Daniel Brennan",
+   "state": "IL",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [
+    [
+     "BT 05",
+     "2025-03"
+    ]
+   ],
+   "topic": "navigation_limits",
+   "loss": "2025-04-04"
+  },
+  {
+   "id": "DET-0144",
+   "name": "Erin Jensen",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2023-06-07"
+  },
+  {
+   "id": "DET-0145",
+   "name": "Steven Meyer",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2026-03-04"
+  },
+  {
+   "id": "DET-0146",
+   "name": "Robert Weber",
+   "state": "IL",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2026-08-21"
+  },
+  {
+   "id": "DET-0147",
+   "name": "Karen Schmidt",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2023-07-06"
+  },
+  {
+   "id": "DET-0148",
+   "name": "James Brennan",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2023-09-08"
+  },
+  {
+   "id": "DET-0149",
+   "name": "Karen Hoffman",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2024-06-08"
+  },
+  {
+   "id": "DET-0150",
+   "name": "Rachel Klein",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "hail_cosmetic",
+   "loss": "2024-01-27"
+  },
+  {
+   "id": "DET-0151",
+   "name": "Steven Larson",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_swerve",
+   "loss": "2023-09-04"
+  },
+  {
+   "id": "DET-0152",
+   "name": "Grace Johnson",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2025-11-03"
+  },
+  {
+   "id": "DET-0153",
+   "name": "Nicole Walsh",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2023-12-14"
+  },
+  {
+   "id": "DET-0154",
+   "name": "Eric Nelson",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2023-01-09"
+  },
+  {
+   "id": "DET-0155",
+   "name": "Brian Sorensen",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2023-05-04"
+  },
+  {
+   "id": "DET-0156",
+   "name": "James Carter",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2026-02-07"
+  },
+  {
+   "id": "DET-0157",
+   "name": "Robert Nelson",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2023-01-31"
+  },
+  {
+   "id": "DET-0158",
+   "name": "Eric Meyer",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2026-04-11"
+  },
+  {
+   "id": "DET-0159",
+   "name": "Laura Miller",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2024-03-28"
+  },
+  {
+   "id": "DET-0160",
+   "name": "Steven Murphy",
+   "state": "IA",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2026-07-29"
+  },
+  {
+   "id": "DET-0161",
+   "name": "Daniel Hoffman",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2025-04-14"
+  },
+  {
+   "id": "DET-0162",
+   "name": "Linda Meyer",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-06-19"
+  },
+  {
+   "id": "DET-0163",
+   "name": "Grace Schmidt",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2026-06-03"
+  },
+  {
+   "id": "DET-0164",
+   "name": "Thomas Kowalski",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2025-12-15"
+  },
+  {
+   "id": "DET-0165",
+   "name": "Mark Walsh",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-04-10"
+  },
+  {
+   "id": "DET-0166",
+   "name": "Hannah Kraus",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2023-02-05"
+  },
+  {
+   "id": "DET-0167",
+   "name": "Kevin Johnson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-10-17"
+  },
+  {
+   "id": "DET-0168",
+   "name": "Linda Becker",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "water_backup",
+   "loss": "2026-09-20"
+  },
+  {
+   "id": "DET-0169",
+   "name": "Erin Kraus",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-10-05"
+  },
+  {
+   "id": "DET-0170",
+   "name": "Mark Meyer",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2023-08-03"
+  },
+  {
+   "id": "DET-0171",
+   "name": "Scott Berg",
+   "state": "MI",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2024-08-16"
+  },
+  {
+   "id": "DET-0172",
+   "name": "Julie Hansen",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2026-09-06"
+  },
+  {
+   "id": "DET-0173",
+   "name": "Daniel Murphy",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2023-03-16"
+  },
+  {
+   "id": "DET-0174",
+   "name": "Julie Meyer",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-08-25"
+  },
+  {
+   "id": "DET-0175",
+   "name": "Jason Novak",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2026-09-12"
+  },
+  {
+   "id": "DET-0176",
+   "name": "Thomas Jensen",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2023-10-07"
+  },
+  {
+   "id": "DET-0177",
+   "name": "Erin Hansen",
+   "state": "IL",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [
+    [
+     "BT 05",
+     "2025-03"
+    ]
+   ],
+   "topic": "navigation_limits",
+   "loss": "2023-10-08"
+  },
+  {
+   "id": "DET-0178",
+   "name": "Eric Olson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2024-05-07"
+  },
+  {
+   "id": "DET-0179",
+   "name": "Emily Miller",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2025-10-08"
+  },
+  {
+   "id": "DET-0180",
+   "name": "James Nelson",
+   "state": "MI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2023-03-14"
+  },
+  {
+   "id": "DET-0181",
+   "name": "Grace Hansen",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2024-03-24"
+  },
+  {
+   "id": "DET-0182",
+   "name": "Scott Kraus",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2024-08-04"
+  },
+  {
+   "id": "DET-0183",
+   "name": "Hannah Hansen",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2025-02-18"
+  },
+  {
+   "id": "DET-0184",
+   "name": "Rachel Kraus",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-06-21"
+  },
+  {
+   "id": "DET-0185",
+   "name": "Emily Fischer",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2026-06-11"
+  },
+  {
+   "id": "DET-0186",
+   "name": "Eric Novak",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2023-03-27"
+  },
+  {
+   "id": "DET-0187",
+   "name": "Karen Jensen",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2026-02-04"
+  },
+  {
+   "id": "DET-0188",
+   "name": "Daniel Becker",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2026-04-28"
+  },
+  {
+   "id": "DET-0189",
+   "name": "Daniel Dahl",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2024-05-07"
+  },
+  {
+   "id": "DET-0190",
+   "name": "Eric Nelson",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-07-07"
+  },
+  {
+   "id": "DET-0191",
+   "name": "Karen Novak",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "mold",
+   "loss": "2026-04-10"
+  },
+  {
+   "id": "DET-0192",
+   "name": "Rachel Walsh",
+   "state": "MI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "spoilage",
+   "loss": "2023-12-02"
+  },
+  {
+   "id": "DET-0193",
+   "name": "James Klein",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2023-09-29"
+  },
+  {
+   "id": "DET-0194",
+   "name": "Amy Becker",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2025-11-03"
+  },
+  {
+   "id": "DET-0195",
+   "name": "Michael Wagner",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "wind_hail",
+   "loss": "2025-12-21"
+  },
+  {
+   "id": "DET-0196",
+   "name": "Anna Peterson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2024-08-18"
+  },
+  {
+   "id": "DET-0197",
+   "name": "Scott Murphy",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-02-22"
+  },
+  {
+   "id": "DET-0198",
+   "name": "Linda Morgan",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2024-02-28"
+  },
+  {
+   "id": "DET-0199",
+   "name": "Kelly Johnson",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "wind_hail",
+   "loss": "2026-09-10"
+  },
+  {
+   "id": "DET-0200",
+   "name": "Anna Reid",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2024-02-15"
+  },
+  {
+   "id": "DET-0201",
+   "name": "Sarah Miller",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-07-25"
+  },
+  {
+   "id": "DET-0202",
+   "name": "Eric Miller",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2026-06-03"
+  },
+  {
+   "id": "DET-0203",
+   "name": "Brian Murphy",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2026-09-14"
+  },
+  {
+   "id": "DET-0204",
+   "name": "Kevin Jensen",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2024-10-18"
+  },
+  {
+   "id": "DET-0205",
+   "name": "Erin Berg",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2024-08-05"
+  },
+  {
+   "id": "DET-0206",
+   "name": "Rachel Jensen",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "dog_bite",
+   "loss": "2025-04-29"
+  },
+  {
+   "id": "DET-0207",
+   "name": "Linda Brennan",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2025-06-03"
+  },
+  {
+   "id": "DET-0208",
+   "name": "Steven Reid",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2024-10-17"
+  },
+  {
+   "id": "DET-0209",
+   "name": "Laura Johnson",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2025-11-08"
+  },
+  {
+   "id": "DET-0210",
+   "name": "Nicole Morgan",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ],
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2024-12-04"
+  },
+  {
+   "id": "DET-0211",
+   "name": "Hannah Kraus",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2025-08-26"
+  },
+  {
+   "id": "DET-0212",
+   "name": "Kevin Reid",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2024-03-21"
+  },
+  {
+   "id": "DET-0213",
+   "name": "Rachel Walsh",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2024-06-10"
+  },
+  {
+   "id": "DET-0214",
+   "name": "Grace Becker",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2023-09-17"
+  },
+  {
+   "id": "DET-0215",
+   "name": "Scott Meyer",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2025-06-15"
+  },
+  {
+   "id": "DET-0216",
+   "name": "Emily Dahl",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2025-03-20"
+  },
+  {
+   "id": "DET-0217",
+   "name": "David Larson",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2026-06-25"
+  },
+  {
+   "id": "DET-0218",
+   "name": "Laura Hoffman",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2026-08-05"
+  },
+  {
+   "id": "DET-0219",
+   "name": "Emily Weber",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-01-19"
+  },
+  {
+   "id": "DET-0220",
+   "name": "Michael Kraus",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2024-04-06"
+  },
+  {
+   "id": "DET-0221",
+   "name": "Rachel Meyer",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "dog_bite",
+   "loss": "2025-08-10"
+  },
+  {
+   "id": "DET-0222",
+   "name": "Jason Sorensen",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2024-10-10"
+  },
+  {
+   "id": "DET-0223",
+   "name": "Grace Klein",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2025-07-04"
+  },
+  {
+   "id": "DET-0224",
+   "name": "Sarah Morgan",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2026-09-14"
+  },
+  {
+   "id": "DET-0225",
+   "name": "Karen Wagner",
+   "state": "MI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2026-06-18"
+  },
+  {
+   "id": "DET-0226",
+   "name": "Steven Murphy",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "wear_tear",
+   "loss": "2026-02-12"
+  },
+  {
+   "id": "DET-0227",
+   "name": "Hannah Brennan",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2024-04-16"
+  },
+  {
+   "id": "DET-0228",
+   "name": "Paul Carter",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2026-03-11"
+  },
+  {
+   "id": "DET-0229",
+   "name": "Amy Miller",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "water_backup",
+   "loss": "2024-12-31"
+  },
+  {
+   "id": "DET-0230",
+   "name": "Karen Nelson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "snow_load",
+   "loss": "2023-07-09"
+  },
+  {
+   "id": "DET-0231",
+   "name": "Linda Morgan",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2023-08-18"
+  },
+  {
+   "id": "DET-0232",
+   "name": "Scott Berg",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2025-04-10"
+  },
+  {
+   "id": "DET-0233",
+   "name": "Hannah Murphy",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2024-04-10"
+  },
+  {
+   "id": "DET-0234",
+   "name": "Scott Nelson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "mold",
+   "loss": "2025-01-20"
+  },
+  {
+   "id": "DET-0235",
+   "name": "Karen Carter",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-10-08"
+  },
+  {
+   "id": "DET-0236",
+   "name": "Erin Klein",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2024-11-25"
+  },
+  {
+   "id": "DET-0237",
+   "name": "Erin Berg",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2024-08-09"
+  },
+  {
+   "id": "DET-0238",
+   "name": "James Peterson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2025-05-13"
+  },
+  {
+   "id": "DET-0239",
+   "name": "Paul Berg",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2024-05-14"
+  },
+  {
+   "id": "DET-0240",
+   "name": "Steven Weber",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2025-06-16"
+  },
+  {
+   "id": "DET-0241",
+   "name": "Rachel Novak",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "personal_property_rc",
+   "loss": "2023-12-16"
+  },
+  {
+   "id": "DET-0242",
+   "name": "Sarah Fischer",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "personal_property_rc",
+   "loss": "2026-04-17"
+  },
+  {
+   "id": "DET-0243",
+   "name": "Rachel Anderson",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-02-08"
+  },
+  {
+   "id": "DET-0244",
+   "name": "Karen Murphy",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "wind_hail",
+   "loss": "2025-06-30"
+  },
+  {
+   "id": "DET-0245",
+   "name": "Julie Novak",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2024-08-05"
+  },
+  {
+   "id": "DET-0246",
+   "name": "Olivia Weber",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2025-04-10"
+  },
+  {
+   "id": "DET-0247",
+   "name": "Thomas Carter",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2023-04-14"
+  },
+  {
+   "id": "DET-0248",
+   "name": "Scott Jensen",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2026-02-05"
+  },
+  {
+   "id": "DET-0249",
+   "name": "Linda Peterson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "water_backup",
+   "loss": "2026-06-04"
+  },
+  {
+   "id": "DET-0250",
+   "name": "Kelly Hansen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2025-04-25"
+  },
+  {
+   "id": "DET-0251",
+   "name": "Kelly Schmidt",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2026-10-06"
+  },
+  {
+   "id": "DET-0252",
+   "name": "Laura Anderson",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2025-01-11"
+  },
+  {
+   "id": "DET-0253",
+   "name": "Steven Berg",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2026-02-22"
+  },
+  {
+   "id": "DET-0254",
+   "name": "Erin Sorensen",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2024-12-21"
+  },
+  {
+   "id": "DET-0255",
+   "name": "Hannah Jensen",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "dog_bite",
+   "loss": "2025-08-04"
+  },
+  {
+   "id": "DET-0256",
+   "name": "Laura Hoffman",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2026-08-23"
+  },
+  {
+   "id": "DET-0257",
+   "name": "Linda Jensen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2026-10-17"
+  },
+  {
+   "id": "DET-0258",
+   "name": "Paul Kraus",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2024-12-28"
+  },
+  {
+   "id": "DET-0259",
+   "name": "Karen Novak",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "mold",
+   "loss": "2025-12-22"
+  },
+  {
+   "id": "DET-0260",
+   "name": "Michael Olson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2025-08-26"
+  },
+  {
+   "id": "DET-0261",
+   "name": "Anna Weber",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2023-10-04"
+  },
+  {
+   "id": "DET-0262",
+   "name": "Kevin Johnson",
+   "state": "MN",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2023-05-18"
+  },
+  {
+   "id": "DET-0263",
+   "name": "Emily Lund",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2024-05-31"
+  },
+  {
+   "id": "DET-0264",
+   "name": "Steven Kowalski",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-05-26"
+  },
+  {
+   "id": "DET-0265",
+   "name": "Nicole Johnson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "personal_property_rc",
+   "loss": "2023-04-19"
+  },
+  {
+   "id": "DET-0266",
+   "name": "Paul Brennan",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2025-07-06"
+  },
+  {
+   "id": "DET-0267",
+   "name": "Paul Johnson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "dog_bite",
+   "loss": "2023-10-26"
+  },
+  {
+   "id": "DET-0268",
+   "name": "Linda Novak",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2025-08-19"
+  },
+  {
+   "id": "DET-0269",
+   "name": "Rachel Lund",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2025-04-20"
+  },
+  {
+   "id": "DET-0270",
+   "name": "Mark Brennan",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_swerve",
+   "loss": "2025-04-20"
+  },
+  {
+   "id": "DET-0271",
+   "name": "Mark Reid",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2025-12-16"
+  },
+  {
+   "id": "DET-0272",
+   "name": "Daniel Morgan",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2024-01-23"
+  },
+  {
+   "id": "DET-0273",
+   "name": "Sarah Fischer",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-03-20"
+  },
+  {
+   "id": "DET-0274",
+   "name": "Hannah Schmidt",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "wear_tear",
+   "loss": "2026-07-28"
+  },
+  {
+   "id": "DET-0275",
+   "name": "Brian Hoffman",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2023-10-29"
+  },
+  {
+   "id": "DET-0276",
+   "name": "Emily Dahl",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_collision",
+   "loss": "2026-08-12"
+  },
+  {
+   "id": "DET-0277",
+   "name": "Emily Kowalski",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-05-21"
+  },
+  {
+   "id": "DET-0278",
+   "name": "Hannah Johnson",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2024-11-12"
+  },
+  {
+   "id": "DET-0279",
+   "name": "Steven Meyer",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-06-23"
+  },
+  {
+   "id": "DET-0280",
+   "name": "Brian Johnson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2024-01-04"
+  },
+  {
+   "id": "DET-0281",
+   "name": "Michael Sorensen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2024-06-07"
+  },
+  {
+   "id": "DET-0282",
+   "name": "Robert Klein",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2025-07-19"
+  },
+  {
+   "id": "DET-0283",
+   "name": "Rachel Hansen",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-01-23"
+  },
+  {
+   "id": "DET-0284",
+   "name": "Sarah Klein",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2026-02-21"
+  },
+  {
+   "id": "DET-0285",
+   "name": "Steven Novak",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_collision",
+   "loss": "2025-03-23"
+  },
+  {
+   "id": "DET-0286",
+   "name": "Megan Wagner",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2023-11-12"
+  },
+  {
+   "id": "DET-0287",
+   "name": "Hannah Reid",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "flood",
+   "loss": "2023-06-13"
+  },
+  {
+   "id": "DET-0288",
+   "name": "Michael Sorensen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2025-06-19"
+  },
+  {
+   "id": "DET-0289",
+   "name": "Thomas Olson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2024-02-16"
+  },
+  {
+   "id": "DET-0290",
+   "name": "Hannah Klein",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2026-09-21"
+  },
+  {
+   "id": "DET-0291",
+   "name": "Robert Novak",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2025-12-15"
+  },
+  {
+   "id": "DET-0292",
+   "name": "Brian Becker",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "spoilage",
+   "loss": "2026-06-10"
+  },
+  {
+   "id": "DET-0293",
+   "name": "Grace Murphy",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "personal_property_rc",
+   "loss": "2024-09-24"
+  },
+  {
+   "id": "DET-0294",
+   "name": "Emily Kowalski",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "snow_load",
+   "loss": "2026-06-13"
+  },
+  {
+   "id": "DET-0295",
+   "name": "Kelly Olson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2024-09-06"
+  },
+  {
+   "id": "DET-0296",
+   "name": "Hannah Berg",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2024-03-01"
+  },
+  {
+   "id": "DET-0297",
+   "name": "Hannah Morgan",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2023-05-05"
+  },
+  {
+   "id": "DET-0298",
+   "name": "Anna Lund",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2023-01-18"
+  },
+  {
+   "id": "DET-0299",
+   "name": "Brian Hansen",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "wear_tear",
+   "loss": "2023-11-29"
+  },
+  {
+   "id": "DET-0300",
+   "name": "Megan Klein",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2025-01-29"
+  },
+  {
+   "id": "DET-0301",
+   "name": "Robert Larson",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-11-10"
+  },
+  {
+   "id": "DET-0302",
+   "name": "Eric Weber",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2024-01-01"
+  },
+  {
+   "id": "DET-0303",
+   "name": "Brian Berg",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2026-01-07"
+  },
+  {
+   "id": "DET-0304",
+   "name": "Nicole Carter",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2023-03-03"
+  },
+  {
+   "id": "DET-0305",
+   "name": "David Jensen",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2023-09-22"
+  },
+  {
+   "id": "DET-0306",
+   "name": "Hannah Reid",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2026-01-29"
+  },
+  {
+   "id": "DET-0307",
+   "name": "Julie Becker",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2025-07-11"
+  },
+  {
+   "id": "DET-0308",
+   "name": "Karen Hansen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2025-05-12"
+  },
+  {
+   "id": "DET-0309",
+   "name": "Steven Hansen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "snow_load",
+   "loss": "2023-12-01"
+  },
+  {
+   "id": "DET-0310",
+   "name": "Karen Lund",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2026-06-21"
+  },
+  {
+   "id": "DET-0311",
+   "name": "Linda Sorensen",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2026-06-18"
+  },
+  {
+   "id": "DET-0312",
+   "name": "Anna Brennan",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2023-09-02"
+  },
+  {
+   "id": "DET-0313",
+   "name": "Michael Johnson",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2025-01-24"
+  },
+  {
+   "id": "DET-0314",
+   "name": "Thomas Wagner",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2025-08-29"
+  },
+  {
+   "id": "DET-0315",
+   "name": "Thomas Brennan",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2023-04-04"
+  },
+  {
+   "id": "DET-0316",
+   "name": "Emily Kraus",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2026-04-13"
+  },
+  {
+   "id": "DET-0317",
+   "name": "Daniel Brennan",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "water_backup",
+   "loss": "2026-08-18"
+  },
+  {
+   "id": "DET-0318",
+   "name": "Grace Wagner",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2025-09-22"
+  },
+  {
+   "id": "DET-0319",
+   "name": "Steven Walsh",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "tree_debris",
+   "loss": "2026-08-20"
+  },
+  {
+   "id": "DET-0320",
+   "name": "Jason Sorensen",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2025-04-07"
+  },
+  {
+   "id": "DET-0321",
+   "name": "Jason Jensen",
+   "state": "MI",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "spoilage",
+   "loss": "2023-01-19"
+  },
+  {
+   "id": "DET-0322",
+   "name": "Jason Meyer",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2025-04-14"
+  },
+  {
+   "id": "DET-0323",
+   "name": "Nicole Walsh",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-08-17"
+  },
+  {
+   "id": "DET-0324",
+   "name": "Hannah Meyer",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2023-07-28"
+  },
+  {
+   "id": "DET-0325",
+   "name": "Sarah Hansen",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2026-10-14"
+  },
+  {
+   "id": "DET-0326",
+   "name": "Hannah Fischer",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2025-12-06"
+  },
+  {
+   "id": "DET-0327",
+   "name": "Julie Kraus",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-05-09"
+  },
+  {
+   "id": "DET-0328",
+   "name": "Nicole Klein",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "personal_property_rc",
+   "loss": "2023-06-26"
+  },
+  {
+   "id": "DET-0329",
+   "name": "Nicole Nelson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2025-12-23"
+  },
+  {
+   "id": "DET-0330",
+   "name": "Paul Hoffman",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2025-03-23"
+  },
+  {
+   "id": "DET-0331",
+   "name": "Erin Klein",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2023-03-17"
+  },
+  {
+   "id": "DET-0332",
+   "name": "Emily Jensen",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "hail_cosmetic",
+   "loss": "2025-05-04"
+  },
+  {
+   "id": "DET-0333",
+   "name": "Steven Fischer",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2024-10-15"
+  },
+  {
+   "id": "DET-0334",
+   "name": "Rachel Miller",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2024-03-27"
+  },
+  {
+   "id": "DET-0335",
+   "name": "Megan Brennan",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2026-04-11"
+  },
+  {
+   "id": "DET-0336",
+   "name": "Erin Walsh",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2025-07-01"
+  },
+  {
+   "id": "DET-0337",
+   "name": "Scott Weber",
+   "state": "IL",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2025-04-11"
+  },
+  {
+   "id": "DET-0338",
+   "name": "Hannah Walsh",
+   "state": "MI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2024-04-17"
+  },
+  {
+   "id": "DET-0339",
+   "name": "Emily Brennan",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2023-06-24"
+  },
+  {
+   "id": "DET-0340",
+   "name": "Karen Hansen",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2023-09-09"
+  },
+  {
+   "id": "DET-0341",
+   "name": "Jason Hansen",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2024-11-17"
+  },
+  {
+   "id": "DET-0342",
+   "name": "Eric Hoffman",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2023-08-09"
+  },
+  {
+   "id": "DET-0343",
+   "name": "Megan Miller",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-02-23"
+  },
+  {
+   "id": "DET-0344",
+   "name": "Kelly Klein",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-02-16"
+  },
+  {
+   "id": "DET-0345",
+   "name": "Olivia Brennan",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2023-10-10"
+  },
+  {
+   "id": "DET-0346",
+   "name": "Anna Kowalski",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2023-03-14"
+  },
+  {
+   "id": "DET-0347",
+   "name": "Paul Miller",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2023-12-11"
+  },
+  {
+   "id": "DET-0348",
+   "name": "Linda Hansen",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2023-02-25"
+  },
+  {
+   "id": "DET-0349",
+   "name": "Mark Hansen",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2022-12-10"
+  },
+  {
+   "id": "DET-0350",
+   "name": "Scott Nelson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2024-03-09"
+  },
+  {
+   "id": "DET-0351",
+   "name": "Brian Morgan",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2026-01-19"
+  },
+  {
+   "id": "DET-0352",
+   "name": "Grace Walsh",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "spoilage",
+   "loss": "2025-10-10"
+  },
+  {
+   "id": "DET-0353",
+   "name": "Paul Peterson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2026-10-14"
+  },
+  {
+   "id": "DET-0354",
+   "name": "Megan Meyer",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "tree_debris",
+   "loss": "2026-08-23"
+  },
+  {
+   "id": "DET-0355",
+   "name": "Paul Jensen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2024-10-23"
+  },
+  {
+   "id": "DET-0356",
+   "name": "Hannah Hansen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2025-03-15"
+  },
+  {
+   "id": "DET-0357",
+   "name": "Rachel Jensen",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2024-11-10"
+  },
+  {
+   "id": "DET-0358",
+   "name": "Nicole Peterson",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_collision",
+   "loss": "2024-08-02"
+  },
+  {
+   "id": "DET-0359",
+   "name": "Scott Berg",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2026-06-08"
+  },
+  {
+   "id": "DET-0360",
+   "name": "Scott Anderson",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2025-11-11"
+  },
+  {
+   "id": "DET-0361",
+   "name": "James Sorensen",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2023-05-30"
+  },
+  {
+   "id": "DET-0362",
+   "name": "Amy Sorensen",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rental_reimbursement",
+   "loss": "2023-08-14"
+  },
+  {
+   "id": "DET-0363",
+   "name": "Sarah Nelson",
+   "state": "IA",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [
+    [
+     "BT 05",
+     "2025-03"
+    ]
+   ],
+   "topic": "navigation_limits",
+   "loss": "2023-09-04"
+  },
+  {
+   "id": "DET-0364",
+   "name": "Olivia Nelson",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [
+    [
+     "BT 05",
+     "2025-03"
+    ]
+   ],
+   "topic": "navigation_limits",
+   "loss": "2025-12-23"
+  },
+  {
+   "id": "DET-0365",
+   "name": "Sarah Weber",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2024-10-07"
+  },
+  {
+   "id": "DET-0366",
+   "name": "Mark Brennan",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-05-10"
+  },
+  {
+   "id": "DET-0367",
+   "name": "Hannah Jensen",
+   "state": "IA",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2025-11-22"
+  },
+  {
+   "id": "DET-0368",
+   "name": "Kevin Becker",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2024-11-03"
+  },
+  {
+   "id": "DET-0369",
+   "name": "Scott Dahl",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2023-02-19"
+  },
+  {
+   "id": "DET-0370",
+   "name": "Hannah Sorensen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "hail_cosmetic",
+   "loss": "2025-06-24"
+  },
+  {
+   "id": "DET-0371",
+   "name": "Erin Johnson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "dog_bite",
+   "loss": "2024-05-03"
+  },
+  {
+   "id": "DET-0372",
+   "name": "Paul Weber",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-09-08"
+  },
+  {
+   "id": "DET-0373",
+   "name": "Sarah Weber",
+   "state": "IA",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2025-03-15"
+  },
+  {
+   "id": "DET-0374",
+   "name": "James Murphy",
+   "state": "IL",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2023-02-01"
+  },
+  {
+   "id": "DET-0375",
+   "name": "Paul Lund",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2026-10-12"
+  },
+  {
+   "id": "DET-0376",
+   "name": "Sarah Peterson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2026-04-03"
+  },
+  {
+   "id": "DET-0377",
+   "name": "Nicole Carter",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [
+    [
+     "BT 05",
+     "2025-03"
+    ]
+   ],
+   "topic": "navigation_limits",
+   "loss": "2025-10-04"
+  },
+  {
+   "id": "DET-0378",
+   "name": "Grace Johnson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "wind_hail",
+   "loss": "2026-09-23"
+  },
+  {
+   "id": "DET-0379",
+   "name": "Anna Brennan",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "wear_tear",
+   "loss": "2025-10-15"
+  },
+  {
+   "id": "DET-0380",
+   "name": "Julie Morgan",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-03-23"
+  },
+  {
+   "id": "DET-0381",
+   "name": "Kevin Miller",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_swerve",
+   "loss": "2026-05-08"
+  },
+  {
+   "id": "DET-0382",
+   "name": "Laura Morgan",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-05-18"
+  },
+  {
+   "id": "DET-0383",
+   "name": "Robert Meyer",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2024-01-30"
+  },
+  {
+   "id": "DET-0384",
+   "name": "Sarah Meyer",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2023-10-01"
+  },
+  {
+   "id": "DET-0385",
+   "name": "Linda Novak",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2026-10-01"
+  },
+  {
+   "id": "DET-0386",
+   "name": "Kevin Jensen",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [
+    [
+     "BT 05",
+     "2025-03"
+    ]
+   ],
+   "topic": "navigation_limits",
+   "loss": "2026-01-03"
+  },
+  {
+   "id": "DET-0387",
+   "name": "James Morgan",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ],
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2025-08-06"
+  },
+  {
+   "id": "DET-0388",
+   "name": "Anna Nelson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2024-06-12"
+  },
+  {
+   "id": "DET-0389",
+   "name": "Brian Dahl",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2026-09-05"
+  },
+  {
+   "id": "DET-0390",
+   "name": "James Carter",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "snow_load",
+   "loss": "2024-06-20"
+  },
+  {
+   "id": "DET-0391",
+   "name": "Laura Olson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "wind_hail",
+   "loss": "2025-10-25"
+  },
+  {
+   "id": "DET-0392",
+   "name": "Grace Nelson",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2023-10-08"
+  },
+  {
+   "id": "DET-0393",
+   "name": "Julie Morgan",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_swerve",
+   "loss": "2025-12-28"
+  },
+  {
+   "id": "DET-0394",
+   "name": "Nicole Hansen",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2023-03-12"
+  },
+  {
+   "id": "DET-0395",
+   "name": "Laura Morgan",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "ice_dam",
+   "loss": "2023-03-02"
+  },
+  {
+   "id": "DET-0396",
+   "name": "Hannah Nelson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2019-03"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-02-24"
+  },
+  {
+   "id": "DET-0397",
+   "name": "Megan Schmidt",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2023-07-16"
+  },
+  {
+   "id": "DET-0398",
+   "name": "Brian Meyer",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2024-09-08"
+  },
+  {
+   "id": "DET-0399",
+   "name": "Mark Peterson",
+   "state": "WI",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2025-04-28"
+  },
+  {
+   "id": "DET-0400",
+   "name": "Emily Sorensen",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "wind_hail",
+   "loss": "2025-05-24"
+  },
+  {
+   "id": "DET-0401",
+   "name": "Rachel Johnson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-09-16"
+  },
+  {
+   "id": "DET-0402",
+   "name": "Thomas Jensen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2024-04-29"
+  },
+  {
+   "id": "DET-0403",
+   "name": "Kelly Klein",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-06-27"
+  },
+  {
+   "id": "DET-0404",
+   "name": "Steven Meyer",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_swerve",
+   "loss": "2024-08-18"
+  },
+  {
+   "id": "DET-0405",
+   "name": "Mark Anderson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "hail_cosmetic",
+   "loss": "2024-04-09"
+  },
+  {
+   "id": "DET-0406",
+   "name": "Michael Olson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2023-03-03"
+  },
+  {
+   "id": "DET-0407",
+   "name": "Mark Murphy",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2025-09-18"
+  },
+  {
+   "id": "DET-0408",
+   "name": "Hannah Berg",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2026-04-01"
+  },
+  {
+   "id": "DET-0409",
+   "name": "Rachel Hansen",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2025-11-09"
+  },
+  {
+   "id": "DET-0410",
+   "name": "Erin Becker",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "personal_property_rc",
+   "loss": "2024-06-10"
+  },
+  {
+   "id": "DET-0411",
+   "name": "Jason Berg",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2024-06-24"
+  },
+  {
+   "id": "DET-0412",
+   "name": "Megan Hansen",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2024-01-13"
+  },
+  {
+   "id": "DET-0413",
+   "name": "Scott Brennan",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2023-05-28"
+  },
+  {
+   "id": "DET-0414",
+   "name": "Michael Kowalski",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2026-09-28"
+  },
+  {
+   "id": "DET-0415",
+   "name": "Erin Schmidt",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2026-04-04"
+  },
+  {
+   "id": "DET-0416",
+   "name": "Kevin Kowalski",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2024-03-21"
+  },
+  {
+   "id": "DET-0417",
+   "name": "Robert Brennan",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2026-03-16"
+  },
+  {
+   "id": "DET-0418",
+   "name": "Sarah Novak",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2026-06-19"
+  },
+  {
+   "id": "DET-0419",
+   "name": "Megan Novak",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2025-10-07"
+  },
+  {
+   "id": "DET-0420",
+   "name": "Karen Klein",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2024-12-24"
+  },
+  {
+   "id": "DET-0421",
+   "name": "Megan Meyer",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2024-11-25"
+  },
+  {
+   "id": "DET-0422",
+   "name": "Thomas Anderson",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2026-02-02"
+  },
+  {
+   "id": "DET-0423",
+   "name": "Rachel Brennan",
+   "state": "MN",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2024-04-01"
+  },
+  {
+   "id": "DET-0424",
+   "name": "Mark Carter",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-05-06"
+  },
+  {
+   "id": "DET-0425",
+   "name": "Julie Berg",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2025-07-02"
+  },
+  {
+   "id": "DET-0426",
+   "name": "Megan Peterson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2024-07-25"
+  },
+  {
+   "id": "DET-0427",
+   "name": "Linda Hoffman",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2023-06-22"
+  },
+  {
+   "id": "DET-0428",
+   "name": "Rachel Wagner",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "flood",
+   "loss": "2026-08-24"
+  },
+  {
+   "id": "DET-0429",
+   "name": "Sarah Hansen",
+   "state": "MN",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2026-02-07"
+  },
+  {
+   "id": "DET-0430",
+   "name": "Amy Carter",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2023-03-13"
+  },
+  {
+   "id": "DET-0431",
+   "name": "Amy Wagner",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2026-05-15"
+  },
+  {
+   "id": "DET-0432",
+   "name": "Julie Morgan",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2026-03-14"
+  },
+  {
+   "id": "DET-0433",
+   "name": "Brian Peterson",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2024-07-31"
+  },
+  {
+   "id": "DET-0434",
+   "name": "Anna Berg",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2026-04-09"
+  },
+  {
+   "id": "DET-0435",
+   "name": "Erin Kraus",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_matching",
+   "loss": "2023-02-18"
+  },
+  {
+   "id": "DET-0436",
+   "name": "Daniel Novak",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "equipment_breakdown",
+   "loss": "2023-04-30"
+  },
+  {
+   "id": "DET-0437",
+   "name": "Daniel Klein",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2024-12-26"
+  },
+  {
+   "id": "DET-0438",
+   "name": "Robert Hoffman",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2024-09-10"
+  },
+  {
+   "id": "DET-0439",
+   "name": "Laura Dahl",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "roof_settlement",
+   "loss": "2024-01-20"
+  },
+  {
+   "id": "DET-0440",
+   "name": "Kevin Carter",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2025-06-08"
+  },
+  {
+   "id": "DET-0441",
+   "name": "James Sorensen",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2024-03-22"
+  },
+  {
+   "id": "DET-0442",
+   "name": "Anna Anderson",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "flood",
+   "loss": "2026-07-23"
+  },
+  {
+   "id": "DET-0443",
+   "name": "Karen Olson",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2025-12-08"
+  },
+  {
+   "id": "DET-0444",
+   "name": "David Olson",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2025-03-22"
+  },
+  {
+   "id": "DET-0445",
+   "name": "Paul Nelson",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "spoilage",
+   "loss": "2025-09-23"
+  },
+  {
+   "id": "DET-0446",
+   "name": "Nicole Nelson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2026-07-22"
+  },
+  {
+   "id": "DET-0447",
+   "name": "Daniel Reid",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2024-07-06"
+  },
+  {
+   "id": "DET-0448",
+   "name": "Brian Peterson",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "rideshare",
+   "loss": "2025-11-09"
+  },
+  {
+   "id": "DET-0449",
+   "name": "Anna Becker",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2023-02-28"
+  },
+  {
+   "id": "DET-0450",
+   "name": "Olivia Larson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2024-06"
+    ],
+    [
+     "HO 04 98",
+     "2024-06"
+    ]
+   ],
+   "topic": "flood",
+   "loss": "2024-12-10"
+  },
+  {
+   "id": "DET-0451",
+   "name": "James Olson",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2023-11-06"
+  },
+  {
+   "id": "DET-0452",
+   "name": "Sarah Brennan",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2023-10-23"
+  },
+  {
+   "id": "DET-0453",
+   "name": "Sarah Becker",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 98",
+     "2024-06"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "wind_hail",
+   "loss": "2026-04-02"
+  },
+  {
+   "id": "DET-0454",
+   "name": "Anna Nelson",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "deer_collision",
+   "loss": "2025-11-04"
+  },
+  {
+   "id": "DET-0455",
+   "name": "Anna Berg",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2025-06-10"
+  },
+  {
+   "id": "DET-0456",
+   "name": "Karen Larson",
+   "state": "IA",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-07-15"
+  },
+  {
+   "id": "DET-0457",
+   "name": "Rachel Larson",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "earth_movement",
+   "loss": "2024-09-03"
+  },
+  {
+   "id": "DET-0458",
+   "name": "Sarah Meyer",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2023-03-04"
+  },
+  {
+   "id": "DET-0459",
+   "name": "Megan Hansen",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "ice_dam",
+   "loss": "2023-07-06"
+  },
+  {
+   "id": "DET-0460",
+   "name": "Mark Schmidt",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "hail_cosmetic",
+   "loss": "2024-11-26"
+  },
+  {
+   "id": "DET-0461",
+   "name": "Michael Lund",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2025-02-04"
+  },
+  {
+   "id": "DET-0462",
+   "name": "Robert Murphy",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [],
+   "topic": "employee_dishonesty",
+   "loss": "2024-08-25"
+  },
+  {
+   "id": "DET-0463",
+   "name": "Robert Johnson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2023-08-12"
+  },
+  {
+   "id": "DET-0464",
+   "name": "Jason Peterson",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "tree_debris",
+   "loss": "2026-02-15"
+  },
+  {
+   "id": "DET-0465",
+   "name": "Eric Sorensen",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-07-24"
+  },
+  {
+   "id": "DET-0466",
+   "name": "Julie Lund",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2024-02-07"
+  },
+  {
+   "id": "DET-0467",
+   "name": "Linda Jensen",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "personal_property_rc",
+   "loss": "2025-01-08"
+  },
+  {
+   "id": "DET-0468",
+   "name": "Michael Dahl",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "frozen_pipes",
+   "loss": "2023-10-11"
+  },
+  {
+   "id": "DET-0469",
+   "name": "Brian Johnson",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "hail_cosmetic",
+   "loss": "2026-03-03"
+  },
+  {
+   "id": "DET-0470",
+   "name": "Sarah Murphy",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "flood",
+   "loss": "2026-01-11"
+  },
+  {
+   "id": "DET-0471",
+   "name": "Laura Larson",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2026-01-14"
+  },
+  {
+   "id": "DET-0472",
+   "name": "Scott Sorensen",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "mold",
+   "loss": "2025-11-13"
+  },
+  {
+   "id": "DET-0473",
+   "name": "Paul Meyer",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "hail_cosmetic",
+   "loss": "2024-05-07"
+  },
+  {
+   "id": "DET-0474",
+   "name": "Julie Schmidt",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "flood",
+   "loss": "2025-11-13"
+  },
+  {
+   "id": "DET-0475",
+   "name": "David Klein",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "tree_debris",
+   "loss": "2025-05-14"
+  },
+  {
+   "id": "DET-0476",
+   "name": "Grace Nelson",
+   "state": "MI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2023-06-04"
+  },
+  {
+   "id": "DET-0477",
+   "name": "Amy Larson",
+   "state": "IA",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2026-08-17"
+  },
+  {
+   "id": "DET-0478",
+   "name": "Thomas Hoffman",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_swerve",
+   "loss": "2023-03-18"
+  },
+  {
+   "id": "DET-0479",
+   "name": "James Walsh",
+   "state": "WI",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2024-11-20"
+  },
+  {
+   "id": "DET-0480",
+   "name": "Paul Klein",
+   "state": "MN",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "earth_movement",
+   "loss": "2025-09-21"
+  },
+  {
+   "id": "DET-0481",
+   "name": "Nicole Miller",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "roof_matching",
+   "loss": "2023-02-24"
+  },
+  {
+   "id": "DET-0482",
+   "name": "Linda Johnson",
+   "state": "MI",
+   "form": "BOAT",
+   "form_version": "2025-03",
+   "endorsements": [],
+   "topic": "hull_damage",
+   "loss": "2025-01-01"
+  },
+  {
+   "id": "DET-0483",
+   "name": "David Klein",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "tree_debris",
+   "loss": "2024-04-11"
+  },
+  {
+   "id": "DET-0484",
+   "name": "Thomas Wagner",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ]
+   ],
+   "topic": "tree_debris",
+   "loss": "2024-06-01"
+  },
+  {
+   "id": "DET-0485",
+   "name": "Erin Brennan",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "water_backup",
+   "loss": "2026-05-29"
+  },
+  {
+   "id": "DET-0486",
+   "name": "Sarah Reid",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2026-01-14"
+  },
+  {
+   "id": "DET-0487",
+   "name": "Anna Miller",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 34",
+     "2023-01"
+    ]
+   ],
+   "topic": "rideshare",
+   "loss": "2026-09-20"
+  },
+  {
+   "id": "DET-0488",
+   "name": "Anna Peterson",
+   "state": "WI",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2024-01-11"
+  },
+  {
+   "id": "DET-0489",
+   "name": "Julie Olson",
+   "state": "IA",
+   "form": "BOP",
+   "form_version": "2025-01",
+   "endorsements": [
+    [
+     "LM BP 12",
+     "2025-01"
+    ]
+   ],
+   "topic": "equipment_breakdown",
+   "loss": "2023-10-14"
+  },
+  {
+   "id": "DET-0490",
+   "name": "Hannah Johnson",
+   "state": "MN",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [],
+   "topic": "deer_collision",
+   "loss": "2025-03-30"
+  },
+  {
+   "id": "DET-0491",
+   "name": "Olivia Peterson",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "wind_hail",
+   "loss": "2026-04-24"
+  },
+  {
+   "id": "DET-0492",
+   "name": "Grace Kowalski",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "LM HO 17",
+     "2024-06"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2025-03-02"
+  },
+  {
+   "id": "DET-0493",
+   "name": "Jason Dahl",
+   "state": "MN",
+   "form": "BOAT",
+   "form_version": "2021-05",
+   "endorsements": [],
+   "topic": "navigation_limits",
+   "loss": "2026-06-07"
+  },
+  {
+   "id": "DET-0494",
+   "name": "Kelly Dahl",
+   "state": "IL",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "food_spoilage",
+   "loss": "2023-05-23"
+  },
+  {
+   "id": "DET-0495",
+   "name": "Amy Fischer",
+   "state": "WI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "food_spoilage",
+   "loss": "2024-04-26"
+  },
+  {
+   "id": "DET-0496",
+   "name": "Emily Carter",
+   "state": "IL",
+   "form": "BOP",
+   "form_version": "2020-04",
+   "endorsements": [
+    [
+     "BP 04 50",
+     "2025-01"
+    ]
+   ],
+   "topic": "employee_dishonesty",
+   "loss": "2023-05-02"
+  },
+  {
+   "id": "DET-0497",
+   "name": "Sarah Wagner",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [],
+   "topic": "wind_hail",
+   "loss": "2025-05-31"
+  },
+  {
+   "id": "DET-0498",
+   "name": "Amy Kraus",
+   "state": "MI",
+   "form": "HO-3",
+   "form_version": "2024-06",
+   "endorsements": [
+    [
+     "HO 04 90",
+     "2022-01"
+    ],
+    [
+     "HO 04 95",
+     "2024-06"
+    ]
+   ],
+   "topic": "roof_settlement",
+   "loss": "2026-09-27"
+  },
+  {
+   "id": "DET-0499",
+   "name": "Hannah Hansen",
+   "state": "IA",
+   "form": "HO-3",
+   "form_version": "2022-01",
+   "endorsements": [
+    [
+     "HO 04 54",
+     "2022-01"
+    ]
+   ],
+   "topic": "frozen_pipes",
+   "loss": "2023-02-11"
+  },
+  {
+   "id": "DET-0500",
+   "name": "Anna Olson",
+   "state": "IL",
+   "form": "PAP",
+   "form_version": "2023-01",
+   "endorsements": [
+    [
+     "LM PP 21",
+     "2023-01"
+    ]
+   ],
+   "topic": "rental_reimbursement",
+   "loss": "2024-05-05"
+  }
+ ],
+ "retrieval_miss": {
+  "DET-0022": [
+   "Conditions 4",
+   13
+  ],
+  "DET-0063": [
+   "Conditions 4",
+   13
+  ],
+  "DET-0163": [
+   "Conditions 1",
+   12
+  ],
+  "DET-0178": [
+   "Conditions 1",
+   12
+  ],
+  "DET-0181": [
+   "Conditions 11",
+   15
+  ],
+  "DET-0214": [
+   "Conditions 4",
+   13
+  ],
+  "DET-0218": [
+   "Conditions 4",
+   13
+  ]
+ },
+ "pool": [
+  "DET-0202",
+  "DET-0205",
+  "DET-0209",
+  "DET-0213",
+  "DET-0216",
+  "DET-0222",
+  "DET-0227",
+  "DET-0231",
+  "DET-0234",
+  "DET-0239",
+  "DET-0244",
+  "DET-0250",
+  "DET-0255",
+  "DET-0260",
+  "DET-0264",
+  "DET-0274",
+  "DET-0277",
+  "DET-0281",
+  "DET-0287",
+  "DET-0291",
+  "DET-0294",
+  "DET-0297",
+  "DET-0301",
+  "DET-0305",
+  "DET-0313",
+  "DET-0317",
+  "DET-0324",
+  "DET-0331",
+  "DET-0334",
+  "DET-0338",
+  "DET-0343",
+  "DET-0349",
+  "DET-0356",
+  "DET-0359"
+ ],
+ "models": {
+  "sim-large": {
+   "noprec": [
+    "DET-0071",
+    "DET-0064",
+    "DET-0167",
+    "DET-0049",
+    "DET-0145",
+    "DET-0185",
+    "DET-0109",
+    "DET-0219",
+    "DET-0220",
+    "DET-0202",
+    "DET-0210",
+    "DET-0216",
+    "DET-0217",
+    "DET-0279",
+    "DET-0320",
+    "DET-0321",
+    "DET-0282"
+   ],
+   "prec": [
+    "DET-0071",
+    "DET-0064",
+    "DET-0167"
+   ],
+   "resistance": {
+    "DET-0061": 0.3,
+    "DET-0064": 0.3,
+    "DET-0167": 0.3,
+    "DET-0074": 0.3,
+    "DET-0156": 0.3,
+    "DET-0085": 0.1,
+    "DET-0139": 0.1,
+    "DET-0232": 0.3,
+    "DET-0238": 0.3,
+    "DET-0240": 0.3,
+    "DET-0252": 0.3,
+    "DET-0326": 0.3,
+    "DET-0393": 0.3,
+    "DET-0415": 0.3,
+    "DET-0219": 0.3,
+    "DET-0220": 0.3,
+    "DET-0071": 0.3,
+    "DET-0082": 0.3,
+    "DET-0141": 0.3,
+    "DET-0052": 0.3,
+    "DET-0092": 0.3,
+    "DET-0039": 0.3,
+    "DET-0032": 0.3,
+    "DET-0044": 0.3,
+    "DET-0126": 0.3,
+    "DET-0175": 0.3,
+    "DET-0045": 0.3,
+    "DET-0102": 0.3,
+    "DET-0177": 0.3,
+    "DET-0127": 0.3,
+    "DET-0067": 0.3,
+    "DET-0192": 0.3,
+    "DET-0017": 0.3,
+    "DET-0110": 0.3,
+    "DET-0158": 0.3,
+    "DET-0307": 0.3
+   },
+   "offapp_norule": [
+    "DET-0162",
+    "DET-0119",
+    "DET-0040",
+    "DET-0199",
+    "DET-0170",
+    "DET-0146",
+    "DET-0173",
+    "DET-0019",
+    "DET-0038",
+    "DET-0124",
+    "DET-0174",
+    "DET-0157",
+    "DET-0154",
+    "DET-0018",
+    "DET-0086",
+    "DET-0013",
+    "DET-0166",
+    "DET-0153",
+    "DET-0066",
+    "DET-0093",
+    "DET-0155",
+    "DET-0152",
+    "DET-0095",
+    "DET-0065",
+    "DET-0015",
+    "DET-0080",
+    "DET-0072",
+    "DET-0029",
+    "DET-0098",
+    "DET-0090",
+    "DET-0089",
+    "DET-0165",
+    "DET-0035",
+    "DET-0057",
+    "DET-0114",
+    "DET-0190",
+    "DET-0200",
+    "DET-0149",
+    "DET-0147",
+    "DET-0107",
+    "DET-0034",
+    "DET-0179",
+    "DET-0096",
+    "DET-0108",
+    "DET-0195",
+    "DET-0180",
+    "DET-0120",
+    "DET-0132",
+    "DET-0084"
+   ],
+   "offapp_rule": [
+    "DET-0162",
+    "DET-0119",
+    "DET-0040",
+    "DET-0199",
+    "DET-0170",
+    "DET-0146",
+    "DET-0173",
+    "DET-0019",
+    "DET-0038"
+   ],
+   "additions": {
+    "DET-0045": [
+     "The insured must also provide receipts within 60 days.",
+     0.9
+    ],
+    "DET-0088": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.35
+    ],
+    "DET-0056": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0055": [
+     "The claim must be reported to the police within 24 hours.",
+     0.35
+    ],
+    "DET-0144": [
+     "This coverage ends after the policy's first renewal.",
+     0.35
+    ],
+    "DET-0192": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ],
+    "DET-0229": [
+     "The insured must also provide receipts within 60 days.",
+     0.9
+    ]
+   },
+   "noskill": [
+    "DET-0219"
+   ],
+   "skill_pull": [
+    "DET-0116",
+    "DET-0188",
+    "DET-0133"
+   ]
+  },
+  "sim-mid": {
+   "noprec": [
+    "DET-0197",
+    "DET-0045",
+    "DET-0071",
+    "DET-0127",
+    "DET-0192",
+    "DET-0111",
+    "DET-0177",
+    "DET-0171",
+    "DET-0144",
+    "DET-0044"
+   ],
+   "prec": [
+    "DET-0197",
+    "DET-0071",
+    "DET-0111"
+   ],
+   "resistance": {
+    "DET-0061": 0.3
+   },
+   "offapp_norule": [],
+   "offapp_rule": [],
+   "additions": {
+    "DET-0076": [
+     "The insured must also provide receipts and photographs of the damaged property within 60 days.",
+     0.8
+    ],
+    "DET-0174": [
+     "Payment for this type of loss is limited to $5,000 unless the declarations show a higher limit.",
+     0.8
+    ],
+    "DET-0120": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0127": [
+     "The claim must be reported to the police within 24 hours.",
+     0.35
+    ],
+    "DET-0187": [
+     "This coverage ends after the policy's first renewal.",
+     0.35
+    ],
+    "DET-0249": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.8
+    ],
+    "DET-0360": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ]
+   },
+   "skill_pull": [
+    "DET-0116",
+    "DET-0133",
+    "DET-0188",
+    "DET-0217"
+   ]
+  },
+  "sim-small": {
+   "noprec": [
+    "DET-0327",
+    "DET-0329",
+    "DET-0334",
+    "DET-0335",
+    "DET-0343",
+    "DET-0347",
+    "DET-0351",
+    "DET-0352",
+    "DET-0353",
+    "DET-0361",
+    "DET-0363",
+    "DET-0364",
+    "DET-0197",
+    "DET-0045",
+    "DET-0088",
+    "DET-0127",
+    "DET-0192",
+    "DET-0111",
+    "DET-0177",
+    "DET-0171",
+    "DET-0144",
+    "DET-0044"
+   ],
+   "prec": [
+    "DET-0327",
+    "DET-0329",
+    "DET-0197",
+    "DET-0111"
+   ],
+   "noskill": [
+    "DET-0113"
+   ],
+   "resistance": {
+    "DET-0061": 0.3,
+    "DET-0074": 0.3,
+    "DET-0156": 0.3,
+    "DET-0232": 0.3,
+    "DET-0238": 0.3,
+    "DET-0240": 0.3,
+    "DET-0282": 0.3,
+    "DET-0307": 0.3,
+    "DET-0252": 0.3,
+    "DET-0326": 0.3,
+    "DET-0393": 0.3,
+    "DET-0415": 0.3,
+    "DET-0197": 0.3,
+    "DET-0088": 0.3,
+    "DET-0082": 0.3,
+    "DET-0141": 0.3,
+    "DET-0052": 0.3,
+    "DET-0092": 0.3,
+    "DET-0039": 0.3,
+    "DET-0032": 0.3,
+    "DET-0044": 0.3,
+    "DET-0126": 0.3,
+    "DET-0175": 0.3,
+    "DET-0045": 0.3,
+    "DET-0102": 0.3,
+    "DET-0177": 0.3,
+    "DET-0127": 0.3,
+    "DET-0067": 0.3,
+    "DET-0192": 0.3,
+    "DET-0017": 0.3,
+    "DET-0110": 0.3,
+    "DET-0158": 0.3,
+    "DET-0109": 0.3
+   },
+   "offapp_norule": [
+    "DET-0138",
+    "DET-0060",
+    "DET-0055",
+    "DET-0099",
+    "DET-0148",
+    "DET-0122",
+    "DET-0100",
+    "DET-0196",
+    "DET-0041",
+    "DET-0023",
+    "DET-0151",
+    "DET-0123",
+    "DET-0106",
+    "DET-0159",
+    "DET-0182",
+    "DET-0079",
+    "DET-0117",
+    "DET-0076",
+    "DET-0103",
+    "DET-0137",
+    "DET-0010",
+    "DET-0025",
+    "DET-0059",
+    "DET-0135",
+    "DET-0115",
+    "DET-0011",
+    "DET-0024",
+    "DET-0020",
+    "DET-0130",
+    "DET-0105"
+   ],
+   "offapp_rule": [
+    "DET-0138",
+    "DET-0060"
+   ],
+   "additions": {
+    "DET-0042": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.4
+    ],
+    "DET-0012": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.9
+    ],
+    "DET-0046": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.85
+    ],
+    "DET-0061": [
+     "The claim must be reported to the police within 24 hours.",
+     0.85
+    ],
+    "DET-0128": [
+     "This coverage ends after the policy's first renewal.",
+     0.85
+    ],
+    "DET-0191": [
+     "The insured must also provide receipts within 60 days.",
+     0.85
+    ],
+    "DET-0199": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.3
+    ],
+    "DET-0034": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.3
+    ],
+    "DET-0086": [
+     "The claim must be reported to the police within 24 hours.",
+     0.3
+    ],
+    "DET-0019": [
+     "This coverage ends after the policy's first renewal.",
+     0.3
+    ],
+    "DET-0179": [
+     "The insured must also provide receipts within 60 days.",
+     0.3
+    ],
+    "DET-0011": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.3
+    ],
+    "DET-0109": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.3
+    ],
+    "DET-0159": [
+     "The claim must be reported to the police within 24 hours.",
+     0.3
+    ],
+    "DET-0095": [
+     "This coverage ends after the policy's first renewal.",
+     0.3
+    ],
+    "DET-0098": [
+     "The insured must also provide receipts within 60 days.",
+     0.3
+    ],
+    "DET-0051": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.3
+    ],
+    "DET-0108": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.3
+    ],
+    "DET-0259": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.35
+    ],
+    "DET-0409": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ]
+   },
+   "skill_pull": [
+    "DET-0116",
+    "DET-0133",
+    "DET-0194",
+    "DET-0217"
+   ]
+  }
+ },
+ "evidence_tokens": {
+  "DET-0001": 987,
+  "DET-0002": 935,
+  "DET-0003": 903,
+  "DET-0004": 863,
+  "DET-0005": 945,
+  "DET-0006": 880,
+  "DET-0007": 998,
+  "DET-0008": 981,
+  "DET-0009": 989,
+  "DET-0010": 918,
+  "DET-0011": 1005,
+  "DET-0012": 975,
+  "DET-0013": 860,
+  "DET-0014": 970,
+  "DET-0015": 1008,
+  "DET-0016": 945,
+  "DET-0017": 898,
+  "DET-0018": 870,
+  "DET-0019": 1000,
+  "DET-0020": 1014,
+  "DET-0021": 950,
+  "DET-0022": 922,
+  "DET-0023": 874,
+  "DET-0024": 1006,
+  "DET-0025": 929,
+  "DET-0026": 1032,
+  "DET-0027": 959,
+  "DET-0028": 921,
+  "DET-0029": 984,
+  "DET-0030": 1013,
+  "DET-0031": 1036,
+  "DET-0032": 989,
+  "DET-0033": 968,
+  "DET-0034": 1020,
+  "DET-0035": 944,
+  "DET-0036": 908,
+  "DET-0037": 888,
+  "DET-0038": 935,
+  "DET-0039": 908,
+  "DET-0040": 914,
+  "DET-0041": 938,
+  "DET-0042": 864,
+  "DET-0043": 979,
+  "DET-0044": 876,
+  "DET-0045": 908,
+  "DET-0046": 958,
+  "DET-0047": 931,
+  "DET-0048": 876,
+  "DET-0049": 913,
+  "DET-0050": 953,
+  "DET-0051": 922,
+  "DET-0052": 935,
+  "DET-0053": 935,
+  "DET-0054": 970,
+  "DET-0055": 963,
+  "DET-0056": 959,
+  "DET-0057": 895,
+  "DET-0058": 957,
+  "DET-0059": 1022,
+  "DET-0060": 952,
+  "DET-0061": 1034,
+  "DET-0062": 967,
+  "DET-0063": 964,
+  "DET-0064": 921,
+  "DET-0065": 983,
+  "DET-0066": 953,
+  "DET-0067": 931,
+  "DET-0068": 892,
+  "DET-0069": 1009,
+  "DET-0070": 1012,
+  "DET-0071": 882,
+  "DET-0072": 904,
+  "DET-0073": 977,
+  "DET-0074": 872,
+  "DET-0075": 917,
+  "DET-0076": 866,
+  "DET-0077": 874,
+  "DET-0078": 861,
+  "DET-0079": 951,
+  "DET-0080": 944,
+  "DET-0081": 983,
+  "DET-0082": 866,
+  "DET-0083": 1018,
+  "DET-0084": 928,
+  "DET-0085": 1009,
+  "DET-0086": 1028,
+  "DET-0087": 921,
+  "DET-0088": 948,
+  "DET-0089": 932,
+  "DET-0090": 1012,
+  "DET-0091": 948,
+  "DET-0092": 997,
+  "DET-0093": 1027,
+  "DET-0094": 942,
+  "DET-0095": 1039,
+  "DET-0096": 885,
+  "DET-0097": 893,
+  "DET-0098": 865,
+  "DET-0099": 953,
+  "DET-0100": 1000,
+  "DET-0101": 939,
+  "DET-0102": 898,
+  "DET-0103": 879,
+  "DET-0104": 937,
+  "DET-0105": 908,
+  "DET-0106": 884,
+  "DET-0107": 920,
+  "DET-0108": 861,
+  "DET-0109": 1008,
+  "DET-0110": 867,
+  "DET-0111": 1022,
+  "DET-0112": 929,
+  "DET-0113": 879,
+  "DET-0114": 955,
+  "DET-0115": 938,
+  "DET-0116": 1027,
+  "DET-0117": 944,
+  "DET-0118": 921,
+  "DET-0119": 875,
+  "DET-0120": 999,
+  "DET-0121": 968,
+  "DET-0122": 941,
+  "DET-0123": 966,
+  "DET-0124": 933,
+  "DET-0125": 958,
+  "DET-0126": 982,
+  "DET-0127": 1003,
+  "DET-0128": 929,
+  "DET-0129": 1027,
+  "DET-0130": 901,
+  "DET-0131": 1035,
+  "DET-0132": 1005,
+  "DET-0133": 996,
+  "DET-0134": 867,
+  "DET-0135": 979,
+  "DET-0136": 891,
+  "DET-0137": 880,
+  "DET-0138": 897,
+  "DET-0139": 960,
+  "DET-0140": 972,
+  "DET-0141": 909,
+  "DET-0142": 910,
+  "DET-0143": 1013,
+  "DET-0144": 940,
+  "DET-0145": 967,
+  "DET-0146": 1005,
+  "DET-0147": 909,
+  "DET-0148": 930,
+  "DET-0149": 1003,
+  "DET-0150": 868,
+  "DET-0151": 949,
+  "DET-0152": 885,
+  "DET-0153": 924,
+  "DET-0154": 1034,
+  "DET-0155": 986,
+  "DET-0156": 983,
+  "DET-0157": 923,
+  "DET-0158": 934,
+  "DET-0159": 948,
+  "DET-0160": 992,
+  "DET-0161": 1036,
+  "DET-0162": 1027,
+  "DET-0163": 867,
+  "DET-0164": 920,
+  "DET-0165": 873,
+  "DET-0166": 934,
+  "DET-0167": 1017,
+  "DET-0168": 905,
+  "DET-0169": 893,
+  "DET-0170": 874,
+  "DET-0171": 966,
+  "DET-0172": 899,
+  "DET-0173": 963,
+  "DET-0174": 913,
+  "DET-0175": 859,
+  "DET-0176": 979,
+  "DET-0177": 923,
+  "DET-0178": 1033,
+  "DET-0179": 1020,
+  "DET-0180": 870,
+  "DET-0181": 984,
+  "DET-0182": 931,
+  "DET-0183": 999,
+  "DET-0184": 936,
+  "DET-0185": 861,
+  "DET-0186": 867,
+  "DET-0187": 955,
+  "DET-0188": 892,
+  "DET-0189": 1002,
+  "DET-0190": 977,
+  "DET-0191": 885,
+  "DET-0192": 1029,
+  "DET-0193": 988,
+  "DET-0194": 950,
+  "DET-0195": 900,
+  "DET-0196": 876,
+  "DET-0197": 914,
+  "DET-0198": 1028,
+  "DET-0199": 912,
+  "DET-0200": 1019,
+  "DET-0201": 866,
+  "DET-0202": 1019,
+  "DET-0203": 966,
+  "DET-0204": 897,
+  "DET-0205": 906,
+  "DET-0206": 918,
+  "DET-0207": 901,
+  "DET-0208": 867,
+  "DET-0209": 885,
+  "DET-0210": 973,
+  "DET-0211": 918,
+  "DET-0212": 1030,
+  "DET-0213": 984,
+  "DET-0214": 922,
+  "DET-0215": 894,
+  "DET-0216": 973,
+  "DET-0217": 937,
+  "DET-0218": 888,
+  "DET-0219": 995,
+  "DET-0220": 1003,
+  "DET-0221": 921,
+  "DET-0222": 870,
+  "DET-0223": 921,
+  "DET-0224": 910,
+  "DET-0225": 970,
+  "DET-0226": 964,
+  "DET-0227": 946,
+  "DET-0228": 913,
+  "DET-0229": 1017,
+  "DET-0230": 929,
+  "DET-0231": 961,
+  "DET-0232": 975,
+  "DET-0233": 1017,
+  "DET-0234": 865,
+  "DET-0235": 1007,
+  "DET-0236": 1038,
+  "DET-0237": 990,
+  "DET-0238": 968,
+  "DET-0239": 895,
+  "DET-0240": 952,
+  "DET-0241": 942,
+  "DET-0242": 977,
+  "DET-0243": 955,
+  "DET-0244": 870,
+  "DET-0245": 942,
+  "DET-0246": 899,
+  "DET-0247": 1037,
+  "DET-0248": 893,
+  "DET-0249": 971,
+  "DET-0250": 1006,
+  "DET-0251": 911,
+  "DET-0252": 980,
+  "DET-0253": 878,
+  "DET-0254": 946,
+  "DET-0255": 935,
+  "DET-0256": 965,
+  "DET-0257": 1018,
+  "DET-0258": 890,
+  "DET-0259": 936,
+  "DET-0260": 889,
+  "DET-0261": 985,
+  "DET-0262": 1041,
+  "DET-0263": 1011,
+  "DET-0264": 997,
+  "DET-0265": 1030,
+  "DET-0266": 871,
+  "DET-0267": 881,
+  "DET-0268": 969,
+  "DET-0269": 973,
+  "DET-0270": 881,
+  "DET-0271": 883,
+  "DET-0272": 928,
+  "DET-0273": 1034,
+  "DET-0274": 954,
+  "DET-0275": 927,
+  "DET-0276": 913,
+  "DET-0277": 1041,
+  "DET-0278": 904,
+  "DET-0279": 1023,
+  "DET-0280": 978,
+  "DET-0281": 1014,
+  "DET-0282": 948,
+  "DET-0283": 953,
+  "DET-0284": 963,
+  "DET-0285": 865,
+  "DET-0286": 979,
+  "DET-0287": 913,
+  "DET-0288": 878,
+  "DET-0289": 1008,
+  "DET-0290": 1023,
+  "DET-0291": 971,
+  "DET-0292": 905,
+  "DET-0293": 974,
+  "DET-0294": 903,
+  "DET-0295": 949,
+  "DET-0296": 903,
+  "DET-0297": 912,
+  "DET-0298": 948,
+  "DET-0299": 905,
+  "DET-0300": 942,
+  "DET-0301": 1041,
+  "DET-0302": 996,
+  "DET-0303": 1042,
+  "DET-0304": 881,
+  "DET-0305": 984,
+  "DET-0306": 1027,
+  "DET-0307": 984,
+  "DET-0308": 960,
+  "DET-0309": 1005,
+  "DET-0310": 902,
+  "DET-0311": 867,
+  "DET-0312": 1036,
+  "DET-0313": 1020,
+  "DET-0314": 911,
+  "DET-0315": 1025,
+  "DET-0316": 973,
+  "DET-0317": 998,
+  "DET-0318": 944,
+  "DET-0319": 868,
+  "DET-0320": 887,
+  "DET-0321": 1014,
+  "DET-0322": 1040,
+  "DET-0323": 914,
+  "DET-0324": 1006,
+  "DET-0325": 888,
+  "DET-0326": 953,
+  "DET-0327": 876,
+  "DET-0328": 913,
+  "DET-0329": 915,
+  "DET-0330": 867,
+  "DET-0331": 1014,
+  "DET-0332": 935,
+  "DET-0333": 1037,
+  "DET-0334": 960,
+  "DET-0335": 971,
+  "DET-0336": 868,
+  "DET-0337": 891,
+  "DET-0338": 972,
+  "DET-0339": 1023,
+  "DET-0340": 980,
+  "DET-0341": 953,
+  "DET-0342": 887,
+  "DET-0343": 885,
+  "DET-0344": 1032,
+  "DET-0345": 1007,
+  "DET-0346": 882,
+  "DET-0347": 928,
+  "DET-0348": 953,
+  "DET-0349": 968,
+  "DET-0350": 899,
+  "DET-0351": 881,
+  "DET-0352": 1029,
+  "DET-0353": 871,
+  "DET-0354": 873,
+  "DET-0355": 908,
+  "DET-0356": 985,
+  "DET-0357": 934,
+  "DET-0358": 864,
+  "DET-0359": 1030,
+  "DET-0360": 991,
+  "DET-0361": 991,
+  "DET-0362": 985,
+  "DET-0363": 953,
+  "DET-0364": 885,
+  "DET-0365": 964,
+  "DET-0366": 920,
+  "DET-0367": 927,
+  "DET-0368": 954,
+  "DET-0369": 896,
+  "DET-0370": 945,
+  "DET-0371": 973,
+  "DET-0372": 902,
+  "DET-0373": 906,
+  "DET-0374": 908,
+  "DET-0375": 980,
+  "DET-0376": 965,
+  "DET-0377": 893,
+  "DET-0378": 868,
+  "DET-0379": 1008,
+  "DET-0380": 939,
+  "DET-0381": 925,
+  "DET-0382": 882,
+  "DET-0383": 935,
+  "DET-0384": 871,
+  "DET-0385": 996,
+  "DET-0386": 921,
+  "DET-0387": 899,
+  "DET-0388": 874,
+  "DET-0389": 1013,
+  "DET-0390": 912,
+  "DET-0391": 1026,
+  "DET-0392": 1003,
+  "DET-0393": 908,
+  "DET-0394": 890,
+  "DET-0395": 915,
+  "DET-0396": 938,
+  "DET-0397": 896,
+  "DET-0398": 865,
+  "DET-0399": 947,
+  "DET-0400": 901,
+  "DET-0401": 989,
+  "DET-0402": 914,
+  "DET-0403": 1025,
+  "DET-0404": 921,
+  "DET-0405": 975,
+  "DET-0406": 984,
+  "DET-0407": 963,
+  "DET-0408": 979,
+  "DET-0409": 878,
+  "DET-0410": 989,
+  "DET-0411": 933,
+  "DET-0412": 919,
+  "DET-0413": 998,
+  "DET-0414": 995,
+  "DET-0415": 1037,
+  "DET-0416": 942,
+  "DET-0417": 902,
+  "DET-0418": 926,
+  "DET-0419": 933,
+  "DET-0420": 878,
+  "DET-0421": 986,
+  "DET-0422": 988,
+  "DET-0423": 905,
+  "DET-0424": 920,
+  "DET-0425": 919,
+  "DET-0426": 983,
+  "DET-0427": 870,
+  "DET-0428": 873,
+  "DET-0429": 1017,
+  "DET-0430": 867,
+  "DET-0431": 939,
+  "DET-0432": 1038,
+  "DET-0433": 960,
+  "DET-0434": 940,
+  "DET-0435": 892,
+  "DET-0436": 1027,
+  "DET-0437": 1013,
+  "DET-0438": 1019,
+  "DET-0439": 887,
+  "DET-0440": 976,
+  "DET-0441": 954,
+  "DET-0442": 876,
+  "DET-0443": 891,
+  "DET-0444": 929,
+  "DET-0445": 1039,
+  "DET-0446": 1013,
+  "DET-0447": 898,
+  "DET-0448": 966,
+  "DET-0449": 1016,
+  "DET-0450": 927,
+  "DET-0451": 979,
+  "DET-0452": 937,
+  "DET-0453": 1031,
+  "DET-0454": 976,
+  "DET-0455": 939,
+  "DET-0456": 879,
+  "DET-0457": 1027,
+  "DET-0458": 986,
+  "DET-0459": 967,
+  "DET-0460": 1009,
+  "DET-0461": 1016,
+  "DET-0462": 907,
+  "DET-0463": 1000,
+  "DET-0464": 926,
+  "DET-0465": 1002,
+  "DET-0466": 1033,
+  "DET-0467": 911,
+  "DET-0468": 984,
+  "DET-0469": 987,
+  "DET-0470": 944,
+  "DET-0471": 892,
+  "DET-0472": 918,
+  "DET-0473": 912,
+  "DET-0474": 881,
+  "DET-0475": 878,
+  "DET-0476": 947,
+  "DET-0477": 966,
+  "DET-0478": 978,
+  "DET-0479": 945,
+  "DET-0480": 865,
+  "DET-0481": 924,
+  "DET-0482": 899,
+  "DET-0483": 969,
+  "DET-0484": 1021,
+  "DET-0485": 1029,
+  "DET-0486": 941,
+  "DET-0487": 1032,
+  "DET-0488": 907,
+  "DET-0489": 919,
+  "DET-0490": 1030,
+  "DET-0491": 974,
+  "DET-0492": 949,
+  "DET-0493": 900,
+  "DET-0494": 1004,
+  "DET-0495": 889,
+  "DET-0496": 952,
+  "DET-0497": 994,
+  "DET-0498": 877,
+  "DET-0499": 1002,
+  "DET-0500": 882
+ },
+ "draws": {
+  "sim-large": {
+   "roof": {
+    "2026": {
+     "DET-0116": 0.496,
+     "DET-0133": 0.885,
+     "DET-0188": 0.385,
+     "DET-0217": 0.682,
+     "DET-0282": 0.866
+    },
+    "2027": {
+     "DET-0116": 0.778,
+     "DET-0133": 0.906,
+     "DET-0188": 0.945,
+     "DET-0217": 0.049,
+     "DET-0282": 0.069
+    },
+    "2028": {
+     "DET-0116": 0.34,
+     "DET-0133": 0.308,
+     "DET-0188": 0.376,
+     "DET-0217": 0.461,
+     "DET-0282": 0.418
+    },
+    "2029": {
+     "DET-0116": 0.794,
+     "DET-0133": 0.367,
+     "DET-0188": 0.298,
+     "DET-0217": 0.649,
+     "DET-0282": 0.079
+    },
+    "2030": {
+     "DET-0116": 0.024,
+     "DET-0133": 0.355,
+     "DET-0188": 0.605,
+     "DET-0217": 0.771,
+     "DET-0282": 0.398
+    },
+    "2031": {
+     "DET-0116": 0.641,
+     "DET-0133": 0.406,
+     "DET-0188": 0.798,
+     "DET-0217": 0.406,
+     "DET-0282": 0.684
+    },
+    "2032": {
+     "DET-0116": 0.449,
+     "DET-0133": 0.494,
+     "DET-0188": 0.583,
+     "DET-0217": 0.768,
+     "DET-0282": 0.85
+    },
+    "2033": {
+     "DET-0116": 0.873,
+     "DET-0133": 0.503,
+     "DET-0188": 0.815,
+     "DET-0217": 0.613,
+     "DET-0282": 0.901
+    },
+    "2034": {
+     "DET-0116": 0.278,
+     "DET-0133": 0.967,
+     "DET-0188": 0.431,
+     "DET-0217": 0.453,
+     "DET-0282": 0.376
+    },
+    "2035": {
+     "DET-0116": 0.877,
+     "DET-0133": 0.578,
+     "DET-0188": 0.962,
+     "DET-0217": 0.264,
+     "DET-0282": 0.461
+    }
+   },
+   "water": {
+    "2026": {
+     "DET-0088": 0.839
+    },
+    "2027": {
+     "DET-0106": 0.804,
+     "DET-0499": 0.416
+    },
+    "2028": {
+     "DET-0340": 0.527,
+     "DET-0450": 0.324
+    },
+    "2029": {
+     "DET-0099": 0.86,
+     "DET-0134": 0.49
+    },
+    "2030": {
+     "DET-0058": 0.173
+    },
+    "2032": {
+     "DET-0388": 0.311
+    }
+   }
+  },
+  "sim-mid": {
+   "roof": {
+    "2026": {
+     "DET-0045": 0.125,
+     "DET-0116": 0.614,
+     "DET-0133": 0.908,
+     "DET-0188": 0.039,
+     "DET-0217": 0.413
+    },
+    "2027": {
+     "DET-0045": 0.053,
+     "DET-0116": 0.548,
+     "DET-0133": 0.803,
+     "DET-0188": 0.08,
+     "DET-0217": 0.814
+    },
+    "2028": {
+     "DET-0045": 0.817,
+     "DET-0116": 0.047,
+     "DET-0133": 0.322,
+     "DET-0188": 0.238,
+     "DET-0217": 0.506
+    },
+    "2029": {
+     "DET-0045": 0.319,
+     "DET-0116": 0.947,
+     "DET-0133": 0.934,
+     "DET-0188": 0.145,
+     "DET-0217": 0.03
+    },
+    "2030": {
+     "DET-0045": 0.859,
+     "DET-0116": 0.599,
+     "DET-0133": 0.489,
+     "DET-0188": 0.862,
+     "DET-0217": 0.524
+    },
+    "2031": {
+     "DET-0045": 0.408,
+     "DET-0116": 0.324,
+     "DET-0133": 0.354,
+     "DET-0188": 0.807,
+     "DET-0217": 0.874
+    },
+    "2032": {
+     "DET-0045": 0.589,
+     "DET-0116": 0.771,
+     "DET-0133": 0.91,
+     "DET-0188": 0.281,
+     "DET-0217": 0.439
+    },
+    "2033": {
+     "DET-0045": 0.476,
+     "DET-0116": 0.552,
+     "DET-0133": 0.987,
+     "DET-0188": 0.852,
+     "DET-0217": 0.318
+    },
+    "2034": {
+     "DET-0045": 0.962,
+     "DET-0116": 0.098,
+     "DET-0133": 0.559,
+     "DET-0188": 0.038,
+     "DET-0217": 0.324
+    },
+    "2035": {
+     "DET-0045": 0.877,
+     "DET-0116": 0.86,
+     "DET-0133": 0.908,
+     "DET-0188": 0.313,
+     "DET-0217": 0.488
+    }
+   },
+   "water": {
+    "2026": {
+     "DET-0360": 0.545
+    },
+    "2027": {
+     "DET-0064": 0.382,
+     "DET-0107": 0.532,
+     "DET-0340": 0.533
+    },
+    "2028": {
+     "DET-0131": 0.338,
+     "DET-0340": 0.91,
+     "DET-0380": 0.729
+    },
+    "2029": {
+     "DET-0222": 0.646
+    },
+    "2030": {
+     "DET-0181": 0.824,
+     "DET-0470": 0.464
+    },
+    "2031": {
+     "DET-0060": 0.832,
+     "DET-0372": 0.176
+    },
+    "2032": {
+     "DET-0280": 0.176,
+     "DET-0442": 0.806
+    },
+    "2033": {
+     "DET-0499": 0.546
+    },
+    "2034": {
+     "DET-0184": 0.395,
+     "DET-0463": 0.11
+    },
+    "2035": {
+     "DET-0058": 0.089
+    }
+   }
+  },
+  "sim-small": {
+   "roof": {
+    "2026": {
+     "DET-0045": 0.361,
+     "DET-0116": 0.972,
+     "DET-0133": 0.718,
+     "DET-0194": 0.559,
+     "DET-0217": 0.871
+    },
+    "2027": {
+     "DET-0045": 0.984,
+     "DET-0116": 0.514,
+     "DET-0133": 0.394,
+     "DET-0194": 0.332,
+     "DET-0217": 0.646
+    },
+    "2028": {
+     "DET-0045": 0.655,
+     "DET-0116": 0.447,
+     "DET-0133": 0.766,
+     "DET-0194": 0.852,
+     "DET-0217": 0.335
+    },
+    "2029": {
+     "DET-0045": 0.714,
+     "DET-0116": 0.999,
+     "DET-0133": 0.256,
+     "DET-0194": 0.939,
+     "DET-0217": 0.092
+    },
+    "2030": {
+     "DET-0045": 0.871,
+     "DET-0116": 0.589,
+     "DET-0133": 0.293,
+     "DET-0194": 0.948,
+     "DET-0217": 0.593
+    },
+    "2031": {
+     "DET-0045": 0.977,
+     "DET-0116": 0.416,
+     "DET-0133": 0.494,
+     "DET-0194": 0.396,
+     "DET-0217": 0.343
+    },
+    "2032": {
+     "DET-0045": 0.827,
+     "DET-0116": 0.346,
+     "DET-0133": 0.912,
+     "DET-0194": 0.804,
+     "DET-0217": 0.948
+    },
+    "2033": {
+     "DET-0045": 0.102,
+     "DET-0116": 0.986,
+     "DET-0133": 0.571,
+     "DET-0194": 0.717,
+     "DET-0217": 0.372
+    },
+    "2034": {
+     "DET-0045": 0.523,
+     "DET-0116": 0.913,
+     "DET-0133": 0.942,
+     "DET-0194": 0.854,
+     "DET-0217": 0.315
+    },
+    "2035": {
+     "DET-0045": 0.148,
+     "DET-0116": 0.858,
+     "DET-0133": 0.469,
+     "DET-0194": 0.403,
+     "DET-0217": 0.177
+    }
+   },
+   "water": {
+    "2026": {
+     "DET-0034": 0.795,
+     "DET-0259": 0.217,
+     "DET-0409": 0.278
+    },
+    "2027": {
+     "DET-0178": 0.521,
+     "DET-0234": 0.984,
+     "DET-0345": 0.513,
+     "DET-0388": 0.9
+    },
+    "2028": {
+     "DET-0167": 0.276,
+     "DET-0288": 0.266,
+     "DET-0345": 0.718,
+     "DET-0360": 0.653,
+     "DET-0485": 0.44
+    },
+    "2029": {
+     "DET-0090": 0.12,
+     "DET-0220": 0.78
+    },
+    "2030": {
+     "DET-0023": 0.615,
+     "DET-0432": 0.058
+    },
+    "2031": {
+     "DET-0106": 0.604,
+     "DET-0131": 0.866,
+     "DET-0134": 0.495,
+     "DET-0345": 0.723
+    },
+    "2032": {
+     "DET-0058": 0.964,
+     "DET-0181": 0.866,
+     "DET-0186": 0.431,
+     "DET-0219": 0.298,
+     "DET-0280": 0.081
+    },
+    "2033": {
+     "DET-0058": 0.615,
+     "DET-0104": 0.367,
+     "DET-0411": 0.873,
+     "DET-0499": 0.766
+    },
+    "2034": {
+     "DET-0191": 0.155,
+     "DET-0214": 0.682,
+     "DET-0492": 0.645
+    },
+    "2035": {
+     "DET-0022": 0.352,
+     "DET-0034": 0.341,
+     "DET-0138": 0.425
+    }
+   }
+  }
+ },
+ "water": [
+  "DET-0001",
+  "DET-0015",
+  "DET-0020",
+  "DET-0022",
+  "DET-0023",
+  "DET-0024",
+  "DET-0034",
+  "DET-0035",
+  "DET-0058",
+  "DET-0060",
+  "DET-0061",
+  "DET-0063",
+  "DET-0064",
+  "DET-0069",
+  "DET-0078",
+  "DET-0088",
+  "DET-0090",
+  "DET-0093",
+  "DET-0094",
+  "DET-0099",
+  "DET-0100",
+  "DET-0104",
+  "DET-0106",
+  "DET-0107",
+  "DET-0131",
+  "DET-0134",
+  "DET-0138",
+  "DET-0163",
+  "DET-0167",
+  "DET-0168",
+  "DET-0178",
+  "DET-0181",
+  "DET-0184",
+  "DET-0186",
+  "DET-0191",
+  "DET-0205",
+  "DET-0214",
+  "DET-0218",
+  "DET-0219",
+  "DET-0220",
+  "DET-0222",
+  "DET-0229",
+  "DET-0234",
+  "DET-0236",
+  "DET-0247",
+  "DET-0249",
+  "DET-0259",
+  "DET-0260",
+  "DET-0280",
+  "DET-0287",
+  "DET-0288",
+  "DET-0317",
+  "DET-0340",
+  "DET-0345",
+  "DET-0349",
+  "DET-0350",
+  "DET-0360",
+  "DET-0372",
+  "DET-0380",
+  "DET-0388",
+  "DET-0396",
+  "DET-0409",
+  "DET-0411",
+  "DET-0412",
+  "DET-0428",
+  "DET-0432",
+  "DET-0442",
+  "DET-0450",
+  "DET-0458",
+  "DET-0463",
+  "DET-0468",
+  "DET-0470",
+  "DET-0472",
+  "DET-0474",
+  "DET-0485",
+  "DET-0492",
+  "DET-0499"
+ ],
+ "seed_additions": {
+  "sim-large": {
+   "2027": {
+    "DET-0106": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0499": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ]
+   },
+   "2028": {
+    "DET-0340": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ],
+    "DET-0450": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2029": {
+    "DET-0099": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0134": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ]
+   },
+   "2030": {
+    "DET-0058": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ]
+   },
+   "2031": {
+    "DET-0060": [
+     "The insured must also provide receipts within 60 days.",
+     0.85
+    ]
+   },
+   "2032": {
+    "DET-0388": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ]
+   },
+   "2033": {
+    "DET-0412": [
+     "The insured must also provide receipts within 60 days.",
+     0.85
+    ]
+   },
+   "2034": {
+    "DET-0234": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.85
+    ]
+   },
+   "2035": {
+    "DET-0220": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.85
+    ]
+   }
+  },
+  "sim-mid": {
+   "2027": {
+    "DET-0064": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0107": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0340": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.35
+    ]
+   },
+   "2028": {
+    "DET-0131": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0340": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0380": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ]
+   },
+   "2029": {
+    "DET-0167": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.85
+    ],
+    "DET-0222": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ]
+   },
+   "2030": {
+    "DET-0181": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0470": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ]
+   },
+   "2031": {
+    "DET-0060": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0372": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2032": {
+    "DET-0280": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ],
+    "DET-0442": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2033": {
+    "DET-0249": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.85
+    ],
+    "DET-0499": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2034": {
+    "DET-0184": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ],
+    "DET-0463": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2035": {
+    "DET-0058": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0167": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.85
+    ]
+   }
+  },
+  "sim-small": {
+   "2027": {
+    "DET-0024": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.85
+    ],
+    "DET-0178": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.35
+    ],
+    "DET-0234": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0345": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0388": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2028": {
+    "DET-0167": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.35
+    ],
+    "DET-0288": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ],
+    "DET-0345": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ],
+    "DET-0360": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.35
+    ],
+    "DET-0485": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2029": {
+    "DET-0063": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.85
+    ],
+    "DET-0090": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.35
+    ],
+    "DET-0220": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0247": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.85
+    ],
+    "DET-0287": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.85
+    ]
+   },
+   "2030": {
+    "DET-0023": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.35
+    ],
+    "DET-0060": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.85
+    ],
+    "DET-0220": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.85
+    ],
+    "DET-0288": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.85
+    ],
+    "DET-0432": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2031": {
+    "DET-0023": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.85
+    ],
+    "DET-0106": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ],
+    "DET-0131": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0134": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ],
+    "DET-0345": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.35
+    ]
+   },
+   "2032": {
+    "DET-0058": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0181": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0186": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.35
+    ],
+    "DET-0219": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ],
+    "DET-0280": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ]
+   },
+   "2033": {
+    "DET-0058": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0104": [
+     "A separate $2,500 deductible also applies under the declarations.",
+     0.35
+    ],
+    "DET-0411": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ],
+    "DET-0442": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.85
+    ],
+    "DET-0499": [
+     "The insured must also provide receipts within 60 days.",
+     0.35
+    ]
+   },
+   "2034": {
+    "DET-0060": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.85
+    ],
+    "DET-0191": [
+     "Coverage is limited to losses reported within 30 days.",
+     0.35
+    ],
+    "DET-0214": [
+     "Payment is limited to $5,000 for this type of loss.",
+     0.35
+    ],
+    "DET-0492": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ]
+   },
+   "2035": {
+    "DET-0022": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ],
+    "DET-0034": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.35
+    ],
+    "DET-0138": [
+     "The insured's prior claim history voids coverage for repeat water losses.",
+     0.35
+    ],
+    "DET-0432": [
+     "A separate $1,000 deductible applies to this coverage.",
+     0.85
+    ]
+   }
+  }
+ },
+ "gold_rank": {
+  "DET-0001": 2,
+  "DET-0002": 2,
+  "DET-0003": 5,
+  "DET-0004": 5,
+  "DET-0005": 1,
+  "DET-0006": 1,
+  "DET-0007": 2,
+  "DET-0008": 5,
+  "DET-0009": 1,
+  "DET-0010": 1,
+  "DET-0011": 1,
+  "DET-0012": 4,
+  "DET-0013": 2,
+  "DET-0014": 2,
+  "DET-0015": 1,
+  "DET-0016": 1,
+  "DET-0017": 1,
+  "DET-0018": 1,
+  "DET-0019": 4,
+  "DET-0020": 3,
+  "DET-0021": 4,
+  "DET-0022": 14,
+  "DET-0023": 3,
+  "DET-0024": 3,
+  "DET-0025": 2,
+  "DET-0026": 1,
+  "DET-0027": 4,
+  "DET-0028": 2,
+  "DET-0029": 1,
+  "DET-0030": 1,
+  "DET-0031": 1,
+  "DET-0032": 1,
+  "DET-0033": 3,
+  "DET-0034": 4,
+  "DET-0035": 2,
+  "DET-0036": 4,
+  "DET-0037": 1,
+  "DET-0038": 2,
+  "DET-0039": 2,
+  "DET-0040": 2,
+  "DET-0041": 1,
+  "DET-0042": 2,
+  "DET-0043": 3,
+  "DET-0044": 1,
+  "DET-0045": 1,
+  "DET-0046": 1,
+  "DET-0047": 1,
+  "DET-0048": 3,
+  "DET-0049": 2,
+  "DET-0050": 4,
+  "DET-0051": 5,
+  "DET-0052": 1,
+  "DET-0053": 1,
+  "DET-0054": 1,
+  "DET-0055": 4,
+  "DET-0056": 8,
+  "DET-0057": 1,
+  "DET-0058": 1,
+  "DET-0059": 1,
+  "DET-0060": 1,
+  "DET-0061": 4,
+  "DET-0062": 3,
+  "DET-0063": 14,
+  "DET-0064": 5,
+  "DET-0065": 2,
+  "DET-0066": 1,
+  "DET-0067": 4,
+  "DET-0068": 2,
+  "DET-0069": 1,
+  "DET-0070": 1,
+  "DET-0071": 1,
+  "DET-0072": 2,
+  "DET-0073": 1,
+  "DET-0074": 4,
+  "DET-0075": 5,
+  "DET-0076": 1,
+  "DET-0077": 2,
+  "DET-0078": 1,
+  "DET-0079": 5,
+  "DET-0080": 2,
+  "DET-0081": 2,
+  "DET-0082": 2,
+  "DET-0083": 2,
+  "DET-0084": 5,
+  "DET-0085": 1,
+  "DET-0086": 1,
+  "DET-0087": 1,
+  "DET-0088": 7,
+  "DET-0089": 5,
+  "DET-0090": 1,
+  "DET-0091": 1,
+  "DET-0092": 3,
+  "DET-0093": 3,
+  "DET-0094": 8,
+  "DET-0095": 3,
+  "DET-0096": 2,
+  "DET-0097": 4,
+  "DET-0098": 5,
+  "DET-0099": 4,
+  "DET-0100": 2,
+  "DET-0101": 1,
+  "DET-0102": 2,
+  "DET-0103": 1,
+  "DET-0104": 3,
+  "DET-0105": 1,
+  "DET-0106": 1,
+  "DET-0107": 2,
+  "DET-0108": 2,
+  "DET-0109": 1,
+  "DET-0110": 2,
+  "DET-0111": 1,
+  "DET-0112": 5,
+  "DET-0113": 1,
+  "DET-0114": 4,
+  "DET-0115": 1,
+  "DET-0116": 2,
+  "DET-0117": 2,
+  "DET-0118": 5,
+  "DET-0119": 1,
+  "DET-0120": 1,
+  "DET-0121": 2,
+  "DET-0122": 5,
+  "DET-0123": 1,
+  "DET-0124": 1,
+  "DET-0125": 1,
+  "DET-0126": 1,
+  "DET-0127": 1,
+  "DET-0128": 5,
+  "DET-0129": 9,
+  "DET-0130": 1,
+  "DET-0131": 1,
+  "DET-0132": 5,
+  "DET-0133": 2,
+  "DET-0134": 2,
+  "DET-0135": 2,
+  "DET-0136": 5,
+  "DET-0137": 4,
+  "DET-0138": 4,
+  "DET-0139": 1,
+  "DET-0140": 1,
+  "DET-0141": 3,
+  "DET-0142": 2,
+  "DET-0143": 1,
+  "DET-0144": 10,
+  "DET-0145": 5,
+  "DET-0146": 3,
+  "DET-0147": 3,
+  "DET-0148": 5,
+  "DET-0149": 1,
+  "DET-0150": 1,
+  "DET-0151": 1,
+  "DET-0152": 4,
+  "DET-0153": 5,
+  "DET-0154": 1,
+  "DET-0155": 2,
+  "DET-0156": 4,
+  "DET-0157": 2,
+  "DET-0158": 1,
+  "DET-0159": 5,
+  "DET-0160": 1,
+  "DET-0161": 2,
+  "DET-0162": 2,
+  "DET-0163": 14,
+  "DET-0164": 1,
+  "DET-0165": 7,
+  "DET-0166": 1,
+  "DET-0167": 2,
+  "DET-0168": 2,
+  "DET-0169": 1,
+  "DET-0170": 2,
+  "DET-0171": 5,
+  "DET-0172": 3,
+  "DET-0173": 5,
+  "DET-0174": 1,
+  "DET-0175": 5,
+  "DET-0176": 2,
+  "DET-0177": 2,
+  "DET-0178": 14,
+  "DET-0179": 1,
+  "DET-0180": 1,
+  "DET-0181": 14,
+  "DET-0182": 1,
+  "DET-0183": 4,
+  "DET-0184": 2,
+  "DET-0185": 5,
+  "DET-0186": 1,
+  "DET-0187": 2,
+  "DET-0188": 1,
+  "DET-0189": 2,
+  "DET-0190": 3,
+  "DET-0191": 3,
+  "DET-0192": 4,
+  "DET-0193": 2,
+  "DET-0194": 3,
+  "DET-0195": 3,
+  "DET-0196": 1,
+  "DET-0197": 5,
+  "DET-0198": 5,
+  "DET-0199": 5,
+  "DET-0200": 8,
+  "DET-0201": 6,
+  "DET-0202": 2,
+  "DET-0203": 1,
+  "DET-0204": 5,
+  "DET-0205": 4,
+  "DET-0206": 1,
+  "DET-0207": 1,
+  "DET-0208": 3,
+  "DET-0209": 5,
+  "DET-0210": 5,
+  "DET-0211": 7,
+  "DET-0212": 10,
+  "DET-0213": 2,
+  "DET-0214": 14,
+  "DET-0215": 5,
+  "DET-0216": 2,
+  "DET-0217": 4,
+  "DET-0218": 14,
+  "DET-0219": 3,
+  "DET-0220": 2,
+  "DET-0221": 1,
+  "DET-0222": 1,
+  "DET-0223": 5,
+  "DET-0224": 4,
+  "DET-0225": 1,
+  "DET-0226": 4,
+  "DET-0227": 3,
+  "DET-0228": 1,
+  "DET-0229": 4,
+  "DET-0230": 5,
+  "DET-0231": 1,
+  "DET-0232": 5,
+  "DET-0233": 2,
+  "DET-0234": 2,
+  "DET-0235": 1,
+  "DET-0236": 4,
+  "DET-0237": 1,
+  "DET-0238": 1,
+  "DET-0239": 1,
+  "DET-0240": 5,
+  "DET-0241": 1,
+  "DET-0242": 3,
+  "DET-0243": 2,
+  "DET-0244": 4,
+  "DET-0245": 2,
+  "DET-0246": 3,
+  "DET-0247": 1,
+  "DET-0248": 2,
+  "DET-0249": 1,
+  "DET-0250": 5,
+  "DET-0251": 1,
+  "DET-0252": 2,
+  "DET-0253": 2,
+  "DET-0254": 4,
+  "DET-0255": 1,
+  "DET-0256": 5,
+  "DET-0257": 8,
+  "DET-0258": 1,
+  "DET-0259": 2,
+  "DET-0260": 3,
+  "DET-0261": 5,
+  "DET-0262": 1,
+  "DET-0263": 2,
+  "DET-0264": 2,
+  "DET-0265": 2,
+  "DET-0266": 5,
+  "DET-0267": 5,
+  "DET-0268": 4,
+  "DET-0269": 5,
+  "DET-0270": 5,
+  "DET-0271": 2,
+  "DET-0272": 1,
+  "DET-0273": 1,
+  "DET-0274": 3,
+  "DET-0275": 3,
+  "DET-0276": 3,
+  "DET-0277": 1,
+  "DET-0278": 4,
+  "DET-0279": 1,
+  "DET-0280": 1,
+  "DET-0281": 1,
+  "DET-0282": 2,
+  "DET-0283": 2,
+  "DET-0284": 4,
+  "DET-0285": 5,
+  "DET-0286": 1,
+  "DET-0287": 1,
+  "DET-0288": 1,
+  "DET-0289": 3,
+  "DET-0290": 4,
+  "DET-0291": 6,
+  "DET-0292": 1,
+  "DET-0293": 2,
+  "DET-0294": 1,
+  "DET-0295": 1,
+  "DET-0296": 3,
+  "DET-0297": 3,
+  "DET-0298": 1,
+  "DET-0299": 3,
+  "DET-0300": 1,
+  "DET-0301": 1,
+  "DET-0302": 1,
+  "DET-0303": 5,
+  "DET-0304": 1,
+  "DET-0305": 2,
+  "DET-0306": 3,
+  "DET-0307": 3,
+  "DET-0308": 2,
+  "DET-0309": 5,
+  "DET-0310": 4,
+  "DET-0311": 2,
+  "DET-0312": 2,
+  "DET-0313": 4,
+  "DET-0314": 4,
+  "DET-0315": 1,
+  "DET-0316": 4,
+  "DET-0317": 1,
+  "DET-0318": 4,
+  "DET-0319": 2,
+  "DET-0320": 1,
+  "DET-0321": 1,
+  "DET-0322": 5,
+  "DET-0323": 3,
+  "DET-0324": 2,
+  "DET-0325": 1,
+  "DET-0326": 1,
+  "DET-0327": 1,
+  "DET-0328": 1,
+  "DET-0329": 5,
+  "DET-0330": 4,
+  "DET-0331": 5,
+  "DET-0332": 5,
+  "DET-0333": 2,
+  "DET-0334": 4,
+  "DET-0335": 1,
+  "DET-0336": 2,
+  "DET-0337": 3,
+  "DET-0338": 4,
+  "DET-0339": 5,
+  "DET-0340": 4,
+  "DET-0341": 1,
+  "DET-0342": 2,
+  "DET-0343": 9,
+  "DET-0344": 5,
+  "DET-0345": 6,
+  "DET-0346": 2,
+  "DET-0347": 4,
+  "DET-0348": 1,
+  "DET-0349": 8,
+  "DET-0350": 1,
+  "DET-0351": 2,
+  "DET-0352": 3,
+  "DET-0353": 1,
+  "DET-0354": 1,
+  "DET-0355": 5,
+  "DET-0356": 1,
+  "DET-0357": 2,
+  "DET-0358": 5,
+  "DET-0359": 5,
+  "DET-0360": 4,
+  "DET-0361": 1,
+  "DET-0362": 4,
+  "DET-0363": 5,
+  "DET-0364": 3,
+  "DET-0365": 2,
+  "DET-0366": 2,
+  "DET-0367": 1,
+  "DET-0368": 1,
+  "DET-0369": 1,
+  "DET-0370": 2,
+  "DET-0371": 5,
+  "DET-0372": 2,
+  "DET-0373": 1,
+  "DET-0374": 2,
+  "DET-0375": 2,
+  "DET-0376": 4,
+  "DET-0377": 3,
+  "DET-0378": 2,
+  "DET-0379": 5,
+  "DET-0380": 4,
+  "DET-0381": 5,
+  "DET-0382": 1,
+  "DET-0383": 9,
+  "DET-0384": 4,
+  "DET-0385": 1,
+  "DET-0386": 1,
+  "DET-0387": 1,
+  "DET-0388": 5,
+  "DET-0389": 4,
+  "DET-0390": 1,
+  "DET-0391": 2,
+  "DET-0392": 4,
+  "DET-0393": 1,
+  "DET-0394": 1,
+  "DET-0395": 3,
+  "DET-0396": 5,
+  "DET-0397": 9,
+  "DET-0398": 3,
+  "DET-0399": 1,
+  "DET-0400": 5,
+  "DET-0401": 2,
+  "DET-0402": 2,
+  "DET-0403": 1,
+  "DET-0404": 2,
+  "DET-0405": 4,
+  "DET-0406": 3,
+  "DET-0407": 2,
+  "DET-0408": 1,
+  "DET-0409": 5,
+  "DET-0410": 5,
+  "DET-0411": 2,
+  "DET-0412": 1,
+  "DET-0413": 1,
+  "DET-0414": 1,
+  "DET-0415": 4,
+  "DET-0416": 2,
+  "DET-0417": 1,
+  "DET-0418": 5,
+  "DET-0419": 5,
+  "DET-0420": 2,
+  "DET-0421": 1,
+  "DET-0422": 5,
+  "DET-0423": 1,
+  "DET-0424": 3,
+  "DET-0425": 5,
+  "DET-0426": 1,
+  "DET-0427": 2,
+  "DET-0428": 4,
+  "DET-0429": 1,
+  "DET-0430": 2,
+  "DET-0431": 1,
+  "DET-0432": 1,
+  "DET-0433": 2,
+  "DET-0434": 1,
+  "DET-0435": 2,
+  "DET-0436": 1,
+  "DET-0437": 8,
+  "DET-0438": 4,
+  "DET-0439": 2,
+  "DET-0440": 2,
+  "DET-0441": 3,
+  "DET-0442": 2,
+  "DET-0443": 5,
+  "DET-0444": 3,
+  "DET-0445": 5,
+  "DET-0446": 1,
+  "DET-0447": 2,
+  "DET-0448": 1,
+  "DET-0449": 1,
+  "DET-0450": 2,
+  "DET-0451": 3,
+  "DET-0452": 2,
+  "DET-0453": 1,
+  "DET-0454": 1,
+  "DET-0455": 2,
+  "DET-0456": 1,
+  "DET-0457": 4,
+  "DET-0458": 5,
+  "DET-0459": 2,
+  "DET-0460": 2,
+  "DET-0461": 3,
+  "DET-0462": 1,
+  "DET-0463": 1,
+  "DET-0464": 5,
+  "DET-0465": 10,
+  "DET-0466": 1,
+  "DET-0467": 1,
+  "DET-0468": 5,
+  "DET-0469": 5,
+  "DET-0470": 2,
+  "DET-0471": 2,
+  "DET-0472": 2,
+  "DET-0473": 2,
+  "DET-0474": 1,
+  "DET-0475": 4,
+  "DET-0476": 1,
+  "DET-0477": 1,
+  "DET-0478": 2,
+  "DET-0479": 1,
+  "DET-0480": 3,
+  "DET-0481": 5,
+  "DET-0482": 1,
+  "DET-0483": 4,
+  "DET-0484": 5,
+  "DET-0485": 3,
+  "DET-0486": 1,
+  "DET-0487": 2,
+  "DET-0488": 1,
+  "DET-0489": 5,
+  "DET-0490": 5,
+  "DET-0491": 3,
+  "DET-0492": 2,
+  "DET-0493": 7,
+  "DET-0494": 3,
+  "DET-0495": 1,
+  "DET-0496": 3,
+  "DET-0497": 2,
+  "DET-0498": 5,
+  "DET-0499": 1,
+  "DET-0500": 1
+ }
+}

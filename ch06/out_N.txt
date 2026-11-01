@@ -1,0 +1,5 @@
+N. With the policy filter off: does the applicability rule matter? (eval 200)
+  filter off  v2.2   sim-large  wrong  8.0%
+  filter off  v2.3b  sim-large  wrong 28.0%
+  filter off  v2.2   sim-small  wrong  5.5%
+  filter off  v2.3b  sim-small  wrong 19.5%

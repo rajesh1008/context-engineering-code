@@ -1,0 +1,18 @@
+--- 60 determinations, sim-large: share citing the governing clause, mean tokens in
+  60k padded, clause at 50%          15.0%
+  60k padded, clause first           58.3%
+  60k padded, clause last            66.7%
+  unpadded, rank order               91.7%    1,018 tokens
+  unpadded, filter, rank order       96.7%    1,046 tokens
+  unpadded, edges order              91.7%    1,018 tokens
+  unpadded, filter, edges order      98.3%    1,046 tokens
+--- 200 determinations, sim-large: share citing the governing clause, mean tokens in
+  60k padded, clause at 50%          14.5%
+  60k padded, clause first           59.0%
+  60k padded, clause last            64.5%
+  unpadded, rank order               91.5%    1,031 tokens
+  unpadded, filter, rank order       94.0%    1,046 tokens
+  unpadded, edges order              92.5%    1,031 tokens
+  unpadded, filter, edges order      93.5%    1,046 tokens
+
+sim-small, 60,000-token packet: ValueError: prompt of 60237 tokens exceeds sim-small window 32000

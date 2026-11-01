@@ -1,0 +1,19 @@
+baseline (no filter): same 10.0 spans per packet, five orders
+  rank        wrong  17/200 ( 8.5%)  cited span differs from rank order:   0
+  reversed    wrong  17/200 ( 8.5%)  cited span differs from rank order:   4
+  edges       wrong  15/200 ( 7.5%)  cited span differs from rank order:   4
+  precedence  wrong  17/200 ( 8.5%)  cited span differs from rank order:   8
+  cache       wrong  19/200 ( 9.5%)  cited span differs from rank order:   6
+  determinations whose citation depends on order: 11/200
+
+fixed (applicability filter): same 9.8 spans per packet, five orders
+  rank        wrong  12/200 ( 6.0%)  cited span differs from rank order:   0
+  reversed    wrong  14/200 ( 7.0%)  cited span differs from rank order:   7
+  edges       wrong  13/200 ( 6.5%)  cited span differs from rank order:   5
+  precedence  wrong  10/200 ( 5.0%)  cited span differs from rank order:   5
+  cache       wrong  12/200 ( 6.0%)  cited span differs from rank order:   6
+  determinations whose citation depends on order: 12/200
+
+DET-0006 (Susan Peterson, IL, navigation_limits): gold BT 05 (2025-03), rank 2 of 10
+  rank order    -> [S2] BT 05 (2025-03), Coverage, page 1
+  reversed order-> [S10] BOAT (2025-03), Declarations Navigation Warranty, page 3

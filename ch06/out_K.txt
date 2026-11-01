@@ -1,0 +1,5 @@
+K. Is the committed instruction file the one the code renders?
+  instructions_v2.2.md: matches V22.render(): True
+  hand-edited copy matches V22.render(): False
+  - ..., its endorsements, and bulletins for its state. Ignore underwriting notes.
+  + ...s state. Ignore underwriting notes. Mention the deductible in every answer.

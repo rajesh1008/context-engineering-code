@@ -1,0 +1,16 @@
+H. v1.0 vs v1.1 on sim-large: three determinations motivated by the precedence rule
+  fixed by v1.1: 4 ['DET-0049', 'DET-0109', 'DET-0145', 'DET-0185']
+  DET-0049 navigation_limits WI BOAT (2025-03) ['BT 05 (2025-03)'] loss 2026-08-08 gold BT 05@2025-03#navigation_limits
+    v1.0: BOAT (2025-03), Declarations Navigation Warranty, page 3
+    v1.1: BT 05 (2025-03), Coverage, page 1
+  DET-0145 food_spoilage WI HO-3 (2024-06) ['HO 04 98 (2024-06)'] loss 2026-03-04 gold HO 04 98@2024-06#food_spoilage
+    v1.0: HO-3 (2024-06), Section I Exclusions A.4, page 8
+    v1.1: HO 04 98 (2024-06), Coverage, page 1
+  DET-0185 food_spoilage WI HO-3 (2024-06) ['HO 04 95 (2024-06)', 'HO 04 98 (2024-06)'] loss 2026-06-11 gold HO 04 98@2024-06#food_spoilage
+    v1.0: HO-3 (2024-06), Section I Exclusions A.4, page 8
+    v1.1: HO 04 98 (2024-06), Coverage, page 1
+
+H2. The quote_only rule on sim-small
+  DET-0042 deer_swerve WI
+  v1.1 answer: If your covered auto leaves the road or strikes another object while you avoid an animal, and there is no contact with the animal, the loss is collision and the collision deductible applies. Coverage is limited to losses reported within 30 days. Governing provision: PAP (2018-09), Part D Definitions, page 2 [S1]. Version PAP (2018-09) checked against the date of loss.
+  v1.2 answer: If your covered auto leaves the road or strikes another object while you avoid an animal, and there is no contact with the animal, the loss is collision and the collision deductible applies. Governing provision: PAP (2018-09), Part D Definitions, page 2 [S1]. Version PAP (2018-09) checked against the date of loss.

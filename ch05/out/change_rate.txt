@@ -1,0 +1,30 @@
+1. Change rate: stuffed windows on sim-large, simulated prompt cache
+strategy      edited               changes cache hit  cached $ $ per day
+stuff all     form                   never       99%   0.01226     39.23
+stuff all     form          every 50 calls       97%   0.01363     43.61
+stuff all     form          every 10 calls       89%   0.02093     66.97
+stuff all     form           every 1 calls        0%   0.10304    329.73
+stuff all     bulletin               never       99%   0.01226     39.23
+stuff all     bulletin      every 50 calls       99%   0.01238     39.63
+stuff all     bulletin      every 10 calls       98%   0.01305     41.75
+stuff all     bulletin       every 1 calls       90%   0.02051     65.64
+stuff family  form                   never       92%   0.00830     26.55
+stuff family  form          every 50 calls       89%   0.00965     30.88
+stuff family  form          every 10 calls       73%   0.01583     50.65
+stuff family  form           every 1 calls        8%   0.04116    131.70
+stuff family  bulletin               never       92%   0.00830     26.55
+stuff family  bulletin      every 50 calls       91%   0.00857     27.43
+stuff family  bulletin      every 10 calls       88%   0.00976     31.23
+stuff family  bulletin       every 1 calls       78%   0.01369     43.80
+retrieve      (no cache)                            0%   0.00399     12.77
+
+2. Corpus size: does the stuffed corpus still fit?
+  synthetic corpus: 21,354 tokens of binding text; stuffed prompt about 34,052 tokens
+multiple  prompt tok  sim-large fits    sim-mid fits  sim-small fits list $/det list $/day
+      1x      34,052             yes             yes              no     0.1034        331
+      2x      68,104             yes             yes              no     0.2055        658
+      4x     136,208             yes              no              no     0.4098      1,311
+      8x     272,416              no              no              no     0.8184      2,619
+     16x     544,832              no              no              no     1.6357      5,234
+     64x   2,179,328              no              no              no     6.5392     20,925
+    600x  20,431,200              no              no              no    61.2948    196,143

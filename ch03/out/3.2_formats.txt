@@ -1,0 +1,5 @@
+DET-0001 (Emily Carter) fixed packet, 10 evidence spans, by format:
+  plain       873 tokens (contextlab)  cl100k_base 934  o200k_base 926
+  markdown  1,182 tokens (contextlab)  cl100k_base 1,284  o200k_base 1,275
+  xml       1,272 tokens (contextlab)  cl100k_base 1,304  o200k_base 1,295
+  json      1,372 tokens (contextlab)  cl100k_base 1,376  o200k_base 1,367

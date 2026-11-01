@@ -1,0 +1,13 @@
+family,n,docs,editions,text_tokens,model,retrieve_wrong,family_wrong,hybrid_wrong,stuff_ok
+HO-3,113,15,3,10026,sim-large,11,27,2,False
+HO-3,113,15,3,10026,sim-mid,13,52,4,False
+HO-3,113,15,3,10026,sim-small,13,66,2,False
+PAP,48,10,2,5958,sim-large,0,4,0,False
+PAP,48,10,2,5958,sim-mid,0,6,0,False
+PAP,48,10,2,5958,sim-small,1,14,0,False
+BOAT,22,3,2,1806,sim-large,1,2,1,True
+BOAT,22,3,2,1806,sim-mid,2,1,2,True
+BOAT,22,3,2,1806,sim-small,2,2,2,True
+BOP,17,4,2,2051,sim-large,0,0,0,True
+BOP,17,4,2,2051,sim-mid,0,1,0,True
+BOP,17,4,2,2051,sim-small,0,3,0,False

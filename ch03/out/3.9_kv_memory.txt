@@ -1,0 +1,5 @@
+bytes per token: 2 x 32 x 8 x 128 x 2 = 131,072
+     1,046 tokens ->   0.13 GiB per sequence
+    14,463 tokens ->   1.77 GiB per sequence
+    60,000 tokens ->   7.32 GiB per sequence
+   200,000 tokens ->  24.41 GiB per sequence

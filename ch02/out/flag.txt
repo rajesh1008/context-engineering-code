@@ -1,0 +1,5 @@
+all 500 determinations: {'policy has endorsements': 282, 'eligible': 218}
+working 200   eligible  92 of 200 (46.0%)
+held-out 300  eligible 126 of 300 (42.0%)
+DET-0001 with endorsements unreadable: (False, 'endorsements unknown')
+DET-0001 as recorded:             (False, 'policy has endorsements')

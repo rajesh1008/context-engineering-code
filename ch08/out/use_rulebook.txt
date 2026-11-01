@@ -2,4 +2,4 @@ r1.0 82bf00cd677a 12 rules, 12 topics
 rules in conflict with the documents: 0
 DET-0030 deer_swerve -> WI-OCI-2024-11 (2024-11), Requirements, page 1
 rulebook span in packet: ['RULEBOOK-r1.0-deer_swerve']
-trace fingerprints: 8aa74d97a834 82bf00cd677a
+trace fingerprints: 6bc1f97b940b 82bf00cd677a

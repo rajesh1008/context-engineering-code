@@ -1,0 +1,21 @@
+ 2,000 tokens, depth   0%:  95.0% of 200 cite the governing clause
+ 2,000 tokens, depth  50%:  93.0% of 200 cite the governing clause
+15,000 tokens, depth   0%:  94.5% of 200 cite the governing clause
+15,000 tokens, depth  50%:  32.5% of 200 cite the governing clause
+
+start-minus-middle gap, points, 5th to 95th percentile of 2,000 random subsets
+   2,000 tokens (all 200:  2.0):  n=10  [-10.0,  10.0]  n=20  [ -5.0,  10.0]  n=30  [ -3.3,   6.7]  n=60  [ -1.7,   5.0]  n=120 [  0.0,   4.2]
+  15,000 tokens (all 200: 62.0):  n=10  [ 40.0,  90.0]  n=20  [ 45.0,  80.0]  n=30  [ 50.0,  76.7]  n=60  [ 53.3,  70.0]  n=120 [ 57.5,  66.7]
+
+15,000 tokens by topic, topics with 8 or more determinations (n, start, middle):
+  water_backup            13     92%      8%
+  frozen_pipes            13     92%     23%
+  food_spoilage           13    100%      8%
+  rental_reimbursement    12    100%     58%
+  navigation_limits       11     82%      9%
+  roof_settlement         11    100%      0%
+  rideshare               11    100%      9%
+  roof_matching           10     80%      0%
+  deer_swerve              9    100%     22%
+  tree_debris              8    100%      0%
+  hail_cosmetic            8    100%     50%

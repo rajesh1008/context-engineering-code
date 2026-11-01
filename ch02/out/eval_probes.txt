@@ -1,0 +1,67 @@
+== proxy sensitivity (fixed pipeline median, baseline median)
+as written           fixed median 3.48 mean 3.87  baseline median 3.49
+version check 0      fixed median 1.28 mean 1.81  baseline median 1.29
+version check 1.1    fixed median 2.38 mean 2.84  baseline median 2.39
+version check 3.3    fixed median 4.58 mean 4.91  baseline median 4.59
+verify 2.4           fixed median 4.76 mean 5.10  baseline median 4.78
+manual 8             fixed median 3.48 mean 3.73  baseline median 3.49
+manual 14            fixed median 3.48 mean 4.02  baseline median 3.49
+
+{
+ "span_id": "HO 04 95@2024-06#water_backup",
+ "kind": "endorsement",
+ "text": "Water Back-Up and Sump Discharge or Overflow. We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump. A $1,000 deductible applies. We do not pay for loss caused by your negligent failure to maintain the sump pump. [HO 04 95 (2024-06), page 1]",
+ "provenance": {
+  "doc_id": "HO 04 95",
+  "version": "2024-06",
+  "effective_from": "2024-06-01",
+  "effective_to": null,
+  "superseded_by": null,
+  "jurisdiction": "ALL",
+  "entitlement": ["underwriting", "claims"],
+  "precedence": 30,
+  "page": 1,
+  "source_system": "docstore",
+  "trust": 1.0,
+  "label": "HO 04 95 (2024-06)"
+ },
+ "topic": "water_backup",
+ "section": "Coverage",
+ "meta": {"verdict": "covered up to $10,000"}
+}
+
+determination_id,state,form,topic,gold_label,gold_span_id,gold_kind,verdict,difficulty
+DET-0001,WI,HO-3 (2024-06),water_backup,HO 04 95 (2024-06),HO 04 95@2024-06#water_backup,endorsement,"covered up to $10,000",complex
+DET-0002,MI,BOAT (2021-05),navigation_limits,BOAT (2021-05),BOAT@2021-05#navigation_limits,form,Great Lakes only,simple
+DET-0003,IL,BOP (2020-04),employee_dishonesty,BOP (2020-04),BOP@2020-04#employee_dishonesty,form,excluded,simple
+DET-0004,IA,BOP (2025-01),employee_dishonesty,BOP (2025-01),BOP@2025-01#employee_dishonesty,form,excluded,simple
+
+UW-NOTE-0001 2020-08-31 water_backup  Reminder from the team: sewer backup is never covered on HO-3, decline add-on requests unless the dw...
+UW-NOTE-0002 2022-10-26 water_backup  Water back-up endorsement pays $5,000 with a $500 deductible; push it at renewal for finished baseme...
+UW-NOTE-0004 2021-04-02 hail_cosmetic Cosmetic hail on metal roofs is excluded on the new HO-3 everywhere, including Minnesota; no premium...
+
+ 1 HO 04 95@2024-06#schedule                 22.61 sup=False endorsement
+ 2 HO 04 95@2024-06#water_backup             22.55 sup=False endorsement
+ 3 HO 04 95@2019-03#water_backup             22.37 sup=True endorsement
+ 4 HO-3@2024-06#water_backup                 18.80 sup=False form
+ 5 HO 04 95@2019-03#schedule                 18.21 sup=True endorsement
+ 6 UW-NOTE-0002                              16.86 sup=False uw_note
+ 7 HO-3@2019-03#water_backup                 16.75 sup=True form
+ 8 HO-3@2022-01#water_backup                 16.75 sup=True form
+ 9 HO-3@2024-06#flood                        16.69 sup=False form
+10 HO-3@2019-03#flood                        12.34 sup=True form
+
+Freezing. We insure for loss caused by freezing of a plumbing, heating, air conditioning or automatic fire protective sprinkler system or of a household appliance only if, while the dwelling is vacant, unoccupied or being constructed, you used reasonable care to maintain heat in the building ...
+
+You are the claims assistant for Lakeshore Mutual Insurance. Answer the adjuster's coverage question from the documents provided and name the governing provision.
+
+Claim facts: Claim CLM-2026-01187, claimant Emily Carter, policy LMH-WI-0048213. Policy form: HO-3 (2024-06). Endorsements: HO 04 95 (2024-06). State: WI. Date of loss: 2026-03-14. Adjuster: tbrennan.
+
+### [S1] HO 04 95 (2024-06) | Schedule | page 1 | effective 2024-06-01 | jurisdiction ALL | authority endorsement
+Water Back-Up and Sump Discharge or Overflow. This endorsement changes the policy. It modifies insurance provided under the Homeowners 3 Special Form (HO-3). All other provisions of the policy apply. [HO 04 95 (2024-06), page 1]
+
+### [S2] HO 04 95 (2024-06) | Coverage | page 1 | effective 2024-06-01 | jurisdiction ALL | authority endorsement
+Water Back-Up and Sump Discharge or Overflow. We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump. A $1,000 deductible applies. We do not pay for loss caused by your negligent failure to maintain the sump pump. [HO 04 95 (2024-06), page 1]
+
+### [S3] HO 04 95 (2019-03) | Coverage | page 1 | effective 2019-03-01 | jurisdiction ALL | authority endorsement
+Water Back-Up and Sump Discharge or Overflow. We will pay up to $5,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment. A $500 deductible applies. [HO 04 95 (2019-03), page 1]

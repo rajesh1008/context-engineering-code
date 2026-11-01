@@ -1,0 +1,16 @@
+BOAT: 22 determinations, 3 on policies with endorsements
+  retrieve wrong  1  list $0.00339  cached $0.00339  p50 1.42s  tokens    901  DET-0049
+  family   wrong  2  list $0.01802  cached $0.00482  p50 1.48s  tokens  5,776  DET-0006, DET-0049
+  hybrid   wrong  1  list $0.00640  cached $0.00338  p50 1.46s  tokens  1,902  DET-0049
+BOP: 17 determinations, 4 on policies with endorsements
+  retrieve wrong  0  list $0.00371  cached $0.00371  p50 1.62s  tokens    947  -
+  family   wrong  0  list $0.01942  cached $0.00641  p50 1.74s  tokens  6,186  -
+  hybrid   wrong  0  list $0.00692  cached $0.00432  p50 1.64s  tokens  2,018  -
+PAP: 48 determinations, 20 on policies with endorsements
+  retrieve wrong  0  list $0.00386  cached $0.00386  p50 1.59s  tokens  1,028  -
+  family   wrong  4  list $0.03653  cached $0.00675  p50 1.73s  tokens 11,913  DET-0042, DET-0058, DET-0169, DET-0184
+  hybrid   wrong  0  list $0.00994  cached $0.00608  p50 1.62s  tokens  3,053  -
+HO-3: 113 determinations, 81 on policies with endorsements
+  retrieve wrong 11  list $0.00420  cached $0.00420  p50 1.73s  tokens  1,097  DET-0022, DET-0063, DET-0071, DET-0113, DET-0131, DET-0145, DET-0163, DET-0178, DET-0181, DET-0185, DET-0188
+  family   wrong 27  list $0.05638  cached $0.00979  p50 2.10s  tokens 18,483  DET-0009, DET-0014, DET-0016, DET-0022, DET-0027, DET-0031, DET-0048, DET-0054, DET-0063, DET-0068, DET-0070, DET-0075, DET-0081, DET-0097, DET-0118, DET-0121, DET-0125, DET-0142, DET-0143, DET-0160, DET-0164, DET-0176, DET-0181, DET-0183, DET-0186, DET-0189, DET-0198
+  hybrid   wrong  2  list $0.01449  cached $0.00746  p50 1.92s  tokens  4,518  DET-0113, DET-0131

@@ -1,0 +1,4 @@
+J. sim-small: all skills loaded vs progressive, which determinations differ
+  DET-0113 earth_movement IL gold HO 04 54 (2022-01); all: HO 04 54 (2022-01), Coverage, page 1; progressive: HO-3 (2022-01), Section I Exclusions A.2, page 5
+    skills loaded progressive: []
+  claims with no skill loaded (progressive): 25 of 200

@@ -9,7 +9,7 @@ Three things are kept apart on purpose:
            retention, re-validation, read budget, tenancy and erasure;
   context  the packet assembled for one model call from the two above plus evidence.
 
-Chapter 23 of Context Engineering: The Practical Guide. Plain Python, no dependencies.
+Chapter 23 of The Context Engineering Handbook for LLMs and AI Agents. Plain Python, no dependencies.
 """
 from __future__ import annotations
 
