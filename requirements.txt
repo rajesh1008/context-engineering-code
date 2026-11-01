@@ -1,0 +1,22 @@
+# Context Engineering: The Practical Guide - companion code
+# Consolidated requirements for every lab and test (Python 3.11+; tested on 3.13).
+# Most labs use only the standard library plus numpy; the rest are needed by specific chapters.
+
+pytest>=8.0              # all tests
+numpy>=2.0               # contextlab core (embeddings, vector stores, tools)
+pydantic>=2.0            # ch01 stand-in schemas, contextlab.embeddings
+PyYAML>=6.0              # contextlab.rulebook (ch20 rulebooks)
+reportlab>=4.0           # ch10 / ch37 fixture PDF generation
+pypdf>=5.0               # PDF text-layer parsing (ch10, ch37)
+pdfplumber>=0.11         # layout parsing (ch10, ch37, contextlab.defence)
+pypdfium2>=4.0           # page rendering for the OCR path (ch10)
+lancedb>=0.41,<0.42      # ch13 embedded vector database
+pyarrow>=15.0            # ch13 (LanceDB tables)
+jedi>=0.19               # ch25 gold sets for the code map
+tiktoken>=0.7            # ch31 real o200k_base token counts (downloads the encoding on first use)
+
+# Optional, only for the "real model" side scripts (not needed by any test):
+#   fastembed>=0.9               ch12/real_models.py (bge-small, MiniLM reranker; downloads models)
+#   rapidocr-onnxruntime>=1.2    ch10/ocr_all.py (re-running OCR; the OCR cache is shipped)
+#   dspy==3.4.1                  ch36/dspy_module36.py and its one optional test
+#   matplotlib>=3.8              figure scripts (not part of this repository)

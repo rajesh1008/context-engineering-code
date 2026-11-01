@@ -1,0 +1,9 @@
+stack,case,top_cosine,hit,gov,gov1,leaky,tokens
+dense only,matched: index and queries on @1,0.736,0.938,0.932,0.813,0.0,319
+dense only,"upgrade, no re-index",0.145,0.101,0.099,0.021,0.0,242
+dense only,"upgrade, half re-indexed",0.717,0.85,0.841,0.734,0.0,318
+dense only,"upgrade, fully re-indexed",0.736,0.938,0.932,0.813,0.0,319
+rebuilt stack,matched: index and queries on @1,0.736,0.968,0.967,0.88,0.0,333
+rebuilt stack,"upgrade, no re-index",0.145,0.91,0.909,0.845,0.0,320
+rebuilt stack,"upgrade, half re-indexed",0.717,0.956,0.955,0.875,0.0,333
+rebuilt stack,"upgrade, fully re-indexed",0.736,0.968,0.967,0.88,0.0,333

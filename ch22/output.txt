@@ -1,0 +1,88 @@
+
+== Scoreboard
+Chapter 20 close (memory off): 7 of 1,000 (0.7%)
+Chapter 21 close (cause path): 13 of 1,000 (1.3%)
+Full pipeline, read log on:    15 of 1,000 (1.5%)
+
+== Trace back from the new wrong determinations
+D0025 2026-10-05 WI water_backup A12 reads 8 culprits 1 root M02116 -> poison
+D0355 2026-10-08 WI water_backup A01 reads 2 culprits 1 root M02116 -> poison
+D0364 2026-10-08 MN burst_pipe   A05 reads 8 culprits 8 root none (every memory) -> over-remembering
+D0450 2026-10-09 WI water_backup A01 reads 2 culprits 1 root M02116 -> poison
+D0807 2026-10-15 WI mould        A04 reads 2 culprits 1 root M02116 -> poison
+D0848 2026-10-15 WI water_backup A03 reads 2 culprits 1 root M02116 -> poison
+D0978 2026-10-16 WI water_backup A11 reads 2 culprits 1 root M02116 -> poison
+D0979 2026-10-16 WI water_backup A02 reads 8 culprits 1 root M-PD0979 -> stale
+
+== Trace forward from M02116
+family ['M-A01-D', 'M-A02-D', 'M02116']; reads by member {'M-A01-D': 24, 'M-A02-D': 21, 'M02116': 37}
+determinations that read the family: 64; outcome {'agreed': 27, 'wrong (family)': 6, 'outranked': 30, 'wrong (other cause)': 1}
+  2026-10-05: read  5, wrong 1
+  2026-10-06: read  3, wrong 0
+  2026-10-07: read  2, wrong 0
+  2026-10-08: read  2, wrong 1
+  2026-10-09: read  4, wrong 1
+  2026-10-12: read  5, wrong 0
+  2026-10-13: read 10, wrong 0
+  2026-10-14: read  8, wrong 0
+  2026-10-15: read 10, wrong 2
+  2026-10-16: read 15, wrong 2
+origins of M02116: [('note', 'correction:tbrennan:2026-02-17')]; authority unverified
+origins of M-A01-D: ['D0450', 'D0500'] parents ('M02116',)
+
+== Remediation rerun
+rerun 64 with family masked: changed 6, now right 6, newly wrong 0
+
+== Three ways to remove it (applied 16 October)
+none                 {'removed': 0, 'wrong_that_day': 3, 'legit_reads_lost': 0}
+quarantine family    {'removed': 3, 'wrong_that_day': 2, 'legit_reads_lost': 0}
+rollback to 4 Oct    {'removed': 903, 'wrong_that_day': 2, 'legit_reads_lost': 0, 'legit_destroyed': 900, 'legit_destroyed_reads_so_far': 0}
+text search          {'removed': 7, 'legit_removed': 6, 'family_missed': ['M-A01-D', 'M-A02-D']}
+
+== Failure injection: M-T0419 (Illinois hail, 12 October)
+no guard           reads 15, wrong 4, full mix 19 of 1,000 (1.9%), sent to review 0 (false alarms 0), held []
+read-time monitor  reads  7, wrong 0, full mix 8 of 1,000 (0.8%), sent to review 5 (false alarms 1), held []
+   2026-10-08 monitor ['M02116']
+   2026-10-15 monitor ['M-T0419']
+write gate         reads  0, wrong 0, full mix 9 of 1,000 (0.9%), sent to review 0 (false alarms 0), held ['M-T0419', 'M-TOK0', 'M-TOK1', 'M-TOK2', 'M-TOK3', 'M-TOK4', 'M-TOK5', 'M02116']
+
+== Chapter 22 close
+write gate on, poison never readable: 9 of 1,000 (0.9%); remaining causes Counter({'residual': 7, 'over-remembering': 1, 'stale': 1})
+
+== Stale facts
+earlier-claim episodes naming an endorsement 310; contradicted by the record 28; read in the replay 28 times; wrong 1
+
+== Over-remembering: memories per packet
+k= 0: repeat-claimant wrong  0 of 310, lookup time saved   0.0 s/det, expected distraction errors 0.00 per 1,000
+k= 2: repeat-claimant wrong  1 of 310, lookup time saved  44.1 s/det, expected distraction errors 0.00 per 1,000
+k= 4: repeat-claimant wrong  2 of 310, lookup time saved  81.5 s/det, expected distraction errors 0.00 per 1,000
+k= 6: repeat-claimant wrong  2 of 310, lookup time saved  85.0 s/det, expected distraction errors 0.00 per 1,000
+k= 8: repeat-claimant wrong  3 of 310, lookup time saved  85.0 s/det, expected distraction errors 4.00 per 1,000
+k=12: repeat-claimant wrong  8 of 310, lookup time saved  85.0 s/det, expected distraction errors 9.70 per 1,000
+k=16: repeat-claimant wrong 10 of 310, lookup time saved  85.0 s/det, expected distraction errors 11.81 per 1,000
+
+== Drift through repeated consolidation
+round 1: qualifiers kept 91.4%, policy qualifier lost  21; re-derived from source 92.4%, lost 13
+round 2: qualifiers kept 84.4%, policy qualifier lost  33; re-derived from source 89.9%, lost 25
+round 3: qualifiers kept 78.9%, policy qualifier lost  41; re-derived from source 92.1%, lost 16
+round 4: qualifiers kept 72.0%, policy qualifier lost  54; re-derived from source 91.4%, lost 21
+round 5: qualifiers kept 66.4%, policy qualifier lost  68; re-derived from source 93.2%, lost 18
+round 6: qualifiers kept 61.0%, policy qualifier lost  80; re-derived from source 92.2%, lost 22
+round 7: qualifiers kept 56.4%, policy qualifier lost  85; re-derived from source 91.9%, lost 12
+round 8: qualifiers kept 52.6%, policy qualifier lost  90; re-derived from source 89.0%, lost 23
+
+== Cross-tenant leakage: 24 addresses with a landlord and a tenant policy
+keyed by policy  : memory reads 144, cross-tenant 0 in 0 determinations
+keyed by address : memory reads 288, cross-tenant 144 in 48 determinations
+
+== One determination: D0025, 5 October
+D0025 2026-10-05 WI water_backup P-WI-23372 adjuster A12 HO 04 95 on record: False
+  answer freezing:HO3-freezing   truth excluded:HO3-2.c
+  read M02116   team     written 2026-10-04 authority unverified origins ['note:correction:tbrennan:2026-02-17'] parents -
+  read M-PD0025 policy   written 2025-03-01 authority governed   origins ['record:claim:old-D0025'] parents -
+  read M-A12-0  adjuster written 2026-09-01 authority unverified origins ['note:M-A12-0'] parents -
+  read M-CD0025-0 claimant written 2025-11-01 authority unverified origins ['determination:old-D0025-0'] parents -
+  read M-CD0025-1 claimant written 2025-01-01 authority unverified origins ['determination:old-D0025-1'] parents -
+  read M-CD0025-2 claimant written 2025-04-01 authority unverified origins ['determination:old-D0025-2'] parents -
+  read M-CD0025-3 claimant written 2025-12-01 authority unverified origins ['determination:old-D0025-3'] parents -
+  read M-CD0025-4 claimant written 2025-01-01 authority unverified origins ['determination:old-D0025-4'] parents -

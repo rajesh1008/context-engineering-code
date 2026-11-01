@@ -1,0 +1,10 @@
+model,padding,neutral,lookalike,lookalike_tokens
+sim-large,4000,0.04,0.05,3544
+sim-large,8000,0.04,0.05,4298
+sim-large,16000,0.04,0.05,4298
+sim-mid,4000,0.06,0.07,3544
+sim-mid,8000,0.06,0.08,4298
+sim-mid,16000,0.09,0.23,4298
+sim-small,4000,0.06,0.12,3544
+sim-small,8000,0.08,0.28,4298
+sim-small,16000,0.11,0.54,4298

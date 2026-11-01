@@ -1,0 +1,17 @@
+group,n,gov5,gov1,config
+eval,200,0.885,0.82,baseline
+holdout,300,0.88,0.77,baseline
+new:docstore,160,0.869,0.706,baseline
+new:guidance,40,0.8,0.775,baseline
+new:multi-state,60,0.817,0.75,baseline
+new:policy-admin,130,0.792,0.638,baseline
+new:scanned,90,0.811,0.711,baseline
+new:third-party,20,0.65,0.5,baseline
+eval,200,0.985,0.95,rebuilt
+holdout,300,0.98,0.9,rebuilt
+new:docstore,160,0.975,0.838,rebuilt
+new:guidance,40,0.9,0.725,rebuilt
+new:multi-state,60,0.967,0.867,rebuilt
+new:policy-admin,130,0.954,0.838,rebuilt
+new:scanned,90,0.922,0.878,rebuilt
+new:third-party,20,0.95,0.85,rebuilt

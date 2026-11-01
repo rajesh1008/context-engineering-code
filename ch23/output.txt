@@ -1,0 +1,72 @@
+
+== 1. Tom's afternoon, Thursday 22 October 2026, from 13:00
+claims 9 (C01, C02, C03, C04, C05, C06, C07, C08, C09); items 201; model calls 70; last call minute 114.6 (14:55); tokens if nothing is ever removed 136,165
+tool results: {'record': 9, 'packet': 9, 'notes': 21, 'decl': 7, 'photos': 5, 'prior': 7} | reserve over US$25,000: ['C01', 'C02', 'C06', 'C07', 'C09']
+  K1 stated at 13:01: Any claim with a reserve over US$25,000: draft only and route to Margaret Hale's queue; never mark it ready.
+  K2 stated at 13:13: C02 is on legal hold: do not quote the recorded statement in any draft.
+  K3 stated at 13:39: C04: the claimant is represented; all contact through counsel, no direct letters.
+
+== 2. Full history: the failure injection is the afternoon itself
+window at 14:00: 77,760 tokens; overflow at minute 104.9 (14:45); calls refused after it 7
+  hour 1: answers 36, wrong 1 (2.8%)
+  hour 2: answers 27, wrong 3 (11.1%)
+
+== 3. Four ways to hold the afternoon
+strategy    answers wrong withheld violations refused     peak compactions re-fetch    US$
+full             63     4        0          0       7  133,792           0        0   1.87
+truncate         70     2        1          2       0   39,997           0        0   5.21
+summarise        70     2        2          2       0   39,607           4        0   1.69
+structured       70     1        0          0       0   13,727           0        1   1.42
+
+== 4. Forty afternoons (seeds 1 to 40), same adjuster workload
+model calls requested: 2,799
+strategy    served  wrong withheld violations refused overflowed hour1 wrong hour2 wrong US$/afternoon  cached
+full         2,584   7.4%     0.0%          0     215      22 of 40        3.6%       12.6%          1.83     97%
+truncate     2,799   3.2%     1.1%         60       0       0 of 40        1.7%        5.0%          4.78     42%
+summarise    2,799   2.1%     4.3%         37       0       0 of 40        1.3%        3.1%          1.63     85%
+structured   2,799   1.1%     0.0%          0       0       0 of 40        0.9%        1.4%          1.38     50%
+
+== 5. Checkpoint at 14:11, crash, restore
+active claim C06; claims in state 6; pinned 3; facts 77
+checkpoint 1f1c1ad8f8386f1e: by reference ~1,013 tokens; rendered window 12,812 tokens
+restored checkpoint 1f1c1ad8f8386f1e; identical: True
+
+== 6. The progress sheet at the end of the afternoon
+C01	routed	routed; 13 facts with sources; Margaret Hale's queue
+C02	routed	-
+C03	ready	ready; 14 facts with sources; ready for Tom's sign-off
+C04	ready	ready; 13 facts with sources; ready for Tom's sign-off
+C05	ready	ready; 13 facts with sources; ready for Tom's sign-off
+C06	routed	routed; 10 facts with sources; Margaret Hale's queue
+C07	routed	routed; 11 facts with sources; Margaret Hale's queue
+C08	ready	ready; 12 facts with sources; ready for Tom's sign-off
+C09	routed	routed; 8 facts with sources; Margaret Hale's queue
+
+== 7. Chapter 22's memory store under the lifecycle policy (5 October 2026)
+before: {'due for re-validation': 310, 'live': 3060}
+re-validated earlier-claim records 310: unchanged 282, corrected 28 (each replaced by a pointer to the policy system, re-read at use)
+expired by retention 0; after: {'live': 3370, 'superseded': 310}
+
+== 8. Full mix, 1,000 determinations, write gate on (Chapter 22's close)
+Chapter 22 close       wrong 9 of 1,000 (0.9%) memory reads 3,170 lookup saved 85.0 s per repeat-claimant determination  ['D0211', 'D0249', 'D0364', 'D0461', 'D0727', 'D0752', 'D0846', 'D0915', 'D0979']
++ re-validation        wrong 8 of 1,000 (0.8%) memory reads 3,170 lookup saved 85.0 s per repeat-claimant determination  ['D0211', 'D0249', 'D0364', 'D0461', 'D0727', 'D0752', 'D0846', 'D0915']
++ read budget 6        wrong 7 of 1,000 (0.7%) memory reads 2,550 lookup saved 85.0 s per repeat-claimant determination  ['D0211', 'D0249', 'D0461', 'D0727', 'D0752', 'D0846', 'D0915']
++ retention 730 days   wrong 7 of 1,000 (0.7%) memory reads 2,550 lookup saved 85.0 s per repeat-claimant determination  ['D0211', 'D0249', 'D0461', 'D0727', 'D0752', 'D0846', 'D0915']
+
+== 9. Retention period for claimant memories (read budget 6, re-validation on)
+keep 180 days   wrong 7  claimant memories live at the end 1,000  lookup saved 45.0 s
+keep 365 days   wrong 7  claimant memories live at the end 1,482  lookup saved 70.2 s
+keep 730 days   wrong 7  claimant memories live at the end 4,024  lookup saved 85.0 s
+keep forever    wrong 7  claimant memories live at the end 4,024  lookup saved 85.0 s
+
+== 10. One erasure request, end to end
+subject P-WI-37272: memory records 17 {'live': 16, 'superseded': 1}; read by 1 determinations in the replay
+deleted 17, re-derived 0, dropped 0, checkpoints redacted 1; the governed span in the checkpoint stays
+tombstone: {'request': 'ER-2026-0117', 'date': '2026-10-26', 'subject_hash': 'c35ec5f55ba2', 'deleted': 17, 'held': 0, 'rederived': 0, 'dropped': 0, 'redacted_incident': 0, 'checkpoints': 1}
+same request under a litigation hold: deleted 0, held 17
+incident record M02116 (status held): origins ['correction:tbrennan:2026-02-17']; origins that are a policyholder's determination 0, so no policyholder's request reaches it
+
+== 11. Tenancy: two bank-partner programmes on Lakeshore paper
+live policy and claimant memories by tenant: {'partner-a': 474, 'lakeshore': 3602, 'partner-b': 242}
+determinations by tenant: {'partner-a': 114, 'lakeshore': 825, 'partner-b': 61}
+partner-b exit: 258 records to export and erase, by subject; team memories with a partner-b origin 0

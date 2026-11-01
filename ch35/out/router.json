@@ -1,0 +1,19 @@
+{
+ "weights": {
+  "causes2": 0.259,
+  "causes3": 0.173,
+  "n_end": 0.039,
+  "multi_state": 0.215,
+  "bulletin": 0.139,
+  "prior": 0.03,
+  "photos": -0.003,
+  "auto": -0.002,
+  "amount_k": -0.0,
+  "ambiguity": 0.704
+ },
+ "bias": -0.035,
+ "cuts": [
+  0.3,
+  0.65
+ ]
+}

@@ -1,0 +1,389 @@
+{
+ "probes": {
+  "overflow": [
+   24,
+   0
+  ],
+  "missing_evidence": [
+   40,
+   0
+  ],
+  "drift": [
+   40,
+   0
+  ],
+  "poisoning": [
+   32,
+   0
+  ],
+  "confusion": [
+   23,
+   0
+  ],
+  "clash": [
+   27,
+   0
+  ],
+  "fragmentation": [
+   40,
+   0
+  ],
+  "distraction": [
+   28,
+   0
+  ],
+  "lost_in_middle": [
+   26,
+   0
+  ],
+  "rot": [
+   20,
+   0
+  ]
+ },
+ "confusion_matrix": {
+  "overflow": {
+   "overflow": 24
+  },
+  "missing_evidence": {
+   "missing_evidence": 40
+  },
+  "drift": {
+   "drift": 40
+  },
+  "poisoning": {
+   "poisoning": 32
+  },
+  "confusion": {
+   "confusion": 23
+  },
+  "clash": {
+   "clash": 27
+  },
+  "fragmentation": {
+   "fragmentation": 40
+  },
+  "distraction": {
+   "distraction": 28
+  },
+  "lost_in_middle": {
+   "lost_in_middle": 26
+  },
+  "rot": {
+   "rot": 20
+  }
+ },
+ "mixed": [
+  54,
+  100,
+  0
+ ],
+ "fix_matrix": {
+  "overflow": [
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "missing_evidence": [
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "drift": [
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "poisoning": [
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "confusion": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "clash": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "fragmentation": [
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "distraction": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0
+  ],
+  "lost_in_middle": [
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "rot": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ },
+ "symptom": [
+  49,
+  20
+ ],
+ "ledger": {
+  "classes": {
+   "confusion": 48,
+   "poisoning": 5,
+   "missing_evidence": 14,
+   "not_context": 1,
+   "fragmentation": 13,
+   "drift": 1
+  },
+  "codes": {
+   "edition cited is not the edition in force on the date of loss": 24,
+   "endorsement schedule misread in the policy summary": 2,
+   "endorsement missing from the policy record": 1,
+   "no defect visible in the trace": 1,
+   "base form cited; endorsement is a scan never indexed": 11,
+   "another state's bulletin cited": 16,
+   "another state's bulletin cited; rule needs two spans": 6,
+   "state's bulletin absent from the packet": 2,
+   "governing sentence cut at a span boundary": 11,
+   "table broken across a column or page": 2,
+   "underwriting guidance cited as governing": 2,
+   "roof age in the claim header wrong (licensed feed)": 3,
+   "change date in the partner feed wrong": 1
+  },
+  "agree": 82,
+  "joint": 6,
+  "by_fix": {
+   "confusion|Ch 9 verified query": 24,
+   "poisoning|open: policy record": 2,
+   "missing_evidence|open: policy record": 1,
+   "not_context|not recorded": 1,
+   "missing_evidence|Ch 9 admission": 11,
+   "confusion|Ch 15 jurisdiction": 16,
+   "confusion|Ch 15 + Ch 17 graph": 6,
+   "missing_evidence|Ch 14 embedding model": 2,
+   "fragmentation|Ch 10 structural spans": 13,
+   "confusion|Ch 15 authority": 2,
+   "poisoning|Ch 9 licence gate": 3,
+   "drift|Ch 24 change log": 1
+  }
+ },
+ "incidents": [
+  [
+   "I01",
+   "Ch 1",
+   "missing_evidence",
+   [
+    "confusion",
+    "clash"
+   ],
+   true,
+   "retrieval, no versions",
+   "2025 chatbot cites HO-3 (2019-03) exclusion"
+  ],
+  [
+   "I02",
+   "Ch 2",
+   "drift",
+   [],
+   false,
+   "unowned copy",
+   "current-form pointer never moved"
+  ],
+  [
+   "I03",
+   "Ch 6",
+   "clash",
+   [],
+   false,
+   "instruction change",
+   "v2.3 tidy-up deletes the precedence sentence"
+  ],
+  [
+   "I04",
+   "Ch 7",
+   "clash",
+   [],
+   false,
+   "instruction against evidence",
+   "roof skill: bulletins are 'guidance for complaint handling'"
+  ],
+  [
+   "I05",
+   "Ch 10",
+   "fragmentation",
+   [],
+   false,
+   "parser",
+   "Iowa deductible: 2% read for 1% across a page break"
+  ],
+  [
+   "I06",
+   "Ch 13",
+   "missing_evidence",
+   [],
+   false,
+   "vector store filter",
+   "post-filter: small tenant gets fewer than k rows"
+  ],
+  [
+   "I07",
+   "Ch 14",
+   "missing_evidence",
+   [],
+   false,
+   "overflow at the embedder",
+   "marine spans truncated at 512 tokens; marine retrieval 0.000"
+  ],
+  [
+   "I08",
+   "Ch 16",
+   "fragmentation",
+   [],
+   false,
+   "summary drops the term",
+   "remaining back-up limit US$6,150 for US$10,000"
+  ],
+  [
+   "I09",
+   "Ch 18",
+   "missing_evidence",
+   [],
+   false,
+   "graph behind the store",
+   "Iowa EB bulletin missing from the graph"
+  ],
+  [
+   "I10",
+   "Ch 19",
+   "poisoning",
+   [],
+   false,
+   "transcription",
+   "voice note loses 'No' (conf 0.81, SNR 10.9 dB)"
+  ],
+  [
+   "I11",
+   "Ch 22",
+   "poisoning",
+   [],
+   false,
+   "memory write",
+   "team memory read as a rule (the slow slide)"
+  ],
+  [
+   "I12",
+   "Ch 24",
+   "drift",
+   [],
+   false,
+   "partner copy",
+   "partner feed misdates an endorsement change"
+  ]
+ ],
+ "injection": {
+  "primary": "confusion",
+  "secondary": [
+   "lost_in_middle"
+  ],
+  "naive": "lost_in_middle",
+  "base": 33,
+  "reorder": 20,
+  "admit": 0
+ },
+ "blast": {
+  "pointer edition (confusion)": [
+   37,
+   24
+  ],
+  "unindexed scans (missing evidence)": [
+   90,
+   11
+  ],
+  "multi-state claims (22 confusion, 2 missing)": [
+   60,
+   24
+  ],
+  "third-party header (3 poisoning, 1 drift)": [
+   20,
+   4
+  ]
+ }
+}

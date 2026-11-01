@@ -1,0 +1,65 @@
+== 46.1 the agency team's forked copy of the claims pipeline
+agency calls in one day: 2,500
+fork: cited a superseded edition as current     318 (12.7%)
+fork: carried adjuster-only guidance            2500 (100.0%)
+fork: carried another agency's declarations       78 (3.1%)
+platform, same calls: packets with any of these 0
+
+== 46.2 assemble, explain, feedback
+status 200 packet 2b267a8a3834 epoch 1 expires 9.25
+  included dec-P0407              governing  declarations
+  included form-T03@2026          governing  forms
+  included pg-T03                 team-note  producer-guides
+  included faq-T03                public     faq
+  withheld form-T03@2024          superseded
+  withheld cf-T03                 corpus claim-files is private to claims
+  withheld guide-T03              role agent not permitted
+  withheld lt-T03                 corpus letter-templates is private to policyholder
+feedback {'status': '202'}
+explain accounts for every candidate: 970/970
+
+== 46.3 a Monday 09:00-10:00 under the agency renewal batch
+quiet hour                       p95 s: claims 0.41  policyholder 0.40  agency 0.44  batch finished at 0 s
+batch, first come first served   p95 s: claims 56.62  policyholder 48.77  agency 79.55  batch finished at 146 s
+batch, per-team shares           p95 s: claims 0.41  policyholder 0.40  agency 0.44  batch finished at 293 s
+
+== 46.3 budgets, quotas and chargeback over a 30-day month
+packet tokens per day: {'claims': '1,607,350', 'policyholder': '4,545,770', 'agency': '1,491,240'}
+agency renewal pass: 1,789,488 tokens; one pass on each of five Mondays
+agency quota 50,000,000; soft cap month total 53,684,640 (crossed on day 29); hard cap total 51,895,152, batch cut on 1 day(s)
+bill by usage share:
+  agency        direct US$      485  shared US$   2,332  private US$  120  total US$    2,936
+  claims        direct US$      301  shared US$   1,447  private US$  300  total US$    2,048
+  policyholder  direct US$    1,085  shared US$   5,221  private US$   60  total US$    6,367
+bill by even split:
+  agency        direct US$      485  shared US$   3,000  private US$  120  total US$    3,605
+  claims        direct US$      301  shared US$   3,000  private US$  300  total US$    3,601
+  policyholder  direct US$    1,085  shared US$   3,000  private US$   60  total US$    4,145
+
+== 46.4 where entitlement is enforced: 600 probes
+caller filters                   probes that leaked  596/600  spans 691
+platform, identity in body       probes that leaked  200/600  spans 596
+platform, identity from token    probes that leaked    0/600  spans 0
+
+== 46.4 failure injection: the agency service caches packets
+client cache, no check                 leaking calls   52  spans    94  hits   464  assembles  2036  refused  72  {'leak: revoked user': 14, 'leak: policy moved': 38}
+client cache, gateway verifies         leaking calls    0  spans     0  hits     4  assembles  2496  refused  86  {'audience': 365, 'expired': 31, 'entitlement epoch': 50, 'revoked': 14}
+platform cache by entitlement class    leaking calls    0  spans     0  hits   176  assembles  2238  refused  86  {}
+
+== 46.5 shared and private corpora: producer-guide notes on ten topics
+note ranked above the governing form: fork 6/10, platform 0/10
+claims packets carrying the agency's private notes: 0/10
+
+== 46.6 versioning the contract: consumer tests against v2
+v1: 8/8 pass; failing: []
+v2: 6/8 pass; failing: [('policyholder', 'source names a corpus'), ('agency', 'spans sorted by sid')]
+v1 share of calls by week: [1.0, 1.0, 0.876, 0.876, 0.876, 0.876, 0.258, 0.258, 0.258, 0.258, 0.0, 0.0, 0.0, 0.0]
+
+== 46.7 platform SLOs over a simulated 28 days
+assemble availability (no server error)        271,224/271,600 attained 99.8616%  budget left -38%  met False
+interactive p95 under 0.8 s, per hour              279/280     attained 99.6429%  budget left +64%  met True
+bulletin visible within 2 h of publication          25/26      attained 96.1538%  budget left +23%  met True
+entitlement correctness                            600/600     attained 100.0000%  budget left +100%  met True
+explain completeness                               970/970     attained 100.0000%  budget left +100%  met True
+
+wrote out/results.json

@@ -1,0 +1,7 @@
+style,n,before,after
+identifier,51,0.902,0.98
+kw,569,0.956,1.0
+lay,197,0.503,0.838
+multihop,81,1.0,1.0
+negation,44,0.727,1.0
+numeric,58,0.828,1.0

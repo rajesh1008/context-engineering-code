@@ -1,0 +1,761 @@
+{
+ "version": "v9.6",
+ "incident": {
+  "dets": 73,
+  "new_terms": 8,
+  "wrong": 8
+ },
+ "treatments": {
+  "months": [
+   "2026-09",
+   "2026-10",
+   "2026-11",
+   "2026-12",
+   "2027-01",
+   "2027-02",
+   "2027-03",
+   "2027-04",
+   "2027-05",
+   "2027-06",
+   "2027-07",
+   "2027-08"
+  ],
+  "series": {
+   "no record": [
+    1,
+    8,
+    9,
+    12,
+    19,
+    18,
+    21,
+    29,
+    30,
+    27,
+    37,
+    35
+   ],
+   "end date": [
+    37,
+    34,
+    28,
+    28,
+    21,
+    18,
+    18,
+    10,
+    10,
+    13,
+    3,
+    3
+   ],
+   "term-aware": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "totals": {
+   "no record": 246,
+   "end date": 223,
+   "term-aware": 0
+  },
+  "dets": 469
+ },
+ "reconcile": {
+  "docs": 388,
+  "copies": 10372,
+  "clean": 0,
+  "findings": 102,
+  "classes": {
+   "wrong-model": 6,
+   "void-present": 31,
+   "end-mismatch": 7,
+   "stale-hash": 3,
+   "tenant-mismatch": 20,
+   "retired-open": 29,
+   "orphan": 4,
+   "missing": 2
+  },
+  "by_store": {
+   "vectors": {
+    "wrong-model": 6,
+    "void-present": 7,
+    "stale-hash": 3,
+    "tenant-mismatch": 6,
+    "retired-open": 6,
+    "orphan": 4,
+    "missing": 1
+   },
+   "passages": {
+    "void-present": 7,
+    "end-mismatch": 7,
+    "tenant-mismatch": 6,
+    "retired-open": 6,
+    "missing": 1
+   },
+   "cache": {
+    "tenant-mismatch": 1,
+    "void-present": 1,
+    "retired-open": 5
+   },
+   "gold": {
+    "tenant-mismatch": 2,
+    "void-present": 4
+   },
+   "memory": {
+    "tenant-mismatch": 5,
+    "void-present": 12,
+    "retired-open": 12
+   }
+  },
+  "defects": 8,
+  "event_caught": 2
+ },
+ "changes": [
+  [
+   "CH-0901",
+   "content",
+   212,
+   "standard",
+   true
+  ],
+  [
+   "CH-0902",
+   "metadata",
+   31,
+   "standard",
+   false
+  ],
+  [
+   "CH-0907",
+   "metadata",
+   46089,
+   "standard",
+   false
+  ],
+  [
+   "CH-0915",
+   "content",
+   640,
+   "normal",
+   true
+  ],
+  [
+   "CH-0922",
+   "model",
+   46089,
+   "normal",
+   true
+  ],
+  [
+   "CH-1006",
+   "spanning",
+   9310,
+   "normal",
+   true
+  ],
+  [
+   "CH-1013",
+   "template",
+   46089,
+   "normal",
+   true
+  ],
+  [
+   "CH-1020",
+   "tenant",
+   412,
+   "normal",
+   false
+  ],
+  [
+   "CH-1024",
+   "purge",
+   4,
+   "emergency",
+   false
+  ]
+ ],
+ "plan": {
+  "claim memory": {
+   "refs": 310,
+   "remap": 303,
+   "unmappable": 7
+  },
+  "result cache": {
+   "refs": 120,
+   "remap": 117,
+   "unmappable": 3
+  },
+  "gold set": {
+   "refs": 236,
+   "remap": 232,
+   "unmappable": 4
+  },
+  "evidence packs": {
+   "refs": 540,
+   "remap": 527,
+   "unmappable": 13
+  }
+ },
+ "gaps_v0.9": 9,
+ "gaps_v1.0": 0,
+ "erasure_unanswered_v0.9": 3,
+ "erasure": {
+  "shadow index": [
+   "age-out",
+   4
+  ],
+  "determinations index": [
+   "delete",
+   4
+  ],
+  "result cache": [
+   "age-out",
+   2
+  ],
+  "claim memory": [
+   "delete",
+   14
+  ],
+  "checkpoints": [
+   "redact",
+   3
+  ],
+  "traces": [
+   "age-out",
+   22
+  ],
+  "gateway logs": [
+   "age-out",
+   9
+  ],
+  "evidence packs": [
+   "exempt",
+   2
+  ],
+  "backups": [
+   "age-out",
+   5
+  ]
+ },
+ "erasure_unanswered_v1.0": 0,
+ "exit_v0.9": {
+  "passage store": [
+   "select by tenant",
+   412
+  ],
+  "vector index": [
+   "select by tenant",
+   412
+  ],
+  "knowledge graph": [
+   "select by tenant",
+   57
+  ],
+  "determinations index": [
+   "select by tenant",
+   96
+  ],
+  "result cache": [
+   "cannot select: flush or rebuild",
+   31
+  ],
+  "claim memory": [
+   "select by tenant",
+   258
+  ],
+  "team memory and held queue": [
+   "select by tenant",
+   11
+  ],
+  "checkpoints": [
+   "select by tenant",
+   140
+  ],
+  "traces": [
+   "select by tenant",
+   2210
+  ],
+  "gateway logs": [
+   "select by tenant",
+   5340
+  ],
+  "gold set": [
+   "select by tenant",
+   18
+  ],
+  "evidence packs": [
+   "select by tenant",
+   96
+  ],
+  "backups": [
+   "select by tenant",
+   35
+  ]
+ },
+ "exit_v1.0": {
+  "passage store": [
+   "select by tenant",
+   412
+  ],
+  "vector index": [
+   "select by tenant",
+   412
+  ],
+  "knowledge graph": [
+   "select by tenant",
+   57
+  ],
+  "determinations index": [
+   "select by tenant",
+   96
+  ],
+  "result cache": [
+   "select by tenant",
+   31
+  ],
+  "claim memory": [
+   "select by tenant",
+   258
+  ],
+  "team memory and held queue": [
+   "select by tenant",
+   11
+  ],
+  "checkpoints": [
+   "select by tenant",
+   140
+  ],
+  "traces": [
+   "select by tenant",
+   2210
+  ],
+  "gateway logs": [
+   "select by tenant",
+   5340
+  ],
+  "gold set": [
+   "select by tenant",
+   18
+  ],
+  "evidence packs": [
+   "select by tenant",
+   96
+  ],
+  "backups": [
+   "select by tenant",
+   35
+  ]
+ },
+ "coverage": {
+  "retired forms never govern new terms": 4,
+  "erasure reaches every copy in 30 days": 1,
+  "no partner data outside its tenant": 1,
+  "no vector on a retired model": 0,
+  "every asset has an owner": 5,
+  "index changes are recorded and gated": 0
+ },
+ "calendar": [
+  [
+   "2027-01-01",
+   "contract",
+   "Fox Valley Bank: exit plan refreshed"
+  ],
+  [
+   "2027-01-04",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-01-11",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-01-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-01-18",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-01-20",
+   "quarterly",
+   "probe, retire-by and register re-walk"
+  ],
+  [
+   "2027-01-25",
+   "quarterly",
+   "erasure and exit drill"
+  ],
+  [
+   "2027-01-25",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-02-01",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-02-08",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-02-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-02-15",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-02-22",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-03-01",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-03-08",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-03-10",
+   "half-yearly",
+   "examination readiness drill"
+  ],
+  [
+   "2027-03-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-03-15",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-03-22",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-03-29",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-04-01",
+   "contract",
+   "Fox Valley Bank: contract date"
+  ],
+  [
+   "2027-04-05",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-04-12",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-04-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-04-19",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-04-20",
+   "quarterly",
+   "probe, retire-by and register re-walk"
+  ],
+  [
+   "2027-04-25",
+   "quarterly",
+   "erasure and exit drill"
+  ],
+  [
+   "2027-04-26",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-05-03",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-05-10",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-05-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-05-17",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-05-24",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-05-31",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-06-01",
+   "annual",
+   "inventory re-walk from the work"
+  ],
+  [
+   "2027-06-07",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-06-14",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-06-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-06-21",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-06-28",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-07-05",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-07-12",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-07-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-07-19",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-07-20",
+   "quarterly",
+   "probe, retire-by and register re-walk"
+  ],
+  [
+   "2027-07-25",
+   "quarterly",
+   "erasure and exit drill"
+  ],
+  [
+   "2027-07-26",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-08-02",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-08-09",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-08-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-08-16",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-08-23",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-08-30",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-09-06",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-09-10",
+   "half-yearly",
+   "examination readiness drill"
+  ],
+  [
+   "2027-09-13",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-09-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-09-20",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-09-27",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-10-04",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-10-11",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-10-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-10-18",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-10-20",
+   "quarterly",
+   "probe, retire-by and register re-walk"
+  ],
+  [
+   "2027-10-25",
+   "quarterly",
+   "erasure and exit drill"
+  ],
+  [
+   "2027-10-25",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-11-01",
+   "annual",
+   "retention periods reviewed"
+  ],
+  [
+   "2027-11-01",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-11-08",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-11-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-11-15",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-11-22",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-11-29",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-12-06",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-12-13",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-12-15",
+   "monthly",
+   "lifecycle review with privacy office"
+  ],
+  [
+   "2027-12-20",
+   "weekly",
+   "reconciliation report"
+  ],
+  [
+   "2027-12-27",
+   "weekly",
+   "reconciliation report"
+  ]
+ ]
+}

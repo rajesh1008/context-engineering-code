@@ -1,0 +1,8 @@
+A. Scoreboard model sim-large on the 200-determination evaluation set
+  current, clean       wrong 12/200   6.0%  tokens/det 1,103  cost/det $0.00399  lookup 3.5 min
+  clean + cap 3,000    wrong 12/200   6.0%  tokens/det 1,103  cost/det $0.00399  lookup 3.5 min
+
+B. Same facts, 8,000 vs 80,000 padded tokens (100 determinations)
+  sim-large  8k neutral  4.0% | 8k look-alike  5.0% | 80k neutral 46.0% | 80k look-alike 68.0%
+  sim-mid    8k neutral  6.0% | 8k look-alike  8.0% | 80k neutral 92.0% | 80k look-alike 96.0%
+  sim-small  8k neutral  8.0% | 8k look-alike 28.0% | 80k neutral 100.0% (100 overflow) | 80k look-alike 100.0% (100 overflow)

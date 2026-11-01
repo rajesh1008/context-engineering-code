@@ -1,0 +1,2 @@
+sim-large (curve drawn on it)  0k  4.0% (1,046 tok) | 32k  6.0% (36,336 tok) | within band: keep the budget
+model swapped to sim-mid       0k  6.0% (1,046 tok) | 32k 20.0% (36,336 tok) | OUT OF BAND: re-draw the curve

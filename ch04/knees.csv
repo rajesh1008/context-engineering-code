@@ -1,0 +1,10 @@
+kind,name,n,knee_padded,knee_prompt_tokens
+model,sim-large,100,32000,36336
+model,sim-mid,100,12000,14447
+model,sim-small,100,12000,14447
+task,form clause,153,24000,
+task,endorsement or bulletin,47,8000,
+task,family HO-3,113,12000,
+task,family PAP,48,8000,
+task,family BOAT,22,24000,
+task,family BOP,17,16000,

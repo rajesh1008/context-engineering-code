@@ -1,0 +1,73 @@
+contextlab v6.7; tokens counted with o200k_base; reader runs per determination: 5
+
+== 1. One packet, five assemblies (DET28-0188, Emily Carter)
+plain       556 tokens   2194 characters
+json       1135 tokens   3596 characters
+markdown    836 tokens   2632 characters
+xml         914 tokens   2965 characters
+schema      770 tokens   2835 characters
+schema assembly, first lines:
+  <question>Is the basement water damage from the sump pump failure covered, and what limit and deductible apply?</qu...
+  <claim_facts>
+  <span id="S1" doc="CLM-2026-01187" edition="record" page="1">Reported cause: the sump pump failed during heavy rain...
+  <span id="S2" doc="CLM-2026-01187" edition="record" page="1">Dwelling occupied at time of loss: yes.</span>
+  <span id="S3" doc="DECS-LMH-WI-0048213" edition="2025-06" page="1">Endorsements on this policy: HO 04 95 (2024-06),...
+  </claim_facts>
+
+== 2. Five assemblies, 300 determinations x 5 readings
+plain     tok   469  ptr-tok 15.2  copy   0  gold P 96.3%  checked P 93.9% R 90.5%  faith 94.5%  wrong 46/1500
+json      tok  1017  ptr-tok 20.9  copy 228  gold P 89.7%  checked P 95.0% R 92.7%  faith 94.5%  wrong 46/1500
+markdown  tok   736  ptr-tok 20.9  copy 228  gold P 89.7%  checked P 95.0% R 92.7%  faith 94.5%  wrong 46/1500
+xml       tok   809  ptr-tok 20.9  copy 228  gold P 89.7%  checked P 95.0% R 92.7%  faith 94.5%  wrong 46/1500
+schema    tok   662  ptr-tok  3.0  copy  29  gold P 92.5%  checked P 96.0% R 93.2%  faith 94.7%  wrong 36/1500
+plain     pointers  7236  resolving to more than one span  6843  wrong conclusions the checker did not flag 33
+json      pointers  8104  resolving to more than one span     0  wrong conclusions the checker did not flag 18
+markdown  pointers  8104  resolving to more than one span     0  wrong conclusions the checker did not flag 18
+xml       pointers  8104  resolving to more than one span     0  wrong conclusions the checker did not flag 18
+schema    pointers  8097  resolving to more than one span     0  wrong conclusions the checker did not flag 19
+
+== 3. Position: the schema format under four orders (missing pointers by third)
+order=retrieval  missing pointers 198  checked R 93.3%  polarity 22  wrong 36/1500
+order=document   missing pointers 215  checked R 92.9%  polarity 36  wrong 50/1500
+order=edges      missing pointers 229  checked R 92.6%  polarity 39  wrong 53/1500
+order=schema     missing pointers 204  checked R 93.2%  polarity 22  wrong 36/1500
+
+== 4. Relationships: where the endorsement sits (back-up claims with HO 04 95)
+markdown, retrieval    placement {'adjacent': 82}  polarity mistakes 13/410
+xml, document          placement {'far': 47, 'near': 35}  polarity mistakes 21/410
+schema, no relation    placement {'adjacent': 82}  polarity mistakes 13/410
+schema, modifies=      placement {'tagged': 82}  polarity mistakes 3/410
+markdown, reranked     placement {'adjacent': 12, 'far': 33, 'near': 37}  polarity mistakes 21/410
+
+== 5. Elastic snippets: shorten context spans, never governing ones
+full                   tok   662  faith 94.7%  checked R 93.2%  checked P 96.0%
+context<=20 words      tok   648  faith 94.7%  checked R 93.2%  checked P 96.0%
+context<=12 words      tok   623  faith 94.2%  checked R 92.7%  checked P 95.6%
+context<=8 words       tok   606  faith 94.2%  checked R 92.7%  checked P 95.6%
+everything<=12 words   tok   572  faith 35.8%  checked R 36.5%  checked P 36.6%
+
+== 6. Tables: thirty rows of claim history in five encodings
+json           1631 tokens  (100% of indented JSON)
+json-compact   1057 tokens  (65% of indented JSON)
+toon            784 tokens  (48% of indented JSON)
+csv             719 tokens  (44% of indented JSON)
+markdown        811 tokens  (50% of indented JSON)
+the same comparison on DET28-0188's evidence spans: json 856, json-compact 636, toon 524  (TOON 61% of JSON)
+
+== 7. Identifiers: what a pointer costs, and Chapter 28's reranker
+handles    ptr-tok 20.9  checked P 94.9% -> after rerank upstream 94.9%
+short ids  ptr-tok  3.0  checked P 96.0% -> after rerank upstream 95.9%
+
+== 8. Failure injection: the re-chunk splits HO-3 page 7 span 1, positional ids collide
+positional ids, no check  refused   0/300  collisions 204  pointers to the wrong text  747/8097  gold P 81.7%  checked P 89.8%  R 88.8%
+positional ids, check     refused 204/300  collisions   0  pointers to the wrong text    0/2611  gold P 90.7%  checked P 96.0%  R 93.6%
+short ids (v6.7)          refused   0/300  collisions   0  pointers to the wrong text    0/8097  gold P 92.5%  checked P 95.9%  R 93.1%
+
+== 9. Lakeshore before and after
+tokens per packet       735.5 ->    661.9
+tokens per pointer       20.9 ->      3.0
+checked precision       95.0% ->    96.0%
+checked recall          92.7% ->    93.2%
+faithfulness            94.5% ->    94.7%
+wrong conclusions drafted     46.0 ->     36.0
+  of which unflagged     18.0 ->     19.0

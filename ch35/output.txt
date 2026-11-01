@@ -1,0 +1,113 @@
+
+== 1. The day and the reviewed full mix
+determinations today: 3,200; reviewed full mix: 1,000; record-layer errors in it: 4
+true difficulty (h<0.35 / 0.35-0.70 / >=0.70): {0: 1923, 1: 1107, 2: 170}
+outcome fixed by rule (under deductible, one cause, no bulletin, one state): 154
+
+== 2. Where the tokens go and where the dollars go (Chapter 34 close: every call on the large tier)
+rewrite    1,160 tokens ( 6.7%)   US$0.00203 ( 2.6%)
+rerank     2,680 tokens (15.4%)   US$0.00777 (10.0%)
+extract    4,445 tokens (25.6%)   US$0.01059 (13.6%)
+draft      6,330 tokens (36.5%)   US$0.04258 (54.6%)
+verify     2,746 tokens (15.8%)   US$0.01502 (19.3%)
+by component, US$ per determination: {'uncached': 0.02443, 'cached': 0.00146, 'output': 0.012, 'thinking': 0.0401}
+thinking tokens: 3,341 per determination = 19.2% of tokens, 51.4% of dollars
+Chapter 34 close                   US$0.0780  17,361 tok  wrong   4  flagged 261  clean 735   per day US$249.57
+
+== 3. Difficulty: what the router can see, and when it can see it
+before extraction (no notes signal): residual sd 0.128; true-hard sent to band 0: 3; true-medium sent to band 0: 191
+after extraction: residual sd 0.041; true-hard sent to band 0: 0; true-medium sent to band 0: 20
+fitted weights (after extraction): {'causes2': 0.259, 'causes3': 0.173, 'n_end': 0.039, 'multi_state': 0.215, 'bulletin': 0.139, 'prior': 0.03, 'photos': -0.003, 'auto': -0.002, 'amount_k': -0.0, 'ambiguity': 0.704} bias -0.035
+router bands today: {0: 1649, 1: 1325, 2: 226} routes: ['small-low', 'mid-medium', 'large-high']
+
+== 4. Reasoning budgets: thinking tokens against quality, true-hard reviewed determinations
+small none   misread 56/56  flagged 36  thinking      0
+small low    misread 56/56  flagged 32  thinking    800
+small medium misread 56/56  flagged 30  thinking  4,000
+small high   misread 56/56  flagged 21  thinking  6,250
+mid   none   misread 56/56  flagged 32  thinking      0
+mid   low    misread 56/56  flagged 30  thinking    800
+mid   medium misread 35/56  flagged 29  thinking  4,000
+mid   high   misread 19/56  flagged 19  thinking  6,250
+large none   misread 43/56  flagged 30  thinking      0
+large low    misread 11/56  flagged 29  thinking    800
+large medium misread  0/56  flagged 26  thinking  4,000
+large high   misread  0/56  flagged 17  thinking  6,250
+true-easy reviewed (606): large-medium thinks 1,773 tokens; misreads at small-low: 0
+
+== 5. Routing by difficulty (draft step only; everything else as Chapter 34)
+Chapter 34 close                   US$0.0780  17,361 tok  wrong   4  flagged 261  clean 735
+routed by difficulty               US$0.0513  18,222 tok  wrong   4  flagged 200  clean 796   exits 1204, escalated 445
+routes taken: {'large-high': 226, 'small-low': 1649, 'mid-medium': 1325}
+routed before extraction           US$0.0488  18,183 tok  wrong  39  flagged 187  clean 774   misread causes across all 3,200: 112
+
+== 6. Smaller models for retrieval-side work
+rewrite large, rerank large, extract large US$0.0513  18,222 tok  wrong   4  flagged 200  clean 796   support misses 16, extract retries 0
+rewrite small, rerank large, extract large US$0.0494  18,222 tok  wrong   4  flagged 200  clean 796   support misses 16, extract retries 0
+rewrite small, rerank small, extract large US$0.0426  18,375 tok  wrong   4  flagged 235  clean 761   support misses 59, extract retries 0
+rewrite small, rerank mid, extract large US$0.0438  18,250 tok  wrong   4  flagged 207  clean 789   support misses 24, extract retries 0
+rewrite small, rerank mid, extract small US$0.0345  18,499 tok  wrong   4  flagged 207  clean 789   support misses 24, extract retries 181
+rewrite small, rerank mid, extract mid US$0.0363  18,371 tok  wrong   4  flagged 207  clean 789   support misses 24, extract retries 88
+
+== 7. Caching at three layers
+prefix layer (Chapter 34 layout): 92% of every stable prefix read from cache
+prefix layer only                  US$0.0345  18,499 tok  wrong   4  flagged 207  clean 789
++ retrieval-result layer           US$0.0331  16,125 tok  wrong   4  flagged 211  clean 785   hit rate 62.0% (1,984 of 3,200)
++ tool-result layer                US$0.0331  15,961 tok  wrong   4  flagged 211  clean 785   hit rate 23.3% (747 of 3,200)
+retrieval key without bulletin version US$0.0330  15,631 tok  wrong  14  flagged 215  clean 771   hit rate 71.4%; stale serves after 1900: 38 today, 10 reviewed
+
+== 8. Early exit
++ exit before the model (rule)     US$0.0322  15,577 tok  wrong   4  flagged 203  clean 793   rule exits 154
++ one redraft for flagged hard drafts US$0.0344  15,859 tok  wrong   4  flagged 191  clean 805
+where each determination stopped: {'large-high': 226, 'small exit': 1102, 'mid-medium': 1302, 'escalated': 416, 'rule': 154}
+flagged true-hard reviewed determinations: {'Chapter 34': 25, 'after': 6} of 56
+
+== 9. The chosen configuration, with a 5% shadow audit
+chosen                             US$0.0348  16,003 tok  wrong   4  flagged 191  clean 805   per day US$111.32
+shadow audit: 63 small exits re-run on mid-medium; disagreements 0
+cost per determination US$0.0780 -> US$0.0348: falls 55.4%; tokens 17,361 -> 16,003 (-7.8%)
+per day US$249.57 -> US$111.32; wrong 4 -> 4; clean 735 -> 805; flagged 261 -> 191
+Chapter 34 close  per-determination cost: median US$0.0791, 90th pct US$0.0952, max US$0.1094; top 10% of determinations = 12.5% of spend
+chosen            per-determination cost: median US$0.0306, 90th pct US$0.0446, max US$0.2397; top 10% of determinations = 30.9% of spend
+
+== 10. Failure injection: the router goes blind to the hard claims
+feature renamed upstream, router lax US$0.0286  16,228 tok  wrong 104  flagged 141  clean 755
+extra wrong by true difficulty: {1: 66, 2: 34}
+check passes on 71 of the wrong small drafts; shadow disagreements 12 of 88
+strict router refuses: "router feature(s) missing: ['ambiguity']"
+
+== 11. The frontier (Signature 8)
+small-none                         US$0.0362  14,806 tok  wrong 483  flagged 165  clean 352
+small-low                          US$0.0368  15,593 tok  wrong 300  flagged 217  clean 483
+small-medium                       US$0.0383  17,361 tok  wrong 188  flagged 238  clean 574
+small-high                         US$0.0384  17,576 tok  wrong 145  flagged 160  clean 695
+mid-none                           US$0.0386  14,806 tok  wrong 169  flagged 272  clean 559
+mid-low                            US$0.0411  15,593 tok  wrong  83  flagged 278  clean 639
+mid-medium                         US$0.0468  17,361 tok  wrong  39  flagged 264  clean 697
+mid-high                           US$0.0475  17,576 tok  wrong  23  flagged 184  clean 793
+large-none                         US$0.0473  14,806 tok  wrong  47  flagged 304  clean 649
+large-low                          US$0.0568  15,593 tok  wrong  15  flagged 273  clean 712
+large-medium                       US$0.0780  17,361 tok  wrong   4  flagged 261  clean 735
+large-high                         US$0.0806  17,576 tok  wrong   4  flagged 178  clean 818   *
+routed 0.20/0.55                   US$0.0550  18,038 tok  wrong   4  flagged 211  clean 785
+all levers 0.20/0.55               US$0.0398  15,969 tok  wrong   4  flagged 185  clean 811   *
+routed 0.25/0.60                   US$0.0531  18,119 tok  wrong   4  flagged 206  clean 790
+all levers 0.25/0.60               US$0.0373  15,988 tok  wrong   4  flagged 190  clean 806   *
+routed 0.30/0.65                   US$0.0513  18,222 tok  wrong   4  flagged 200  clean 796
+all levers 0.30/0.65               US$0.0348  16,003 tok  wrong   4  flagged 191  clean 805   *
+routed 0.35/0.70                   US$0.0497  18,299 tok  wrong   6  flagged 186  clean 808
+all levers 0.35/0.70               US$0.0326  16,013 tok  wrong   6  flagged 183  clean 811
+routed 0.40/0.75                   US$0.0485  18,389 tok  wrong  17  flagged 164  clean 819
+all levers 0.40/0.75               US$0.0309  16,052 tok  wrong  17  flagged 162  clean 821
+blind router                       US$0.0286  16,228 tok  wrong 104  flagged 141  clean 755
+frontier (wrong no worse than 4): ['all levers 0.30/0.65', 'all levers 0.25/0.60', 'all levers 0.20/0.55', 'large-high']
+
+== 12. Lakeshore, before and after
+Chapter 34 close               US$0.07799  wrong 4  clean 735
+route the draft                US$0.05126  wrong 4  clean 796
+retrieval side to small/mid    US$0.03446  wrong 4  clean 789
+retrieval-result cache         US$0.03311  wrong 4  clean 785
+tool-result cache              US$0.03307  wrong 4  clean 785
+exit before the model          US$0.03215  wrong 4  clean 793
+redraft flagged hard           US$0.03438  wrong 4  clean 805
+shadow audit 5%                US$0.03479  wrong 4  clean 805

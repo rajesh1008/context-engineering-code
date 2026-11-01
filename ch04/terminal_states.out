@@ -1,0 +1,26 @@
+5. Terminal states by history carried into the search (sim-mid stand-in, 100 lookups, bulletin at call 12)
+ history mean tokens  confident-right  confident-wrong  uncertain-wrong          gave-up  gave-up turn
+       0      15,488               99                0                0                1          10.0
+   8,000      22,840               86                3                1               10           7.5
+  16,000      30,072               77                3                4               16           7.1
+  24,000      36,800               56                2               13               29           7.0
+  32,000      43,000               45               11                8               36           4.6
+  48,000      58,220               40                7               12               41           4.4
+  64,000      72,048               16                9               19               56           4.5
+
+fix at 32,000 history: turn cap 20 + compaction checkpoint at 12,000 tokens (history -> 1,500-token note)
+  no fix              mean tokens 43,000  right 45  confident-wrong 11  uncertain-wrong 8  gave-up 36
+  cap 20 + compaction mean tokens  9,676  right 96  confident-wrong  1  uncertain-wrong 0  gave-up 3
+  turn-cap hand-offs: 0 and 0
+
+trace: lookup 4 at 16,000 history -> gave-up at turn 9, 27,900 tokens; governing bulletin at call 12
+  turn  1  tokens 18,300  read_claim_file(page=1)
+  turn  2  tokens 19,500  read_claim_file(page=2)
+  turn  3  tokens 20,700  read_claim_file(page=3)
+  turn  4  tokens 21,900  read_claim_file(page=4)
+  turn  5  tokens 23,100  read_claim_file(page=5)
+  turn  6  tokens 24,300  read_claim_file(page=6)
+  turn  7  tokens 25,500  open_bulletin_result(state='IL', topic='roof', rank=1)
+  turn  8  tokens 26,700  open_bulletin_result(state='IL', topic='roof', rank=2)
+  turn  9  tokens 27,900  open_bulletin_result(state='IL', topic='roof', rank=3)
+  final: status=insufficient_information  cited=None  (rank 6 holds the governing bulletin)

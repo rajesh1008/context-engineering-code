@@ -1,0 +1,31 @@
+history[30]{date,claim,peril,paid,status}:
+  2018-01-01,CLM-2018-92235,water back-up,1200,closed
+  2018-06-08,CLM-2018-71210,frozen pipe,450,denied
+  2018-11-15,CLM-2018-30690,water back-up,450,denied
+  2018-04-22,CLM-2018-19329,water back-up,1200,closed
+  2019-09-01,CLM-2019-20653,water back-up,0,closed
+  2019-02-08,CLM-2019-56623,hail,1200,denied
+  2019-07-15,CLM-2019-20022,water back-up,0,denied
+  2019-12-22,CLM-2019-44290,frozen pipe,2750,closed
+  2020-05-01,CLM-2020-79307,theft,5000,closed
+  2020-10-08,CLM-2020-62676,water back-up,0,denied
+  2020-03-15,CLM-2020-55264,mould,8300,closed
+  2020-08-22,CLM-2020-45920,frozen pipe,450,closed
+  2021-01-01,CLM-2021-80708,frozen pipe,8300,closed
+  2021-06-08,CLM-2021-26616,wind,2750,denied
+  2021-11-15,CLM-2021-75216,hail,8300,denied
+  2021-04-22,CLM-2021-77527,wind,0,closed
+  2022-09-01,CLM-2022-62326,wind,5000,closed
+  2022-02-08,CLM-2022-66412,frozen pipe,0,closed
+  2022-07-15,CLM-2022-21364,frozen pipe,8300,closed
+  2022-12-22,CLM-2022-54753,frozen pipe,0,denied
+  2023-05-01,CLM-2023-69818,water back-up,0,closed
+  2023-10-08,CLM-2023-27020,hail,5000,closed
+  2023-03-15,CLM-2023-69233,theft,450,closed
+  2023-08-22,CLM-2023-29675,hail,2750,closed
+  2024-01-01,CLM-2024-98700,wind,5000,denied
+  2024-06-08,CLM-2024-15847,frozen pipe,8300,denied
+  2024-11-15,CLM-2024-79310,wind,5000,closed
+  2024-04-22,CLM-2024-82034,wind,450,closed
+  2025-09-01,CLM-2025-10649,hail,0,denied
+  2025-02-08,CLM-2025-50357,theft,8300,closed

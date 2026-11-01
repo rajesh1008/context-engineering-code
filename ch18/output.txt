@@ -1,0 +1,83 @@
+corpus: Counter({'bulletin': 60, 'endorsement': 21, 'manual': 20, 'form': 9}) | hard claims 160 | easy claims 240 | governing spans per hard claim, mean 6.02
+
+== 1. One hard claim, three ways
+claim: MN P-40023, DOL 05/11/25: hail on a 14yr old shingle roof. Covered, and what limit applies?
+policy record: {'SL': '2025-03', 'EB': '2024-04', 'OL': '2024-04', 'MD': '2024-04', 'RS': '2024-04', 'HS': '2024-04', 'SP': '2024-04'}
+governing spans: ['BUL-MN-OL-202202', 'BUL-MN-RS-202205', 'HO-SET-LOSS', 'LK-OL@2024-04', 'LK-RS@2024-04']
+  fixed    packet  9 spans, missing ['BUL-MN-OL-202202', 'LK-OL@2024-04'], wrong=True, tokens 1,415
+  graph    packet  9 spans, missing ['BUL-MN-OL-202202', 'LK-OL@2024-04'], wrong=True, tokens 1,415
+  agentic  packet  9 spans, missing none, wrong=False, tokens 5,246
+    round 1 fixed  MN P-40023, DOL 05/11/25: hail on a 14yr old shingle roof. -> MAN-RS-0, MAN-RS-1, LK-RS@2024-04 ...
+    round 2 lookup LK-OL@2024-04                                              -> LK-OL@2024-04
+    round 2 search Minnesota bulletin limited fungi, wet rot and mould LK-MD  -> BUL-MN-TP-202211, BUL-MN-TP-202504, BUL-MN-EB-202207 ...
+    round 3 search Minnesota bulletin ordinance or law LK-OL                  -> BUL-MN-OL-202202, BUL-MN-OL-202510, BUL-MN-EB-202207 ...
+    stop: sufficient after 3 rounds, 4 tool calls
+
+hard claims (160) and easy claims (240), three ways:
+  hard  fixed                      wrong  72/160 faithfulness 0.650 tokens  1,577 tool calls  1.00 US$0.0079
+  hard  graph                      wrong  14/160 faithfulness 0.963 tokens  1,761 tool calls  1.00 US$0.0084
+  hard  agentic                    wrong   5/160 faithfulness 1.000 tokens  6,973 tool calls  6.22 US$0.0297
+  easy  fixed                      wrong   5/240 faithfulness 1.000 tokens  1,588 tool calls  1.00 US$0.0079
+  easy  graph                      wrong   5/240 faithfulness 1.000 tokens  1,708 tool calls  1.00 US$0.0083
+  easy  agentic                    wrong   5/240 faithfulness 1.000 tokens  6,007 tool calls  4.72 US$0.0254
+
+== 2. Query transformations, one shot, no authority filter (hard claims)
+  raw question   governing endorsements in top 10: 0.555   top endorsement on the policy's edition: 58/112
+  rewritten      governing endorsements in top 10: 0.522   top endorsement on the policy's edition: 55/129
+  decomposed     governing endorsements in top 10: 0.567   top endorsement on the policy's edition: 19/123
+  HyDE           governing endorsements in top 10: 0.604   top endorsement on the policy's edition: 13/87
+  hard claims whose policy carries an older edition of the first endorsement: 132/160
+
+== 3. The first move (slot check, default budget)
+  hard  first move = decompose     wrong   6/160 faithfulness 0.999 tokens  6,861 tool calls  7.54 US$0.0305
+  hard  first move = fixed         wrong   5/160 faithfulness 1.000 tokens  6,973 tool calls  6.22 US$0.0297
+  easy  first move = decompose     wrong   5/240 faithfulness 1.000 tokens  3,382 tool calls  3.00 US$0.0160
+  easy  first move = fixed         wrong   5/240 faithfulness 1.000 tokens  6,007 tool calls  4.72 US$0.0254
+
+== 4. Sufficiency checks (hard claims)
+  judge = always                   wrong  72/160 faithfulness 0.650 tokens  3,225 tool calls  1.00 US$0.0139
+      stopped with a governing span missing: 123; rounds after the packet was complete: 0; stops {'sufficient': 160}
+  judge = self                     wrong  50/160 faithfulness 0.833 tokens  7,312 tool calls  5.30 US$0.0308
+      stopped with a governing span missing: 97; rounds after the packet was complete: 119; stops {'planner-done': 160}
+  judge = slots                    wrong   5/160 faithfulness 1.000 tokens  6,973 tool calls  6.22 US$0.0297
+      stopped with a governing span missing: 0; rounds after the packet was complete: 113; stops {'sufficient': 160}
+  slots open after the first move, by kind: {'ref': 218, 'bulletin': 259}
+
+== 5. Failure injection: the always-satisfied judge
+  hard claims answered after one round: 160; wrong 72; every one stopped as 'sufficient': True
+  governing spans missing, by kind: {'endorsement': 208, 'bulletin': 129}
+
+== 6. Round cap (hard claims, slot check)
+  max rounds 1                     wrong  72/160 faithfulness 0.650 tokens  2,728 tool calls  1.00 US$0.0122
+  max rounds 2                     wrong  56/160 faithfulness 0.823 tokens  4,891 tool calls  3.98 US$0.0214
+  max rounds 3                     wrong  18/160 faithfulness 0.971 tokens  6,402 tool calls  5.73 US$0.0275
+  max rounds 4                     wrong   5/160 faithfulness 1.000 tokens  6,933 tool calls  6.19 US$0.0295
+  max rounds 5                     wrong   5/160 faithfulness 1.000 tokens  6,973 tool calls  6.22 US$0.0297
+  max rounds 6                     wrong   5/160 faithfulness 1.000 tokens  6,973 tool calls  6.22 US$0.0297
+  rounds used with cap 6: {1: 3, 2: 21, 3: 72, 4: 59, 5: 5}
+
+== 7. Cost per determination (hard claims)
+  fixed    input by part {'plan': 0, 'read': 0, 'judge': 0, 'answer': 1227, 'output': 350}  latency p50 1.6s p95 1.6s  US$0.0079
+  graph    input by part {'plan': 0, 'read': 0, 'judge': 0, 'answer': 1411, 'output': 350}  latency p50 1.6s p95 1.6s  US$0.0084
+  agentic  input by part {'plan': 1740, 'read': 3036, 'judge': 0, 'answer': 1225, 'output': 972}  latency p50 16.9s p95 25.1s  US$0.0297
+
+== 8. Search sub-agent: lead context with and without isolation (hard claims)
+  isolate=True  peak lead context    278 tokens; total tokens 6,973; model calls 10.49
+  isolate=False peak lead context  1,411 tokens; total tokens 7,457; model calls 4.26
+  deepest claim H181-066: lead context by round, isolated [0, 275, 275, 300, 325], not isolated [0, 735, 1418, 1781, 2123]
+
+== 9. Routing (graph walk unless the router sends the claim to the loop)
+  router v1 hard  ( 55 to loop)    wrong   9/160 faithfulness 0.979 tokens  3,703 tool calls  3.01 US$0.0164
+  router v1 easy  (  0 to loop)    wrong   5/240 faithfulness 1.000 tokens  1,708 tool calls  1.00 US$0.0083
+  router v2 hard  ( 96 to loop)    wrong   5/160 faithfulness 1.000 tokens  5,007 tool calls  4.23 US$0.0216
+  router v2 easy  (  0 to loop)    wrong   5/240 faithfulness 1.000 tokens  1,708 tool calls  1.00 US$0.0083
+
+== 10. A check that can never be satisfied (demands a bulletin for every endorsement)
+  budget 6 rounds / 20k tokens       mean tokens  12,342 max   15,899 rounds   5.6 US$0.0522 stops {'round-cap': 91, 'call-cap': 64, 'sufficient': 5}
+  cap 30 rounds only, isolated       mean tokens  61,823 max  111,863 rounds  29.1 US$0.2534 stops {'round-cap': 155, 'sufficient': 5}
+  cap 30 rounds only, not isolated   mean tokens 322,964 max  636,640 rounds  29.1 US$1.0109 stops {'round-cap': 155, 'sufficient': 5}
+
+== 11. Scoreboard inputs: the 65 graph-routed claims inside the 1,000-determination mix
+  graph                            wrong   4/65  faithfulness 0.975 tokens  1,736 tool calls  1.00 US$0.0084
+  agentic                          wrong   1/65  faithfulness 1.000 tokens  6,766 tool calls  6.02 US$0.0289
+  routed v2 (33 to the loop)       wrong   2/65  faithfulness 0.997 tokens  4,257 tool calls  3.45 US$0.0186

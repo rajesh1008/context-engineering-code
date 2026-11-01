@@ -1,0 +1,9 @@
+chunking,window,stack,units,hit,gov,gov1,leaky,tokens
+fixed,128,keyword only,310,0.757,0.744,0.631,0.525,442
+fixed,128,rebuilt stack,310,0.829,0.828,0.666,0.0,516
+fixed,256,keyword only,261,0.852,0.85,0.741,0.574,635
+fixed,256,rebuilt stack,261,0.929,0.929,0.803,0.0,792
+fixed,512,keyword only,234,0.887,0.881,0.695,0.653,929
+fixed,512,rebuilt stack,234,0.962,0.958,0.809,0.0,1242
+structural,0,keyword only,375,0.864,0.85,0.772,0.53,294
+structural,0,rebuilt stack,375,0.968,0.967,0.88,0.0,333

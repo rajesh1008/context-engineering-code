@@ -1,0 +1,208 @@
+{
+ "audit_lint": {
+  "determination": [],
+  "policyholder-assistant": [
+   "AP09 warn  policyholder-assistant: volatile field 'today' sits in the cached prefix"
+  ],
+  "subrogation-agent": [
+   "AP12 warn  subrogation-agent: 'claim_notes' and 'claim_diary' read alike"
+  ]
+ },
+ "catalogue": [
+  {
+   "rule": "AP01",
+   "metric": "wrong",
+   "per_1000": 32,
+   "cost_index": 310,
+   "caught": [
+    "AP01"
+   ]
+  },
+  {
+   "rule": "AP02",
+   "metric": "wrong",
+   "per_1000": 50,
+   "cost_index": 100,
+   "caught": [
+    "AP02"
+   ]
+  },
+  {
+   "rule": "AP03",
+   "metric": "wrong",
+   "per_1000": 17,
+   "cost_index": 100,
+   "caught": [
+    "AP03"
+   ]
+  },
+  {
+   "rule": "AP04",
+   "metric": "wrong",
+   "per_1000": 17,
+   "cost_index": 100,
+   "caught": [
+    "AP04"
+   ]
+  },
+  {
+   "rule": "AP05",
+   "metric": "broken",
+   "per_1000": 245,
+   "cost_index": 100,
+   "caught": [
+    "AP05"
+   ]
+  },
+  {
+   "rule": "AP06",
+   "metric": "wrong",
+   "per_1000": 59,
+   "cost_index": 100,
+   "caught": [
+    "AP06"
+   ]
+  },
+  {
+   "rule": "AP07",
+   "metric": "wrong",
+   "per_1000": 20,
+   "cost_index": 100,
+   "caught": [
+    "AP07"
+   ]
+  },
+  {
+   "rule": "AP08",
+   "metric": "wrong",
+   "per_1000": 20,
+   "cost_index": 100,
+   "caught": [
+    "AP08"
+   ]
+  },
+  {
+   "rule": "AP09",
+   "metric": "cost",
+   "per_1000": 3,
+   "cost_index": 260,
+   "caught": [
+    "AP09"
+   ]
+  },
+  {
+   "rule": "AP10",
+   "metric": "wrong",
+   "per_1000": 19,
+   "cost_index": 100,
+   "caught": [
+    "AP10"
+   ]
+  },
+  {
+   "rule": "AP11",
+   "metric": "flaky",
+   "per_1000": 281,
+   "cost_index": 100,
+   "caught": [
+    "AP11"
+   ]
+  },
+  {
+   "rule": "AP12",
+   "metric": "wrong",
+   "per_1000": 9,
+   "cost_index": 135,
+   "caught": [
+    "AP12"
+   ]
+  }
+ ],
+ "rot_lint_only": [
+  {
+   "month": 0,
+   "lint_errors": 0,
+   "resolve": 0,
+   "wrong": 3,
+   "broken": 0
+  },
+  {
+   "month": 1,
+   "lint_errors": 0,
+   "resolve": 0,
+   "wrong": 3,
+   "broken": 0
+  },
+  {
+   "month": 2,
+   "lint_errors": 0,
+   "resolve": 1,
+   "wrong": 3,
+   "broken": 280
+  },
+  {
+   "month": 3,
+   "lint_errors": 0,
+   "resolve": 4,
+   "wrong": 12,
+   "broken": 205
+  },
+  {
+   "month": 4,
+   "lint_errors": 0,
+   "resolve": 7,
+   "wrong": 35,
+   "broken": 235
+  },
+  {
+   "month": 5,
+   "lint_errors": 0,
+   "resolve": 7,
+   "wrong": 53,
+   "broken": 255
+  }
+ ],
+ "rot_resolved": [
+  {
+   "month": 0,
+   "found": 0,
+   "wrong": 3,
+   "broken": 0
+  },
+  {
+   "month": 1,
+   "found": 0,
+   "wrong": 3,
+   "broken": 0
+  },
+  {
+   "month": 2,
+   "found": 1,
+   "wrong": 3,
+   "broken": 0
+  },
+  {
+   "month": 3,
+   "found": 3,
+   "wrong": 3,
+   "broken": 0
+  },
+  {
+   "month": 4,
+   "found": 3,
+   "wrong": 3,
+   "broken": 0
+  },
+  {
+   "month": 5,
+   "found": 0,
+   "wrong": 3,
+   "broken": 0
+  }
+ ],
+ "reaudit": {
+  "determination": "0 error(s), 0 warning(s)",
+  "policyholder-assistant": "0 error(s), 0 warning(s)",
+  "subrogation-agent": "0 error(s), 0 warning(s)"
+ }
+}

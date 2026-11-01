@@ -1,0 +1,91 @@
+
+== 1. What the tool text costs
+A 8 core, team descriptions            tools  8  tokens  1,810  per tool   226  US$ 27.15 per 1k dets
+B + 4 new, as shipped                  tools 12  tokens  2,393  per tool   199  US$ 35.90 per 1k dets
+C + 4 new, rewritten                   tools 12  tokens  2,724  per tool   227  US$ 40.86 per 1k dets
+D gateway 60, catalogue one-liners     tools 60  tokens 11,933  per tool   199  US$179.00 per 1k dets
+E gateway 60, all rewritten            tools 60  tokens 13,365  per tool   223  US$200.47 per 1k dets
+largest definitions: get_declarations 323, search 292, get_policy 290
+
+== 2. Selection accuracy by configuration and phrasing
+A 8 core, team descriptions            all  97.0%  forms 100.0%  adjuster  94.4%  new four   nan%
+B + 4 new, as shipped                  all  87.2%  forms  92.6%  adjuster  82.3%  new four  76.0%
+C + 4 new, rewritten                   all  96.3%  forms  98.6%  adjuster  94.3%  new four  96.0%
+D gateway 60, catalogue one-liners     all  39.2%  forms  45.8%  adjuster  33.2%  new four  33.5%
+E gateway 60, all rewritten            all  82.7%  forms  86.3%  adjuster  79.4%  new four  83.0%
+
+== 3. Tool-count sweep (steps for the 12 assistant tools)
+ tools   one-liners  rewritten   tokens(rw)  US$/1k dets(rw)
+   12      96.3%      96.3%       2,724       40.86
+   16      88.7%      94.3%       3,581       53.72
+   20      85.7%      92.5%       4,511       67.67
+   24      83.8%      90.8%       5,313       79.69
+   30      80.2%      89.0%       6,778      101.67
+   36      79.0%      88.2%       8,188      122.82
+   42      77.8%      85.2%       9,460      141.90
+   48      76.5%      84.0%      10,843      162.65
+   54      74.7%      83.2%      12,107      181.60
+   60      73.5%      82.7%      13,365      200.47
+
+== 4. Where the wrong picks go (gateway 60, one-liners)
+  flood_zone         -> property_risk_profile  26
+  estimate_lines     -> get_quote             22
+  search             -> ocr_text              19
+  storm_events       -> weather_alerts        18
+  search             -> policy_documents      16
+  get_claim          -> flood_zone            15
+  get_declarations   -> policy_documents      13
+  claim_history      -> prior_loss_search     12
+  storm_events       -> flood_zone            11
+  prior_loss_search  -> get_claim_summary      9
+wrong picks 365; to a platform tool 281; to another assistant tool 84
+
+== 5. Failure injection: two descriptions that read alike
+1,000 full-mix determinations; 232 renewed since the loss; 6 wrong before this chapter
+  12 tools, no get_policy          to get_policy    0  wrong-clause   6/1,000 (0.6%)
+  + get_policy, both one-liners    to get_policy  238  wrong-clause  65/1,000 (6.5%)
+  + get_policy, both rewritten     to get_policy   12  wrong-clause   6/1,000 (0.6%)
+  + renamed and rewritten          to get_policy   12  wrong-clause   8/1,000 (0.8%)
+  + get_policy kept out of scope   to get_policy    0  wrong-clause   6/1,000 (0.6%)
+description similarity: one-liners 0.74; rewritten 0.42
+risk state from a geocoder, across a state line: D0518, D0527; from the declarations result: 4/1,000 wrong
+
+== 6. Dynamic loadout from the 60-tool catalogue
+  k   recall(gold loaded)  bare-index recall  selection  tokens/step
+  1       95.0%              91.8%         90.3%      1240
+  2       98.0%              95.7%         90.3%      1458
+  3       98.5%              95.7%         89.7%      1672
+  4       98.5%              95.7%         87.8%      1885
+  6       98.7%              98.7%         87.3%      2319
+  8       98.7%             100.0%         87.5%      2749
+ 12      100.0%             100.0%         87.7%      3602
+
+== 7. Tool results as context: raw record, filtered, shaped
+  raw record (60 fields)   tokens   561   right field  47.5%
+  filtered (12 fields)     tokens    99   right field  85.5%
+  shaped span (6 fields)   tokens   102   right field 100.0%
+[tool get_claim | read 2026-11-01T09:14 | 6 of 60 fields]
+date_of_loss: 2026-03-14  (date the damage happened, not the report date)
+cause_reported: sewer back-up through floor drain  (as the policyholder reported it; not a determination)
+deductible_amount: 1000 US$
+paid_indemnity: 0 US$  (paid for the damage, excluding expenses)
+location_address: 2214 Elm Street, Green Bay, WI
+adjuster_name: Tom Brennan
+
+== 8. Lists: first page, every page, or code
+20 third-party determinations; rows per answer 66-233
+  first page only (20 rows)   found  1/20   tokens/det    920
+  every page into context     found 20/20   tokens/det  6,327
+  code filters, returns hits  found 20/20   tokens/det    272
+
+== 9. Which tool text may enter: approval pins and server trust
+  search           lakeshore-claims     internal -> admit: ok
+  storm_events     lakeshore-external   partner  -> refuse: description changed since approval
+  free_weather     community-weather    public   -> refuse: not approved
+  siu_referral     platform-siu         internal -> refuse: not approved
+  flood_zone       lakeshore-external   partner  -> admit: ok
+
+== 10. Lakeshore before and after
+  before: 8 tools, all loaded  old steps  97.0%  new steps   nan%  tool tokens/call  1,810  wrong-clause 6/1,000  US$ 86.88/day
+  after: 12 tools, all loaded  old steps  96.5%  new steps  96.0%  tool tokens/call  2,724  wrong-clause 4/1,000  US$130.75/day
+  after: 12 tools, core 4 + 3  old steps  96.8%  new steps  94.0%  tool tokens/call  1,661  wrong-clause 4/1,000  US$ 79.71/day

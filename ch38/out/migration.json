@@ -1,0 +1,41 @@
+{
+ "sim-large@2026-04": {
+  "wrong_clause": 4,
+  "citation_parse_pct": 100.0,
+  "input_tokens_rel": 1.0,
+  "verifier_flags_per_det": 0.3
+ },
+ "sim-large@2026-10": {
+  "wrong_clause": 4,
+  "citation_parse_pct": 96.98,
+  "input_tokens_rel": 1.062,
+  "verifier_flags_per_det": 0.31
+ },
+ "gates": {
+  "wrong_clause_max": 4,
+  "citation_parse_min": 99.5,
+  "tokens_max_pct": 10.0,
+  "verifier_flags_max": 0.35
+ },
+ "verdict": {
+  "wrong_clause": true,
+  "citation_parse": false,
+  "tokens": true,
+  "verifier_flags": true
+ },
+ "cold_start": [
+  46.7,
+  63.0,
+  51.7,
+  64.7,
+  74.4,
+  81.2,
+  73.0,
+  66.7,
+  83.9,
+  80.6,
+  69.4,
+  76.5
+ ],
+ "wrong_overlap": 3
+}

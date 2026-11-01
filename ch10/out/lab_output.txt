@@ -1,0 +1,85 @@
+== parse quality, 300 pages ==
+text_layer wordF1 0.930 order 0.960 footer-leak 288 empty  12 rows 0.46 s/page 0.005 usd 0.00
+layout     wordF1 0.960 order 0.960 footer-leak   0 empty  12 rows 1.00 s/page 0.068 usd 0.00
+ocr        wordF1 0.819 order 0.872 footer-leak  14 empty   0 rows 0.62 s/page 4.014 usd 0.00
+vision     wordF1 0.998 order 0.997 footer-leak   0 empty   0 rows 0.92 s/page 3.500 usd 3.60
+routed     wordF1 0.980 order 0.978 footer-leak   3 empty   0 rows 1.00 s/page 0.129 usd 0.00
+routes: {'layout': 288, 'ocr': 12}
+downstream text_layer hit@1 0.309 hit@5 0.568 cite@5 0.562
+downstream layout     hit@1 0.562 hit@5 0.759 cite@5 0.759
+downstream ocr        hit@1 0.198 hit@5 0.475 cite@5 0.451
+downstream vision     hit@1 0.562 hit@5 0.778 cite@5 0.778
+downstream routed     hit@1 0.562 hit@5 0.759 cite@5 0.759
+fixed-64         bm25   hit@1 0.253 @5 0.401 @10 0.451 cite@1 0.235 @5 0.370 chunks  3221 tok   63.8 pkt5   320.1
+fixed-64         vector hit@1 0.272 @5 0.389 @10 0.438 cite@1 0.247 @5 0.352 chunks  3221 tok   63.8 pkt5   319.1
+fixed-128        bm25   hit@1 0.469 @5 0.735 @10 0.784 cite@1 0.352 @5 0.599 chunks  1619 tok  126.9 pkt5   638.5
+fixed-128        vector hit@1 0.401 @5 0.691 @10 0.753 cite@1 0.296 @5 0.549 chunks  1619 tok  126.9 pkt5   633.1
+fixed-256        bm25   hit@1 0.432 @5 0.735 @10 0.796 cite@1 0.302 @5 0.556 chunks   821 tok  250.3 pkt5  1261.2
+fixed-256        vector hit@1 0.432 @5 0.685 @10 0.753 cite@1 0.296 @5 0.500 chunks   821 tok  250.3 pkt5  1247.5
+fixed-512        bm25   hit@1 0.352 @5 0.667 @10 0.722 cite@1 0.198 @5 0.469 chunks   419 tok  490.5 pkt5  2455.1
+fixed-512        vector hit@1 0.284 @5 0.642 @10 0.704 cite@1 0.136 @5 0.438 chunks   419 tok  490.5 pkt5  2440.6
+fixed-1024       bm25   hit@1 0.296 @5 0.488 @10 0.543 cite@1 0.148 @5 0.321 chunks   226 tok  909.4 pkt5  4755.0
+fixed-1024       vector hit@1 0.278 @5 0.457 @10 0.531 cite@1 0.117 @5 0.272 chunks   226 tok  909.4 pkt5  4624.5
+fixed-2048       bm25   hit@1 0.247 @5 0.377 @10 0.444 cite@1 0.093 @5 0.191 chunks   125 tok 1644.2 pkt5  9282.1
+fixed-2048       vector hit@1 0.253 @5 0.395 @10 0.451 cite@1 0.099 @5 0.204 chunks   125 tok 1644.2 pkt5  8975.1
+fixed-256/o64    bm25   hit@1 0.414 @5 0.728 @10 0.809 cite@1 0.302 @5 0.549 chunks  1078 tok  252.8 pkt5  1262.4
+fixed-256/o64    vector hit@1 0.432 @5 0.685 @10 0.747 cite@1 0.290 @5 0.506 chunks  1078 tok  252.8 pkt5  1259.7
+recursive-256    bm25   hit@1 0.407 @5 0.747 @10 0.815 cite@1 0.296 @5 0.574 chunks   948 tok  216.8 pkt5  1090.0
+recursive-256    vector hit@1 0.364 @5 0.673 @10 0.765 cite@1 0.241 @5 0.500 chunks   948 tok  216.8 pkt5  1084.0
+recursive-512    bm25   hit@1 0.364 @5 0.636 @10 0.710 cite@1 0.235 @5 0.457 chunks   446 tok  460.8 pkt5  2302.0
+recursive-512    vector hit@1 0.346 @5 0.630 @10 0.691 cite@1 0.185 @5 0.444 chunks   446 tok  460.8 pkt5  2295.3
+semantic-512     bm25   hit@1 0.383 @5 0.630 @10 0.679 cite@1 0.383 @5 0.630 chunks  5696 tok   36.1 pkt5   329.7
+semantic-512     vector hit@1 0.414 @5 0.617 @10 0.722 cite@1 0.414 @5 0.617 chunks  5696 tok   36.1 pkt5   323.9
+structural       bm25   hit@1 0.494 @5 0.741 @10 0.796 cite@1 0.494 @5 0.741 chunks  2618 tok   70.6 pkt5   293.7
+structural       vector hit@1 0.549 @5 0.753 @10 0.802 cite@1 0.549 @5 0.753 chunks  2618 tok   70.6 pkt5   282.9
+structural+path  bm25   hit@1 0.562 @5 0.759 @10 0.809 cite@1 0.562 @5 0.759 chunks  2618 tok   70.6 pkt5   396.6
+structural+path  vector hit@1 0.586 @5 0.765 @10 0.846 cite@1 0.586 @5 0.765 chunks  2618 tok   70.6 pkt5   387.1
+fixed-256        late   hit@1 0.370 @5 0.648 @10 0.735
+structural+path  late   hit@1 0.562 @5 0.722 @10 0.821
+== the five frozen-pipe determinations ==
+chapter 2 import (text layer, cut at numbered headings): hit@1 0.0 hit@5 0.0 cite@5 0.0
+   DET-0022  gold rank None  top: HO-3 (2022-01), Section I Perils Insured Against > 4. Riot Or Civil Commotion, page 1
+   frozen-2  gold rank None  top: HO-3 (2022-01), Section I Perils Insured Against > 4. Riot Or Civil Commotion, page 1
+   frozen-3  gold rank None  top: HO-3 (2022-01), Section I Perils Insured Against > 4. Riot Or Civil Commotion, page 1
+   frozen-4  gold rank None  top: HO-3 (2022-01), Section I Perils Insured Against > 4. Riot Or Civil Commotion, page 1
+   frozen-5  gold rank None  top: HO-3 (2022-01), Section I Conditions, page 13
+fixed-512 on layout parse: hit@1 0.2 hit@5 1.0 cite@5 1.0
+   DET-0022  gold rank 2  top: HO-3 (2022-01), no section, page 12
+   frozen-2  gold rank 1  top: HO-3 (2022-01), no section, page 2
+   frozen-3  gold rank 3  top: HO-3 (2022-01), no section, page 12
+   frozen-4  gold rank 2  top: HO-3 (2022-01), no section, page 12
+   frozen-5  gold rank 2  top: HO-3 (2022-01), no section, page 12
+structural on layout parse: hit@1 0.0 hit@5 1.0 cite@5 1.0
+   DET-0022  gold rank 3  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+   frozen-2  gold rank 2  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+   frozen-3  gold rank 4  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+   frozen-4  gold rank 2  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+   frozen-5  gold rank 2  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+structural+path on layout parse: hit@1 0.2 hit@5 1.0 cite@5 1.0
+   DET-0022  gold rank 4  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+   frozen-2  gold rank 1  top: HO-3 (2022-01), Section I Perils Insured Against > 12. Freezing, page 2
+   frozen-3  gold rank 4  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+   frozen-4  gold rank 3  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+   frozen-5  gold rank 2  top: HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13
+== furniture by repetition alone: 901 body lines deleted; clauses no chunk holds whole 269/2686 (10.0%) vs margin band and repetition 36/2686 (1.3%)
+== footer kept vs stripped (59 questions, 9 about the declarations): cite@1 0.322 -> 0.339; hit@1 0.322 -> 0.339; flips 1; chunks carrying the footer 14
+   footer inside a clause: HO 04 95 (2024-06), Exclusions, page 1 pages [1, 2]
+   We do not pay for loss caused by flood, surface water, waves, tidal water or overflow of a body of water, whether or not driven by wind. / HO 04 95 (2024-06) Coverage under this endorsement applies only when the endorsement is shown in the Declarations. Page 1 of 2 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.
+   declarations group cite@1 kept 0.0 stripped 0.0
+   roof-2022-01 | kept top: HO-3 (2022-01), Definitions, page 1 | ly the same general harmful conditions.  Actual cash value means the cost to replace damaged property with new property of like kind and quality, less depreciation for age, condition and obsolescence. | stripped top: HO-3 (2022-01), Section I Conditions > D.3 Roof Surfacing, page 14
+== deductible schedule, wind or hail by state ==
+  text_layer {'Wisconsin': ('1% of Coverage A', 'ok'), 'Illinois': ('1% of Coverage A', 'WRONG'), 'Michigan': ('1% of Coverage A', 'ok'), 'Minnesota': ('2% of Coverage A', 'ok'), 'Iowa': ('2% of Coverage A', 'WRONG'), 'Indiana': ('2% of Coverage A', 'ok')}
+  layout     {'Wisconsin': ('1% of Coverage A', 'ok'), 'Illinois': ('2% of Coverage A', 'ok'), 'Michigan': ('1% of Coverage A', 'ok'), 'Minnesota': ('2% of Coverage A', 'ok'), 'Iowa': ('1% of Coverage A', 'ok'), 'Indiana': ('2% of Coverage A', 'ok')}
+  ocr        {'Wisconsin': ('1% of Coverage A', 'ok'), 'Illinois': ('2% of Coverage A', 'ok'), 'Michigan': ('1% of Coverage A', 'ok'), 'Minnesota': ('2% of Coverage A', 'ok'), 'Iowa': (None, 'WRONG'), 'Indiana': ('2% of Coverage A', 'ok')}
+  text layer, page 3:  seepage. Minnesota Iowa Indiana $1,500 $1,000 $1,000 2% of Coverage A 1% of Coverage A 2% of Coverage A $3,000 $2,500 $2,000 LAKESHORE MUTUAL DEDUCTIBLE SCHEDULE
+== one sentence edited in Perils 2: chunks to re-embed ==
+  fixed-256          26 of   90 chunks (28.9%)
+  fixed-512          36 of   45 chunks (80.0%)
+  fixed-256/o64       6 of  119 chunks (5.0%)
+  recursive-512       1 of   48 chunks (2.1%)
+  semantic-512        1 of  319 chunks (0.3%)
+  structural+path     1 of  319 chunks (0.3%)
+== clause split rate: chapter 2 import 102/2686 (3.8%), structural+path routed 21/2686 (0.8%)
+== scoreboard: eval 0/200 (0.0%), holdout 0/300, full mix 40/1000 (4.0%) vs ch9 5.0%; withheld 41; tokens 1713 (ch9 1609; path 10.4/span); usd 0.00610
+   by stratum: {'docstore:right': 157, 'docstore:wrong': 3, 'eval:right': 200, 'guidance:right': 38, 'guidance:wrong': 2, 'holdout:right': 300, 'multi-state:right': 36, 'multi-state:wrong': 24, 'policy-admin:right': 120, 'policy-admin:withheld': 6, 'policy-admin:wrong': 4, 'scanned:right': 49, 'scanned:withheld': 35, 'scanned:wrong': 6, 'third-party:right': 19, 'third-party:wrong': 1}
+lab done in 107s

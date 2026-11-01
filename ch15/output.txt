@@ -1,0 +1,102 @@
+== 0. Corpus corpus-1ee6f8738a
+governing spans Counter({'form': 24, 'bulletin': 9, 'endorsement': 7})
+context spans Counter({'guideline': 3, 'advisory': 2, 'note': 2}) claim notes 1030
+full mix {'reviewed': 500, 'docstore-new': 160, 'policy-admin': 130, 'scanned': 90, 'multi-state': 60, 'guidance': 40, 'third-party': 20}
+tenants {'lakeshore': 957, 'nws': 20, 'fvb': 23} policy policy-v1.0 7dab6e0f8e23
+
+== 1. Similarity is not authority (Chapter 14 configuration, sim-large)
+determinations whose most similar on-topic span is not the governing one: 292
+example D0087: 'hail damaged the roof shingles and the replacement shingles do not match, do we replace the whole roof for a uniform appearance' (MN, loss 2026-09-06)
+    29.02  MN-COM-2023-02@2023-02-10#roof           superseded by MN-COM-2025-06 from 2025-06-02
+    19.08  HO-3@2024-06#roof                        admitted
+    13.91  CG-HO-031@v1                             admitted
+     8.96  MN-COM-2025-06@2025-06-02#roof           admitted
+   governing: MN-COM-2025-06@2025-06-02#roof | cited by Chapter 14 configuration: MN-COM-2023-02@2023-02-10#roof
+candidate spans scored: 6329 Counter({'other': 3856, 'context': 1483, 'governs': 971, 'superseded': 19})
+superseded spans that top their packet: 11
+
+== 2. Failure injection: the 2023 Wisconsin roof bulletin re-scanned without its end date
+Wisconsin roof losses on or after 15 March 2025: 8
+Chapter 14 configuration cites the re-scan: 8 | wrong: 8
+Policy: wrong 0 | re-scan excluded as: superseded by WI-OCI-2025-03 from 2025-03-15
+similarity, re-scan vs governing: {'WI-OCI-2023-07@2023-07-01#roof-rescan': 31.46, 'WI-OCI-2025-03@2025-03-15#roof': 11.29}
+
+== 3. Entitlement
+restricted claim notes: {'siu': 5, 'copied': 13, 'paraphrased': 12}
+packets carrying restricted text: Chapter 14 config 27 | Policy 12
+Policy without lineage (span roles only): 25
+restricted notes reaching packets, by kind: {'Chapter 14 configuration': {'copied': 13, 'siu': 2, 'paraphrased': 12}, 'span roles only': {'copied': 13, 'paraphrased': 12}, 'Policy (roles and lineage)': {'paraphrased': 12}}
+pre-filter versus post-filter: governing span in the packet
+  k= 3  pre 0.991 (wrong 16, withheld 15)   post 0.636 (wrong 50, withheld 327)
+  k= 5  pre 0.991 (wrong 16, withheld 15)   post 0.909 (wrong 34, withheld 75)
+  k= 8  pre 0.991 (wrong 16, withheld 15)   post 0.991 (wrong 16, withheld 15)
+  k=12  pre 0.991 (wrong 16, withheld 15)   post 0.991 (wrong 16, withheld 15)
+
+== 4. Jurisdiction (multi-state stratum, 60)
+  policy state for every rule      wrong 24  withheld 0
+  property state for every rule    wrong 19  withheld 4
+  rule by kind (Policy)            wrong  6  withheld 4
+  Chapter 14 configuration         wrong 23  withheld 0
+  multi-state wrong under Policy, by reason: {'needs two governing spans (Chapter 17)': 6}
+  unknown state falls through      wrong 10  withheld 0
+  regressions (record's property state wrong): ['D0518', 'D0527'] ['MN recorded, IN actual', 'MN recorded, MI actual']
+
+== 5. Precedence
+global 'endorsement beats form': wrong 166 withheld 72
+scoped to the clause (Policy):    wrong 16 withheld 15
+  e.g. D0003 cause=mould endorsements=['HO 04 95@2019-03'] cited HO 04 95@2019-03#water_backup governing HO-3@2019-03#mould
+  newly wrong by cause: {'mould': 48, 'notice': 22, 'freezing': 51, 'payment': 15, 'water_backup': 16, 'roof': 1}
+Chapter 14 configuration citing context as governing: 1 | Policy: 0
+Chapter 14 configuration: governing span in the packet, form cited instead: 11
+
+== 6. Freshness: the date that matters
+in force today (latest wins): wrong 83 | on the date of loss: 16
+  newly wrong: 67 {('WI', 'animal'): 4, ('MN', 'roof'): 14, ('IN', 'payment'): 11, ('IL', 'freezing'): 13, ('IA', 'debris'): 7, ('WI', 'roof'): 14, ('MI', 'notice'): 4}
+end dates read only from the old document (no supersession graph): wrong 12
+Minnesota roof losses: 26 after 2 June 2025: 12
+  withheld: date of loss 15 today 15 no graph 27
+
+== 7. Citation an auditor can follow
+Chapter 14 configuration: clause scorer 3.4% (34/1000) | audit scorer 3.8% (38/1000)
+Policy:                   clause scorer 1.6% (16/1000) | audit scorer 1.6% (16/1000)
+right clause, wrong authority under Chapter 14: 4 ['MN-COM-2023-02', 'MN-COM-2023-02', 'MN-COM-2023-02', 'MN-COM-2023-02']
+{
+ "determination": "D0087",
+ "as_of": "2026-09-06",
+ "role": "adjuster",
+ "tenant": "lakeshore",
+ "cause": "roof",
+ "status": "ok",
+ "reason": "governs",
+ "cited": "MN-COM-2025-06@2025-06-02#roof",
+ "governing": {
+  "doc": "MN-COM-2025-06",
+  "edition": "2025-06-02",
+  "page": 1,
+  "jurisdiction": "MN",
+  "effective_from": "2025-06-02",
+  "effective_to": "None"
+ },
+ "beat": [
+  "HO-3@2024-06#roof"
+ ],
+ "excluded": {},
+ "policy": "policy-v1.0#7dab6e0f8e23",
+ "corpus": "corpus-1ee6f8738a",
+ "record": "a95739b015e6"
+}
+replay gives the same record: True
+
+== 8. Fail closed
+withheld under Policy: {'document gate (Ch11)': 11, 'jurisdiction unknown': 4}
+  sim-large Chapter 14 config wrong 38 | Policy wrong 16 withheld 15 (citation check 0)
+  sim-mid   Chapter 14 config wrong 54 | Policy wrong 16 withheld 15 (citation check 0)
+  sim-small Chapter 14 config wrong 71 | Policy wrong 16 withheld 17 (citation check 2)
+fall-through on unknown jurisdiction, full mix: wrong 20
+
+== 9. Scoreboard ladder (full mix, sim-large, audit scorer)
+  Chapter 14 configuration                     wrong 3.8% (38/1000) withheld  11 leaks 27 evidence tokens  275.6 US$0.00098
+  + entitlement, precedence in code, check     wrong 2.9% (29/1000) withheld  18 leaks 12 evidence tokens  313.6 US$0.00112
+  + supersession graph                         wrong 3.2% (32/1000) withheld  11 leaks 12 evidence tokens  313.8 US$0.00112
+  + jurisdiction by kind of rule (Policy v1.0) wrong 1.6% (16/1000) withheld  15 leaks 12 evidence tokens  313.8 US$0.00112
+remaining wrong under Policy: {'endorsement schedule misread in the policy summary': 2, 'docstore-new': 2, 'needs a chain of three spans (Chapters 17 and 18)': 3, 'endorsement missing from the policy record': 1, 'OCR misread the endorsement on the declarations': 1, 'needs two governing spans (Chapter 17)': 6, 'licensed feed misdated the policy change': 1}

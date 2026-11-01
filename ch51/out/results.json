@@ -1,0 +1,215 @@
+{
+ "version": "12.0",
+ "targets_before": {
+  "lookup_minutes": {
+   "value": 1.29,
+   "target": "< 2.0",
+   "met": true
+  },
+  "wrong_clause_pct": {
+   "value": 0.3,
+   "target": "< 1.0",
+   "met": true
+  },
+  "traceable_pct": {
+   "value": 96.66666666666667,
+   "target": ">= 100.0",
+   "met": false
+  }
+ },
+ "backlog": {
+  "priority": [
+   "E07",
+   "E02",
+   "E04",
+   "E09",
+   "E01",
+   "E06",
+   "E10",
+   "E14",
+   "E05",
+   "E11",
+   "E12",
+   "E13",
+   "E03",
+   "E08"
+  ],
+  "frequency": [
+   "E13",
+   "E10",
+   "E14",
+   "E09",
+   "E05",
+   "E11",
+   "E04",
+   "E07",
+   "E01",
+   "E02",
+   "E08",
+   "E03",
+   "E06",
+   "E12"
+  ],
+  "top5_share": 0.6223,
+  "top5_days": 26,
+  "f5_share": 0.3053,
+  "f5_days": 23,
+  "harm": {
+   "E01": 10.0,
+   "E02": 9.0,
+   "E03": 2.0,
+   "E04": 9.6,
+   "E05": 2.7,
+   "E06": 4.8,
+   "E07": 17.5,
+   "E08": 0.0,
+   "E09": 7.2,
+   "E10": 12.0,
+   "E11": 3.6,
+   "E12": 3.0,
+   "E13": 2.0,
+   "E14": 2.25
+  }
+ },
+ "checklist_before": [
+  "H12",
+  "H13",
+  "H16",
+  "H17",
+  "H18",
+  "H24"
+ ],
+ "checklist_after": [],
+ "runbooks": {
+  "R1": [
+   85,
+   190
+  ],
+  "R2": [
+   47,
+   83
+  ],
+  "R3": [
+   165,
+   285
+  ],
+  "R4": [
+   105,
+   195
+  ],
+  "R5": [
+   90,
+   150
+  ],
+  "R6": [
+   60,
+   105
+  ]
+ },
+ "exam": {
+  "verify": 30,
+  "complete": 29,
+  "missing": [
+   "D899138"
+  ],
+  "minutes": 84.0
+ },
+ "next_as": [
+  {
+   "diagnostic": "citation parse rate, %",
+   "production": 99.91258741258741,
+   "candidate": 90.82167832167832,
+   "alarm": true
+  },
+  {
+   "diagnostic": "wrong-clause per 1,000, full mix",
+   "production": 3.0,
+   "candidate": 91.0,
+   "alarm": true
+  },
+  {
+   "diagnostic": "faithfulness-v2, %",
+   "production": 90.82167832167832,
+   "candidate": 92.22027972027972,
+   "alarm": false
+  },
+  {
+   "diagnostic": "tokens per determination",
+   "production": 16003.0,
+   "candidate": 16643.12,
+   "alarm": false
+  },
+  {
+   "diagnostic": "p95 latency, s",
+   "production": 8.168070594776394,
+   "candidate": 7.767361638812911,
+   "alarm": false
+  },
+  {
+   "diagnostic": "worst cell, wrong of its items",
+   "production": 2,
+   "candidate": 8,
+   "alarm": true
+  }
+ ],
+ "next_after": [
+  {
+   "diagnostic": "citation parse rate, %",
+   "production": 99.91258741258741,
+   "candidate": 99.91258741258741,
+   "alarm": false
+  },
+  {
+   "diagnostic": "wrong-clause per 1,000, full mix",
+   "production": 3.0,
+   "candidate": 1.0,
+   "alarm": false
+  },
+  {
+   "diagnostic": "faithfulness-v2, %",
+   "production": 90.82167832167832,
+   "candidate": 92.22027972027972,
+   "alarm": false
+  },
+  {
+   "diagnostic": "tokens per determination",
+   "production": 16003.0,
+   "candidate": 16643.12,
+   "alarm": false
+  },
+  {
+   "diagnostic": "p95 latency, s",
+   "production": 8.168070594776394,
+   "candidate": 7.767361638812911,
+   "alarm": false
+  },
+  {
+   "diagnostic": "worst cell, wrong of its items",
+   "production": 2,
+   "candidate": 2,
+   "alarm": false
+  }
+ ],
+ "probes": {
+  "n": 40,
+  "production": 0,
+  "candidate": 11
+ },
+ "targets_after": {
+  "lookup_minutes": {
+   "value": 1.29,
+   "target": "< 2.0",
+   "met": true
+  },
+  "wrong_clause_pct": {
+   "value": 0.3,
+   "target": "< 1.0",
+   "met": true
+  },
+  "traceable_pct": {
+   "value": 100.0,
+   "target": ">= 100.0",
+   "met": true
+  }
+ }
+}

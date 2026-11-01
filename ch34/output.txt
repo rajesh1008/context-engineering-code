@@ -1,0 +1,55 @@
+== 1. The day as found, then one fix at a time ==
+no cache at all: cost/det US$0.1565
+v7.4 as found                hit 12.6%  cost/det US$0.1442
+timestamp to end, date only  hit 71.9%  cost/det US$0.0862
+canonical tool JSON          hit 75.4%  cost/det US$0.0828
+stable before volatile       hit 80.0%  cost/det US$0.0783
+all 12 tools, allowed list   hit 74.9%  cost/det US$0.0868
+all 12 tools + routing key   hit 81.1%  cost/det US$0.0801
+chosen: stable before volatile; cost/det falls 45.7%
+breakdown v7.4: {'uncached_input': 0.0948, 'cached_reads': 0.0014, 'write_premium': 0.0, 'output': 0.048}
+breakdown v7.5: {'uncached_input': 0.0216, 'cached_reads': 0.0087, 'write_premium': 0.0, 'output': 0.048}
+== 2. Failure injection: a timestamp in the system prompt ==
+clean v7.5: hit 80.0% cost/det US$0.0783
+stamped:    hit 14.4% cost/det US$0.1422
+lint on stamped packet: [('C2-volatile-value-in-prefix', 'instructions')]
+== 3. Cache lint on the v7.4 builder ==
+  C1-volatile-before-stable: instructions
+  C1-volatile-before-stable: examples
+  C1-volatile-before-stable: facts
+  C1-volatile-before-stable: form
+  C1-volatile-before-stable: state
+  C1-volatile-before-stable: evidence
+  C1-volatile-before-stable: question
+  C3-tool-order-varies: 4
+  C5-memo-without-watermark: render_state_rules
+v7.5 findings: 0
+== 4. Ordering the route-level segments ==
+  examples>form>state>endorse        hit 79.1% cost/det US$0.0792
+  examples>form>endorse>state        hit 78.9% cost/det US$0.0793
+  form>examples>state>endorse        hit 78.5% cost/det US$0.0797
+  state>endorse>form>examples        hit 75.2% cost/det US$0.0829
+  endorse>state>form>examples        hit 75.0% cost/det US$0.0831
+== 5. Invalidation events and their cost ==
+  Rulebook deploy 12:30        extra US$   0.11/day  hit 80.0%
+  tool description edit 12:30  extra US$   0.14/day  hit 80.0%
+  WI bulletin 10:00            extra US$   0.04/day  hit 80.0%
+  model change 12:30           extra US$   0.22/day  hit 79.9%
+  deploy every 30 min          extra US$   1.88/day  hit 79.4%
+  compaction on 30% of call 3  extra US$   0.78/day  hit 79.5%
+== 6. Implicit, 5-minute and 1-hour caching; low-volume routes ==
+  implicit, no write premium   hit 80.0% cost/det US$0.0783
+  explicit 5m, writes 1.25x    hit 80.0% cost/det US$0.0837
+  explicit 1h, writes 2x       hit 83.0% cost/det US$0.0937
+  first-call hit rate by state: {'IA': '54.2%', 'IL': '53.6%', 'MI': '50.2%', 'MN': '55.1%', 'WI': '67.2%'}
+  hit rate by hour: {7: '72%', 8: '78%', 9: '80%', 10: '80%', 11: '81%', 12: '81%', 13: '81%', 14: '81%', 15: '80%', 16: '79%', 17: '76%', 18: '68%'}
+== 7. The freshness bug the cache metrics found ==
+  v7.5 as first built: WI state prefixes first seen ['07:05 rules WI as of wm-0930', '14:00 rules WI as of wm-1000']; alert=True; stale WI determinations 1050 (water back-up 258)
+  memo keyed on watermark: WI state prefixes first seen ['07:05 rules WI as of wm-0930', '10:00 rules WI as of wm-1000']; alert=False; stale WI determinations 0 (water back-up 0)
+== 8. Result cache and a semantic-cache audit ==
+  threshold 0.70: exact repeats 0.0%, paraphrase hits 10.1%, wrong-fact hits 88.9% (89.8% of hits)
+  threshold 0.80: exact repeats 0.0%, paraphrase hits 14.7%, wrong-fact hits 83.7% (85.1% of hits)
+  threshold 0.85: exact repeats 0.0%, paraphrase hits 28.8%, wrong-fact hits 67.7% (70.2% of hits)
+  threshold 0.90: exact repeats 0.3%, paraphrase hits 87.3%, wrong-fact hits 0.5% (0.5% of hits)
+  threshold 0.95: exact repeats 1.0%, paraphrase hits 0.0%, wrong-fact hits 0.0% (0.0% of hits)
+  exact-key result cache: 198 re-opened determinations served, 20 recomputed because the watermark moved

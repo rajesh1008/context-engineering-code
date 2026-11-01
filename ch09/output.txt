@@ -1,0 +1,64 @@
+
+== 1. Inventory v1.0 #f629da40: 15 sources
+source                class       access    volatility version   owner
+policy-forms          governing   retrieve  low        edition   Product forms
+endorsements          governing   retrieve  low        edition   Product forms
+state-bulletins       governing   retrieve  moderate   effective Compliance
+naic-guidance         advisory    retrieve  low        edition   Compliance
+scanned-documents     governing   retrieve  low        edition   Claims operations
+policy-in-force       factual     query     moderate   row       Policy administration
+claim-record          factual     tool      high       as-of     Claims platform
+adjuster-notes        advisory    tool      high       as-of     Claims operations
+weather-reports       factual     tool      high       as-of     Claims platform
+claims-rulebook       procedural  rulebook  low        edition   Claims standards
+underwriting-notes    advisory    retrieve  low        none      Underwriting
+property-data-feed    factual     tool      moderate   as-of     Underwriting
+crm-correspondence    advisory    exclude   high       as-of     Customer service
+generated-summaries   advisory    exclude   moderate   as-of     Claims platform
+current-form-pointer  factual     exclude   moderate   none      Claims platform
+
+== 2. Gaps
+v0.9: 3 gap(s)
+  - claim-record: high volatility but stored for retrieval
+  - current-form-pointer: no owner
+  - current-form-pointer: retrieved as evidence with no version rule
+v1.0: 0 gap(s)
+
+== 3. Failure injection: a scan with no printed edition
+connector output : LM 112#scan-0457 2026-03-14 (origin file-mtime)
+Chapter 2 admit  : admitted
+  packet header  : [S2] LM 112 (2026-03) | page 2 | authority endorsement
+  date of loss 2026-02-07; cited edition starts 2026-03: cited before it existed
+Chapter 9 offer  : withheld
+  quarantine     : LM 112#scan-0457 -> owner Claims operations: version came from file-mtime, inventory requires document
+  packet note    : [W1] governing evidence withheld: LM 112 scan, edition not printed; see imaging archive page 2
+
+== 4. Admission across the inventory (date of loss 2026-02-07)
+  HO 04 95@2024-06#water_backup   admit   admitted
+  WI-OCI-2025-03#matching         admit   admitted
+  IL-DOI-2026-09#frozen_pipe      refuse  not in force on 2026-02-07
+  IA-ID-2024-08#debris            refuse  older than the freshness limit
+  UW-NOTE-0004                    refuse  role 'adjuster' not entitled
+  parcel-55-0192#roof_age         refuse  not licensed for claims_determination
+  DET-0074#summary                refuse  source is excluded
+
+== 5. When the database already has the answer (130 determinations)
+  pointer   edition in force on the date of loss: 93/130
+  passages  edition in force on the date of loss: 93/130
+  query     edition in force on the date of loss: 124/130
+  query rejected by the verifier (no date predicate): 6
+  span: [Q1] policy admin | v_forms_on_policy | query 1c7e9376 | as of 2026-10-30 09:00 | date of loss 2025-01-08 | policy WI-HO-40100: HO 04 95 (2019-03) row v3
+  injected fault: 2 rows returned -> no date-of-loss predicate
+
+== 6. Scoreboard: Chapter 8 configuration against Chapter 9
+  set             config    wrong   rate  withheld  median  mean  tokens      US$
+  eval 200        ch08          5   2.5%         0     1.3   1.3   1,540  0.00548
+  eval 200        ch09          5   2.5%         0     1.3   1.3   1,576  0.00561
+  holdout 300     ch08          2   0.7%         0     1.3   1.3   1,540  0.00548
+  holdout 300     ch09          2   0.7%         0     1.3   1.3   1,576  0.00561
+  full mix 1,000  ch08         82   8.2%         0     1.3   1.3   1,550  0.00552
+  full mix 1,000  ch09         50   5.0%        41     1.3   1.7   1,609  0.00573
+  remaining wrong (ch09, full mix): {'docstore': 6, 'eval': 5, 'guidance': 2, 'holdout': 2, 'multi-state': 24, 'policy-admin': 4, 'scanned': 6, 'third-party': 1}
+
+== 7. Quarantine, visible to owners
+  Claims operations: LM 112#scan-0457: version came from file-mtime, inventory requires document

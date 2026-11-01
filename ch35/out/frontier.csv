@@ -1,0 +1,24 @@
+family,name,usd,tokens,wrong,flagged,clean,on_frontier
+fixed,small-none,0.03621,14806,483,165,352,False
+fixed,small-low,0.03684,15593,300,217,483,False
+fixed,small-medium,0.03825,17361,188,238,574,False
+fixed,small-high,0.03842,17576,145,160,695,False
+fixed,mid-none,0.03859,14806,169,272,559,False
+fixed,mid-low,0.04111,15593,83,278,639,False
+fixed,mid-medium,0.04677,17361,39,264,697,False
+fixed,mid-high,0.04745,17576,23,184,793,False
+fixed,large-none,0.04733,14806,47,304,649,False
+fixed,large-low,0.05677,15593,15,273,712,False
+fixed,large-medium,0.07799,17361,4,261,735,False
+fixed,large-high,0.08056,17576,4,178,818,True
+routed,routed 0.20/0.55,0.055,18038,4,211,785,False
+all levers,all levers 0.20/0.55,0.03978,15969,4,185,811,True
+routed,routed 0.25/0.60,0.05306,18119,4,206,790,False
+all levers,all levers 0.25/0.60,0.03734,15988,4,190,806,True
+routed,routed 0.30/0.65,0.05126,18222,4,200,796,False
+all levers,all levers 0.30/0.65,0.03479,16003,4,191,805,True
+routed,routed 0.35/0.70,0.04974,18299,6,186,808,False
+all levers,all levers 0.35/0.70,0.03263,16013,6,183,811,False
+routed,routed 0.40/0.75,0.04852,18389,17,164,819,False
+all levers,all levers 0.40/0.75,0.03091,16052,17,162,821,False
+failure,blind router,0.02862,16228,104,141,755,False

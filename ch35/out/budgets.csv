@@ -1,0 +1,13 @@
+tier,budget,n,misread,flagged,thinking
+small,none,56,56,36,0
+small,low,56,56,32,800
+small,medium,56,56,30,4000
+small,high,56,56,21,6250
+mid,none,56,56,32,0
+mid,low,56,56,30,800
+mid,medium,56,35,29,4000
+mid,high,56,19,19,6250
+large,none,56,43,30,0
+large,low,56,11,29,800
+large,medium,56,0,26,4000
+large,high,56,0,17,6250

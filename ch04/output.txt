@@ -1,0 +1,73 @@
+1. Rot curves (neutral claim-file padding; mean prompt tokens, wrong-clause rate)
+  padding          sim-large            sim-mid          sim-small
+              tokens   wrong     tokens   wrong     tokens   wrong
+        0      1,046   4.0%       1,046   6.0%       1,046   6.0% 
+    2,000      3,392   4.0%       3,392   6.0%       3,392   6.0% 
+    4,000      5,721   4.0%       5,721   6.0%       5,721   6.0% 
+    8,000     10,085   4.0%      10,085   6.0%      10,085   8.0% 
+   12,000     14,447   4.0%      14,447   8.0%      14,447   8.0% 
+   16,000     18,802   4.0%      18,802   9.0%      18,802  11.0% 
+   24,000     27,532   4.0%      27,532  13.0%      27,532  37.0% 
+   32,000     36,336   6.0%      36,336  20.0%      32,000 100.0%*
+   48,000     53,960  13.0%      53,960  57.0%      48,000 100.0%*
+   64,000     71,497  27.0%      71,497  78.0%      64,000 100.0%*
+   96,000    106,664  63.0%     106,664  96.0%      96,000 100.0%*
+  128,000    141,812  86.0%     128,000 100.0%*    128,000 100.0%*
+  160,000    176,949  96.0%     160,000 100.0%*    160,000 100.0%*
+  * the prompt exceeds the window: the call is rejected (overflow), counted wrong
+
+knee (largest padding within 2 points of the unpadded rate):
+  sim-large  window 200,000  knee  32,000 padded tokens (prompt 36,336 tokens; 4.0% -> 13.0% at 48,000)  knee prompt/window 18%
+  sim-mid    window 128,000  knee  12,000 padded tokens (prompt 14,447 tokens; 6.0% -> 9.0% at 16,000)  knee prompt/window 11%
+  sim-small  window  32,000  knee  12,000 padded tokens (prompt 14,447 tokens; 6.0% -> 11.0% at 16,000)  knee prompt/window 45%
+  sim-large at 64,000 padded tokens (71,497 in the prompt, 36% of the window): 27.0% wrong vs 4.0% unpadded
+
+2. Same length, different padding (wrong-clause rate)
+model       padding  neutral  look-alike  look-alike tokens   diff
+sim-large     4,000    4.0%       5.0%              3,544  +1.0
+sim-large     8,000    4.0%       5.0%              4,298  +1.0
+sim-large    16,000    4.0%       5.0%              4,298  +1.0
+sim-mid       4,000    6.0%       7.0%              3,544  +1.0
+sim-mid       8,000    6.0%       8.0%              4,298  +2.0
+sim-mid      16,000    9.0%      23.0%              4,298 +14.0
+sim-small     4,000    6.0%      12.0%              3,544  +6.0
+sim-small     8,000    8.0%      28.0%              4,298 +20.0
+sim-small    16,000   11.0%      54.0%              4,298 +43.0
+  look-alike pool per claim: median 4,866 tokens, max 6,047; the rest of each padded length is claim-file pages
+  sim-mid at 16,000: 23 wrong citations under look-alike padding -> an inapplicable look-alike 14, an applicable span, wrong clause 9
+  diagnostics on sim-mid 16,000 neutral   : clash 79, confusion 0, distraction 100, rot 100
+  diagnostics on sim-mid 16,000 look-alike: clash 100, confusion 2,447, distraction 100, rot 100
+  overflow: sim-small with 40,000 padded tokens rejects 100 of 100 calls (window 32,000)
+
+3. Where rot starts by task type (sim-mid, neutral padding, 200 determinations)
+task type                   n     0k     4k     8k    12k    16k    24k    32k    48k     knee
+form clause              153   3.3%   3.3%   3.3%   3.3%   3.3%   5.2%  11.1%  55.6%   24,000
+endorsement or bulletin   47  21.3%  21.3%  21.3%  29.8%  36.2%  44.7%  46.8%  61.7%    8,000
+family HO-3              113  11.5%  11.5%  11.5%  13.3%  15.9%  18.6%  22.1%  56.6%   12,000
+family PAP                48   0.0%   0.0%   0.0%   4.2%   4.2%   8.3%  12.5%  58.3%    8,000
+family BOAT               22   9.1%   9.1%   9.1%   9.1%   9.1%   9.1%  18.2%  59.1%   24,000
+family BOP                17   0.0%   0.0%   0.0%   0.0%   0.0%  11.8%  23.5%  52.9%   16,000
+
+4. Failure injection: look-alike padding to 16,000 tokens; fix: packet cap 3,000 tokens
+  (the cap counts evidence tokens; tokens/det is prompt plus output, as billed)
+model      pipeline                      wrong  tokens/det  cost/det lookup min
+sim-large  current, clean                 4.0%       1,103 $  0.0040        3.5
+sim-large  injected (look-alikes)         5.0%      22,263 $  0.0675        3.5
+sim-large  injected + cap 3,000           4.0%       5,832 $  0.0182        3.5
+sim-large  clean + cap 3,000              4.0%       1,103 $  0.0040        3.5
+sim-mid    current, clean                 6.0%       1,103 $  0.0013        3.5
+sim-mid    injected (look-alikes)        23.0%      22,264 $  0.0225        3.6
+sim-mid    injected + cap 3,000           8.0%       5,832 $  0.0061        3.5
+sim-mid    clean + cap 3,000              7.0%       1,103 $  0.0013        3.5
+sim-small  current, clean                 6.0%       1,103 $  0.0003        3.5
+sim-small  injected (look-alikes)        54.0%      22,266 $  0.0056        7.5
+sim-small  injected + cap 3,000           6.0%       5,832 $  0.0015        3.5
+sim-small  clean + cap 3,000              6.0%       1,103 $  0.0003        3.5
+  clean + cap drops nothing (packets are under 3,000) but the packer reorders spans by its own score, so an answer can change
+
+  sim-mid: tokens per determination 22,264 -> 5,832 (74% fewer); wrong-clause 23.0% -> 8.0%
+
+example DET-0004 (Grace Murphy, IA, BOP (2025-01), topic employee_dishonesty)
+  gold:     BOP (2025-01)
+  injected: cited BP 04 50 (2025-01), Coverage, page 1 (21,270 tokens); policy check: endorsement not on policy
+  capped:   cited BOP (2025-01), Section I Exclusions B.2.h, page 3 (5,760 tokens)

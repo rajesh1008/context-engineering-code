@@ -1,0 +1,41 @@
+1. Time-to-visible for 17 bulletins, 1 Jul - 30 Sep 2026 (hours)
+   nightly       median  14.62  p95  16.22  max  16.48
+   stream        median   0.03  p95   0.54  max   2.30
+   graph_stream  median   0.13  p95  19.18  max  24.79
+   stream, no review: n=15 median 2.0 min, max 2.8 min
+   graph_full    never inside the window (next full build after 30 Sep)
+   lead time (effective - committed): future 13, same day 3, retroactive 1; median 14 days
+
+2. Exposure over 211,200 determinations (66 business days)
+   A nightly + graph full builds            passage    5  graph  208  of which Iowa EB  18
+   B streaming passages, graph unchanged    passage    0  graph  208  of which Iowa EB  18
+   C streaming fan-out to both              passage    0  graph    0  of which Iowa EB   0
+   D C + watermark routing                  passage    0  graph    0  of which Iowa EB   0
+
+3. Retroactive bulletins: determinations to re-review
+   BUL-MN-TH-202607: effective 2026-07-26, committed 2026-07-31 14:41, re-review 34
+
+4. Cache on 15 Sep 2026 (wrong after the change was visible: WI reissue, MN new; hit rate)
+   no cache          WI   0  MN   0  hit rate 0.000
+   TTL 24 h only     WI  45  MN  11  hit rate 0.985
+   tag invalidation  WI   0  MN  11  hit rate 0.985
+   scope epoch       WI   0  MN   0  hit rate 0.984
+
+5. Change capture: 2100 deliveries of 2000 changes over 300 policies
+   naive  wrong final versions   6  extra chunks 100  dupes skipped   0  reordered skipped  0
+   keyed  wrong final versions   0  extra chunks   0  dupes skipped  97  reordered skipped 48
+
+6. Policy-in-force changes (450 on 15 Sep): daily pre-warm median 16.6 h, p95 22.3 h; capture + invalidate median 17 s, max 31 s
+
+7. Drafts opened after a claim change (3,200 drafts): 57
+
+8. Iowa equipment-breakdown bulletin, reconstructed
+   committed 28 Jul 14:20; effective 01 Aug
+   visible on nightly      29 Jul 03:40  (800 min)
+   visible on stream       28 Jul 14:22  (2 min)
+   visible on graph_stream 28 Jul 14:28  (8 min)
+   stream stages (s): capture 6, transport 5, parse_chunk 78, embed 52, refresh 1
+   visible on graph_full    never before the next full build (last 30 Jun)
+
+9. Licensed partner feed vs policy administration log: 160 changes, feed median lag 20 h, misdated 5: log 14 Oct feed 13 Oct, log 05 Oct feed 23 Oct, log 03 Sep feed 26 Aug, log 10 Oct feed 23 Oct, log 02 Oct feed 20 Sep
+   full-mix case: change effective 15 Oct (log), 01 Oct (feed), loss 08 Oct; wrong when built from feed True; reconciled against log: flagged, right

@@ -1,0 +1,206 @@
+
+== 1. Corpus and queries
+spans 375: amendatory 6, bulletin 46, endorsement 5, form 170, guideline 16, underwriting 132
+queries by split: eval 200, holdout 300, new 500
+queries by style: identifier 51, kw 569, lay 197, multihop 81, negation 44, numeric 58
+queries by stratum: docstore 660, guidance 40, multi-state 60, policy-admin 130, scanned 90, third-party 20
+mean admitted spans per query: 38.2
+
+== 2. BM25 from scratch: saturation, length and the TF-IDF trap
+tf   raw   bm25 (k1=1.2, average length)
+ 0     0    0.0
+ 1     1    1.0
+ 2     2  1.375
+ 3     3  1.571
+ 4     4  1.692
+ 5     5  1.774
+ 6     6  1.833
+ 7     7  1.878
+ 8     8  1.913
+ 9     9  1.941
+10    10  1.964
+tf-idf (raw tf, no length norm): Hit@1 0.782 Hit@5 0.874 MRR 0.826
+bm25 (k1 1.2, b 0.75):           Hit@1 0.810 Hit@5 0.866 MRR 0.837
+queries whose rank-1 span is a Definitions section: tf-idf 35, bm25 4
+worked query Q0001: 'business exclusion bodily injury arising out of a business conducted from an insured location'
+  term aris           df  11  idf 3.487
+  term bodily         df  20  idf 2.909
+  term busines        df 148  idf 0.929
+  term conduct        df   5  idf 4.225
+  term exclusion      df  81  idf 1.529
+  term injury         df  20  idf 2.909
+  term insur          df  95  idf 1.370
+  term location       df   5  idf 4.225
+  term out            df  18  idf 3.012
+  HO3-2022-01-business_excl          len  33  bm25 28.151  gold 2
+  HO3-2022-01-intentional            len  27  bm25 10.923  gold 0
+  HO3-2022-01-liability              len  38  bm25 7.921  gold 0
+
+== 3. BM25 parameters on the holdout split (MRR)
+default k1 1.2 b 0.75: MRR 0.8581
+best k1 2.0 b 1.0: MRR 0.8604   worst MRR 0.8542
+
+== 4. Keyword against dense, by query style (Hit@5, governing at rank 1)
+style          n  kw Hit@5   dense   kw @1 dense @1
+kw           569     1.000   0.998   0.958    0.884
+lay          197     0.391   0.868   0.228    0.584
+identifier    51     1.000   0.373   0.647    0.157
+numeric       58     1.000   1.000   0.931    0.690
+negation      44     0.682   1.000   0.409    0.591
+multihop      81     1.000   1.000   1.000    0.000
+
+== 5. Fusion: raw sum, RRF and weighted (alpha tuned on eval, scored on the rest)
+alpha 0.0: eval Hit@5 0.955 | rest Hit@5 0.865 MRR 0.821
+alpha 0.1: eval Hit@5 0.975 | rest Hit@5 0.885 MRR 0.840
+alpha 0.2: eval Hit@5 0.985 | rest Hit@5 0.904 MRR 0.843
+alpha 0.3: eval Hit@5 0.985 | rest Hit@5 0.931 MRR 0.854
+alpha 0.4: eval Hit@5 0.985 | rest Hit@5 0.946 MRR 0.865
+alpha 0.5: eval Hit@5 0.985 | rest Hit@5 0.954 MRR 0.863
+alpha 0.6: eval Hit@5 0.985 | rest Hit@5 0.944 MRR 0.858
+alpha 0.7: eval Hit@5 0.985 | rest Hit@5 0.941 MRR 0.860
+alpha 0.8: eval Hit@5 0.980 | rest Hit@5 0.934 MRR 0.853
+alpha 0.9: eval Hit@5 0.980 | rest Hit@5 0.927 MRR 0.826
+alpha 1.0: eval Hit@5 0.985 | rest Hit@5 0.930 MRR 0.817
+raw sum (no normalisation, 0.5/0.5): rest Hit@5 0.873 MRR 0.826
+RRF (k=60): rest Hit@5 0.907 MRR 0.802
+alpha chosen on eval: 0.5 (rest Hit@5 0.9537)
+score scales on Q0507: bm25 top 4.61, dense top 0.447
+RRF worked example Q0507: 'a leak inside the wall nobody knew about for a year' gold HO3-2024-06-seepage
+  HO3-2024-06-seepage                bm25 rank 2  dense rank 19  rrf 0.02879
+  HO3-2024-06-mould                  bm25 rank 28  dense rank 2  rrf 0.02749
+  HO3-2024-06-definitions            bm25 rank 26  dense rank 51  rrf 0.02064
+  HO3-2024-06-water_exclusion        bm25 rank 44  dense rank 37  rrf 0.01992
+fusion tax (alpha 0.5): hybrid ranks the first gold span below the better single retriever on 131 of 1000, above both on 10; drops it out of the top 5 on 19
+
+== 6. Rerank depth: quality against pairs scored (sim-rerank, 6 ms a pair)
+no rerank: Hit@1 0.828 MRR 0.884
+depth   5: Hit@1 0.874 MRR 0.912 pairs/query 4.8 est. ms 29
+depth  10: Hit@1 0.877 MRR 0.920 pairs/query 8.9 est. ms 54
+depth  20: Hit@1 0.877 MRR 0.920 pairs/query 14.2 est. ms 85
+depth  30: Hit@1 0.877 MRR 0.920 pairs/query 14.7 est. ms 88
+depth  50: Hit@1 0.877 MRR 0.920 pairs/query 14.7 est. ms 88
+depth 100: Hit@1 0.877 MRR 0.920 pairs/query 14.7 est. ms 88
+governing span moved up 113, down 50, unchanged 837
+  kw          up   9 down   2
+  lay         up  63 down  19
+  identifier  up  27 down   4
+  numeric     up   0 down   1
+  negation    up  14 down   3
+  multihop    up   0 down  21
+
+== 7. The ladder on the full mix of 1,000
+rung        Hit@1  Hit@5    R@5    MRR  nDCG10  gov@5 eval H@5
+keyword     0.810  0.866  0.811  0.837   0.822  0.858    0.955
+dense       0.772  0.941  0.912  0.845   0.842  0.911    0.985
+hybrid      0.828  0.960  0.938  0.884   0.891  0.955    0.985
+reranked    0.877  0.968  0.952  0.920   0.916  0.967    0.985
+graph       0.877  0.965  0.965  0.916   0.918  0.964    0.985
+packets missing every gold span: keyword 134, graph 35 of 1000
+  eval     Hit@5 keyword 0.955  dense 0.985  hybrid 0.985  reranked 0.985  graph 0.985
+  holdout  Hit@5 keyword 0.863  dense 0.973  hybrid 0.960  reranked 0.973  graph 0.970
+  new      Hit@5 keyword 0.832  dense 0.904  hybrid 0.950  reranked 0.958  graph 0.954
+
+== 8. Wall-clock per query on this box (mean of 200 queries, ms)
+keyword  0.08 ms (measured)
+dense    0.11 ms (measured)
+hybrid   0.26 ms (measured)
+reranked adds about 15 admitted pairs x 6 ms = about 90 ms (cost model, not measured)
+
+== 9. Failure injection: negated near-twins (mould, LM-HO 2311 attached)
+cosine(neg query, pos query) = 0.995
+neg: 'mould that is not hidden in the walls and not from a covered leak: where does it say we do not pay' -> correct span HO3-2024-06-mould
+  keyword   rank 1 HO3-2024-06-mould      right   rank 2 HO3-2024-06-seepage
+  dense     rank 1 LM-HO-2311             WRONG   rank 2 HO3-2024-06-mould
+  hybrid    rank 1 HO3-2024-06-mould      right   rank 2 LM-HO-2311
+  reranked  rank 1 HO3-2024-06-mould      right   rank 2 HO3-2024-06-seepage
+pos: 'mould that is hidden in the walls and from a covered leak: where does it say we pay' -> correct span LM-HO-2311
+  keyword   rank 1 HO3-2024-06-mould      WRONG   rank 2 HO3-2024-06-seepage
+  dense     rank 1 LM-HO-2311             right   rank 2 HO3-2024-06-mould
+  hybrid    rank 1 HO3-2024-06-mould      WRONG   rank 2 LM-HO-2311
+  reranked  rank 1 LM-HO-2311             right   rank 2 HO3-2024-06-mould
+  neg query vs HO3-2024-06-mould    bm25 13.62 dense 0.709 rerank 0.686
+  neg query vs LM-HO-2311           bm25 4.37 dense 0.778 rerank 0.384
+
+== 10. HNSW: recall@10 against distance computations (5,000 clustered vectors, dim 32)
+M  4 ef  10: recall@10 0.388  distances/query 77 (flat 5000)
+M  4 ef  20: recall@10 0.475  distances/query 98 (flat 5000)
+M  4 ef  40: recall@10 0.576  distances/query 129 (flat 5000)
+M  4 ef  80: recall@10 0.688  distances/query 175 (flat 5000)
+M  4 ef 160: recall@10 0.775  distances/query 314 (flat 5000)
+M  8 ef  10: recall@10 0.656  distances/query 103 (flat 5000)
+M  8 ef  20: recall@10 0.737  distances/query 128 (flat 5000)
+M  8 ef  40: recall@10 0.802  distances/query 152 (flat 5000)
+M  8 ef  80: recall@10 0.866  distances/query 183 (flat 5000)
+M  8 ef 160: recall@10 0.921  distances/query 357 (flat 5000)
+M 16 ef  10: recall@10 0.901  distances/query 136 (flat 5000)
+M 16 ef  20: recall@10 0.920  distances/query 150 (flat 5000)
+M 16 ef  40: recall@10 0.920  distances/query 161 (flat 5000)
+M 16 ef  80: recall@10 0.931  distances/query 182 (flat 5000)
+M 16 ef 160: recall@10 0.952  distances/query 399 (flat 5000)
+
+== 11. Second setting: a SaaS billing codebase with vendored buggy twins (Austin)
+rung        style        Hit@1  Hit@10  twin@1
+keyword     nl           0.267   1.000   0.733
+keyword     identifier   0.267   1.000   0.700
+keyword     error        0.267   1.000   0.733
+dense       nl           0.267   1.000   0.733
+dense       identifier   0.267   1.000   0.733
+dense       error        0.267   1.000   0.733
+hybrid      nl           0.267   1.000   0.733
+hybrid      identifier   0.267   1.000   0.733
+hybrid      error        0.267   1.000   0.733
++reachable  nl           1.000   1.000   0.000
++reachable  identifier   1.000   1.000   0.000
++reachable  error        1.000   1.000   0.000
++exec check nl           1.000   1.000   0.000
++exec check identifier   1.000   1.000   0.000
++exec check error        1.000   1.000   0.000
+
+== 12. Rare terms: questions with a term in three or fewer spans (Hit@5)
+questions with a rare term 386, without 614
+  keyword    rare 0.873  rest 0.862
+  dense      rare 0.943  rest 0.940
+  hybrid     rare 0.959  rest 0.961
+  reranked   rare 0.969  rest 0.967
+  graph      rare 0.972  rest 0.961
+
+== 13. Query rewriting: adjuster shorthand against the glossary (Hit@5)
+questions containing a glossary phrase: 113
+  keyword  as written 0.796  shorthand 0.788  rewritten 0.796
+  dense    as written 0.991  shorthand 0.903  rewritten 0.991
+  hybrid   as written 0.947  shorthand 0.938  rewritten 0.947
+
+== 14. Three questions, rung by rung (rank of the governing span; - = not in top 10)
+Q0026 lay        gov HO3-2024-06-water_exclusion
+   text: Duluth claim, loss in July: basement flooded when the river rose
+   keyword 10  dense 1  hybrid 2  reranked 1  graph 1
+Q0518 identifier gov LM-HO-2320
+   text: LM-HO 2320
+   keyword 1  dense 10  hybrid 2  reranked 1  graph 1
+Q0505 multihop   gov IA-ID-2023-04
+   text: Iowa mold denial: what must the letter reference
+   keyword 1  dense 3  hybrid 1  reranked 1  graph 1
+
+== 15. Pooled labelling: what a judge sees if only one rung builds the pool
+pool from keyword  top 10: governing span in pool for 0.885 of questions
+   keyword    true Hit@5 0.866  as judged 0.866
+   dense      true Hit@5 0.941  as judged 0.834
+   hybrid     true Hit@5 0.960  as judged 0.889
+   reranked   true Hit@5 0.968  as judged 0.888
+   graph      true Hit@5 0.965  as judged 0.888
+pool from dense    top 10: governing span in pool for 0.950 of questions
+   keyword    true Hit@5 0.866  as judged 0.831
+   dense      true Hit@5 0.941  as judged 0.941
+   hybrid     true Hit@5 0.960  as judged 0.942
+   reranked   true Hit@5 0.968  as judged 0.950
+   graph      true Hit@5 0.965  as judged 0.947
+pool from all five rungs: governing span in pool for 0.982; mean pool size 13.2
+
+== 16. The ladder by stratum (stand-ins): Hit@5 / governing span at rank 1
+stratum          n        keyword          dense         hybrid       reranked          graph
+docstore        660  0.891 / 0.814  0.964 / 0.777  0.971 / 0.838  0.979 / 0.865  0.977 / 0.865
+policy-admin    130  0.823 / 0.677  0.900 / 0.508  0.938 / 0.731  0.954 / 0.785  0.954 / 0.785
+scanned          90  0.789 / 0.711  0.900 / 0.611  0.911 / 0.756  0.922 / 0.800  0.922 / 0.800
+multi-state      60  0.917 / 0.817  0.933 / 0.517  0.983 / 0.767  0.967 / 0.767  0.967 / 0.767
+guidance         40  0.725 / 0.675  0.875 / 0.425  0.975 / 0.500  0.950 / 0.625  0.900 / 0.625
+third-party      20  0.800 / 0.550  0.800 / 0.500  0.850 / 0.650  0.950 / 0.800  0.950 / 0.800

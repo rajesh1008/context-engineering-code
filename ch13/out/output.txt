@@ -1,0 +1,154 @@
+== 1. The corpus and the determinations
+spans 50,013: lakeshore 46,089 (92.2%), foxvalley 2,932 (5.9%), northwoods 982 (2.0%), public 10 (0.0%)
+by type: manual 49,850, form 138, bulletin 10, endorsement 9, guideline 6
+determinations: lakeshore 890, foxvalley 80, northwoods 30
+embedding 50,013 spans with sim-embed: 16 s
+
+== 2. The swap: same interface, three engines, 1,000 determinations
+lancedb IVF_PQ (256 partitions, 32 sub-vectors, library defaults at query time) and IVF_HNSW_SQ (16 partitions, m=20, ef_construction=150): restored from the frozen build, 55 MB and 74 MB on disk
+engine                         tenant       hit@10 recall@10  p50 ms  p99 ms
+flat (from scratch)            lakeshore     68.9%     1.000
+flat (from scratch)            foxvalley     80.0%     1.000
+flat (from scratch)            northwoods    90.0%     1.000
+flat (from scratch)            all           70.4%     1.000    16.4    42.0
+                               governing span @10 lost 0, gained 0; @20 lost 0, gained 0; leaks 0; incomplete 0
+ivf_pq, defaults               lakeshore     68.7%     0.581
+ivf_pq, defaults               foxvalley     77.5%     0.493
+ivf_pq, defaults               northwoods    90.0%     0.673
+ivf_pq, defaults               all           70.0%     0.577     4.2     7.9
+                               governing span @10 lost 32, gained 28; @20 lost 50, gained 36; leaks 0; incomplete 0
+ivf_hnsw_sq, ef=80             lakeshore     65.2%     0.946
+ivf_hnsw_sq, ef=80             foxvalley     77.5%     0.972
+ivf_hnsw_sq, ef=80             northwoods    90.0%     0.990
+ivf_hnsw_sq, ef=80             all           66.9%     0.950     4.1     7.5
+                               governing span @10 lost 35, gained 0; @20 lost 27, gained 0; leaks 0; incomplete 0
+ivf_pq, nprobes=100, refine=20 lakeshore     68.9%     0.980
+ivf_pq, nprobes=100, refine=20 foxvalley     80.0%     0.840
+ivf_pq, nprobes=100, refine=20 northwoods    90.0%     0.937
+ivf_pq, nprobes=100, refine=20 all           70.4%     0.968     9.2    12.0
+                               governing span @10 lost 0, gained 0; @20 lost 0, gained 2; leaks 0; incomplete 0
+spans-v7 + exact < 5,000       lakeshore     68.9%     0.980
+spans-v7 + exact < 5,000       foxvalley     80.0%     1.000
+spans-v7 + exact < 5,000       northwoods    90.0%     1.000
+spans-v7 + exact < 5,000       all           70.4%     0.983     9.3    12.0
+                               governing span @10 lost 0, gained 0; @20 lost 0, gained 0; leaks 0; incomplete 0
+
+== 3. Failure injection: prefilter=False on spans-v7, before small-tenant routing, to cut latency
+tenant      returned/20 incomplete  empty hit@10 pre   post
+lakeshore         15.95      84.4%   0.0%      68.9%  68.9%
+foxvalley          5.42     100.0%  12.5%      80.0%  76.2%
+northwoods         3.07     100.0%   0.0%      90.0%  90.0%
+all               14.72      86.1%   1.0%      70.4%  70.1%
+latency: post-filter p50 9.1 ms p99 44.6 ms; pre-filter p50 9.2 ms p99 12.0 ms
+governing span lost from the top 10: 3; from the top 20 the reranker sees: 23
+governing span lost: 23 {('lakeshore', 'form'): 14, ('foxvalley', 'form'): 8, ('northwoods', 'form'): 1}
+newly empty packets (withheld): 3; packets without the governing span: 20
+aggregate hit@10 70.4% -> 70.1%
+plan, post-filter:
+   ProjectionExec: expr=[span_id@3 as span_id, tenant@2 as tenant, doc_type@4 as doc_type, text@5 as text, embed_
+   LanceRead: uri=workspace/book/04-code/ch13/out/lancedb_pq/spans-v7.lance/data, projection=[span_id, doc_type, 
+   GlobalLimitExec: skip=0, fetch=10
+   SortPreservingMergeExec: [_distance@0 ASC NULLS LAST, _rowid@1 ASC NULLS LAST]
+   FilterExec: tenant@2 = foxvalley OR tenant@2 = public
+   RepartitionExec: partitioning=RoundRobinBatch(6), input_partitions=1, maintains_sort_order=true
+   LanceRead: uri=workspace/book/04-code/ch13/out/lancedb_pq/spans-v7.lance/data, projection=[tenant], source=str
+   SortExec: TopK(fetch=10), expr=[_distance@0 ASC NULLS LAST, _rowid@1 ASC NULLS LAST], preserve_partitioning=[f
+   ProjectionExec: expr=[_distance@0 * 0.5 as _distance, _rowid@1 as _rowid]
+   ANNSubIndex: name=vector_idx, k=10, deltas=1, metric=Cosine
+   ANNIvfPartition: uuid=66a56163-88ec-4e63-b7cf-2462532d1f6b, minimum_nprobes=1, maximum_nprobes=None, deltas=1
+plan, pre-filter:
+   ProjectionExec: expr=[span_id@2 as span_id, tenant@3 as tenant, doc_type@4 as doc_type, text@5 as text, embed_
+   LanceRead: uri=workspace/book/04-code/ch13/out/lancedb_pq/spans-v7.lance/data, projection=[span_id, tenant, do
+   SortExec: TopK(fetch=10), expr=[_distance@0 ASC NULLS LAST, _rowid@1 ASC NULLS LAST], preserve_partitioning=[f
+   ProjectionExec: expr=[_distance@0 * 0.5 as _distance, _rowid@1 as _rowid]
+   ANNSubIndex: name=vector_idx, k=10, deltas=1, metric=Cosine
+   ANNIvfPartition: uuid=66a56163-88ec-4e63-b7cf-2462532d1f6b, minimum_nprobes=1, maximum_nprobes=None, deltas=1
+   ScalarIndexQuery: query=OR([tenant = foxvalley]@tenant_idx(Bitmap),[tenant = public]@tenant_idx(Bitmap))
+
+== 4. Selectivity sweep on spans-v7: filtered recall@10 against exact, 100 queries
+selectivity  50.0%: pre-filter recall 0.974 (10.0 returned), post-filter recall 0.440 (4.5 returned)
+selectivity  20.0%: pre-filter recall 0.975 (10.0 returned), post-filter recall 0.181 (1.8 returned)
+selectivity  10.0%: pre-filter recall 0.921 (10.0 returned), post-filter recall 0.106 (1.1 returned)
+selectivity   5.0%: pre-filter recall 0.847 (10.0 returned), post-filter recall 0.054 (0.5 returned)
+selectivity   2.0%: pre-filter recall 0.861 (10.0 returned), post-filter recall 0.030 (0.3 returned)
+selectivity   1.0%: pre-filter recall 0.874 (10.0 returned), post-filter recall 0.009 (0.1 returned)
+selectivity   0.5%: pre-filter recall 0.884 (10.0 returned), post-filter recall 0.000 (0.0 returned)
+selectivity   0.2%: pre-filter recall 0.862 (10.0 returned), post-filter recall 0.000 (0.0 returned)
+
+== 5. Retrieval ranks by relevance, not entitlement
+lakeshore   ungated:  82.1% of searches show another tenant's spans (2.5 of 10 on average); scoped: 0.0%
+foxvalley   ungated: 100.0% of searches show another tenant's spans (7.4 of 10 on average); scoped: 0.0%
+northwoods  ungated: 100.0% of searches show another tenant's spans (7.8 of 10 on average); scoped: 0.0%
+
+== 6. Index tuning: recall@10 against exact, 200 Lakeshore queries, pre-filter
+flat (from scratch)      exact      recall@10 1.000  p50  15.3 ms  p99  20.3 ms
+ivf_pq                   nprobes=1    recall@10 0.447  p50   3.5 ms  p99  11.5 ms
+ivf_pq                   nprobes=2    recall@10 0.509  p50   3.6 ms  p99   4.6 ms
+ivf_pq                   nprobes=5    recall@10 0.543  p50   3.7 ms  p99   5.1 ms
+ivf_pq                   nprobes=10   recall@10 0.561  p50   3.9 ms  p99   4.9 ms
+ivf_pq                   nprobes=20   recall@10 0.582  p50   4.2 ms  p99   5.7 ms
+ivf_pq                   nprobes=50   recall@10 0.583  p50   5.0 ms  p99   6.5 ms
+ivf_pq                   nprobes=100  recall@10 0.586  p50   6.6 ms  p99   8.4 ms
+ivf_pq + refine x20      nprobes=1    recall@10 0.588  p50   4.8 ms  p99   6.6 ms
+ivf_pq + refine x20      nprobes=2    recall@10 0.693  p50   5.3 ms  p99   6.6 ms
+ivf_pq + refine x20      nprobes=5    recall@10 0.775  p50   5.3 ms  p99   6.7 ms
+ivf_pq + refine x20      nprobes=10   recall@10 0.835  p50   5.4 ms  p99   6.8 ms
+ivf_pq + refine x20      nprobes=20   recall@10 0.907  p50   5.8 ms  p99   7.4 ms
+ivf_pq + refine x20      nprobes=50   recall@10 0.967  p50   6.5 ms  p99   8.0 ms
+ivf_pq + refine x20      nprobes=100  recall@10 0.972  p50   8.2 ms  p99  12.4 ms
+ivf_hnsw_sq (16 probes)  ef=10   recall@10 0.782  p50   3.7 ms  p99   5.4 ms
+ivf_hnsw_sq (16 probes)  ef=20   recall@10 0.850  p50   3.7 ms  p99   5.1 ms
+ivf_hnsw_sq (16 probes)  ef=40   recall@10 0.897  p50   3.8 ms  p99   8.0 ms
+ivf_hnsw_sq (16 probes)  ef=80   recall@10 0.943  p50   4.0 ms  p99  26.8 ms
+ivf_hnsw_sq (16 probes)  ef=160  recall@10 0.964  p50   4.1 ms  p99   5.1 ms
+ivf_hnsw_sq (16 probes)  ef=320  recall@10 0.973  p50   4.7 ms  p99   6.6 ms
+
+== 7. Small tenants: exact search below 5,000 eligible rows
+ivf_pq, defaults     partner recall@10 0.525  incomplete 0  p50 4.0 ms  p99 7.8 ms
+ivf_pq, nprobes=100, refine=20 partner recall@10 0.865  incomplete 0  p50 7.3 ms  p99 9.4 ms
+exact below 5,000    partner recall@10 1.000  incomplete 0  p50 4.6 ms  p99 6.8 ms
+
+== 8. Embedding lifecycle
+10,000 rows appended: unindexed 10,000; p50 8.3 -> 8.7 ms, p99 13.7 -> 12.5 ms
+after optimize() (1 s): unindexed 0; p50 7.5 ms, p99 11.3 ms
+edited spans: 13; content-hash audit finds 13 stale vectors
+re-embedded   0%: mixed table + new queries   0.8%; in place, old queries pinned to v1  66.8%; shadow table  66.8%; adapter into the old table  61.6%
+re-embedded  25%: mixed table + new queries  12.0%; in place, old queries pinned to v1  58.0%; shadow table  66.8%; adapter into the old table  61.6%
+re-embedded  50%: mixed table + new queries  30.0%; in place, old queries pinned to v1  40.4%; shadow table  66.8%; adapter into the old table  61.6%
+re-embedded  75%: mixed table + new queries  44.0%; in place, old queries pinned to v1  26.0%; shadow table  66.8%; adapter into the old table  61.6%
+re-embedded 100%: mixed table + new queries  67.6%; in place, old queries pinned to v1  67.6%; shadow table  67.6%; adapter into the old table  61.6%
+
+== 9. Hybrid in production: full-text index plus vectors, fused by RRF
+lay determinations   vector  hit@10  69.2%  p50   7.2 ms  p99   9.7 ms
+lay determinations   hybrid  hit@10  66.2%  p50   6.6 ms  p99   8.3 ms
+identifier queries   vector  hit@10  82.4%  p50   6.2 ms  p99   8.1 ms
+identifier queries   hybrid  hit@10 100.0%  p50   6.7 ms  p99  16.2 ms
+a span added after the full-text index was built is found by full-text search: True; unindexed rows in the text index: 1
+
+== 10. Observability: fourteen days, the prefilter change ships on day 9; day 11 restores it and adds routing
+day  1 hit@10 74.0%  canary recall lk 0.93 fv 0.98 nw 0.99  incomplete lk   0% fv   0% nw   0%  p50  8.4 ms
+day  2 hit@10 73.0%  canary recall lk 0.93 fv 0.98 nw 0.99  incomplete lk   0% fv   0% nw   0%  p50  8.3 ms
+day  3 hit@10 67.0%  canary recall lk 0.93 fv 0.98 nw 0.99  incomplete lk   0% fv   0% nw   0%  p50  8.3 ms
+day  4 hit@10 66.0%  canary recall lk 0.93 fv 0.98 nw 0.99  incomplete lk   0% fv   0% nw   0%  p50  8.4 ms
+day  5 hit@10 70.0%  canary recall lk 0.93 fv 0.98 nw 0.99  incomplete lk   0% fv   0% nw   0%  p50  8.3 ms
+day  6 hit@10 67.5%  canary recall lk 0.93 fv 0.98 nw 0.99  incomplete lk   0% fv   0% nw   0%  p50  8.1 ms
+day  7 hit@10 68.5%  canary recall lk 0.93 fv 0.98 nw 0.99  incomplete lk   0% fv   0% nw   0%  p50  8.4 ms
+day  8 hit@10 69.5%  canary recall lk 0.93 fv 0.98 nw 0.99  incomplete lk   0% fv   0% nw   0%  p50  8.2 ms
+day  9 hit@10 66.0%  canary recall lk 0.74 fv 0.28 nw 0.22  incomplete lk  60% fv 100% nw 100%  p50  9.2 ms  ALARM
+day 10 hit@10 64.5%  canary recall lk 0.74 fv 0.28 nw 0.22  incomplete lk  60% fv 100% nw 100%  p50  8.8 ms  ALARM
+day 11 hit@10 71.0%  canary recall lk 0.93 fv 1.00 nw 1.00  incomplete lk   0% fv   0% nw   0%  p50  8.2 ms
+day 12 hit@10 68.5%  canary recall lk 0.93 fv 1.00 nw 1.00  incomplete lk   0% fv   0% nw   0%  p50  8.4 ms
+day 13 hit@10 78.0%  canary recall lk 0.93 fv 1.00 nw 1.00  incomplete lk   0% fv   0% nw   0%  p50  8.4 ms
+day 14 hit@10 67.5%  canary recall lk 0.93 fv 1.00 nw 1.00  incomplete lk   0% fv   0% nw   0%  p50  8.5 ms
+
+== 11. Scoreboard, full mix of 1,000 (carried in: 36 wrong-clause, 11 withheld, at the Chapter 12 close)
+a governing span that leaves the top 20 the reranker sees makes that determination wrong (or withheld,
+if the packet is empty); a span that enters is not counted as a fix, because the carried-in errors
+are not dense-recall misses
+flat (from scratch)            wrong  36  rate 3.6%  dense p50  16.4 ms  p99  42.0 ms  (to re-adjudicate: 0)
+ivf_pq, defaults               wrong  86  rate 8.6%  dense p50   4.2 ms  p99   7.9 ms  (to re-adjudicate: 86)
+ivf_hnsw_sq, ef=80             wrong  63  rate 6.3%  dense p50   4.1 ms  p99   7.5 ms  (to re-adjudicate: 27)
+ivf_pq, nprobes=100, refine=20 wrong  36  rate 3.6%  dense p50   9.2 ms  p99  12.0 ms  (to re-adjudicate: 2)
+spans-v7 + exact < 5,000       wrong  36  rate 3.6%  dense p50   9.3 ms  p99  12.0 ms  (to re-adjudicate: 0)
+incident (post-filter)         wrong  56  rate 5.6%  dense p50   9.1 ms  p99  44.6 ms  withheld 11 + 3
+total lab time 303 s

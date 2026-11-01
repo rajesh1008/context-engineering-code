@@ -1,0 +1,8 @@
+stage,hit,gov,gov1,leaky,tokens
+baseline (Ch 9),0.852,0.85,0.741,0.574,635
++ structural spans (Ch 10),0.864,0.85,0.772,0.53,294
+"+ hybrid, dense and BM25 (Ch 12)",0.949,0.937,0.787,0.467,317
++ cross-encoder re-rank (Ch 12),0.966,0.959,0.83,0.463,330
++ authority filter (Ch 15),0.968,0.967,0.832,0.0,337
++ precedence order (Ch 15),0.968,0.967,0.882,0.0,340
++ graph links (Ch 17) = rebuilt,0.968,0.967,0.88,0.0,333

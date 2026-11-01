@@ -1,0 +1,726 @@
+{
+ "gold": {
+  "before": 94.33,
+  "released": 96.35
+ },
+ "weeks": [
+  {
+   "week": 0,
+   "month": "Jul",
+   "version": "before",
+   "gold": 94.33,
+   "override": 8.08,
+   "right": 92.83
+  },
+  {
+   "week": 1,
+   "month": "Jul",
+   "version": "before",
+   "gold": 94.33,
+   "override": 7.83,
+   "right": 92.83
+  },
+  {
+   "week": 2,
+   "month": "Jul",
+   "version": "before",
+   "gold": 94.33,
+   "override": 8.12,
+   "right": 92.96
+  },
+  {
+   "week": 3,
+   "month": "Jul",
+   "version": "before",
+   "gold": 94.33,
+   "override": 7.79,
+   "right": 93.29
+  },
+  {
+   "week": 4,
+   "month": "Aug",
+   "version": "before",
+   "gold": 94.33,
+   "override": 7.88,
+   "right": 92.88
+  },
+  {
+   "week": 5,
+   "month": "Aug",
+   "version": "before",
+   "gold": 94.33,
+   "override": 6.96,
+   "right": 93.71
+  },
+  {
+   "week": 6,
+   "month": "Aug",
+   "version": "before",
+   "gold": 94.33,
+   "override": 8.71,
+   "right": 92.79
+  },
+  {
+   "week": 7,
+   "month": "Aug",
+   "version": "before",
+   "gold": 94.33,
+   "override": 8.29,
+   "right": 92.83
+  },
+  {
+   "week": 8,
+   "month": "Aug",
+   "version": "before",
+   "gold": 94.33,
+   "override": 7.92,
+   "right": 92.29
+  },
+  {
+   "week": 9,
+   "month": "Sep",
+   "version": "released",
+   "gold": 96.35,
+   "override": 8.0,
+   "right": 92.0
+  },
+  {
+   "week": 10,
+   "month": "Sep",
+   "version": "released",
+   "gold": 96.35,
+   "override": 8.12,
+   "right": 92.75
+  },
+  {
+   "week": 11,
+   "month": "Sep",
+   "version": "released",
+   "gold": 96.35,
+   "override": 8.54,
+   "right": 91.75
+  },
+  {
+   "week": 12,
+   "month": "Sep",
+   "version": "released",
+   "gold": 96.35,
+   "override": 8.5,
+   "right": 91.62
+  },
+  {
+   "week": 13,
+   "month": "Oct",
+   "version": "released",
+   "gold": 96.35,
+   "override": 8.62,
+   "right": 91.67
+  },
+  {
+   "week": 14,
+   "month": "Oct",
+   "version": "released",
+   "gold": 96.35,
+   "override": 8.17,
+   "right": 92.42
+  },
+  {
+   "week": 15,
+   "month": "Oct",
+   "version": "released",
+   "gold": 96.35,
+   "override": 8.71,
+   "right": 91.83
+  },
+  {
+   "week": 16,
+   "month": "Oct",
+   "version": "released",
+   "gold": 96.35,
+   "override": 9.17,
+   "right": 91.46
+  }
+ ],
+ "override_aug": 7.97,
+ "override_oct": 8.67,
+ "open": {
+  "pool": 832,
+  "n": 120,
+  "acceptable": 23,
+  "examples": [
+   "Deductible applied twice across the house and the detached garage.",
+   "Two causes on this loss, hail then interior water. Answered the hail part only.",
+   "Percentage deductible taken off the loss instead of off the dwelling limit.",
+   "Read the date of loss wrong from the scanned first notice."
+  ]
+ },
+ "axial": {
+  "v1": {
+   "deductible_misapplied": 9,
+   "None": 58,
+   "extraction": 7,
+   "missing_evidence": 26,
+   "wrong_limit_line": 11,
+   "condition_missed": 6,
+   "superseded_edition": 2,
+   "precedence_missed": 1
+  },
+  "v2": {
+   "deductible_misapplied": 9,
+   "second_peril": 55,
+   "extraction": 7,
+   "not_a_failure": 23,
+   "wrong_limit_line": 11,
+   "condition_missed": 6,
+   "should_withhold": 6,
+   "superseded_edition": 2,
+   "precedence_missed": 1
+  },
+  "moves": {
+   "None->second_peril": 35,
+   "None->not_a_failure": 23,
+   "missing_evidence->second_peril": 20,
+   "missing_evidence->should_withhold": 6
+  },
+  "v2_match": 120
+ },
+ "pareto": [
+  [
+   "second_peril",
+   55,
+   165
+  ],
+  [
+   "wrong_limit_line",
+   11,
+   33
+  ],
+  [
+   "deductible_misapplied",
+   9,
+   27
+  ],
+  [
+   "condition_missed",
+   6,
+   12
+  ],
+  [
+   "should_withhold",
+   6,
+   12
+  ],
+  [
+   "extraction",
+   7,
+   7
+  ],
+  [
+   "superseded_edition",
+   2,
+   6
+  ],
+  [
+   "precedence_missed",
+   1,
+   2
+  ],
+  [
+   "not_a_failure",
+   23,
+   0
+  ]
+ ],
+ "agreement": {
+  "before": {
+   "kappa": 0.46,
+   "agree": 0.533,
+   "per": {
+    "condition_missed": 0.37,
+    "deductible_misapplied": 0.55,
+    "extraction": 0.88,
+    "not_a_failure": 0.58,
+    "second_peril": 0.39,
+    "should_withhold": 0.79,
+    "superseded_edition": 1.0,
+    "wrong_limit_line": 0.74
+   }
+  },
+  "after": {
+   "kappa": 0.89,
+   "agree": 0.917,
+   "per": {
+    "condition_missed": 1.0,
+    "deductible_misapplied": 1.0,
+    "extraction": 0.7,
+    "not_a_failure": 0.94,
+    "second_peril": 0.9,
+    "should_withhold": 0.79,
+    "superseded_edition": 1.0,
+    "wrong_limit_line": 1.0
+   }
+  }
+ },
+ "saturation": {
+  "gold-set failures": {
+   "n": 38,
+   "curve": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5,
+    6
+   ],
+   "stop": null,
+   "final": 6,
+   "second_peril_at": null,
+   "after_stop": []
+  },
+  "July overrides": {
+   "n": 120,
+   "curve": [
+    1,
+    2,
+    3,
+    4,
+    4,
+    5,
+    6,
+    6,
+    6,
+    6,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    8,
+    8,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+   ],
+   "stop": 55,
+   "final": 9,
+   "second_peril_at": 6,
+   "after_stop": []
+  },
+  "October overrides": {
+   "n": 120,
+   "curve": [
+    1,
+    2,
+    2,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    9,
+    9,
+    9
+   ],
+   "stop": 51,
+   "final": 9,
+   "second_peril_at": 2,
+   "after_stop": [
+    [
+     52,
+     "superseded_edition"
+    ],
+    [
+     118,
+     "precedence_missed"
+    ]
+   ]
+  }
+ },
+ "drift": {
+  "months": {
+   "Apr": {
+    "tvd": 0.02,
+    "unsupported": 0.02
+   },
+   "May": {
+    "tvd": 0.03,
+    "unsupported": 0.03
+   },
+   "Jun": {
+    "tvd": 0.068,
+    "unsupported": 0.05
+   },
+   "Jul": {
+    "tvd": 0.098,
+    "unsupported": 0.07
+   },
+   "Aug": {
+    "tvd": 0.128,
+    "unsupported": 0.09
+   },
+   "Sep": {
+    "tvd": 0.128,
+    "unsupported": 0.09
+   },
+   "Oct": {
+    "tvd": 0.128,
+    "unsupported": 0.09
+   }
+  },
+  "d_raw": 2.02,
+  "d_rw": 2.09,
+  "d_prod": -1.11,
+  "prod": {
+   "before": 92.96,
+   "released": 91.84
+  },
+  "seg_prod": {
+   "before": {
+    "plain": 97.17,
+    "limit": 93.16,
+    "conditions": 91.94,
+    "deductible": 90.99,
+    "withhold": 95.1,
+    "edition": 92.76,
+    "conflict": 92.99,
+    "multi_peril": 80.69
+   },
+   "released": {
+    "plain": 98.94,
+    "limit": 96.54,
+    "conditions": 95.24,
+    "deductible": 92.81,
+    "withhold": 96.14,
+    "edition": 95.96,
+    "conflict": 95.05,
+    "multi_peril": 45.71
+   }
+  },
+  "gold_seg": {
+   "before": {
+    "plain": 97.17,
+    "limit": 89.26,
+    "conditions": 91.95,
+    "deductible": 89.62,
+    "withhold": 98.82,
+    "edition": 93.24,
+    "conflict": 96.23
+   },
+   "released": {
+    "plain": 98.58,
+    "limit": 93.29,
+    "conditions": 93.96,
+    "deductible": 92.45,
+    "withhold": 100.0,
+    "edition": 94.59,
+    "conflict": 98.11
+   }
+  }
+ },
+ "fix": {
+  "released": {
+   "all": 91.84,
+   "multi_n": 875,
+   "multi_wrong": 475,
+   "multi_upper": 57.56
+  },
+  "per_peril": {
+   "all": 96.16,
+   "multi_n": 875,
+   "multi_wrong": 61,
+   "multi_upper": 8.85
+  },
+  "worse": [],
+  "extended": {
+   "before": 93.18,
+   "released": 92.13,
+   "per_peril": 96.24
+  },
+  "silent": {
+   "second_peril": 4
+  }
+ },
+ "ship": {
+  "rows": {
+   "released": {
+    "second_peril": {
+     "k": 475,
+     "upper": 5.4
+    },
+    "deductible_misapplied": {
+     "k": 99,
+     "upper": 1.254
+    },
+    "wrong_limit_line": {
+     "k": 43,
+     "upper": 0.603
+    },
+    "superseded_edition": {
+     "k": 24,
+     "upper": 0.372
+    }
+   },
+   "per_peril": {
+    "second_peril": {
+     "k": 61,
+     "upper": 0.815
+    },
+    "deductible_misapplied": {
+     "k": 99,
+     "upper": 1.254
+    },
+    "wrong_limit_line": {
+     "k": 43,
+     "upper": 0.603
+    },
+    "superseded_edition": {
+     "k": 24,
+     "upper": 0.372
+    }
+   }
+  },
+  "alarm_month": "Jun",
+  "exit_pass": true
+ }
+}

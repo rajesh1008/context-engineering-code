@@ -1,0 +1,115 @@
+
+== 1. The incident: Michigan loss-payment determinations, 1 Sep to 27 Oct 2026
+determinations: 73; on terms that began on or after 1 Sep: 8
+cited the retired endorsement where the new edition governs: 8
+each of those drafts omitted the 15-day written notice the new edition requires
+
+== 2. Three ways to record a retirement, Sep 2026 to Aug 2027
+treatment     dets  wrong  per 1,000
+no record      469    246        525
+   e.g. loss 2026-09-28, term from 2026-09-03: rules chose LM-HO 0122 MI@04 23#loss-payment
+end date       469    223        475
+   e.g. loss 2026-09-01, term from 2025-11-14: rules chose HO-3@05 11#loss-payment
+term-aware     469      0          0
+
+== 3. Reconciliation against the catalogue
+catalogue: 388 document versions; copies: 10372 rows in 5 stores
+clean run: 0 findings
+after the year's eight defects: 102 findings
+  end-mismatch       7  passages 7
+  missing            2  passages 1, vectors 1
+  orphan             4  vectors 4
+  retired-open      29  cache 5, memory 12, passages 6, vectors 6
+  stale-hash         3  vectors 3
+  tenant-mismatch   20  cache 1, gold 2, memory 5, passages 6, vectors 6
+  void-present      31  cache 1, gold 4, memory 12, passages 7, vectors 7
+  wrong-model        6  vectors 6
+defects found: 8 of 8; finding classes with no injected cause: 0
+defects the event-driven checks caught: 2 of 8
+  retired endorsement still current         retired-open    nothing fired
+  vectors outlive deleted guideline         orphan          deletion check after the batch
+  new bulletin never ingested               missing         nothing fired
+  guideline edited in place                 stale-hash      monthly content-hash audit
+  vectors left on the retired model         wrong-model     nothing fired
+  end date mistyped in the passage store    end-mismatch    nothing fired
+  partner guideline indexed for everyone    tenant-mismatch nothing fired
+  voided endorsement still indexed          void-present    nothing fired
+if lifecycle state were inside the embedded text, the retirement would re-embed 6 spans and the quarter's 31 status changes about 230; kept beside the vector, they re-embed none
+
+== 4. Embedding refresh: change classes
+change   touches      rows  class     re-embed gates
+CH-0901  content       212  standard  yes      1
+CH-0902  metadata       31  standard  no       1
+CH-0907  metadata    46089  standard  no       1
+CH-0915  content       640  normal    yes      5
+CH-0922  model       46089  normal    yes      5
+CH-1006  spanning     9310  normal    yes      5
+CH-1013  template    46089  normal    yes      5
+CH-1020  tenant        412  normal    no       5
+CH-1024  purge           4  emergency no       3
+restatement plan for CH-1006 (span ids change):
+  claim memory     refs  310  remap  303  unmappable   7
+  result cache     refs  120  remap  117  unmappable   3
+  gold set         refs  236  remap  232  unmappable   4
+  evidence packs   refs  540  remap  527  unmappable  13
+
+== 5. The asset register
+register v0.9: 16 assets, 9 gaps
+  - shadow index: no owner
+  - shadow index: no review cadence
+  - determinations index: personal data with no erasure answer
+  - result cache: personal data with no erasure answer
+  - result cache: no tenant field
+  - team memory and held queue: no owner
+  - gateway logs: age-out with no period
+  - gold set: personal data with no erasure answer
+  - evidence packs: exempt with no stated basis
+register v1.0: 16 assets, 0 gaps
+downstream of evidence packs: determinations index, gold set, result cache, claim memory, checkpoints, backups
+downstream of forms catalogue: passage store, vector index, shadow index, knowledge graph, backups, result cache
+
+== 6. Erasure ER-2026-0131 across the register
+register v0.9: 9 assets hold rows; no answer for 3: shadow index, determinations index, result cache
+register v1.0: 9 assets hold rows; no answer for 0: 
+  shadow index                  4  age-out
+  determinations index          4  delete
+  result cache                  2  age-out
+  claim memory                 14  delete
+  checkpoints                   3  redact
+  traces                       22  age-out
+  gateway logs                  9  age-out
+  evidence packs                2  exempt
+  backups                       5  age-out
+
+== 7. Partner exit drill: Northwoods Savings
+register v0.9: 13 assets hold partner rows (9116 rows); cannot select by tenant: ['result cache']
+register v1.0: 13 assets hold partner rows (9116 rows); cannot select by tenant: none
+
+== 8. Policy to evidence
+before: 2 of 6 controls complete
+  retired forms never govern new terms    missing: enforcement point, telemetry, evidence, regression test
+  erasure reaches every copy in 30 days   missing: regression test
+  no partner data outside its tenant      missing: evidence
+  no vector on a retired model            missing: -
+  every asset has an owner                missing: rule, enforcement point, telemetry, evidence, regression test
+  index changes are recorded and gated    missing: -
+after: 6 of 6 controls complete
+
+== 9. The governance calendar for 2027
+78 events: annual 2, contract 2, half-yearly 2, monthly 12, quarterly 8, weekly 52
+  2027-01-01  contract    Fox Valley Bank: exit plan refreshed
+  2027-01-20  quarterly   probe, retire-by and register re-walk
+  2027-01-25  quarterly   erasure and exit drill
+  2027-03-10  half-yearly examination readiness drill
+  2027-04-01  contract    Fox Valley Bank: contract date
+  2027-04-20  quarterly   probe, retire-by and register re-walk
+  2027-04-25  quarterly   erasure and exit drill
+  2027-06-01  annual      inventory re-walk from the work
+  2027-07-20  quarterly   probe, retire-by and register re-walk
+  2027-07-25  quarterly   erasure and exit drill
+  2027-09-10  half-yearly examination readiness drill
+  2027-10-20  quarterly   probe, retire-by and register re-walk
+  2027-10-25  quarterly   erasure and exit drill
+  2027-11-01  annual      retention periods reviewed
+
+wrote out/results.json

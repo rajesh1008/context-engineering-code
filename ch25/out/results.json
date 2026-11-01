@@ -1,0 +1,194 @@
+{
+ "index": {
+  "files": 91,
+  "symbols": 842,
+  "edges": {
+   "exact": 2395,
+   "name-only": 615,
+   "ambiguous": 2397
+  },
+  "revision": "580e6a87456d"
+ },
+ "same_name_classes": {
+  "Span": 6,
+  "Trace": 2,
+  "Det": 3,
+  "Policy": 2,
+  "Route": 2,
+  "Edge": 2,
+  "Candidate": 2,
+  "MemoryRecord": 2
+ },
+ "change": {
+  "vector chunks": {
+   "sufficient": 0.04216867469879518,
+   "line_recall": 0.3247624020452175,
+   "tokens": 2922.789156626506,
+   "n": 166
+  },
+  "keyword chunks": {
+   "sufficient": 0.05421686746987952,
+   "line_recall": 0.22723445603658407,
+   "tokens": 2902.843373493976,
+   "n": 166
+  },
+  "grep and read": {
+   "sufficient": 0.7409638554216867,
+   "line_recall": 0.8360747259069651,
+   "tokens": 1938.3072289156626,
+   "n": 166
+  },
+  "symbol index + graph": {
+   "sufficient": 0.8855421686746988,
+   "line_recall": 0.9585583276372749,
+   "tokens": 1543.7710843373493,
+   "n": 166
+  }
+ },
+ "change_miss_reasons": {
+  "every missed line has an edge; budget spent first (ambiguous)": 11,
+  "a missed line has no edge in the index": 3,
+  "every missed line has an edge; budget spent first (exact)": 4,
+  "every missed line has an edge; budget spent first (name-only)": 1
+ },
+ "change_targets": 166,
+ "locate": {
+  "vector chunks": {
+   "found": 0.8125,
+   "tokens": 2940.25
+  },
+  "keyword chunks": {
+   "found": 0.8125,
+   "tokens": 2921.5625
+  },
+  "grep and read": {
+   "found": 0.5625,
+   "tokens": 761.875
+  },
+  "symbol cards (top 3)": {
+   "found": 0.875,
+   "tokens": 458.375
+  }
+ },
+ "map_sweep": [
+  {
+   "budget": 250,
+   "plain": 0.1877653471026965,
+   "focused": 0.8321572002294895
+  },
+  {
+   "budget": 500,
+   "plain": 0.26167527251864603,
+   "focused": 0.9409351692484222
+  },
+  {
+   "budget": 1000,
+   "plain": 0.3622418244406196,
+   "focused": 0.9571141709695926
+  },
+  {
+   "budget": 2000,
+   "plain": 0.5780694205393,
+   "focused": 0.962801204819277
+  },
+  {
+   "budget": 4000,
+   "plain": 0.938790877796902,
+   "focused": 0.962801204819277
+  },
+  {
+   "budget": 8000,
+   "plain": 0.962801204819277,
+   "focused": 0.962801204819277
+  }
+ ],
+ "map_full_tokens": 5287,
+ "moved_missing": {
+  "naive incr": 8,
+  "relinked": 0
+ },
+ "refactor": {
+  "changed_files": 17,
+  "configs": {
+   "stale": {
+    "sufficient": 0.7831325301204819,
+    "line_recall": 0.9255832454905061,
+    "wrong_definition_served": 69
+   },
+   "naive incr": {
+    "sufficient": 0.8674698795180723,
+    "line_recall": 0.9503436507478994,
+    "wrong_definition_served": 0
+   },
+   "relinked": {
+    "sufficient": 0.8855421686746988,
+    "line_recall": 0.9585583276372749,
+    "wrong_definition_served": 0
+   },
+   "rebuild": {
+    "sufficient": 0.8855421686746988,
+    "line_recall": 0.9585583276372749,
+    "wrong_definition_served": 0
+   }
+  },
+  "grep_after": null
+ },
+ "resolve": {
+  "changed, name gone from line": 69,
+  "fresh": 88,
+  "changed, name still at line": 9,
+  "guard_sufficient": 0.8493975903614458,
+  "def_only_sufficient": 0.8493975903614458,
+  "lazy_files": 17
+ },
+ "dispatch": {
+  "static": {
+   "handle_refund": 0,
+   "handle_reship": 0,
+   "escalate_fraud": 0
+  },
+  "runtime": {
+   "handle_refund<-dispatch": 2,
+   "handle_reship<-dispatch": 1,
+   "escalate_fraud<-dispatch": 1
+  },
+  "rule_edges": 3
+ },
+ "agents_check": {
+  "refs": 7,
+  "broken": [
+   "CODEOWNERS",
+   "chNN/instructions_v*.md",
+   "contextlab/instructions.py",
+   "fixtures",
+   "fixtures/data",
+   "fixtures/generate.py"
+  ],
+  "tokens": 195
+ },
+ "notebook": {
+  "cells": 9,
+  "raw": 5948,
+  "sources": 231,
+  "map": 133
+ },
+ "tool_result": {
+  "symbol": "contextlab.retrieval.fusion.rrf",
+  "defined_at": "contextlab/retrieval/fusion.py:9-15",
+  "signature": "def rrf(*runs: dict[str, float], k: int=60, depth: int=100) -> dict[str, float]",
+  "callers": [
+   "ch12/lab.py:20",
+   "ch12/lab.py:143",
+   "ch12/lab.py:158",
+   "contextlab/retrieval/__init__.py:10",
+   "contextlab/retrieval/pipeline.py:4",
+   "contextlab/retrieval/pipeline.py:36"
+  ],
+  "callers_total": 8,
+  "caller_confidence": "exact",
+  "unresolved_callers_possible": true,
+  "index_revision": "580e6a87456d",
+  "checked_against_disk": "fresh",
+  "requires_source_read": true
+ }
+}

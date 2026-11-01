@@ -1,0 +1,381 @@
+{
+ "calibrator": [
+  25.438,
+  -17.73
+ ],
+ "entry": {
+  "wrong": 4,
+  "faithful": 0.9764,
+  "tokens": 2956,
+  "p95_tokens": 2998,
+  "duplicates": 488,
+  "orphans": 0,
+  "base_clause_missing": 0
+ },
+ "top_k": {
+  "wrong": 14,
+  "faithful": 0.9704,
+  "tokens": 2245,
+  "p95_tokens": 2723,
+  "duplicates": 488,
+  "orphans": 17,
+  "base_clause_missing": 0
+ },
+ "matched": {
+  "fill": {
+   "wrong": 166,
+   "faithful": 0.8771,
+   "tokens": 1463,
+   "p95_tokens": 1498,
+   "duplicates": 447,
+   "orphans": 242,
+   "base_clause_missing": 7
+  },
+  "greedy": {
+   "wrong": 162,
+   "faithful": 0.9292,
+   "tokens": 1363,
+   "p95_tokens": 1491,
+   "duplicates": 336,
+   "orphans": 177,
+   "base_clause_missing": 60
+  },
+  "knapsack": {
+   "wrong": 149,
+   "faithful": 0.9046,
+   "tokens": 1359,
+   "p95_tokens": 1471,
+   "duplicates": 368,
+   "orphans": 196,
+   "base_clause_missing": 27
+  },
+  "budgeter": {
+   "wrong": 4,
+   "faithful": 0.9784,
+   "tokens": 1430,
+   "p95_tokens": 2052,
+   "duplicates": 0,
+   "orphans": 0,
+   "base_clause_missing": 0
+  }
+ },
+ "sweep": {
+  "fill": [
+   [
+    600,
+    553,
+    564,
+    0.5308
+   ],
+   [
+    800,
+    429,
+    763,
+    0.6245
+   ],
+   [
+    1000,
+    330,
+    964,
+    0.7085
+   ],
+   [
+    1200,
+    258,
+    1162,
+    0.7849
+   ],
+   [
+    1500,
+    166,
+    1463,
+    0.8771
+   ],
+   [
+    2000,
+    59,
+    1960,
+    0.951
+   ],
+   [
+    2500,
+    11,
+    2461,
+    0.9736
+   ],
+   [
+    3000,
+    4,
+    2956,
+    0.9764
+   ]
+  ],
+  "greedy": [
+   [
+    600,
+    812,
+    530,
+    0.6373
+   ],
+   [
+    800,
+    638,
+    728,
+    0.7342
+   ],
+   [
+    1000,
+    489,
+    918,
+    0.8073
+   ],
+   [
+    1200,
+    337,
+    1103,
+    0.8682
+   ],
+   [
+    1500,
+    162,
+    1363,
+    0.9292
+   ],
+   [
+    2000,
+    47,
+    1688,
+    0.9678
+   ],
+   [
+    2500,
+    9,
+    1867,
+    0.9758
+   ],
+   [
+    3000,
+    5,
+    1926,
+    0.9765
+   ]
+  ],
+  "knapsack": [
+   [
+    600,
+    725,
+    543,
+    0.5938
+   ],
+   [
+    800,
+    571,
+    735,
+    0.6955
+   ],
+   [
+    1000,
+    409,
+    927,
+    0.7746
+   ],
+   [
+    1200,
+    292,
+    1106,
+    0.8374
+   ],
+   [
+    1500,
+    149,
+    1359,
+    0.9046
+   ],
+   [
+    2000,
+    53,
+    1684,
+    0.9589
+   ],
+   [
+    2500,
+    12,
+    1862,
+    0.9734
+   ],
+   [
+    3000,
+    4,
+    1925,
+    0.9766
+   ]
+  ],
+  "budgeter": [
+   [
+    600,
+    4,
+    1424,
+    0.9784
+   ],
+   [
+    800,
+    4,
+    1425,
+    0.9784
+   ],
+   [
+    1000,
+    4,
+    1430,
+    0.9784
+   ],
+   [
+    1200,
+    4,
+    1451,
+    0.9784
+   ],
+   [
+    1500,
+    4,
+    1520,
+    0.9778
+   ],
+   [
+    2000,
+    4,
+    1744,
+    0.9768
+   ],
+   [
+    2500,
+    4,
+    1950,
+    0.9766
+   ],
+   [
+    3000,
+    4,
+    2050,
+    0.9766
+   ]
+  ]
+ },
+ "ablation": {
+  "Budgeter (all parts)": {
+   "wrong": 4,
+   "faithful": 0.9784,
+   "tokens": 1430,
+   "p95_tokens": 2052,
+   "duplicates": 0,
+   "orphans": 0,
+   "base_clause_missing": 0
+  },
+  "no document slots": {
+   "wrong": 822,
+   "faithful": 0.7419,
+   "tokens": 876,
+   "p95_tokens": 990,
+   "duplicates": 0,
+   "orphans": 0,
+   "base_clause_missing": 763
+  },
+  "no dependency bundles": {
+   "wrong": 288,
+   "faithful": 0.9256,
+   "tokens": 1349,
+   "p95_tokens": 1887,
+   "duplicates": 0,
+   "orphans": 478,
+   "base_clause_missing": 0
+  },
+  "no redundancy (second copy at full value)": {
+   "wrong": 4,
+   "faithful": 0.9784,
+   "tokens": 1431,
+   "p95_tokens": 2052,
+   "duplicates": 3,
+   "orphans": 0,
+   "base_clause_missing": 0
+  },
+  "no whole small sections": {
+   "wrong": 4,
+   "faithful": 0.6741,
+   "tokens": 1312,
+   "p95_tokens": 1885,
+   "duplicates": 0,
+   "orphans": 0,
+   "base_clause_missing": 0
+  }
+ },
+ "tokens_per_det": {
+  "entry": 30170,
+  "budgeter_only": 22541,
+  "budgeter_and_per_step": 17197,
+  "mean_spans_entry": 13.3,
+  "mean_spans_after": 6.9,
+  "evidence_entry": 2956,
+  "evidence_after": 1430
+ },
+ "cache": {
+  "one_packet_entry": {
+   "hit_rate": 0.8683,
+   "usd_per_1k": 22.26,
+   "list_usd_per_1k": 88.53,
+   "input_tokens_per_det": 29510
+  },
+  "one_packet_budgeted": {
+   "hit_rate": 0.8921,
+   "usd_per_1k": 14.71,
+   "list_usd_per_1k": 65.67,
+   "input_tokens_per_det": 21890
+  },
+  "per_step_layout": {
+   "hit_rate": 0.8526,
+   "usd_per_1k": 12.3,
+   "list_usd_per_1k": 49.62,
+   "input_tokens_per_det": 16539
+  },
+  "breakpoint_after_evidence": {
+   "hit_rate": 0.8526,
+   "usd_per_1k": 13.37,
+   "list_usd_per_1k": 49.62,
+   "input_tokens_per_det": 16539
+  },
+  "drop_tools_on_draft": {
+   "hit_rate": 0.7352,
+   "usd_per_1k": 16.98,
+   "list_usd_per_1k": 44.64,
+   "input_tokens_per_det": 14878
+  },
+  "trim_rulebook": {
+   "hit_rate": 0.7062,
+   "usd_per_1k": 18.95,
+   "list_usd_per_1k": 45.72,
+   "input_tokens_per_det": 15239
+  }
+ },
+ "injection": {
+  "usage_scorer_no_pin": {
+   "newest_included": 0,
+   "of": 40,
+   "wrong_this_week": 15,
+   "withheld_if_checked_after_pack": 40,
+   "full_mix_wrong": 5
+  },
+  "rule_scorer_no_pin": {
+   "newest_included": 40,
+   "of": 40,
+   "wrong_this_week": 0,
+   "withheld_if_checked_after_pack": 0,
+   "full_mix_wrong": 4
+  },
+  "rule_scorer_pinned": {
+   "newest_included": 40,
+   "of": 40,
+   "wrong_this_week": 0,
+   "withheld_if_checked_after_pack": 0,
+   "full_mix_wrong": 4
+  }
+ }
+}

@@ -1,0 +1,56 @@
+
+== 1. Data: 400 policies, 912 claims, 1797 payments
+history-bearing determinations in the full mix: 300 of 1000; lookups: 1232
+
+== 2. Semantic layer sl-1.2: 5 measures
+- prior_claims_5y (count, per claim): claims before this loss, five-year lookback, voids excluded [owner: Claims platform]
+- backup_paid_term (USD, per payment): indemnity net of recoveries; expenses excluded [owner: Claims finance]
+- term_premium (USD, per term): annual premium of the term in force [owner: Policy administration]
+- deductible (USD, per term): all-peril deductible of the term in force [owner: Policy administration]
+- backup_sublimit (USD, per term): HO 04 95 limit for the term in force [owner: Policy administration]
+
+== 3. Numeric faithfulness on claims-history lookups
+configuration            stated  right  faithful withheld tokens/det  ms/det US$/1k det
+passages                   1200    701     58.4%       32        333     120       1.00
+rows in prompt             1232    805     65.3%        0        787     160       2.36
+schema SQL                 1232    858     69.6%        0        666    3819       2.00
+schema SQL + verifier       332    330     99.4%      900        666    3827       2.00
+structured span            1200   1200    100.0%       32        327     460       0.98
+
+== 4. Wrong numbers by lookup
+configuration              prior_claims_5y        deductible  backup_remaining      term_premium  paid_all_perils_
+passages                               141                90               159               109                 0
+rows in prompt                         139                 0                47               230                11
+schema SQL                             139                 0                 3               230                 2
+schema SQL + verifier                    0                 0                 0                 0                 2
+structured span                          0                 0                 0                 0                 0
+
+== 5. Failure injection: thousands separators in the rendered table
+plain                          numbers read   697  right   697 (100.0%)  renderings refused 0
+separators, no check           numbers read   697  right    62 (8.9%)  renderings refused 0
+separators, round-trip check   numbers read   697  right   697 (100.0%)  renderings refused 260
+
+== 6. Sidebar: the premium that was summed twice
+terms with more than one endorsement: 230 of 300
+CLM-2026-01187 LMH-WI-0048213 term 2025-06-01: naive SUM 4158.28 USD, measure 2079.14 USD; verifier: fan-out: 2 rows for 1 term(s)
+
+== 7. A structured span and a derived number
+claim CLM-2026-01187, policy LMH-WI-0048213, loss 2026-03-14, term 2025-06-01
+passages said: prior_claims_5y=1, deductible=1000, backup_remaining=6150, term_premium=2162.3
+[S1] v_claims | prior_claims_5y | layer sl-1.2 | query 7593d1cd | as of 2026-10-30 09:00 | policy=LMH-WI-0048213, term=2025-06-01
+prior_claims_5y = 1 count
+[S2] v_terms | deductible | layer sl-1.2 | query 6055542d | as of 2026-10-30 09:00 | policy=LMH-WI-0048213, term=2025-06-01
+deductible = 1000.00 USD
+[S3] v_terms | backup_sublimit | layer sl-1.2 | query 91ba6a65 | as of 2026-10-30 09:00 | policy=LMH-WI-0048213, term=2025-06-01
+backup_sublimit = 10000.00 USD
+[S4] v_payments | backup_paid_term | layer sl-1.2 | query 736dab7e | as of 2026-10-30 09:00 | policy=LMH-WI-0048213, term=2025-06-01
+backup_paid_term = 0.00 USD
+[S5] derived | backup_remaining = S3 - S4 | layer sl-1.2
+backup_remaining = 10000.00 USD
+
+== 8. Determinations whose amount line changes
+passages                 wrong remaining back-up limit in 159 of 300 determinations
+rows in prompt           wrong remaining back-up limit in 47 of 300 determinations
+schema SQL               wrong remaining back-up limit in 3 of 300 determinations
+schema SQL + verifier    wrong remaining back-up limit in 0 of 300 determinations
+structured span          wrong remaining back-up limit in 0 of 300 determinations

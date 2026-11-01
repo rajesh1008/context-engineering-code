@@ -1,0 +1,180 @@
+[
+ {
+  "det": "DET28-0188",
+  "claim": "CLM-2026-01187",
+  "sentences": [
+   {
+    "text": "The reported cause is a sump pump failure during heavy rain that let water back up into the basement.",
+    "status": "supported",
+    "score": 0.8571,
+    "spans": [
+     {
+      "doc": "CLM-2026-01187",
+      "edition": "record",
+      "page": 1,
+      "n": 1,
+      "text": "Reported cause: the sump pump failed during heavy rain and water backed up into the basement."
+     }
+    ]
+   },
+   {
+    "text": "The HO-3 form does not insure loss caused by water which backs up through sewers or drains or overflows from a sump unless an endorsement provides that coverage.",
+    "status": "supported",
+    "score": 0.9375,
+    "spans": [
+     {
+      "doc": "HO-3",
+      "edition": "2024-06",
+      "page": 7,
+      "n": 1,
+      "text": "We do not insure for loss caused by water which backs up through sewers or drains or overflows from a sump, unless an endorsement provides that coverage."
+     }
+    ]
+   },
+   {
+    "text": "The HO 04 95 endorsement will pay up to $10,000 for direct physical loss caused by water which backs up through drains or is discharged from a sump, even if caused by mechanical breakdown of the sump pump.",
+    "status": "supported",
+    "score": 0.95,
+    "spans": [
+     {
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "n": 2,
+      "text": "We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump."
+     }
+    ]
+   },
+   {
+    "text": "A $1,000 deductible applies.",
+    "status": "supported",
+    "score": 1.0,
+    "spans": [
+     {
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "n": 3,
+      "text": "A $1,000 deductible applies."
+     }
+    ]
+   },
+   {
+    "text": "The loss is covered by the endorsement up to $10,000 for water discharged from the sump, and a $1,000 deductible applies.",
+    "status": "supported",
+    "score": 0.7778,
+    "spans": [
+     {
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "n": 2,
+      "text": "We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump."
+     },
+     {
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "n": 3,
+      "text": "A $1,000 deductible applies."
+     }
+    ]
+   },
+   {
+    "text": "Please send photographs of the damaged items and the failed pump.",
+    "status": "exempt",
+    "score": 0.0,
+    "spans": []
+   }
+  ]
+ },
+ {
+  "det": "DET28-0013",
+  "claim": "CLM-2026-01012",
+  "sentences": [
+   {
+    "text": "The reported cause is a sump pump failure during heavy rain that let water back up into the basement.",
+    "status": "supported",
+    "score": 0.8571,
+    "spans": [
+     {
+      "doc": "CLM-2026-01012",
+      "edition": "record",
+      "page": 1,
+      "n": 1,
+      "text": "Reported cause: the sump pump failed during heavy rain and water backed up into the basement."
+     }
+    ]
+   },
+   {
+    "text": "The HO-3 form does not insure loss caused by water which backs up through sewers or drains or overflows from a sump unless an endorsement provides that coverage provided the loss was reported within 72 hours.",
+    "status": "unverified",
+    "score": 0.2429,
+    "spans": [
+     {
+      "doc": "HO-3",
+      "edition": "2024-06",
+      "page": 7,
+      "n": 1,
+      "text": "We do not insure for loss caused by water which backs up through sewers or drains or overflows from a sump, unless an endorsement provides that coverage."
+     }
+    ]
+   },
+   {
+    "text": "The HO 04 95 endorsement will pay up to $10,000 for direct physical loss caused by water which backs up through drains or is discharged from a sump, even if caused by mechanical breakdown of the sump pump.",
+    "status": "supported",
+    "score": 0.95,
+    "spans": [
+     {
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "n": 2,
+      "text": "We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump."
+     }
+    ]
+   },
+   {
+    "text": "A $1,000 deductible applies.",
+    "status": "supported",
+    "score": 1.0,
+    "spans": [
+     {
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "n": 3,
+      "text": "A $1,000 deductible applies."
+     }
+    ]
+   },
+   {
+    "text": "The loss is covered by the endorsement up to $10,000 for water discharged from the sump, and a $1,000 deductible applies.",
+    "status": "supported",
+    "score": 0.7778,
+    "spans": [
+     {
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "n": 2,
+      "text": "We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump."
+     },
+     {
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "n": 3,
+      "text": "A $1,000 deductible applies."
+     }
+    ]
+   },
+   {
+    "text": "Please send photographs of the damaged items and the failed pump.",
+    "status": "exempt",
+    "score": 0.0,
+    "spans": []
+   }
+  ]
+ }
+]

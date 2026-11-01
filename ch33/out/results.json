@@ -1,0 +1,495 @@
+{
+ "corpus": {
+  "mean": 1091,
+  "gold": {
+   "excluded": 57,
+   "pay": 106,
+   "late notice": 5,
+   "condition": 32
+  },
+  "share": {
+   "declarations": 2.9,
+   "policy": 47.1,
+   "endorsement": 12.5,
+   "notes": 29.0,
+   "letters": 8.5
+  },
+  "base": {
+   "ratio": 1.0,
+   "right": 200,
+   "wrong": 0,
+   "withheld": 0,
+   "cited": 100.0
+  }
+ },
+ "compare": {
+  "extractive@0.5": {
+   "ratio": 0.497,
+   "right": 168,
+   "wrong": 32,
+   "withheld": 0,
+   "cited": 89.4
+  },
+  "extractive@0.33": {
+   "ratio": 0.327,
+   "right": 84,
+   "wrong": 8,
+   "withheld": 108,
+   "cited": 66.8
+  },
+  "extractive@0.2": {
+   "ratio": 0.198,
+   "right": 124,
+   "wrong": 26,
+   "withheld": 50,
+   "cited": 53.4
+  },
+  "token pruning@0.5": {
+   "ratio": 0.495,
+   "right": 111,
+   "wrong": 89,
+   "withheld": 0,
+   "cited": 0.0
+  },
+  "token pruning@0.33": {
+   "ratio": 0.325,
+   "right": 9,
+   "wrong": 8,
+   "withheld": 183,
+   "cited": 0.0
+  },
+  "token pruning@0.2": {
+   "ratio": 0.194,
+   "right": 9,
+   "wrong": 8,
+   "withheld": 183,
+   "cited": 0.0
+  },
+  "abstractive@0.5": {
+   "ratio": 0.462,
+   "right": 111,
+   "wrong": 32,
+   "withheld": 57,
+   "cited": 11.6
+  },
+  "abstractive@0.33": {
+   "ratio": 0.309,
+   "right": 107,
+   "wrong": 50,
+   "withheld": 43,
+   "cited": 11.7
+  },
+  "abstractive@0.2": {
+   "ratio": 0.19,
+   "right": 60,
+   "wrong": 84,
+   "withheld": 56,
+   "cited": 8.8
+  }
+ },
+ "survival": {
+  "extractive": {
+   "exclusion": {
+    "kept": 194,
+    "dropped": 6
+   },
+   "exception": {
+    "kept": 143
+   },
+   "limit": {
+    "kept": 143
+   },
+   "deductible": {
+    "kept": 143
+   },
+   "condition": {
+    "kept": 143
+   },
+   "finding": {
+    "dropped": 200
+   },
+   "loss": {
+    "kept": 200
+   },
+   "d_loss": {
+    "kept": 64,
+    "dropped": 136
+   },
+   "d_rep": {
+    "kept": 103,
+    "dropped": 97
+   },
+   "notice": {
+    "kept": 185,
+    "dropped": 15
+   }
+  },
+  "token pruning": {
+   "exclusion": {
+    "altered": 200
+   },
+   "exception": {
+    "kept": 143
+   },
+   "limit": {
+    "kept": 143
+   },
+   "deductible": {
+    "kept": 143
+   },
+   "condition": {
+    "dropped": 74,
+    "altered": 69
+   },
+   "finding": {
+    "dropped": 102,
+    "kept": 79,
+    "altered": 19
+   },
+   "loss": {
+    "kept": 200
+   },
+   "d_loss": {
+    "dropped": 175,
+    "kept": 25
+   },
+   "d_rep": {
+    "dropped": 174,
+    "kept": 26
+   },
+   "notice": {
+    "kept": 200
+   }
+  },
+  "abstractive": {
+   "exclusion": {
+    "kept": 180,
+    "dropped": 20
+   },
+   "exception": {
+    "kept": 119,
+    "dropped": 24
+   },
+   "limit": {
+    "dropped": 19,
+    "kept": 124
+   },
+   "deductible": {
+    "dropped": 43,
+    "kept": 100
+   },
+   "condition": {
+    "kept": 104,
+    "dropped": 35,
+    "altered": 4
+   },
+   "finding": {
+    "kept": 156,
+    "dropped": 44
+   },
+   "loss": {
+    "kept": 171,
+    "dropped": 29
+   },
+   "d_loss": {
+    "dropped": 90,
+    "kept": 110
+   },
+   "d_rep": {
+    "kept": 114,
+    "dropped": 86
+   },
+   "notice": {
+    "dropped": 107,
+    "kept": 93
+   }
+  }
+ },
+ "inject": {
+  "clean": {
+   "ratio": 0.467,
+   "right": 184,
+   "wrong": 7,
+   "withheld": 9,
+   "cited": 20.6
+  },
+  "inj": {
+   "ratio": 0.467,
+   "right": 154,
+   "wrong": 37,
+   "withheld": 9,
+   "cited": 20.6
+  },
+  "inverted": 139,
+  "wrong": 30,
+  "latent": 109,
+  "by_question": 43,
+  "by_polarity": 139,
+  "by_probe": 139,
+  "fp_polarity": 0,
+  "fp_probe": 35
+ },
+ "fixes": {
+  "extractive, clause groups": {
+   "ratio": 0.359,
+   "right": 200,
+   "wrong": 0,
+   "withheld": 0,
+   "cited": 95.9
+  },
+  "token pruning, force-keep": {
+   "ratio": 0.325,
+   "right": 66,
+   "wrong": 0,
+   "withheld": 134,
+   "cited": 0.0
+  },
+  "token pruning, force-keep @0.5": {
+   "ratio": 0.495,
+   "right": 181,
+   "wrong": 19,
+   "withheld": 0,
+   "cited": 0.0
+  },
+  "abstractive, guided": {
+   "ratio": 0.314,
+   "right": 169,
+   "wrong": 13,
+   "withheld": 18,
+   "cited": 20.3
+  },
+  "extractive, clause groups @0.5": {
+   "ratio": 0.519,
+   "right": 200,
+   "wrong": 0,
+   "withheld": 0,
+   "cited": 95.9
+  },
+  "extractive, clause groups @0.2": {
+   "ratio": 0.231,
+   "right": 200,
+   "wrong": 0,
+   "withheld": 0,
+   "cited": 95.9
+  }
+ },
+ "scope": {
+  "nothing compressed": {
+   "ratio": 1.0,
+   "right": 200,
+   "wrong": 0,
+   "withheld": 0,
+   "cited": 100.0
+  },
+  "everything abstractive 0.33": {
+   "ratio": 0.309,
+   "right": 107,
+   "wrong": 50,
+   "withheld": 43,
+   "cited": 11.7
+  },
+  "history abstractive, evidence verbatim": {
+   "ratio": 0.746,
+   "right": 80,
+   "wrong": 1,
+   "withheld": 119,
+   "cited": 68.1
+  },
+  "history pruned, evidence verbatim": {
+   "ratio": 0.746,
+   "right": 168,
+   "wrong": 32,
+   "withheld": 0,
+   "cited": 57.7
+  },
+  "history: facts lifted + summary; evidence clause groups": {
+   "ratio": 0.379,
+   "right": 200,
+   "wrong": 0,
+   "withheld": 0,
+   "cited": 100.0
+  }
+ },
+ "gate": {
+  "shipped": {
+   "pass": 200
+  },
+  "abs_fail": 172
+ },
+ "measure": {
+  "facts": {
+   "kept": 1772
+  },
+  "ratio": 0.379
+ },
+ "curve": {
+  "extractive": [
+   88.7,
+   74.4,
+   60.8
+  ],
+  "clause groups": [
+   96.8,
+   96.8,
+   96.8
+  ],
+  "abstractive": [
+   78.8,
+   71.7,
+   61.1
+  ],
+  "guided abstractive": [
+   98.5,
+   96.3,
+   93.1
+  ]
+ },
+ "agent": [
+  {
+   "family": "full",
+   "pin": false,
+   "offload": false,
+   "peak": 88684,
+   "total": 3201638,
+   "violations": 0,
+   "success": 87.5
+  },
+  {
+   "family": "threshold",
+   "pin": false,
+   "offload": false,
+   "peak": 31689,
+   "total": 1297967,
+   "violations": 50,
+   "success": 39.5
+  },
+  {
+   "family": "threshold",
+   "pin": true,
+   "offload": false,
+   "peak": 31689,
+   "total": 1297967,
+   "violations": 0,
+   "success": 39.5
+  },
+  {
+   "family": "threshold",
+   "pin": true,
+   "offload": true,
+   "peak": 31689,
+   "total": 1298979,
+   "violations": 0,
+   "success": 96.5
+  },
+  {
+   "family": "on_demand",
+   "pin": true,
+   "offload": false,
+   "peak": 38078,
+   "total": 1457630,
+   "violations": 0,
+   "success": 41.5
+  },
+  {
+   "family": "on_demand",
+   "pin": true,
+   "offload": true,
+   "peak": 38078,
+   "total": 1458501,
+   "violations": 0,
+   "success": 98.0
+  },
+  {
+   "family": "trim",
+   "pin": false,
+   "offload": false,
+   "peak": 10923,
+   "total": 599641,
+   "violations": 84,
+   "success": 83.0
+  },
+  {
+   "family": "trim",
+   "pin": true,
+   "offload": false,
+   "peak": 10923,
+   "total": 599641,
+   "violations": 0,
+   "success": 83.0
+  },
+  {
+   "family": "isolate",
+   "pin": false,
+   "offload": false,
+   "peak": 14800,
+   "total": 577150,
+   "violations": 26,
+   "success": 76.5
+  },
+  {
+   "family": "isolate",
+   "pin": true,
+   "offload": false,
+   "peak": 14800,
+   "total": 577150,
+   "violations": 0,
+   "success": 76.5
+  }
+ ],
+ "attack": {
+  "plain": 77,
+  "pinned": 0,
+  "base": 50
+ },
+ "lakeshore": {
+  "Chapter 32 packet (uncompressed)": {
+   "tokens": 1089,
+   "wrong": 4,
+   "withheld": 0,
+   "cost_per_1000": 9.8
+  },
+  "shipped compression policy": {
+   "tokens": 415,
+   "wrong": 4,
+   "withheld": 0,
+   "cost_per_1000": 6.18
+  },
+  "incident: endorsements over 400 tokens summarised": {
+   "tokens": 410,
+   "wrong": 11,
+   "withheld": 0,
+   "cost_per_1000": 6.14
+  },
+  "incident config with probe gate": {
+   "tokens": 411,
+   "wrong": 4,
+   "withheld": 0,
+   "cost_per_1000": 6.15
+  },
+  "shipped policy with probe gate": {
+   "tokens": 415,
+   "wrong": 4,
+   "withheld": 0,
+   "cost_per_1000": 6.18
+  }
+ },
+ "incident": {
+  "summarised": 114,
+  "inverted": 19,
+  "new_wrong": [
+   "D0033",
+   "D0272",
+   "D0330",
+   "D0332",
+   "D0653",
+   "D0685",
+   "D0852"
+  ],
+  "causes": {
+   "condition": 4,
+   "condition,deductible": 2,
+   "exception": 1
+  },
+  "probe_fail": 24
+ }
+}

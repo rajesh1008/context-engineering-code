@@ -1,0 +1,12 @@
+== 1. The exercise (contextlab v11.0): 11 spans, 8 seeded defects
+   spans missing a page: ['S5']
+   candidates finding each defect (of 40): {'D1': 26, 'D2': 28, 'D3': 28, 'D4': 24, 'D5': 20, 'D6': 28, 'D7': 16, 'D8': 12}
+   pool check, Spearman(skill, name fluency): 0.445
+== 2. Failure injection: a rubric that rewards vendor names
+   of its top five, below the median drill score: 1
+   Spearman with held-out drill: 0.501 | with name fluency: 0.923 | top-5 overlap: 0
+   rubric's first choice: ('C33', 35, 7.95, 0.853)
+== 3. Fix: anchored per-defect rubric, names score nothing
+   Spearman with held-out drill: 0.789 | with name fluency: 0.337 | top-5 overlap: 3
+   rubric's first choice: ('C09', 24, 8.68, 0.727)
+== 4. Two raters, five bands: kappa impression 0.49 | anchored 0.77

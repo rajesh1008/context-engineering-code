@@ -1,0 +1,19 @@
+{
+ "before": {
+  "model_ok": 29,
+  "region_ok": 0,
+  "letters_in_sample": 11
+ },
+ "after": {
+  "traces": 10341,
+  "matched": 10341,
+  "unmatched": 0,
+  "answerable": 10341
+ },
+ "findings": {
+  "undeclared_transform": 9
+ },
+ "sample_after": 40,
+ "calls": 10341,
+ "dets": 3200
+}

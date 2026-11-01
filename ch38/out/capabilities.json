@@ -1,0 +1,68 @@
+{
+ "features": [
+  [
+   "Dated model pin (no alias)",
+   14,
+   "kept",
+   "kept"
+  ],
+  [
+   "Cache routing key from caller",
+   34,
+   "lost",
+   "kept"
+  ],
+  [
+   "Explicit cache breakpoints",
+   34,
+   "lost",
+   "kept"
+  ],
+  [
+   "Structured output schema",
+   28,
+   "degraded",
+   "kept"
+  ],
+  [
+   "Long-context tier (200K)",
+   32,
+   "lost",
+   "lost"
+  ],
+  [
+   "Per-call region choice",
+   38,
+   "gateway",
+   "gateway"
+  ],
+  [
+   "Token usage incl. cached",
+   34,
+   "kept",
+   "kept"
+  ],
+  [
+   "Tool definitions (MCP)",
+   26,
+   "kept",
+   "kept"
+  ],
+  [
+   "Log probabilities",
+   29,
+   "lost",
+   "lost"
+  ]
+ ],
+ "cache": {
+  "routing key forwarded": {
+   "hit_rate": 55.6,
+   "cost_per_det": 0.0285
+  },
+  "routing key dropped": {
+   "hit_rate": 21.4,
+   "cost_per_det": 0.0396
+  }
+ }
+}

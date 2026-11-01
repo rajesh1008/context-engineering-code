@@ -1,0 +1,17 @@
+{
+ "pooled": {
+  "probes": 250,
+  "cross_tenant_hits": 250,
+  "own_repeat_cached": true
+ },
+ "client_key": {
+  "probes": 250,
+  "cross_tenant_hits": 250,
+  "own_repeat_cached": true
+ },
+ "identity": {
+  "probes": 250,
+  "cross_tenant_hits": 0,
+  "own_repeat_cached": true
+ }
+}

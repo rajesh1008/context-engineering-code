@@ -1,0 +1,48 @@
+== 1. Four budgeters on the full mix (1,000 determinations)
+  top-10 by score (Ch 2), no budget     {'wrong': 14, 'faithful': 0.9704, 'tokens': 2245, 'p95_tokens': 2723, 'duplicates': 488, 'orphans': 17, 'base_clause_missing': 0}
+  fill by score to 3,000 (entry, Ch 4)   {'wrong': 4, 'faithful': 0.9764, 'tokens': 2956, 'p95_tokens': 2998, 'duplicates': 488, 'orphans': 0, 'base_clause_missing': 0}
+  fill      at 1,500                     {'wrong': 166, 'faithful': 0.8771, 'tokens': 1463, 'p95_tokens': 1498, 'duplicates': 447, 'orphans': 242, 'base_clause_missing': 7}
+  greedy    at 1,500                     {'wrong': 162, 'faithful': 0.9292, 'tokens': 1363, 'p95_tokens': 1491, 'duplicates': 336, 'orphans': 177, 'base_clause_missing': 60}
+  knapsack  at 1,500                     {'wrong': 149, 'faithful': 0.9046, 'tokens': 1359, 'p95_tokens': 1471, 'duplicates': 368, 'orphans': 196, 'base_clause_missing': 27}
+  Budgeter, target 1,000, cap 2,400      {'wrong': 4, 'faithful': 0.9784, 'tokens': 1430, 'p95_tokens': 2052, 'duplicates': 0, 'orphans': 0, 'base_clause_missing': 0}
+
+== 2. Budget sweep: wrong per 1,000 and mean evidence tokens
+  fill      600:553/564 800:429/763 1000:330/964 1200:258/1162 1500:166/1463 2000:59/1960 2500:11/2461 3000:4/2956
+  greedy    600:812/530 800:638/728 1000:489/918 1200:337/1103 1500:162/1363 2000:47/1688 2500:9/1867 3000:5/1926
+  knapsack  600:725/543 800:571/735 1000:409/927 1200:292/1106 1500:149/1359 2000:53/1684 2500:12/1862 3000:4/1925
+  budgeter  600:4/1424 800:4/1425 1000:4/1430 1200:4/1451 1500:4/1520 2000:4/1744 2500:4/1950 3000:4/2050
+
+== 3. Ablation of the Budgeter
+  Budgeter (all parts)                       {'wrong': 4, 'faithful': 0.9784, 'tokens': 1430, 'p95_tokens': 2052, 'duplicates': 0, 'orphans': 0, 'base_clause_missing': 0}
+  no document slots                          {'wrong': 822, 'faithful': 0.7419, 'tokens': 876, 'p95_tokens': 990, 'duplicates': 0, 'orphans': 0, 'base_clause_missing': 763}
+  no dependency bundles                      {'wrong': 288, 'faithful': 0.9256, 'tokens': 1349, 'p95_tokens': 1887, 'duplicates': 0, 'orphans': 478, 'base_clause_missing': 0}
+  no redundancy (second copy at full value)  {'wrong': 4, 'faithful': 0.9784, 'tokens': 1431, 'p95_tokens': 2052, 'duplicates': 3, 'orphans': 0, 'base_clause_missing': 0}
+  no whole small sections                    {'wrong': 4, 'faithful': 0.6741, 'tokens': 1312, 'p95_tokens': 1885, 'duplicates': 0, 'orphans': 0, 'base_clause_missing': 0}
+
+== 4. Tokens per determination, five calls (Ch 26 loop)
+  entry                    30,170
+  budgeter_only            22,541
+  budgeter_and_per_step    17,197
+  mean_spans_entry         13.3
+  mean_spans_after         6.9
+  evidence_entry           2,956
+  evidence_after           1,430
+  change -43.0%   list-price input US$ per day at 3,200: entry 283.30  after 158.76
+
+== 5. Prefix cache: one day, 3,200 determinations, five calls each
+  one_packet_entry             {'hit_rate': 0.8683, 'usd_per_1k': 22.26, 'list_usd_per_1k': 88.53, 'input_tokens_per_det': 29510}
+  one_packet_budgeted          {'hit_rate': 0.8921, 'usd_per_1k': 14.71, 'list_usd_per_1k': 65.67, 'input_tokens_per_det': 21890}
+  per_step_layout              {'hit_rate': 0.8526, 'usd_per_1k': 12.3, 'list_usd_per_1k': 49.62, 'input_tokens_per_det': 16539}
+  breakpoint_after_evidence    {'hit_rate': 0.8526, 'usd_per_1k': 13.37, 'list_usd_per_1k': 49.62, 'input_tokens_per_det': 16539}
+  drop_tools_on_draft          {'hit_rate': 0.7352, 'usd_per_1k': 16.98, 'list_usd_per_1k': 44.64, 'input_tokens_per_det': 14878}
+  trim_rulebook                {'hit_rate': 0.7062, 'usd_per_1k': 18.95, 'list_usd_per_1k': 45.72, 'input_tokens_per_det': 15239}
+
+== 6. Failure injection: the newest bulletin (BUL-WI-WB-202610, 40 claims this week)
+  usage_scorer_no_pin    {'newest_included': 0, 'of': 40, 'wrong_this_week': 15, 'withheld_if_checked_after_pack': 40, 'full_mix_wrong': 5}
+  rule_scorer_no_pin     {'newest_included': 40, 'of': 40, 'wrong_this_week': 0, 'withheld_if_checked_after_pack': 0, 'full_mix_wrong': 4}
+  rule_scorer_pinned     {'newest_included': 40, 'of': 40, 'wrong_this_week': 0, 'withheld_if_checked_after_pack': 0, 'full_mix_wrong': 4}
+
+== 7. Packing time per determination (ms, this machine)
+  fill      0.01
+  knapsack  0.88
+  budgeter  0.05

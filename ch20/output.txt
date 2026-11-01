@@ -1,0 +1,116 @@
+== 1. Audit of the baseline (Chapter 9's configuration)
+  build 99a591be: 375 spans in the inventory -> 261 fixed windows of 256 tokens
+  spans no window holds whole (coverage < 0.8): 15 of 375
+  queries whose governing span no window holds: 40
+  baseline                           hit@5 0.852  gov@5 0.850  gov@1 0.741  leaky  574  tokens  635
+    eval               n 200  gov@5 0.885  gov@1 0.820  leaky 0.585
+    holdout            n 300  gov@5 0.880  gov@1 0.770  leaky 0.563
+    new:docstore       n 160  gov@5 0.869  gov@1 0.706  leaky 0.575
+    new:guidance       n  40  gov@5 0.800  gov@1 0.775  leaky 0.500
+    new:multi-state    n  60  gov@5 0.817  gov@1 0.750  leaky 0.600
+    new:policy-admin   n 130  gov@5 0.792  gov@1 0.638  leaky 0.585
+    new:scanned        n  90  gov@5 0.811  gov@1 0.711  leaky 0.578
+    new:third-party    n  20  gov@5 0.650  gov@1 0.500  leaky 0.600
+  inadmissible spans in baseline packets, by reason: {'endorsement not on policy': 204, 'other state': 826}
+
+== 2. Re-chunk: fixed windows against structural spans
+  fixed-128, keyword only            hit@5 0.757  gov@5 0.744  gov@1 0.631  leaky  525  tokens  442  units 310
+  fixed-128, rebuilt stack           hit@5 0.829  gov@5 0.828  gov@1 0.666  leaky    0  tokens  516  units 310
+  fixed-256, keyword only            hit@5 0.852  gov@5 0.850  gov@1 0.741  leaky  574  tokens  635  units 261
+  fixed-256, rebuilt stack           hit@5 0.929  gov@5 0.929  gov@1 0.803  leaky    0  tokens  792  units 261
+  fixed-512, keyword only            hit@5 0.887  gov@5 0.881  gov@1 0.695  leaky  653  tokens  929  units 234
+  fixed-512, rebuilt stack           hit@5 0.962  gov@5 0.958  gov@1 0.809  leaky    0  tokens 1242  units 234
+  structural, keyword only           hit@5 0.864  gov@5 0.850  gov@1 0.772  leaky  530  tokens  294  units 375
+  structural, rebuilt stack          hit@5 0.968  gov@5 0.967  gov@1 0.880  leaky    0  tokens  333  units 375
+
+== 3. Re-index and re-rank: the ladder, one stage added at a time
+  baseline (Ch 9)                    hit@5 0.852  gov@5 0.850  gov@1 0.741  leaky  574  tokens  635
+  + structural spans (Ch 10)         hit@5 0.864  gov@5 0.850  gov@1 0.772  leaky  530  tokens  294
+  + hybrid, dense and BM25 (Ch 12)   hit@5 0.949  gov@5 0.937  gov@1 0.787  leaky  467  tokens  317
+  + cross-encoder re-rank (Ch 12)    hit@5 0.966  gov@5 0.959  gov@1 0.830  leaky  463  tokens  330
+  + authority filter (Ch 15)         hit@5 0.968  gov@5 0.967  gov@1 0.832  leaky    0  tokens  337
+  + precedence order (Ch 15)         hit@5 0.968  gov@5 0.967  gov@1 0.882  leaky    0  tokens  340
+  + graph links (Ch 17) = rebuilt    hit@5 0.968  gov@5 0.967  gov@1 0.880  leaky    0  tokens  333
+  fusion tax: hybrid ranks the governing span below the better single retriever
+    taxed queries 143 of 1000; by style {'identifier': 25, 'kw': 11, 'lay': 82, 'multihop': 17, 'negation': 8}
+    of those, re-ranking puts the governing span back at or above the better rank: 76
+    reciprocal rank fusion instead: taxed 211; gov@5 before re-rank 0.915 (weighted 0.955)
+    re-rank depth 50 instead of 30: gov@5 0.967
+
+== 4. Precedence and entitlement switched on
+  packets holding an inadmissible span: 463 -> 0
+  inadmissible spans in packets: 708 -> 0
+  precedence: governing span moved to first place 72, moved out 22
+    fixed, by governing type: {'endorsement': 13, 'amendatory': 19, 'form': 20, 'bulletin': 20}
+    moved out, by type now first: {'bulletin': 13, 'endorsement': 9}
+  interaction, graph links off: governing span first (gov@1)
+    authority off  precedence off  gov@1 0.830  leaky 463
+    authority off  precedence on   gov@1 0.759  leaky 473
+    authority on   precedence off  gov@1 0.832  leaky 0
+    authority on   precedence on   gov@1 0.882  leaky 0
+
+== 5. Before and after on the full set of 1,000
+  before: baseline                   hit@5 0.852  gov@5 0.850  gov@1 0.741  leaky  574  tokens  635
+  after: rebuilt                     hit@5 0.968  gov@5 0.967  gov@1 0.880  leaky    0  tokens  333
+  paired bootstrap, gov: +0.117 (95% interval +0.096 to +0.140)
+  paired bootstrap, gov1: +0.139 (95% interval +0.110 to +0.168)
+    eval               n 200  gov@5 0.885 -> 0.985  gov@1 0.820 -> 0.950
+    holdout            n 300  gov@5 0.880 -> 0.980  gov@1 0.770 -> 0.900
+    new:docstore       n 160  gov@5 0.869 -> 0.975  gov@1 0.706 -> 0.838
+    new:guidance       n  40  gov@5 0.800 -> 0.900  gov@1 0.775 -> 0.725
+    new:multi-state    n  60  gov@5 0.817 -> 0.967  gov@1 0.750 -> 0.867
+    new:policy-admin   n 130  gov@5 0.792 -> 0.954  gov@1 0.638 -> 0.838
+    new:scanned        n  90  gov@5 0.811 -> 0.922  gov@1 0.711 -> 0.878
+    new:third-party    n  20  gov@5 0.650 -> 0.950  gov@1 0.500 -> 0.850
+    style identifier  n  51  gov@5 0.902 -> 0.980
+    style kw          n 569  gov@5 0.956 -> 1.000
+    style lay         n 197  gov@5 0.503 -> 0.838
+    style multihop    n  81  gov@5 1.000 -> 1.000
+    style negation    n  44  gov@5 0.727 -> 1.000
+    style numeric     n  58  gov@5 0.828 -> 1.000
+  ablation: remove one stage from the rebuilt stack
+  rebuilt (all stages)               hit@5 0.968  gov@5 0.967  gov@1 0.880  leaky    0  tokens  333
+  - structural spans (fixed-256)     hit@5 0.929  gov@5 0.929  gov@1 0.803  leaky    0  tokens  792
+  - dense (BM25 only)                hit@5 0.916  gov@5 0.915  gov@1 0.843  leaky    0  tokens  314
+  - BM25 (dense only)                hit@5 0.959  gov@5 0.958  gov@1 0.871  leaky    0  tokens  330
+  - re-rank                          hit@5 0.952  gov@5 0.948  gov@1 0.836  leaky    0  tokens  322
+  - authority filter                 hit@5 0.965  gov@5 0.961  gov@1 0.668  leaky  549  tokens  325
+  - precedence order                 hit@5 0.965  gov@5 0.964  gov@1 0.832  leaky    0  tokens  329
+  - graph links                      hit@5 0.968  gov@5 0.967  gov@1 0.882  leaky    0  tokens  340
+  rebuilt stack, governing span not in the top 5: 33; by style {'lay': 32, 'identifier': 1}
+    by governing type {'form': 28, 'amendatory': 4, 'endorsement': 1}
+
+== 6. Failure injection: an embedding model upgrade without re-indexing
+  dense only: matched: index and queries on @1 hit@5 0.938  gov@5 0.932  gov@1 0.813  leaky    0  tokens  319  mean top cosine 0.736
+  dense only: upgrade, no re-index   hit@5 0.101  gov@5 0.099  gov@1 0.021  leaky    0  tokens  242  mean top cosine 0.145
+  dense only: upgrade, half re-indexed hit@5 0.850  gov@5 0.841  gov@1 0.734  leaky    0  tokens  318  mean top cosine 0.717
+  dense only: upgrade, fully re-indexed hit@5 0.938  gov@5 0.932  gov@1 0.813  leaky    0  tokens  319  mean top cosine 0.736
+  rebuilt stack: matched: index and queries on @1 hit@5 0.968  gov@5 0.967  gov@1 0.880  leaky    0  tokens  333  mean top cosine 0.736
+  rebuilt stack: upgrade, no re-index hit@5 0.910  gov@5 0.909  gov@1 0.845  leaky    0  tokens  320  mean top cosine 0.145
+  rebuilt stack: upgrade, half re-indexed hit@5 0.956  gov@5 0.955  gov@1 0.875  leaky    0  tokens  333  mean top cosine 0.717
+  rebuilt stack: upgrade, fully re-indexed hit@5 0.968  gov@5 0.967  gov@1 0.880  leaky    0  tokens  333  mean top cosine 0.736
+  the guard: Chapter 14's registry, probes re-embedded before any query
+    same model             min probe cosine +1.000  may_query True
+    new model, new name    min probe cosine -0.064  may_query False
+    new model, old name    min probe cosine -0.064  may_query False
+
+== 7. The determination ledger: full mix of 1,000
+  Ch 9 close (Part III starts)    50 wrong (5.0%)  evidence inventory
+  Ch 10                           40 wrong (4.0%)  parsing and structural chunking
+  Ch 11                           36 wrong (3.6%)  document quality gate
+  Ch 12-14                        35 wrong (3.5%)  retrieval ladder, index, embedding checked: ch12.md 36, ch14.md 36 -> 35
+  Ch 15                           16 wrong (1.6%)  authority: entitlement, jurisdiction, precedence
+  Ch 16                           16 wrong (1.6%)  structured data (amounts, not clauses)
+  Ch 17                           10 wrong (1.0%)  policy graph for two-span chains
+  Ch 18                            8 wrong (0.8%)  agentic loop for 33 graph-routed claims
+  Ch 19                            8 wrong (0.8%)  multimodal evidence (property claims) checked: ch19.md 8, unchanged
+    R1 policy-admin  record   endorsement schedule misread in the policy summary      still wrong
+    R2 policy-admin  record   endorsement schedule misread in the policy summary      still wrong
+    R3 docstore-new  record   risk address geocoded across a state line               still wrong
+    R4 docstore-new  record   risk address geocoded across a state line               still wrong
+    R5 multi-state   index    Iowa bulletin effective after the graph's last build    FIXED
+    R6 policy-admin  record   endorsement missing from the policy record              still wrong
+    R7 scanned       document OCR misread the endorsement on the declarations         still wrong
+    R8 third-party   feed     licensed feed misdated the policy change                still wrong
+  Ch 20 rebuild: 7 wrong (0.7%)
+  still wrong by layer: {'record': 5, 'document': 1, 'feed': 1}

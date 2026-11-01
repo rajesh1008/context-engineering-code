@@ -1,0 +1,350 @@
+{
+ "cards": {
+  "Dutch bank": [
+   "handback"
+  ],
+  "Boston hospital": [
+   "exit"
+  ],
+  "Dublin firm": [
+   "exit"
+  ],
+  "Austin company": [
+   "gate",
+   "exit",
+   "trace"
+  ],
+  "Lakeshore": [
+   "handback"
+  ]
+ },
+ "dutch": {
+  "v1 publication date": {
+   "n": 600,
+   "wrong": 205,
+   "deferred": 0,
+   "right": 395,
+   "wrong_by": {
+    "what-changed": 55,
+    "transposition": 52,
+    "comply-or-explain": 61,
+    "on-date": 19,
+    "pending": 18
+   },
+   "ci": [
+    0.3048,
+    0.3805
+   ]
+  },
+  "v2 applies-from": {
+   "n": 600,
+   "wrong": 113,
+   "deferred": 0,
+   "right": 487,
+   "wrong_by": {
+    "transposition": 52,
+    "comply-or-explain": 61
+   },
+   "ci": [
+    0.1591,
+    0.2216
+   ]
+  },
+  "v3 layers + dated rank": {
+   "n": 600,
+   "wrong": 1,
+   "deferred": 0,
+   "right": 599,
+   "wrong_by": {
+    "comply-or-explain": 1
+   },
+   "ci": [
+    0.0003,
+    0.0094
+   ]
+  }
+ },
+ "transplant": {
+  "lakeshore": {
+   "n": 600,
+   "wrong": 168,
+   "deferred": 0,
+   "right": 432,
+   "wrong_by": {
+    "what-changed": 55,
+    "transposition": 52,
+    "comply-or-explain": 61
+   },
+   "ci": [
+    0.2456,
+    0.3172
+   ]
+  },
+  "layers": {
+   "n": 600,
+   "wrong": 53,
+   "deferred": 0,
+   "right": 547,
+   "wrong_by": {
+    "transposition": 52,
+    "comply-or-explain": 1
+   },
+   "ci": [
+    0.0682,
+    0.1137
+   ]
+  },
+  "rank": {
+   "n": 600,
+   "wrong": 61,
+   "deferred": 0,
+   "right": 539,
+   "wrong_by": {
+    "comply-or-explain": 61
+   },
+   "ci": [
+    0.08,
+    0.1284
+   ]
+  },
+  "routing": {
+   "n": 600,
+   "wrong": 56,
+   "deferred": 0,
+   "right": 544,
+   "wrong_by": {
+    "what-changed": 55,
+    "comply-or-explain": 1
+   },
+   "ci": [
+    0.0726,
+    0.1193
+   ]
+  }
+ },
+ "exit": {
+  "past_changes": 26,
+  "need_live": 6
+ },
+ "boston": {
+  "v1 document, today": {
+   "n": 1000,
+   "wrong": 142,
+   "deferred": 0,
+   "right": 858,
+   "wrong_by": {
+    "interaction": 28,
+    "retrospective": 24,
+    "dose": 42,
+    "judgement": 48
+   },
+   "ci": [
+    0.1217,
+    0.165
+   ]
+  },
+  "v2 section, purpose": {
+   "n": 1000,
+   "wrong": 1,
+   "deferred": 0,
+   "right": 999,
+   "wrong_by": {
+    "interaction": 1
+   },
+   "ci": [
+    0.0002,
+    0.0056
+   ]
+  },
+  "fix as_of": {
+   "n": 1000,
+   "wrong": 124,
+   "deferred": 0,
+   "right": 876,
+   "wrong_by": {
+    "interaction": 28,
+    "dose": 42,
+    "judgement": 48,
+    "retrospective": 6
+   },
+   "ci": [
+    0.105,
+    0.1459
+   ]
+  },
+  "fix budget": {
+   "n": 1000,
+   "wrong": 131,
+   "deferred": 0,
+   "right": 869,
+   "wrong_by": {
+    "interaction": 17,
+    "retrospective": 24,
+    "dose": 42,
+    "judgement": 48
+   },
+   "ci": [
+    0.1115,
+    0.1533
+   ]
+  },
+  "fix judgement": {
+   "n": 1000,
+   "wrong": 94,
+   "deferred": 0,
+   "right": 906,
+   "wrong_by": {
+    "interaction": 28,
+    "retrospective": 24,
+    "dose": 42
+   },
+   "ci": [
+    0.0774,
+    0.1137
+   ]
+  },
+  "fix supersession": {
+   "n": 1000,
+   "wrong": 78,
+   "deferred": 0,
+   "right": 922,
+   "wrong_by": {
+    "retrospective": 17,
+    "judgement": 48,
+    "interaction": 13
+   },
+   "ci": [
+    0.0629,
+    0.0963
+   ]
+  }
+ },
+ "dublin": {
+  "side_letters": 258,
+  "unindexed": 115,
+  "v1 similarity": {
+   "n": 800,
+   "wrong": 39,
+   "deferred": 0,
+   "right": 761,
+   "wrong_by": {
+    "amd": 27,
+    "sid": 12
+   },
+   "ci": [
+    0.0359,
+    0.0659
+   ]
+  },
+  "v2 key + register": {
+   "n": 800,
+   "wrong": 0,
+   "deferred": 11,
+   "right": 789,
+   "wrong_by": {},
+   "ci": [
+    0.0,
+    0.0048
+   ]
+  },
+  "fix admission": {
+   "n": 800,
+   "wrong": 11,
+   "deferred": 0,
+   "right": 789,
+   "wrong_by": {
+    "sid": 11
+   },
+   "ci": [
+    0.0077,
+    0.0245
+   ]
+  },
+  "fix register": {
+   "n": 800,
+   "wrong": 28,
+   "deferred": 11,
+   "right": 761,
+   "wrong_by": {
+    "amd": 27,
+    "sid": 1
+   },
+   "ci": [
+    0.0243,
+    0.0501
+   ]
+  },
+  "gate": {
+   "curve": [
+    [
+     0.8,
+     164,
+     6.1
+    ],
+    [
+     0.85,
+     210,
+     5.1
+    ],
+    [
+     0.9,
+     253,
+     4.5
+    ],
+    [
+     0.95,
+     281,
+     4.3
+    ],
+    [
+     0.98,
+     290,
+     4.3
+    ]
+   ],
+   "chosen": [
+    0.8,
+    164,
+    6.1
+   ],
+   "escalated": 46,
+   "no_gate": 25.3
+  }
+ },
+ "austin": {
+  "v1 latest, nightly": {
+   "n": 900,
+   "wrong": 91,
+   "deferred": 0,
+   "right": 809,
+   "wrong_by": {
+    "config": 31,
+    "code": 17,
+    "deploy": 43
+   },
+   "ci": [
+    0.0831,
+    0.1225
+   ]
+  },
+  "v2 record, live, graph": {
+   "n": 900,
+   "wrong": 0,
+   "deferred": 2,
+   "right": 898,
+   "wrong_by": {},
+   "ci": [
+    0.0,
+    0.0043
+   ]
+  }
+ },
+ "lakeshore": {
+  "claims": 1000,
+  "judgement_conditions": 53,
+  "decided_before": 53,
+  "decided_after": 0,
+  "extra_tokens_each": 64,
+  "avg_extra_tokens": 3.4
+ }
+}

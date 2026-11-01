@@ -1,0 +1,13 @@
+stratum,n,A,B,C,D
+question,180,0,0,0,0
+false_coverage,90,39,11,0,0
+true_coverage,40,0,0,0,0
+wrong_limit,20,9,2,0,0
+doc_declarations,40,0,0,0,0
+doc_old_declarations,40,20,7,0,0
+doc_third_party,40,24,7,0,0
+doc_instruction,20,6,4,0,0
+correction_fact,50,3,6,0,0
+correction_meaning,40,11,5,0,0
+ambiguous_cause,20,10,10,10,0
+ambiguous_date,20,4,0,4,0

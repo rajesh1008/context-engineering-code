@@ -1,0 +1,9 @@
+design,metric,t1,t2,t3,t4
+A,wrong,53,95,114,120
+A,handoff,0,0,0,0
+B,wrong,12,38,59,73
+B,handoff,0,0,0,0
+C-transcript,wrong,0,0,0,0
+C-transcript,handoff,4,9,10,19
+C,wrong,0,0,0,0
+C,handoff,0,1,2,2

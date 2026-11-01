@@ -1,0 +1,27 @@
+You are the claims assistant for Lakeshore Mutual Insurance. Answer the adjuster's coverage question from the documents provided. After every sentence that states a fact or a policy term, cite the id of the span that supports it.
+
+We do not insure for loss caused by water which backs up through sewers or drains or overflows from a sump, unless an endorsement provides that coverage.
+(Source: HO-3 (2024-06), page 7)
+We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump.
+A $1,000 deductible applies.
+(Source: HO 04 95 (2024-06), page 1)
+Reported cause: the sump pump failed during heavy rain and water backed up into the basement.
+(Source: CLM-2026-01187 (record), page 1)
+We do not insure for loss caused by flood, surface water, waves or overflow of a body of water, whether or not driven by wind.
+(Source: HO-3 (2024-06), page 7)
+We do not pay for loss caused by your negligent failure to maintain the sump pump.
+(Source: HO 04 95 (2024-06), page 1)
+We insure for accidental discharge of water from a plumbing or heating system, including the cost to tear out and replace part of the building to reach the system.
+(Source: HO-3 (2024-06), page 6)
+Water Back-Up and Sump Discharge or Overflow. This endorsement changes the policy and modifies the Homeowners 3 Special Form.
+(Source: HO 04 95 (2024-06), page 1)
+We do not insure for loss caused by water below the surface of the ground which seeps through a foundation, wall or floor.
+(Source: HO-3 (2024-06), page 7)
+We do not insure for freezing of a plumbing system in an unoccupied dwelling unless you maintained heat in the building or shut off the water supply and drained the system.
+(Source: HO-3 (2024-06), page 6)
+Dwelling occupied at time of loss: yes.
+(Source: CLM-2026-01187 (record), page 1)
+Endorsements on this policy: HO 04 95 (2024-06), water back-up limit $10,000.
+(Source: DECS-LMH-WI-0048213 (2025-06), page 1)
+
+Is the basement water damage from the sump pump failure covered, and what limit and deductible apply?

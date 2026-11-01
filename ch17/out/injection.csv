@@ -1,0 +1,4 @@
+loader,correct,withheld,wrong,n,tokens,limit_correct,limit_withheld,limit_wrong
+"family edges, no checks",40,0,8,48,216,8,0,8
+family edges + conflict check,32,16,0,48,146,0,16,0
+edition-scoped edges,48,0,0,48,216,16,0,0

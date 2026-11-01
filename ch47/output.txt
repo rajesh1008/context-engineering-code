@@ -1,0 +1,21 @@
+claims 1000  governing endorsement 427  bulletin 185
+single            wrong/1000   3.0 after review   3  coverage tok  16003  handoff tok     0  endorsement survival 1.0  probe flagged 0
+share             wrong/1000  19.0 after review   7  coverage tok  24426  handoff tok  9023  endorsement survival 0.956  probe flagged 0
+summary           wrong/1000  16.0 after review   8  coverage tok  15786  handoff tok   383  endorsement survival 0.932  probe flagged 130
+summary-injected  wrong/1000 125.0 after review  64  coverage tok  15789  handoff tok   386  endorsement survival 0.431  probe flagged 985
+record            wrong/1000   4.0 after review   3  coverage tok  15541  handoff tok   138  endorsement survival 1.0  probe flagged 0
+research inline          wrong  23/185 (0.124)  window 23548  tok 7545  US$0.0164
+research fork            wrong  10/185 (0.054)  window 16353  tok 23898  US$0.052
+research isolated-full   wrong   6/185 (0.032)  window 16353  tok 9395  US$0.0204
+research isolated-thin   wrong  55/185 (0.297)  window 16353  tok 9395  US$0.0204
+research isolated-small  wrong  18/185 (0.097)  window 16353  tok 9395  US$0.0051
+review same-session      caught 72/150 {'endorsement': 22, 'amount': 30, 'edition': 20}  FA/1000 7
+review briefed-subagent  caught 80/150 {'endorsement': 22, 'amount': 33, 'edition': 25}  FA/1000 17
+review clean-context     caught 124/150 {'endorsement': 47, 'amount': 39, 'edition': 38}  FA/1000 27
+board {'open_board_overwrites': 63, 'single_writer_refused': 63}
+provenance {'share': {'coverage': 0.372, 'tiers': {'public': 251, 'governed': 149}}, 'summary': {'coverage': 0.302, 'tiers': {'public': 279, 'governed': 121}}, 'record': {'coverage': 1.0, 'tiers': {'record': 200, 'party': 200}}}
+tokens {'per_agent': {'1 intake': 11461, '2 coverage': 15606, '3 research sub-agent': 1738, '4 review': 5200}, 'total': 34005, 'ratio': 2.12, 'cost': 0.0739}
+fan-out one agent, one question per peril   {'wrong_independent': 3, 'of_independent': 66, 'wrong_coupled': 5, 'of_coupled': 38, 'tokens': 22681}
+fan-out fan-out, isolated briefs            {'wrong_independent': 3, 'of_independent': 66, 'wrong_coupled': 17, 'of_coupled': 38, 'tokens': 30308}
+fan-out fan-out, coupling in briefs         {'wrong_independent': 3, 'of_independent': 66, 'wrong_coupled': 5, 'of_coupled': 38, 'tokens': 30965}
+loop {'open_claims': 212, 'affected': 37, 'preflight_good': [], 'preflight_bad': ["verifier shares the assembler's view", 'no machine-checkable stop', 'no persisted state', 'no token bound', 'no human on the loop'], 'flagged_independent': 37, 'flagged_shared_view': 0, 'tokens': 835851, 'cost': 1.82, 'within_cap': True}

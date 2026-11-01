@@ -1,0 +1,149 @@
+{
+ "inventory": [
+  [
+   "Determination generation",
+   "claim_file",
+   "us",
+   "us"
+  ],
+  [
+   "Query embedding",
+   "claim_file",
+   "us",
+   "us"
+  ],
+  [
+   "Span embedding (nightly)",
+   "public",
+   "us",
+   "us"
+  ],
+  [
+   "Provider prompt cache",
+   "claim_file",
+   "us",
+   "us"
+  ],
+  [
+   "Citation verifier (judge)",
+   "claim_file",
+   "global",
+   "us"
+  ],
+  [
+   "Policyholder letter draft",
+   "claim_file",
+   "global",
+   "us"
+  ],
+  [
+   "Gateway access log",
+   "claim_file",
+   "n/a",
+   "us"
+  ]
+ ],
+ "outage": {
+  "any": {
+   "calls": 133,
+   "served": 133,
+   "outside_region": 133,
+   "queued_503": 0
+  },
+  "in_region": {
+   "calls": 133,
+   "served": 0,
+   "outside_region": 0,
+   "queued_503": 133
+  },
+  "none": {
+   "calls": 133,
+   "served": 0,
+   "outside_region": 0,
+   "queued_503": 133
+  }
+ },
+ "sweep": [
+  {
+   "th": 0.4,
+   "old_prec": 100.0,
+   "old_rec": 53.3,
+   "new_prec": 100.0,
+   "new_rec": 40.0,
+   "old_flags": 32,
+   "new_flags": 24
+  },
+  {
+   "th": 0.45,
+   "old_prec": 100.0,
+   "old_rec": 63.3,
+   "new_prec": 97.3,
+   "new_rec": 60.0,
+   "old_flags": 38,
+   "new_flags": 37
+  },
+  {
+   "th": 0.5,
+   "old_prec": 100.0,
+   "old_rec": 81.7,
+   "new_prec": 90.2,
+   "new_rec": 76.7,
+   "old_flags": 49,
+   "new_flags": 51
+  },
+  {
+   "th": 0.55,
+   "old_prec": 98.1,
+   "old_rec": 88.3,
+   "new_prec": 74.0,
+   "new_rec": 95.0,
+   "old_flags": 54,
+   "new_flags": 77
+  },
+  {
+   "th": 0.6,
+   "old_prec": 93.4,
+   "old_rec": 95.0,
+   "new_prec": 53.2,
+   "new_rec": 98.3,
+   "old_flags": 61,
+   "new_flags": 111
+  },
+  {
+   "th": 0.65,
+   "old_prec": 81.1,
+   "old_rec": 100.0,
+   "new_prec": 36.6,
+   "new_rec": 100.0,
+   "old_flags": 74,
+   "new_flags": 164
+  },
+  {
+   "th": 0.7,
+   "old_prec": 60.0,
+   "old_rec": 100.0,
+   "new_prec": 26.1,
+   "new_rec": 100.0,
+   "old_flags": 100,
+   "new_flags": 230
+  },
+  {
+   "th": 0.75,
+   "old_prec": 36.6,
+   "old_rec": 100.0,
+   "new_prec": 20.7,
+   "new_rec": 100.0,
+   "old_flags": 164,
+   "new_flags": 290
+  }
+ ],
+ "chosen": {
+  "th": 0.55,
+  "old_prec": 98.1,
+  "old_rec": 88.3,
+  "new_prec": 74.0,
+  "new_rec": 95.0,
+  "old_flags": 54,
+  "new_flags": 77
+ }
+}

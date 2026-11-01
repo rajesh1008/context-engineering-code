@@ -1,0 +1,16 @@
+rule_id: R11
+topic: deer_swerve
+statement: >
+  Swerving to miss a deer: in Wisconsin, for losses on or after November 1, 2024,
+  bulletin WI-OCI-2024-11 treats it as contact with the animal; elsewhere it is a
+  collision under the PAP.
+owner: Tom Brennan
+source_interview: elicitation session 1, Green Bay (role-played for the lab)
+effective_from: 2024-11-01
+table:
+  - {state: WI, on_or_after: 2024-11-01, governs: WI-OCI-2024-11}
+default: PAP
+examples: [DET-0030, DET-0252]
+counterexamples:
+  - a Wisconsin swerve with a date of loss before 2024-11-01
+  - an Iowa swerve on any date

@@ -1,0 +1,23 @@
+{
+ "demos": [
+  "D:withhold:T0073",
+  "D:withhold:T0078",
+  "D:plain:T0186"
+ ],
+ "dev": 0.95,
+ "devset": "0fbeb46c93e4",
+ "heldout": "5eb1204dc81f",
+ "heldout_score": 0.88,
+ "metric": "faithfulness-v2",
+ "model": "stand-in-36",
+ "optimiser": "bootstrap(k=3,12)+evolve(6x6)+reflect(12)",
+ "pinned_hash": "cd5da3b5f76b",
+ "prompt_key": "b28d2d1e331e",
+ "rules": [
+  "G1",
+  "G2",
+  "G4"
+ ],
+ "seed": 36,
+ "trainset": "7245f0a44828"
+}

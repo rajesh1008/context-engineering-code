@@ -1,0 +1,76 @@
+contextlab 12.0; Chapter 51 lab; deterministic stand-ins
+
+== 1. Margaret's targets, before the last twenty percent
+lookup_minutes     baseline   11.0  now    1.29  target   < 2.0  met True
+wrong_clause_pct   baseline    7.0  now    0.30  target   < 1.0  met True
+traceable_pct      baseline    0.0  now   96.67  target >= 100.0  met False
+
+== 2. Edge-case backlog: frequency order vs escaped harm per day
+rank  by frequency            by priority (escaped harm / day)
+   1  E13  40.0/10k        E07 harm 17.50 pri 2.500
+   2  E10  30.0/10k        E02 harm  9.00 pri 2.250
+   3  E14  15.0/10k        E04 harm  9.60 pri 1.920
+   4  E09  12.0/10k        E09 harm  7.20 pri 1.800
+   5  E05   9.0/10k        E01 harm 10.00 pri 1.667
+   6  E11   8.0/10k        E06 harm  4.80 pri 1.600
+   7  E04   6.0/10k        E10 harm 12.00 pri 1.200
+   8  E07   5.0/10k        E14 harm  2.25 pri 1.125
+   9  E01   4.0/10k        E05 harm  2.70 pri 0.900
+  10  E02   3.0/10k        E11 harm  3.60 pri 0.600
+  11  E08   2.5/10k        E12 harm  3.00 pri 0.600
+  12  E03   2.0/10k        E13 harm  2.00 pri 0.500
+  13  E06   1.5/10k        E03 harm  2.00 pri 0.250
+  14  E12   0.8/10k        E08 harm  0.00 pri 0.000
+top five shared by both orders: ['E09']
+priority top five: 62% of escaped harm for 26 days
+frequency top five: 31% of escaped harm for 23 days
+backlog: 14 items, 69 days
+
+== 3. Hardening checklist (24 checks)
+before: 18/24 pass; failed: ['H12', 'H13', 'H16', 'H17', 'H18', 'H24']
+   H12 [model] Degraded mode drilled this quarter
+   H13 [outputs] Citation parse rate alarm has an on-call owner
+   H16 [outputs] Manual determinations carry a reason code
+   H17 [operations] Each runbook drilled in the last 6 months
+   H18 [operations] Write-once store restore tested
+   H24 [governance] Behaviour probes run before any model change
+after: 24/24 pass; failed: []
+evidence missing for H24 -> fails closed: ['H24']
+
+== 4. Runbooks, timed in a tabletop drill (minutes to contained)
+R1 A governing document cited after it stopped governin owner context team                   with   85  without  190
+R2 Gateway or model unavailable for 10 minutes          owner platform on-call               with   47  without   83
+R3 Model deprecation notice or forced swap              owner platform team                  with  165  without  285
+R4 Suspected injected or poisoned span                  owner security with context team     with  105  without  195
+R5 Erasure request or partner exit                      owner privacy office                 with   90  without  150
+R6 Volume above three times the daily norm              owner claims operations with platform with   60  without  105
+total with 552, without 1008
+
+== 5. Examination drill: 30 determinations, 1 Oct to 27 Nov 2026
+packs verify by hash: 30/30
+complete (verifies and carries model or manual reason): 29/30
+incomplete: ['D899138'] (drafted by hand during a gateway outage; no reason code)
+minutes to produce, total 84.0, max 3.5
+
+== 6. A model two generations newer, on the same diagnostics
+-- candidate as delivered
+   citation parse rate, %             production     99.91  candidate     90.82  alarm True
+   wrong-clause per 1,000, full mix   production      3.00  candidate     91.00  alarm True
+   faithfulness-v2, %                 production     90.82  candidate     92.22  alarm False
+   tokens per determination           production  16003.00  candidate  16643.12  alarm False
+   p95 latency, s                     production      8.17  candidate      7.77  alarm False
+   worst cell, wrong of its items     production      2.00  candidate      8.00  alarm True
+-- candidate after output-format adapter
+   citation parse rate, %             production     99.91  candidate     99.91  alarm False
+   wrong-clause per 1,000, full mix   production      3.00  candidate      1.00  alarm False
+   faithfulness-v2, %                 production     90.82  candidate     92.22  alarm False
+   tokens per determination           production  16003.00  candidate  16643.12  alarm False
+   p95 latency, s                     production      8.17  candidate      7.77  alarm False
+   worst cell, wrong of its items     production      2.00  candidate      2.00  alarm False
+gold items exercising 'older bulletin narrows newer endorsement': 0
+behaviour probes (40): production wrong 0, candidate wrong 11
+
+== 7. Margaret's targets, after
+lookup_minutes     now    1.29  target   < 2.0  met True
+wrong_clause_pct   now    0.30  target   < 1.0  met True
+traceable_pct      now  100.00  target >= 100.0  met True

@@ -1,0 +1,61 @@
+
+== Media slice
+determinations 240; photos 854; voice notes 167 (noisy 55); sketches 60; windscreen photos 8
+
+== Scoreboard (media slice)
+configuration              wrong   rate asserts flagged tok/det  US$/1k routed
+A text only                  104  43.3%       0       0       0    0.00      0
+B + raw photos                44  18.3%      84       8    5565   16.70      0
+C + free captions             87  36.2%     143       8     160    0.48      0
+D + image spans               20   8.3%       0       0     229    0.69      0
+E + raw transcript            28  11.7%       0       0     280    0.84      0
+F + voice spans (guard)       14   5.8%       0       0     280    0.84     55
+ablation: D without sketches 25 wrong (10.4%)
+
+== Wrong clauses by cause
+configuration              sewer_back surface_wa burst_pipe    seepage       hail  wear_tear
+A text only                        18         23         20         13          0         30
+B + raw photos                     16          0         15          2          0         11
+C + free captions                  31          4         25          9          0         18
+D + image spans                     5          5          3          0          1          6
+E + raw transcript                 12          6          2          0          1          7
+F + voice spans (guard)             4          2          2          0          1          5
+
+== Observation gate
+refused: below confidence floor 0.6               165
+refused: not an observation kind                  98
+
+== Voice notes
+WER clean 4.0% (n=112); noisy 13.4% (n=55)
+negations dropped in decisive sentences: 16
+guard: clips routed 55, adjuster listening 12 min (13 s per clip incl. 10 s overhead)
+guard on decisive flips: caught 14, missed 2; clean clips routed (false alarms) 41
+threshold sweep (decisive sentences, snr floor 15 dB):
+  min_conf 0.75: routed  55, flips caught 14 of 16
+  min_conf 0.80: routed  55, flips caught 14 of 16
+  min_conf 0.85: routed  55, flips caught 14 of 16
+  min_conf 0.90: routed  85, flips caught 16 of 16
+  min_conf 0.95: routed 145, flips caught 16 of 16
+  confidence only (no snr floor) at 0.85: routed 47, caught 14
+E vs D: fixed 7, introduced 15; F vs D: fixed 8, introduced 2
+
+== Image token budget (one 4032x3024 phone photo)
+standard full photo -> sent 1269x952, 1564 tokens
+high     full photo -> sent 2193x1645, 4661 tokens
+crop 600x450 (+15% pad) -> 588 tokens; observation line ~15 tokens
+
+== CLM-2026-01187 (Emily Carter)
+A text only                -> HO 04 95 (2024-06) water back-up
+B + raw photos             -> HO-3 water exclusion (surface water)
+C + free captions          -> HO-3 water exclusion (surface water)
+D + image spans            -> HO 04 95 (2024-06) water back-up
+E + raw transcript         -> HO-3 water exclusion (surface water)
+F + voice spans (guard)    -> HO 04 95 (2024-06) water back-up
+[IMAGE CLM-2026-01187-P1 sha256:05b5b41900239b59 claim=CLM-2026-01187 by=tbrennan captured=2026-03-15T13:58 gps=44.5191,-87.9758 subject='damage at the insured home' via=obs-model v2 / prompt 19.3]
+- water_at(floor_drain) region=1180,1640,2860,2620 conf=0.93
+- residue_at(floor_drain) region=1720,1900,2240,2290 conf=0.89
+- tide_line(wall) region=0,820,4032,1010 conf=0.83
+heard   0.0-  3.6s conf=0.81 snr=10.9 listen Water came in at the window wells.
+heard   3.6-  7.0s conf=0.86 snr=11.4 use    Took photos of eats wall an the mechanical room.
+heard   7.0-  9.7s conf=0.78 snr=11.9 use    Homeowner was present for the whole visit.
+heard   9.7- 12.5s conf=0.71 snr=12.1 use    Basement finished carpet and drywall.

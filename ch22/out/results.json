@@ -1,0 +1,898 @@
+{
+ "ch20": 7,
+ "ch21": 15,
+ "ch21_cause_path": 13,
+ "causes": {
+  "poison": 6,
+  "over-remembering": 1,
+  "stale": 1
+ },
+ "readers": 64,
+ "outcome": {
+  "agreed": 27,
+  "wrong (family)": 6,
+  "outranked": 30,
+  "wrong (other cause)": 1
+ },
+ "family": [
+  "M-A01-D",
+  "M-A02-D",
+  "M02116"
+ ],
+ "reads_by_day": {
+  "2026-10-05:right": 4,
+  "2026-10-05:wrong": 1,
+  "2026-10-06:right": 3,
+  "2026-10-07:right": 2,
+  "2026-10-08:right": 1,
+  "2026-10-08:wrong": 1,
+  "2026-10-09:wrong": 1,
+  "2026-10-09:right": 3,
+  "2026-10-12:right": 5,
+  "2026-10-13:right": 10,
+  "2026-10-14:right": 8,
+  "2026-10-15:right": 8,
+  "2026-10-15:wrong": 2,
+  "2026-10-16:right": 13,
+  "2026-10-16:wrong": 2
+ },
+ "readers_rows": [
+  [
+   "D0020",
+   "2026-10-05",
+   "burst_pipe",
+   "A02",
+   [
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0025",
+   "2026-10-05",
+   "water_backup",
+   "A12",
+   [
+    "M02116"
+   ],
+   "wrong (family)"
+  ],
+  [
+   "D0030",
+   "2026-10-05",
+   "mould",
+   "A01",
+   [
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0044",
+   "2026-10-05",
+   "burst_pipe",
+   "A01",
+   [
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0076",
+   "2026-10-05",
+   "water_backup",
+   "A01",
+   [
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0103",
+   "2026-10-06",
+   "water_backup",
+   "A01",
+   [
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0112",
+   "2026-10-06",
+   "water_backup",
+   "A02",
+   [
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0181",
+   "2026-10-06",
+   "water_backup",
+   "A01",
+   [
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0206",
+   "2026-10-07",
+   "burst_pipe",
+   "A02",
+   [
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0212",
+   "2026-10-07",
+   "burst_pipe",
+   "A02",
+   [
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0306",
+   "2026-10-08",
+   "burst_pipe",
+   "A02",
+   [
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0355",
+   "2026-10-08",
+   "water_backup",
+   "A01",
+   [
+    "M02116"
+   ],
+   "wrong (family)"
+  ],
+  [
+   "D0450",
+   "2026-10-09",
+   "water_backup",
+   "A01",
+   [
+    "M02116"
+   ],
+   "wrong (family)"
+  ],
+  [
+   "D0458",
+   "2026-10-09",
+   "water_backup",
+   "A02",
+   [
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0496",
+   "2026-10-09",
+   "burst_pipe",
+   "A02",
+   [
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0500",
+   "2026-10-09",
+   "water_backup",
+   "A01",
+   [
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0521",
+   "2026-10-12",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0535",
+   "2026-10-12",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0550",
+   "2026-10-12",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0557",
+   "2026-10-12",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0584",
+   "2026-10-12",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0604",
+   "2026-10-13",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0617",
+   "2026-10-13",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D",
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0641",
+   "2026-10-13",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0644",
+   "2026-10-13",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0652",
+   "2026-10-13",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0653",
+   "2026-10-13",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0659",
+   "2026-10-13",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0671",
+   "2026-10-13",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0681",
+   "2026-10-13",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0683",
+   "2026-10-13",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0720",
+   "2026-10-14",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0723",
+   "2026-10-14",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0724",
+   "2026-10-14",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0741",
+   "2026-10-14",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D",
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0781",
+   "2026-10-14",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0794",
+   "2026-10-14",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0795",
+   "2026-10-14",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0798",
+   "2026-10-14",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0802",
+   "2026-10-15",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0807",
+   "2026-10-15",
+   "mould",
+   "A04",
+   [
+    "M02116"
+   ],
+   "wrong (family)"
+  ],
+  [
+   "D0811",
+   "2026-10-15",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0817",
+   "2026-10-15",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0833",
+   "2026-10-15",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0848",
+   "2026-10-15",
+   "water_backup",
+   "A03",
+   [
+    "M02116"
+   ],
+   "wrong (family)"
+  ],
+  [
+   "D0859",
+   "2026-10-15",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D",
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0864",
+   "2026-10-15",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0882",
+   "2026-10-15",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0887",
+   "2026-10-15",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0901",
+   "2026-10-16",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0909",
+   "2026-10-16",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0918",
+   "2026-10-16",
+   "burst_pipe",
+   "A02",
+   [
+    "M-A02-D",
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0929",
+   "2026-10-16",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0939",
+   "2026-10-16",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0945",
+   "2026-10-16",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0949",
+   "2026-10-16",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0951",
+   "2026-10-16",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0952",
+   "2026-10-16",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "agreed"
+  ],
+  [
+   "D0959",
+   "2026-10-16",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0962",
+   "2026-10-16",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D"
+   ],
+   "outranked"
+  ],
+  [
+   "D0964",
+   "2026-10-16",
+   "burst_pipe",
+   "A01",
+   [
+    "M-A01-D"
+   ],
+   "agreed"
+  ],
+  [
+   "D0977",
+   "2026-10-16",
+   "water_backup",
+   "A01",
+   [
+    "M-A01-D",
+    "M02116"
+   ],
+   "outranked"
+  ],
+  [
+   "D0978",
+   "2026-10-16",
+   "water_backup",
+   "A11",
+   [
+    "M02116"
+   ],
+   "wrong (family)"
+  ],
+  [
+   "D0979",
+   "2026-10-16",
+   "water_backup",
+   "A02",
+   [
+    "M-A02-D",
+    "M02116"
+   ],
+   "wrong (other cause)"
+  ]
+ ],
+ "remediation": {
+  "rerun": 64,
+  "changed": 6,
+  "fixed": 6
+ },
+ "removal": {
+  "none": {
+   "removed": 0,
+   "wrong_that_day": 3,
+   "legit_reads_lost": 0
+  },
+  "quarantine family": {
+   "removed": 3,
+   "wrong_that_day": 2,
+   "legit_reads_lost": 0
+  },
+  "rollback to 4 Oct": {
+   "removed": 903,
+   "wrong_that_day": 2,
+   "legit_reads_lost": 0,
+   "legit_destroyed": 900,
+   "legit_destroyed_reads_so_far": 0
+  },
+  "text search": {
+   "removed": 7,
+   "legit_removed": 6,
+   "family_missed": [
+    "M-A01-D",
+    "M-A02-D"
+   ]
+  }
+ },
+ "injection": {
+  "no guard": {
+   "reads": 15,
+   "wrong": 4,
+   "total_wrong": 19,
+   "held": [],
+   "reviews": 0,
+   "false_alarms": 0,
+   "events": []
+  },
+  "read-time monitor": {
+   "reads": 7,
+   "wrong": 0,
+   "total_wrong": 8,
+   "held": [],
+   "reviews": 5,
+   "false_alarms": 1,
+   "events": [
+    [
+     "2026-10-08",
+     "monitor",
+     [
+      "M02116"
+     ]
+    ],
+    [
+     "2026-10-15",
+     "monitor",
+     [
+      "M-T0419"
+     ]
+    ]
+   ]
+  },
+  "write gate": {
+   "reads": 0,
+   "wrong": 0,
+   "total_wrong": 9,
+   "held": [
+    "M-T0419",
+    "M-TOK0",
+    "M-TOK1",
+    "M-TOK2",
+    "M-TOK3",
+    "M-TOK4",
+    "M-TOK5",
+    "M02116"
+   ],
+   "reviews": 0,
+   "false_alarms": 0,
+   "events": []
+  }
+ },
+ "ch22": 9,
+ "stale": {
+  "snapshots": 310,
+  "stale": 28,
+  "reads": 28,
+  "wrong": 1
+ },
+ "over": {
+  "0": {
+   "wrong": 0,
+   "saved_s": 0.0,
+   "expected_distracted_per_1000": 0.0
+  },
+  "2": {
+   "wrong": 1,
+   "saved_s": 44.1,
+   "expected_distracted_per_1000": 0.0
+  },
+  "4": {
+   "wrong": 2,
+   "saved_s": 81.5,
+   "expected_distracted_per_1000": 0.0
+  },
+  "6": {
+   "wrong": 2,
+   "saved_s": 85.0,
+   "expected_distracted_per_1000": 0.0
+  },
+  "8": {
+   "wrong": 3,
+   "saved_s": 85.0,
+   "expected_distracted_per_1000": 4.0
+  },
+  "12": {
+   "wrong": 8,
+   "saved_s": 85.0,
+   "expected_distracted_per_1000": 9.7
+  },
+  "16": {
+   "wrong": 10,
+   "saved_s": 85.0,
+   "expected_distracted_per_1000": 11.81
+  }
+ },
+ "drift": [
+  {
+   "round": 1,
+   "kept": 0.914,
+   "generalised": 21,
+   "fresh_kept": 0.924,
+   "fresh_generalised": 13
+  },
+  {
+   "round": 2,
+   "kept": 0.844,
+   "generalised": 33,
+   "fresh_kept": 0.899,
+   "fresh_generalised": 25
+  },
+  {
+   "round": 3,
+   "kept": 0.789,
+   "generalised": 41,
+   "fresh_kept": 0.921,
+   "fresh_generalised": 16
+  },
+  {
+   "round": 4,
+   "kept": 0.72,
+   "generalised": 54,
+   "fresh_kept": 0.914,
+   "fresh_generalised": 21
+  },
+  {
+   "round": 5,
+   "kept": 0.664,
+   "generalised": 68,
+   "fresh_kept": 0.932,
+   "fresh_generalised": 18
+  },
+  {
+   "round": 6,
+   "kept": 0.61,
+   "generalised": 80,
+   "fresh_kept": 0.922,
+   "fresh_generalised": 22
+  },
+  {
+   "round": 7,
+   "kept": 0.564,
+   "generalised": 85,
+   "fresh_kept": 0.919,
+   "fresh_generalised": 12
+  },
+  {
+   "round": 8,
+   "kept": 0.526,
+   "generalised": 90,
+   "fresh_kept": 0.89,
+   "fresh_generalised": 23
+  }
+ ],
+ "leak": {
+  "policy": {
+   "reads": 144,
+   "violations": 0,
+   "determinations": 0
+  },
+  "address": {
+   "reads": 288,
+   "violations": 144,
+   "determinations": 48
+  }
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "no_cache": 0.1564903125,
+ "steps": [
+  {
+   "step": "v7.4 as found",
+   "hit_rate": 0.1263808663791986,
+   "cost_per_det": 0.14415032278125
+  },
+  {
+   "step": "timestamp to end, date only",
+   "hit_rate": 0.7187410035162756,
+   "cost_per_det": 0.08620663950000002
+  },
+  {
+   "step": "canonical tool JSON",
+   "hit_rate": 0.7536342588179837,
+   "cost_per_det": 0.08280894431250001
+  },
+  {
+   "step": "stable before volatile",
+   "hit_rate": 0.8001265616578659,
+   "cost_per_det": 0.07828180368750001
+  },
+  {
+   "step": "all 12 tools, allowed list",
+   "hit_rate": 0.7485992774883488,
+   "cost_per_det": 0.08676117225
+  },
+  {
+   "step": "all 12 tools + routing key",
+   "hit_rate": 0.8105859320132003,
+   "cost_per_det": 0.0801333185625
+  }
+ ],
+ "fall": 0.4569432646620315,
+ "breakdown_v74": {
+  "uncached_input": 0.0947792128125,
+  "cached_reads": 0.00137110996875,
+  "write_premium": 0.0,
+  "output": 0.048
+ },
+ "breakdown_v75": {
+  "uncached_input": 0.021624969374999997,
+  "cached_reads": 0.008656834312499999,
+  "write_premium": 0.0,
+  "output": 0.048
+ }
+}

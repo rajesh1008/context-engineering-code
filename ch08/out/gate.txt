@@ -1,0 +1,19 @@
+r0.9 (02f693109c68) -> r1.0 (82bf00cd677a)
+  changed R11: table rows 0 -> 1
+  review: conflicts with the documents 0
+  sim-large  eval  3.0% ->  2.5%  probes 107/107
+  sim-mid    eval  3.0% ->  2.5%  probes 107/107
+  sim-small  eval  3.5% ->  3.0%  probes 107/107
+  gate: PASS
+
+r1.0 (82bf00cd677a) -> r1.1 (d9cd2224db7b)
+  changed R6: table rows 2 -> 1
+  review: conflicts with the documents 5
+  sim-large  eval  2.5% ->  2.5%  probes 107/107
+  sim-mid    eval  2.5% ->  2.5%  probes 107/107
+  sim-small  eval  3.0% ->  3.0%  probes 107/107
+  gate: BLOCK
+
+  DET-0074 (WI, 2025-04-30): rule says WI-OCI-2023-07, documents say WI-OCI-2025-03 (2025-03), Requirements, page 1 (bulletin)
+  DET-0156 (WI, 2026-02-07): rule says WI-OCI-2023-07, documents say WI-OCI-2025-03 (2025-03), Requirements, page 1 (bulletin)
+  DET-0172 (WI, 2026-09-06): rule says WI-OCI-2023-07, documents say WI-OCI-2025-03 (2025-03), Requirements, page 1 (bulletin)

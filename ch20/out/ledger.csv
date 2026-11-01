@@ -1,0 +1,9 @@
+det,stratum,layer,cause,after_rebuild,next
+R1,policy-admin,record,endorsement schedule misread in the policy summary,still wrong,Ch 23 (state)
+R2,policy-admin,record,endorsement schedule misread in the policy summary,still wrong,Ch 23 (state)
+R3,docstore-new,record,risk address geocoded across a state line,still wrong,Ch 26 (tools)
+R4,docstore-new,record,risk address geocoded across a state line,still wrong,Ch 26 (tools)
+R5,multi-state,index,Iowa bulletin effective after the graph's last build,fixed,fixed by the rebuild
+R6,policy-admin,record,endorsement missing from the policy record,still wrong,Ch 23 (state)
+R7,scanned,document,OCR misread the endorsement on the declarations,still wrong,"Ch 11 gate audit, Ch 28 (exact page)"
+R8,third-party,feed,licensed feed misdated the policy change,still wrong,Ch 24 (freshness)

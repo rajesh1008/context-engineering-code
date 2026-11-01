@@ -1,0 +1,106 @@
+== 1. The 300 documents
+born_digital   docs  30  layouts  2  mean quality 0.98  min 0.94
+scanned_form   docs  45  layouts  3  mean quality 0.87  min 0.75
+estimate       docs  60  layouts  4  mean quality 0.90  min 0.79
+medical_bill   docs  30  layouts  2  mean quality 0.89  min 0.77
+police_report  docs  45  layouts  3  mean quality 0.86  min 0.77
+fax            docs  30  layouts  2  mean quality 0.70  min 0.60
+handwritten    docs  30  layouts  2  mean quality 0.61  min 0.52
+phone_photo    docs  30  layouts  2  mean quality 0.66  min 0.58
+layouts used: 20
+
+== 2. Field accuracy and document accuracy, before any review
+fields 3269  field accuracy 98.0%  documents all-correct 84.0%  mean fields/doc 10.9
+born_digital   field 100.0%  document 100.0%  fields/doc   5.0
+scanned_form   field  99.7%  document  97.8%  fields/doc   6.8
+estimate       field  99.0%  document  80.0%  fields/doc  19.2
+medical_bill   field  99.5%  document  90.0%  fields/doc  19.0
+police_report  field  99.6%  document  97.8%  fields/doc   5.0
+fax            field  95.9%  document  80.0%  fields/doc   7.4
+handwritten    field  91.6%  document  53.3%  fields/doc  10.0
+phone_photo    field  95.6%  document  63.3%  fields/doc  11.4
+
+== 3. Field error rate by family and pipeline (all fields, no gate)
+born_digital   ocr_text   0.0%  vision   0.0%  vision_ocr   0.7%
+scanned_form   ocr_text   3.6%  vision   3.9%  vision_ocr   2.3%
+estimate       ocr_text   1.1%  vision   2.6%  vision_ocr   0.9%
+medical_bill   ocr_text   1.6%  vision   3.2%  vision_ocr   1.4%
+police_report  ocr_text   4.0%  vision   3.1%  vision_ocr   2.7%
+fax            ocr_text   4.5%  vision   3.2%  vision_ocr   4.5%
+handwritten    ocr_text  32.4%  vision  12.0%  vision_ocr  11.7%
+phone_photo    ocr_text  15.2%  vision   4.1%  vision_ocr   7.9%
+cost per document, chosen mix with cross-check: US$0.0178; vision_ocr everywhere, no cross-check: US$0.0149
+
+== 4. Confidence: does the score rank wrong fields below right ones? (critical fields)
+vision verbalised          AUROC 0.661  over 1058 fields
+vision_ocr first-token     AUROC 0.912  over 1058 fields
+composite gate score       AUROC 0.988  over 1064 fields
+
+== 5. Routing, thresholds Thresholds(refuse_below=0.35, review_below=0.55, field_auto=0.67, layout_min=0.5)
+auto 252  review 46 (15.3%)  refuse 2 (0.7%)
+documents with a wrong critical field before the gate: 24 (8.0%)
+post-review error: 1 of 298 admitted (0.3%)
+  missed in review DOC-0137 handwritten
+review reasons (a document can have several): field below threshold 59, missing confidence 1, quality 3, unknown layout 1
+born_digital   auto  30 review   0 refuse  0
+scanned_form   auto  45 review   0 refuse  0
+estimate       auto  49 review   9 refuse  2
+medical_bill   auto  28 review   2 refuse  0
+police_report  auto  44 review   1 refuse  0
+fax            auto  25 review   5 refuse  0
+handwritten    auto  12 review  18 refuse  0
+phone_photo    auto  19 review  11 refuse  0
+dropped continuation pages: 2; routed DOC-0087 refuse, DOC-0266 refuse
+live mix, 4,000 documents: auto 3542  review 421 (10.5%)  refuse 37 (0.9%)  wrong critical field before the gate 219 (5.5%)  post-review error 33 of 3963 (0.8%)
+  of which in the auto tier 25, missed in review 8
+  born_digital   share  26.1% review   0.2% refuse  0.0% post-review error 0.19%
+  scanned_form   share  19.5% review   6.3% refuse  0.6% post-review error 1.54%
+  estimate       share  25.8% review  13.6% refuse  1.9% post-review error 0.48%
+  medical_bill   share   8.5% review  13.5% refuse  2.3% post-review error 0.88%
+  police_report  share   7.6% review   4.6% refuse  0.0% post-review error 0.99%
+  fax            share   5.2% review  18.7% refuse  1.4% post-review error 0.96%
+  handwritten    share   3.6% review  49.3% refuse  0.7% post-review error 2.08%
+  phone_photo    share   3.6% review  40.4% refuse  0.0% post-review error 2.05%
+
+== 6. Threshold sweep on the live mix (field_auto): review share and post-review error
+t=0.50 review   8.8% post-review error   1.7% (69)
+t=0.55 review   8.9% post-review error   1.7% (66)
+t=0.60 review   9.2% post-review error   1.3% (52)
+t=0.63 review   9.4% post-review error   1.2% (47)
+t=0.65 review   9.9% post-review error   1.0% (38)
+t=0.67 review  10.5% post-review error   0.8% (33)
+t=0.70 review  12.3% post-review error   0.5% (20)
+t=0.75 review  15.1% post-review error   0.3% (13)
+t=0.80 review  16.7% post-review error   0.3% (12)
+t=0.85 review  23.4% post-review error   0.3% (12)
+
+== 7. Missing confidence: fail closed against fail open
+live documents with a critical field missing its confidence: 48 (1.2%); with a wrong critical field among them: 18
+fail closed: post-review error 33 (0.8%), review 10.5%; fail open: 44 (1.1%), review 9.5%
+
+== 8. Failure injection: a normaliser that rounds amounts to whole dollars
+amount fields 1787: within the old ±US$1.00 tolerance 100.0%; exact to the cent 0.7%
+documents with line items: 165; reconciliation flags with the per-line tolerance 0; with zero tolerance 101
+sum of rounded items minus printed total: median US$0.84, max US$8.03, documents off by more than US$5: 11
+largest drift: DOC-0226 (estimate, 25 line items, printed total US$17,221.97, rounded sum off by US$8.03)
+round-trip test (normalised value must equal the printed value): 1774 failures
+
+== 9. Full 1,000-determination mix (Chapter 9): the gate on scanned and carrier documents
+scanned and carrier-document determinations (Chapter 9 stratum): 90; routed to a person 37
+gate catch rate on scanned and faxed documents with a wrong critical field (live sample of 1,200): 86.2%
+before the gate (Chapter 9 rules): wrong 6, withheld 35; after: wrong 2, withheld 5
+full mix: Chapter 10 close 40 of 1000 (4.0%) -> 36 of 1000 (3.6%); withheld 41 -> 11 (6 rejected queries unchanged)
+
+== 10. Template drift: prior-carrier declarations page (L05), 12 weeks
+week  1 layout match 0.93 review  1.7% wrong deductible  0.0% PSI layout 0.00 PSI deductible 0.00
+week  2 layout match 0.93 review  5.0% wrong deductible  0.0% PSI layout 0.00 PSI deductible 0.00
+week  3 layout match 0.93 review  1.7% wrong deductible  0.0% PSI layout 0.00 PSI deductible 0.00
+week  4 layout match 0.93 review  6.7% wrong deductible  0.0% PSI layout 0.00 PSI deductible 0.00
+week  5 layout match 0.92 review  5.0% wrong deductible  0.0% PSI layout 0.10 PSI deductible 0.06
+week  6 layout match 0.93 review  5.0% wrong deductible  0.0% PSI layout 0.07 PSI deductible 0.11
+week  7 layout match 0.72 review  6.7% wrong deductible 50.0% PSI layout 8.35 PSI deductible 1.47  ALARM
+week  8 layout match 0.73 review  6.7% wrong deductible 43.3% PSI layout 8.24 PSI deductible 1.71  ALARM
+week  9 layout match 0.72 review  1.7% wrong deductible 50.0% PSI layout 8.62 PSI deductible 1.42  ALARM
+week 10 layout match 0.72 review  8.3% wrong deductible 46.7% PSI layout 8.22 PSI deductible 1.62  ALARM
+week 11 layout match 0.72 review  0.0% wrong deductible 48.3% PSI layout 8.31 PSI deductible 1.66  ALARM
+week 12 layout match 0.72 review  1.7% wrong deductible 43.3% PSI layout 8.87 PSI deductible 1.08  ALARM

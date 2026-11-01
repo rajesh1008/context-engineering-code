@@ -1,0 +1,26 @@
+extraction {"proposed": {"precision": 0.875, "recall": 1.0}, "validated": {"precision": 0.964, "recall": 0.964}, "reviewed": {"precision": 0.966, "recall": 1.0}, "candidates": 47, "gold": 28, "status": {"published": 43, "quarantined": 1, "rejected": 3}, "review_minutes": 3.0, "false_positives_published": ["LM-HO 0455|MODIFIES|clause:debris"]}
+   quarantined FVB-HO 01 REPLACES HO 04 95 0.69 low or missing confidence
+   rejected WI-OCI-2025-03 MODIFIES clause:roof 0.81 bulletin -MODIFIES-> clause not allowed
+   rejected IN-IDOI-2025-01 MODIFIES clause:payment 0.81 bulletin -MODIFIES-> clause not allowed
+   rejected CG-HO-022 MODIFIES HO 04 95 0.74 guideline -MODIFIES-> endorsement not allowed
+ch16 (lexical top-4 + resolver)        hard     correct  0 withheld 14 wrong 34 tokens 249
+ch16 (lexical top-4 + resolver)        control  correct 48 withheld  0 wrong  0 tokens 197
+vector reader k=4                      hard     correct 29 withheld  0 wrong 19 tokens 249
+vector reader k=4                      control  correct 48 withheld  0 wrong  0 tokens 197
+vector reader k=8                      hard     correct 44 withheld  0 wrong  4 tokens 453
+vector reader k=8                      control  correct 48 withheld  0 wrong  0 tokens 290
+graph only (coded cause)               hard     correct 40 withheld  0 wrong  8 tokens 155
+graph only (coded cause)               control  correct 48 withheld  0 wrong  0 tokens 55
+hybrid (vector entry + graph chain)    hard     correct 48 withheld  0 wrong  0 tokens 216
+hybrid (vector entry + graph chain)    control  correct 48 withheld  0 wrong  0 tokens 85
+hybrid before review {'correct': 40, 'withheld': 8, 'wrong': 0, 'n': 48, 'tokens': 192} Counter({'requirement unmet': 8})
+injection {'loader': 'family edges, no checks', 'correct': 40, 'withheld': 0, 'wrong': 8, 'n': 48, 'tokens': 216, 'limit_correct': 8, 'limit_withheld': 0, 'limit_wrong': 8}
+injection {'loader': 'family edges + conflict check', 'correct': 32, 'withheld': 16, 'wrong': 0, 'n': 48, 'tokens': 146, 'limit_correct': 0, 'limit_withheld': 16, 'limit_wrong': 0}
+injection {'loader': 'edition-scoped edges', 'correct': 48, 'withheld': 0, 'wrong': 0, 'n': 48, 'tokens': 216, 'limit_correct': 16, 'limit_withheld': 0, 'limit_wrong': 0}
+expansion {'hops': 0, 'complete': 35, 'n': 48, 'tokens': 274, 'control_tokens': 197}
+expansion {'hops': 1, 'complete': 39, 'n': 48, 'tokens': 622, 'control_tokens': 535}
+expansion {'hops': 2, 'complete': 48, 'n': 48, 'tokens': 676, 'control_tokens': 570}
+expansion {'hops': 3, 'complete': 48, 'n': 48, 'tokens': 690, 'control_tokens': 590}
+full mix {'rules': 935, 'graph': 65, 'graph_contains_reviewer_span': 59} six matched 6
+ledger {"month_mean": 4157.85, "per_determination": 0.0591, "per_graph_routed": 0.909, "avoided_month": 422, "break_even_per_avoided": 9.84, "graph_share": 0.065, "mean_degree": 0.32, "quarantine_rate": 0.021, "assumed_ch16_full_wrong": 16, "projected_ch17_full_wrong": 10}
+graph {'nodes': 28, 'edges': 44, 'spans': 50}

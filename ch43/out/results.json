@@ -1,0 +1,381 @@
+{
+ "funnel": [
+  [
+   "arrived",
+   32194
+  ],
+  [
+   "eligible",
+   30262
+  ],
+  [
+   "mirrored",
+   2000
+  ],
+  [
+   "candidate answered",
+   1992
+  ],
+  [
+   "citations parsed",
+   1986
+  ],
+  [
+   "final recorded",
+   1939
+  ],
+  [
+   "agree",
+   1861
+  ],
+  [
+   "disagree",
+   78
+  ],
+  [
+   "both wrong",
+   59
+  ],
+  [
+   "candidate right",
+   10
+  ],
+  [
+   "production right",
+   9
+  ]
+ ],
+ "cells": {
+  "PA-WI": {
+   "n": 283,
+   "cand": 276,
+   "prod": 275,
+   "b": 0,
+   "c": 1,
+   "cand_wrong": 7,
+   "prod_wrong": 8
+  },
+  "PA-MN": {
+   "n": 169,
+   "cand": 165,
+   "prod": 165,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 4,
+   "prod_wrong": 4
+  },
+  "PA-MI": {
+   "n": 99,
+   "cand": 93,
+   "prod": 93,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 5,
+   "prod_wrong": 5
+  },
+  "PA-IL": {
+   "n": 83,
+   "cand": 82,
+   "prod": 83,
+   "b": 1,
+   "c": 0,
+   "cand_wrong": 1,
+   "prod_wrong": 0
+  },
+  "PA-IA": {
+   "n": 78,
+   "cand": 76,
+   "prod": 78,
+   "b": 1,
+   "c": 1,
+   "cand_wrong": 1,
+   "prod_wrong": 1
+  },
+  "PA-IN": {
+   "n": 50,
+   "cand": 49,
+   "prod": 49,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 1,
+   "prod_wrong": 1
+  },
+  "HO-WI": {
+   "n": 286,
+   "cand": 275,
+   "prod": 276,
+   "b": 0,
+   "c": 1,
+   "cand_wrong": 9,
+   "prod_wrong": 10
+  },
+  "HO-MN": {
+   "n": 155,
+   "cand": 141,
+   "prod": 148,
+   "b": 7,
+   "c": 0,
+   "cand_wrong": 14,
+   "prod_wrong": 7
+  },
+  "HO-MI": {
+   "n": 103,
+   "cand": 99,
+   "prod": 99,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 4,
+   "prod_wrong": 4
+  },
+  "HO-IL": {
+   "n": 90,
+   "cand": 87,
+   "prod": 87,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 3,
+   "prod_wrong": 3
+  },
+  "HO-IA": {
+   "n": 86,
+   "cand": 81,
+   "prod": 81,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 4,
+   "prod_wrong": 4
+  },
+  "HO-IN": {
+   "n": 44,
+   "cand": 44,
+   "prod": 44,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 0,
+   "prod_wrong": 0
+  },
+  "BOP-WI": {
+   "n": 112,
+   "cand": 103,
+   "prod": 103,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 7,
+   "prod_wrong": 7
+  },
+  "BOP-MN": {
+   "n": 48,
+   "cand": 48,
+   "prod": 48,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 0,
+   "prod_wrong": 0
+  },
+  "BOP-MI": {
+   "n": 34,
+   "cand": 32,
+   "prod": 32,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 1,
+   "prod_wrong": 1
+  },
+  "BOP-IL": {
+   "n": 26,
+   "cand": 25,
+   "prod": 25,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 1,
+   "prod_wrong": 1
+  },
+  "BOP-IA": {
+   "n": 26,
+   "cand": 25,
+   "prod": 25,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 1,
+   "prod_wrong": 1
+  },
+  "BOP-IN": {
+   "n": 22,
+   "cand": 21,
+   "prod": 21,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 1,
+   "prod_wrong": 1
+  },
+  "BOAT-WI": {
+   "n": 56,
+   "cand": 54,
+   "prod": 54,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 1,
+   "prod_wrong": 1
+  },
+  "BOAT-MN": {
+   "n": 29,
+   "cand": 29,
+   "prod": 29,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 0,
+   "prod_wrong": 0
+  },
+  "BOAT-MI": {
+   "n": 19,
+   "cand": 18,
+   "prod": 18,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 0,
+   "prod_wrong": 0
+  },
+  "BOAT-IL": {
+   "n": 22,
+   "cand": 19,
+   "prod": 19,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 3,
+   "prod_wrong": 3
+  },
+  "BOAT-IA": {
+   "n": 13,
+   "cand": 13,
+   "prod": 13,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 0,
+   "prod_wrong": 0
+  },
+  "BOAT-IN": {
+   "n": 6,
+   "cand": 6,
+   "prod": 6,
+   "b": 0,
+   "c": 0,
+   "cand_wrong": 0,
+   "prod_wrong": 0
+  }
+ },
+ "exit": {
+  "digest": "3da435b218c4a8e3",
+  "gates": {
+   "parse": 0.9969879518072289,
+   "parse_ok": true,
+   "latency_ratio": 1.0843041743126867,
+   "latency_ok": true,
+   "cost_ratio": 1.062,
+   "cost_ok": true,
+   "packs_ok": true
+  },
+  "cells": {
+   "PA-IA": "release",
+   "BOAT-IL": "shadow",
+   "PA-WI": "release",
+   "BOAT-MN": "shadow",
+   "PA-MN": "release",
+   "PA-MI": "release",
+   "HO-MN": "hold: excess wrong",
+   "HO-IA": "release",
+   "BOAT-WI": "shadow",
+   "PA-IL": "release",
+   "HO-WI": "release",
+   "HO-IL": "release",
+   "BOP-MI": "shadow",
+   "HO-MI": "release",
+   "BOP-WI": "release",
+   "BOAT-IA": "shadow",
+   "HO-IN": "shadow",
+   "BOAT-IN": "shadow",
+   "BOAT-MI": "shadow",
+   "PA-IN": "shadow",
+   "BOP-MN": "shadow",
+   "BOP-IL": "shadow",
+   "BOP-IA": "shadow",
+   "BOP-IN": "shadow"
+  },
+  "pooled": {
+   "PA-IA": "release",
+   "BOAT-IL": "release",
+   "PA-WI": "release",
+   "BOAT-MN": "release",
+   "PA-MN": "release",
+   "PA-MI": "release",
+   "HO-MN": "release",
+   "HO-IA": "release",
+   "BOAT-WI": "release",
+   "PA-IL": "release",
+   "HO-WI": "release",
+   "HO-IL": "release",
+   "BOP-MI": "release",
+   "HO-MI": "release",
+   "BOP-WI": "release",
+   "BOAT-IA": "release",
+   "HO-IN": "release",
+   "BOAT-IN": "release",
+   "BOAT-MI": "release",
+   "PA-IN": "release",
+   "BOP-MN": "release",
+   "BOP-IL": "release",
+   "BOP-IA": "release",
+   "BOP-IN": "release"
+  },
+  "pooled_overall": 0.9597730789066529
+ },
+ "reshadow": {
+  "changed": [
+   "HO-MN"
+  ],
+  "fresh": {
+   "n": 157,
+   "cand": 151,
+   "prod": 148,
+   "b": 0,
+   "c": 3,
+   "cand_wrong": 4,
+   "prod_wrong": 7
+  }
+ },
+ "holdback": {
+  "visible": [
+   28615,
+   29416
+  ],
+  "blind": [
+   567,
+   584
+  ],
+  "accepted_wrong": 72
+ },
+ "exam_by_id": {
+  "verify": 19,
+  "notes": 0
+ },
+ "exam_by_hash": {
+  "verify": 20,
+  "notes": 1
+ },
+ "exam": {
+  "pool": 4680,
+  "affected": 257,
+  "sampled_affected": [
+   "D-W03093"
+  ]
+ },
+ "redact_naive": {
+  "verify": 0,
+  "redacted": 36,
+  "refused": 4
+ },
+ "redact_commit": {
+  "verify": 20,
+  "redacted": 36,
+  "refused": 4
+ }
+}

@@ -1,0 +1,85 @@
+
+== 1. The 300 determinations
+determinations 300  sentences 1545  claim sentences 1354  notes 191
+by kind: {'fact': 340, 'policy': 714, 'conclusion': 300, 'note': 191}
+by claim type: {'hail_interior': 69, 'mould_seepage': 12, 'mould_hidden': 25, 'frozen_pipe': 72, 'backup_endorsed': 82, 'backup_plain': 40}
+packet size: {11: 218, 12: 82}
+stand-in mistakes: {'neighbour': 57, 'missing': 30, 'addition': 35, 'stacking': 5, 'polarity': 8, 'detail': 8, 'number': 2, 'stale': 7, 'exception': 2, 'reason': 6}
+
+== 2. Four citation formats, same sentences
+format   pointers cands/ptr ambiguous tokens/ptr  gold P checked P
+doc          1464      5.19      1385        9.5   95.2%     92.1%
+page         1464      2.62      1380       12.2   95.2%     92.3%
+index        1652      1.00         0        3.0   92.2%     91.1%
+handle       1652      1.00         0       17.2   92.2%     91.1%
+example sentence in each format (DET28-0188, Emily Carter's claim):
+  doc    A $1,000 deductible applies. [HO 04 95 (2024-06)]
+  page   A $1,000 deductible applies. [HO 04 95 (2024-06), page 1]
+  index  A $1,000 deductible applies. [3]
+  handle A $1,000 deductible applies. [[HO 04 95@2024-06/p1/s3#0daba536]]
+
+== 3. Calibrating the stand-in verifier against gold (handle format)
+cited sentences scored 1324  gold supported 1210  gold unsupported 114
+thresh measured P  flags flag prec flag recall
+  0.30      92.9%     94    100.0%       82.5%
+  0.40      91.8%    108    100.0%       94.7%
+  0.50      91.8%    109    100.0%       95.6%
+  0.55      91.5%    113    100.0%       99.1%
+  0.60      90.7%    123     92.7%      100.0%
+  0.65      88.0%    159     71.7%      100.0%
+  0.70      78.5%    284     40.1%      100.0%
+  0.75      73.6%    349     32.7%      100.0%
+  0.80      67.9%    425     26.8%      100.0%
+  0.90      49.0%    675     16.9%      100.0%
+gold share of cited sentences supported: 91.4%
+at 0.6: unsupported sentences the verifier passes {}; supported it flags {'none': 9}
+
+== 4. First measurement: Lakeshore as it ran (page format) and with v6.4 (handles)
+page format, checked at page level   precision 92.3%  recall 89.4%
+page format, gold at span level      precision 95.2%  recall 92.9%
+handle format, gold                  precision 92.2%  recall 89.4%
+handle format, checked (v6.4)       precision 95.0%  recall 93.4%
+after v6.4, what the adjuster sees as verified: precision 100.0% (0 wrong of 1265), recall 93.4% of 1354 claim sentences
+sentence statuses: {'reattributed': 64, 'supported': 1201, 'exempt': 191, 'missing': 30, 'unverified': 59}
+re-attributions to a gold span 64, to a wrong span 0
+flagged sentences per determination: {0: 220, 1: 71, 2: 9} mean 0.30
+
+== 5. Failure injection: a reranker reorders spans after indices were assigned
+index  gold P  92.2% ->  12.8%   checked P  91.1% ->  10.5%
+handle gold P  92.2% ->  92.2%   checked P  91.1% ->  91.1%
+determinations whose packet order changed: 300/300
+
+== 6. Right citation, wrong reasoning: which check catches each wrong conclusion
+mistake      n attribution conclusion governing  none
+stacking     5           5          0         0     0
+polarity     8           8          8         0     0
+detail       8           0          0         0     8
+exception    2           0          2         2     0
+reason       6           0          0         6     0
+  adjuster only: DET28-0053 The burst pipe is insured, including the cost to tear out and replace part of the building to reach the system, because the water supply was shut off.
+
+== 7. Sidebar: the display that resolves (document, page) to the latest edition
+form pointers 1092; page shown does not contain the cited span 432 (39.6%); determinations affected 149; determinations on an older edition 146
+edition check on handles: pointers naming an edition not on the policy 0 (stale pointers resolve to nothing and are flagged as unverified first)
+
+== 8. The adjuster's view for one determination
+DET28-0188 CLM-2026-01187 backup_endorsed HO-3 (2024-06) HO 04 95 (2024-06)
+  supported    0.86  The reported cause is a sump pump failure during heavy rain that let water back up into the basement. [[CLM-2026-01187@record/p1/s1#654728c4]]
+  supported    0.94  The HO-3 form does not insure loss caused by water which backs up through sewers or drains or overflows from a sump unless an endorsement provides tha
+  supported    0.95  The HO 04 95 endorsement will pay up to $10,000 for direct physical loss caused by water which backs up through drains or is discharged from a sump, e
+  supported    1.00  A $1,000 deductible applies. [[HO 04 95@2024-06/p1/s3#0daba536]]
+  supported    0.78  The loss is covered by the endorsement up to $10,000 for water discharged from the sump, and a $1,000 deductible applies. [[HO 04 95@2024-06/p1/s2#104
+  exempt       0.00  Please send photographs of the damaged items and the failed pump. [no-source]
+DET28-0013 CLM-2026-01012 backup_endorsed HO-3 (2024-06) HO 04 95 (2024-06)
+  supported    0.86  The reported cause is a sump pump failure during heavy rain that let water back up into the basement. [[CLM-2026-01012@record/p1/s1#654728c4]]
+  unverified   0.24  The HO-3 form does not insure loss caused by water which backs up through sewers or drains or overflows from a sump unless an endorsement provides tha
+  supported    0.95  The HO 04 95 endorsement will pay up to $10,000 for direct physical loss caused by water which backs up through drains or is discharged from a sump, e
+  supported    1.00  A $1,000 deductible applies. [[HO 04 95@2024-06/p1/s3#0daba536]]
+  supported    0.78  The loss is covered by the endorsement up to $10,000 for water discharged from the sump, and a $1,000 deductible applies. [[HO 04 95@2024-06/p1/s2#104
+  exempt       0.00  Please send photographs of the damaged items and the failed pump. [no-source]
+
+== 9. Scoreboard rows added in Chapter 28
+citation precision, verified pointers (gold)      before 95.2% page level, 92.2% span level  after 100.0%
+citation recall (gold, span level)                before 89.4%  after 93.4%
+flagged sentences per determination (after)       0.30
+wrong-clause rate                                 unchanged (no change to retrieval or rules)

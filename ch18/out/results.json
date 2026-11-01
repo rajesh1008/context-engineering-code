@@ -1,0 +1,490 @@
+{
+ "example": {
+  "log": [
+   [
+    1,
+    "fixed",
+    "MN P-40023, DOL 05/11/25: hail on a 14yr old shingle roof. Covered, and what limit applies?",
+    [
+     "MAN-RS-0",
+     "MAN-RS-1",
+     "LK-RS@2024-04",
+     "BUL-MN-RS-202205",
+     "LK-MD@2024-04",
+     "HO-SET-LOSS",
+     "BUL-MN-TP-202504",
+     "BUL-MN-EB-202207",
+     "HO-EXC-FUNGI"
+    ]
+   ],
+   [
+    2,
+    "lookup",
+    "LK-OL@2024-04",
+    [
+     "LK-OL@2024-04"
+    ]
+   ],
+   [
+    2,
+    "search",
+    "Minnesota bulletin limited fungi, wet rot and mould LK-MD",
+    [
+     "BUL-MN-TP-202211",
+     "BUL-MN-TP-202504",
+     "BUL-MN-EB-202207",
+     "BUL-MN-IR-202204",
+     "BUL-MN-OL-202202"
+    ]
+   ],
+   [
+    3,
+    "search",
+    "Minnesota bulletin ordinance or law LK-OL",
+    [
+     "BUL-MN-OL-202202",
+     "BUL-MN-OL-202510",
+     "BUL-MN-EB-202207",
+     "BUL-MN-IR-202204",
+     "BUL-MN-RS-202205"
+    ]
+   ]
+  ]
+ },
+ "three": {
+  "hard-fixed": {
+   "n": 160,
+   "wrong": 72,
+   "faith": 0.65,
+   "tokens": 1577,
+   "calls": 1,
+   "rounds": 0,
+   "cost": 0.00788,
+   "model_calls": 1
+  },
+  "hard-graph": {
+   "n": 160,
+   "wrong": 14,
+   "faith": 0.963,
+   "tokens": 1761,
+   "calls": 1,
+   "rounds": 0,
+   "cost": 0.00843,
+   "model_calls": 1
+  },
+  "hard-agentic": {
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6973,
+   "calls": 6.22,
+   "rounds": 3.26,
+   "cost": 0.02967,
+   "model_calls": 10.49
+  },
+  "easy-fixed": {
+   "n": 240,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 1588,
+   "calls": 1,
+   "rounds": 0,
+   "cost": 0.00791,
+   "model_calls": 1
+  },
+  "easy-graph": {
+   "n": 240,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 1708,
+   "calls": 1,
+   "rounds": 0,
+   "cost": 0.00827,
+   "model_calls": 1
+  },
+  "easy-agentic": {
+   "n": 240,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6007,
+   "calls": 4.72,
+   "rounds": 2.83,
+   "cost": 0.02542,
+   "model_calls": 8.55
+  }
+ },
+ "qt": {
+  "raw question": {
+   "recall": 0.555,
+   "edition_ok": 0.518
+  },
+  "rewritten": {
+   "recall": 0.522,
+   "edition_ok": 0.426
+  },
+  "decomposed": {
+   "recall": 0.567,
+   "edition_ok": 0.154
+  },
+  "HyDE": {
+   "recall": 0.604,
+   "edition_ok": 0.149
+  }
+ },
+ "first": {
+  "hard-decompose": {
+   "n": 160,
+   "wrong": 6,
+   "faith": 0.999,
+   "tokens": 6861,
+   "calls": 7.54,
+   "rounds": 3.25,
+   "cost": 0.03052,
+   "model_calls": 11.79
+  },
+  "hard-fixed": {
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6973,
+   "calls": 6.22,
+   "rounds": 3.26,
+   "cost": 0.02967,
+   "model_calls": 10.49
+  },
+  "easy-decompose": {
+   "n": 240,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 3382,
+   "calls": 3,
+   "rounds": 2,
+   "cost": 0.016,
+   "model_calls": 6
+  },
+  "easy-fixed": {
+   "n": 240,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6007,
+   "calls": 4.72,
+   "rounds": 2.83,
+   "cost": 0.02542,
+   "model_calls": 8.55
+  }
+ },
+ "judges": {
+  "always": {
+   "n": 160,
+   "wrong": 72,
+   "faith": 0.65,
+   "tokens": 3225,
+   "calls": 1,
+   "rounds": 1,
+   "cost": 0.0139,
+   "model_calls": 4,
+   "early": 123,
+   "over": 0,
+   "stops": {
+    "sufficient": 160
+   }
+  },
+  "self": {
+   "n": 160,
+   "wrong": 50,
+   "faith": 0.833,
+   "tokens": 7312,
+   "calls": 5.3,
+   "rounds": 3.34,
+   "cost": 0.03082,
+   "model_calls": 11.97,
+   "early": 97,
+   "over": 119,
+   "stops": {
+    "planner-done": 160
+   }
+  },
+  "slots": {
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6973,
+   "calls": 6.22,
+   "rounds": 3.26,
+   "cost": 0.02967,
+   "model_calls": 10.49,
+   "early": 0,
+   "over": 113,
+   "stops": {
+    "sufficient": 160
+   }
+  }
+ },
+ "slots_open": {
+  "ref": 218,
+  "bulletin": 259
+ },
+ "always_missing": {
+  "endorsement": 208,
+  "bulletin": 129
+ },
+ "cap": [
+  {
+   "cap": 1,
+   "n": 160,
+   "wrong": 72,
+   "faith": 0.65,
+   "tokens": 2728,
+   "calls": 1,
+   "rounds": 1,
+   "cost": 0.01223,
+   "model_calls": 3
+  },
+  {
+   "cap": 2,
+   "n": 160,
+   "wrong": 56,
+   "faith": 0.823,
+   "tokens": 4891,
+   "calls": 3.98,
+   "rounds": 1.98,
+   "cost": 0.02141,
+   "model_calls": 6.96
+  },
+  {
+   "cap": 3,
+   "n": 160,
+   "wrong": 18,
+   "faith": 0.971,
+   "tokens": 6402,
+   "calls": 5.73,
+   "rounds": 2.83,
+   "cost": 0.02752,
+   "model_calls": 9.56
+  },
+  {
+   "cap": 4,
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6933,
+   "calls": 6.19,
+   "rounds": 3.23,
+   "cost": 0.02952,
+   "model_calls": 10.43
+  },
+  {
+   "cap": 5,
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6973,
+   "calls": 6.22,
+   "rounds": 3.26,
+   "cost": 0.02967,
+   "model_calls": 10.49
+  },
+  {
+   "cap": 6,
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6973,
+   "calls": 6.22,
+   "rounds": 3.26,
+   "cost": 0.02967,
+   "model_calls": 10.49
+  }
+ ],
+ "rounds_dist": {
+  "3": 72,
+  "4": 59,
+  "1": 3,
+  "2": 21,
+  "5": 5
+ },
+ "cost": {
+  "fixed": {
+   "plan": 0,
+   "read": 0,
+   "judge": 0,
+   "answer": 1227,
+   "output": 350,
+   "p50": 1.6,
+   "p95": 1.6,
+   "usd": 0.00788
+  },
+  "graph": {
+   "plan": 0,
+   "read": 0,
+   "judge": 0,
+   "answer": 1411,
+   "output": 350,
+   "p50": 1.6,
+   "p95": 1.6,
+   "usd": 0.00843
+  },
+  "agentic": {
+   "plan": 1740,
+   "read": 3036,
+   "judge": 0,
+   "answer": 1225,
+   "output": 972,
+   "p50": 16.9,
+   "p95": 25.1,
+   "usd": 0.02967
+  }
+ },
+ "iso": {
+  "True": {
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 6973,
+   "calls": 6.22,
+   "rounds": 3.26,
+   "cost": 0.02967,
+   "model_calls": 10.49,
+   "lead_peak": 278
+  },
+  "False": {
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 7457,
+   "calls": 6.22,
+   "rounds": 3.26,
+   "cost": 0.02888,
+   "model_calls": 4.26,
+   "lead_peak": 1411
+  }
+ },
+ "iso_example": {
+  "True": [
+   0,
+   275,
+   275,
+   300,
+   325
+  ],
+  "False": [
+   0,
+   735,
+   1418,
+   1781,
+   2123
+  ]
+ },
+ "route": {
+  "v1-hard": {
+   "n": 160,
+   "wrong": 9,
+   "faith": 0.979,
+   "tokens": 3703,
+   "calls": 3.01,
+   "rounds": 1.14,
+   "cost": 0.01637,
+   "model_calls": 4.49,
+   "to_loop": 55
+  },
+  "v1-easy": {
+   "n": 240,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 1708,
+   "calls": 1,
+   "rounds": 0,
+   "cost": 0.00827,
+   "model_calls": 1,
+   "to_loop": 0
+  },
+  "v2-hard": {
+   "n": 160,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 5007,
+   "calls": 4.23,
+   "rounds": 1.98,
+   "cost": 0.02162,
+   "model_calls": 6.81,
+   "to_loop": 96
+  },
+  "v2-easy": {
+   "n": 240,
+   "wrong": 5,
+   "faith": 1.0,
+   "tokens": 1708,
+   "calls": 1,
+   "rounds": 0,
+   "cost": 0.00827,
+   "model_calls": 1,
+   "to_loop": 0
+  }
+ },
+ "never": {
+  "budget 6 rounds / 20k tokens": {
+   "tokens": 12342,
+   "max": 15899,
+   "rounds": 5.6,
+   "usd": 0.0522,
+   "stops": {
+    "round-cap": 91,
+    "call-cap": 64,
+    "sufficient": 5
+   }
+  },
+  "cap 30 rounds only, isolated": {
+   "tokens": 61823,
+   "max": 111863,
+   "rounds": 29.1,
+   "usd": 0.2534,
+   "stops": {
+    "round-cap": 155,
+    "sufficient": 5
+   }
+  },
+  "cap 30 rounds only, not isolated": {
+   "tokens": 322964,
+   "max": 636640,
+   "rounds": 29.1,
+   "usd": 1.0109,
+   "stops": {
+    "round-cap": 155,
+    "sufficient": 5
+   }
+  }
+ },
+ "mix": {
+  "graph": {
+   "n": 65,
+   "wrong": 4,
+   "faith": 0.975,
+   "tokens": 1736,
+   "calls": 1,
+   "rounds": 0,
+   "cost": 0.00836,
+   "model_calls": 1
+  },
+  "agentic": {
+   "n": 65,
+   "wrong": 1,
+   "faith": 1.0,
+   "tokens": 6766,
+   "calls": 6.02,
+   "rounds": 3.22,
+   "cost": 0.02886,
+   "model_calls": 10.23
+  },
+  "routed": {
+   "n": 65,
+   "wrong": 2,
+   "faith": 0.997,
+   "tokens": 4257,
+   "calls": 3.45,
+   "rounds": 1.62,
+   "cost": 0.01858,
+   "model_calls": 5.57,
+   "to_loop": 33
+  }
+ }
+}

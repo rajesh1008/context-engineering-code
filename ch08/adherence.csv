@@ -1,0 +1,7 @@
+model,rulebook,probe_adherence_pct,covered_wrong_pct,uncovered_wrong_pct,eval_wrong_pct,prompt_tokens
+sim-large,none,98.1,5.9,0.0,3.5,1517
+sim-large,r1.0,100.0,4.2,0.0,2.5,1540
+sim-mid,none,96.3,7.6,0.0,4.5,1518
+sim-mid,r1.0,100.0,4.2,0.0,2.5,1541
+sim-small,none,95.3,6.7,1.2,4.5,1518
+sim-small,r1.0,100.0,4.2,1.2,3.0,1541

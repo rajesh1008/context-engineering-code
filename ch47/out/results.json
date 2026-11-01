@@ -1,0 +1,379 @@
+{
+ "n": 1000,
+ "gov_end": 427,
+ "bulletin": 185,
+ "strategies": {
+  "single": {
+   "wrong": 3,
+   "per_1000": 3.0,
+   "after_review": 3,
+   "coverage_tokens": 16003,
+   "handoff_tokens": 0,
+   "endorsement_survival": 1.0,
+   "probe_flagged": 0
+  },
+  "share": {
+   "wrong": 19,
+   "per_1000": 19.0,
+   "after_review": 7,
+   "coverage_tokens": 24426,
+   "handoff_tokens": 9023,
+   "endorsement_survival": 0.956,
+   "probe_flagged": 0
+  },
+  "summary": {
+   "wrong": 16,
+   "per_1000": 16.0,
+   "after_review": 8,
+   "coverage_tokens": 15786,
+   "handoff_tokens": 383,
+   "endorsement_survival": 0.932,
+   "probe_flagged": 130
+  },
+  "summary-injected": {
+   "wrong": 125,
+   "per_1000": 125.0,
+   "after_review": 64,
+   "coverage_tokens": 15789,
+   "handoff_tokens": 386,
+   "endorsement_survival": 0.431,
+   "probe_flagged": 985
+  },
+  "record": {
+   "wrong": 4,
+   "per_1000": 4.0,
+   "after_review": 3,
+   "coverage_tokens": 15541,
+   "handoff_tokens": 138,
+   "endorsement_survival": 1.0,
+   "probe_flagged": 0
+  }
+ },
+ "sweep": [
+  {
+   "budget": 150,
+   "injected": false,
+   "survival": 0.382
+  },
+  {
+   "budget": 150,
+   "injected": true,
+   "survival": 0.379
+  },
+  {
+   "budget": 200,
+   "injected": false,
+   "survival": 0.433
+  },
+  {
+   "budget": 200,
+   "injected": true,
+   "survival": 0.407
+  },
+  {
+   "budget": 250,
+   "injected": false,
+   "survival": 0.522
+  },
+  {
+   "budget": 250,
+   "injected": true,
+   "survival": 0.422
+  },
+  {
+   "budget": 300,
+   "injected": false,
+   "survival": 0.639
+  },
+  {
+   "budget": 300,
+   "injected": true,
+   "survival": 0.424
+  },
+  {
+   "budget": 400,
+   "injected": false,
+   "survival": 0.932
+  },
+  {
+   "budget": 400,
+   "injected": true,
+   "survival": 0.431
+  },
+  {
+   "budget": 500,
+   "injected": false,
+   "survival": 0.995
+  },
+  {
+   "budget": 500,
+   "injected": true,
+   "survival": 0.424
+  },
+  {
+   "budget": 650,
+   "injected": false,
+   "survival": 1.0
+  },
+  {
+   "budget": 650,
+   "injected": true,
+   "survival": 1.0
+  },
+  {
+   "budget": 800,
+   "injected": false,
+   "survival": 1.0
+  },
+  {
+   "budget": 800,
+   "injected": true,
+   "survival": 1.0
+  }
+ ],
+ "rot": [
+  {
+   "tokens": 10000,
+   "p": 0.0141
+  },
+  {
+   "tokens": 12000,
+   "p": 0.0157
+  },
+  {
+   "tokens": 14000,
+   "p": 0.0178
+  },
+  {
+   "tokens": 16000,
+   "p": 0.0206
+  },
+  {
+   "tokens": 18000,
+   "p": 0.0243
+  },
+  {
+   "tokens": 20000,
+   "p": 0.0291
+  },
+  {
+   "tokens": 22000,
+   "p": 0.035
+  },
+  {
+   "tokens": 24000,
+   "p": 0.0423
+  },
+  {
+   "tokens": 26000,
+   "p": 0.0507
+  },
+  {
+   "tokens": 28000,
+   "p": 0.0601
+  },
+  {
+   "tokens": 30000,
+   "p": 0.07
+  },
+  {
+   "tokens": 32000,
+   "p": 0.0799
+  },
+  {
+   "tokens": 34000,
+   "p": 0.0893
+  },
+  {
+   "tokens": 36000,
+   "p": 0.0977
+  },
+  {
+   "tokens": 38000,
+   "p": 0.105
+  },
+  {
+   "tokens": 40000,
+   "p": 0.1109
+  },
+  {
+   "tokens": 42000,
+   "p": 0.1157
+  },
+  {
+   "tokens": 44000,
+   "p": 0.1194
+  },
+  {
+   "tokens": 46000,
+   "p": 0.1222
+  },
+  {
+   "tokens": 48000,
+   "p": 0.1243
+  },
+  {
+   "tokens": 50000,
+   "p": 0.1259
+  },
+  {
+   "tokens": 52000,
+   "p": 0.127
+  }
+ ],
+ "research": {
+  "inline": {
+   "n": 185,
+   "bulletin_wrong": 23,
+   "wrong_rate": 0.124,
+   "coverage_window_mean": 23548,
+   "research_tokens_per_claim": 7545,
+   "research_cost_per_claim": 0.0164
+  },
+  "fork": {
+   "n": 185,
+   "bulletin_wrong": 10,
+   "wrong_rate": 0.054,
+   "coverage_window_mean": 16353,
+   "research_tokens_per_claim": 23898,
+   "research_cost_per_claim": 0.052
+  },
+  "isolated-full": {
+   "n": 185,
+   "bulletin_wrong": 6,
+   "wrong_rate": 0.032,
+   "coverage_window_mean": 16353,
+   "research_tokens_per_claim": 9395,
+   "research_cost_per_claim": 0.0204
+  },
+  "isolated-thin": {
+   "n": 185,
+   "bulletin_wrong": 55,
+   "wrong_rate": 0.297,
+   "coverage_window_mean": 16353,
+   "research_tokens_per_claim": 9395,
+   "research_cost_per_claim": 0.0204
+  },
+  "isolated-small": {
+   "n": 185,
+   "bulletin_wrong": 18,
+   "wrong_rate": 0.097,
+   "coverage_window_mean": 16353,
+   "research_tokens_per_claim": 9395,
+   "research_cost_per_claim": 0.0051
+  }
+ },
+ "review": {
+  "same-session": {
+   "caught": 72,
+   "of": 150,
+   "by_kind": {
+    "endorsement": 22,
+    "amount": 30,
+    "edition": 20
+   },
+   "false_alarms_per_1000": 7,
+   "recall": 0.48
+  },
+  "briefed-subagent": {
+   "caught": 80,
+   "of": 150,
+   "by_kind": {
+    "endorsement": 22,
+    "amount": 33,
+    "edition": 25
+   },
+   "false_alarms_per_1000": 17,
+   "recall": 0.533
+  },
+  "clean-context": {
+   "caught": 124,
+   "of": 150,
+   "by_kind": {
+    "endorsement": 47,
+    "amount": 39,
+    "edition": 38
+   },
+   "false_alarms_per_1000": 27,
+   "recall": 0.827
+  }
+ },
+ "board": {
+  "open_board_overwrites": 63,
+  "single_writer_refused": 63
+ },
+ "provenance": {
+  "share": {
+   "coverage": 0.372,
+   "tiers": {
+    "public": 251,
+    "governed": 149
+   }
+  },
+  "summary": {
+   "coverage": 0.302,
+   "tiers": {
+    "public": 279,
+    "governed": 121
+   }
+  },
+  "record": {
+   "coverage": 1.0,
+   "tiers": {
+    "record": 200,
+    "party": 200
+   }
+  }
+ },
+ "tokens": {
+  "per_agent": {
+   "1 intake": 11461,
+   "2 coverage": 15606,
+   "3 research sub-agent": 1738,
+   "4 review": 5200
+  },
+  "total": 34005,
+  "ratio": 2.12,
+  "cost": 0.0739
+ },
+ "fan_out": {
+  "one agent, one question per peril": {
+   "wrong_independent": 3,
+   "of_independent": 66,
+   "wrong_coupled": 5,
+   "of_coupled": 38,
+   "tokens": 22681
+  },
+  "fan-out, isolated briefs": {
+   "wrong_independent": 3,
+   "of_independent": 66,
+   "wrong_coupled": 17,
+   "of_coupled": 38,
+   "tokens": 30308
+  },
+  "fan-out, coupling in briefs": {
+   "wrong_independent": 3,
+   "of_independent": 66,
+   "wrong_coupled": 5,
+   "of_coupled": 38,
+   "tokens": 30965
+  }
+ },
+ "loop": {
+  "open_claims": 212,
+  "affected": 37,
+  "preflight_good": [],
+  "preflight_bad": [
+   "verifier shares the assembler's view",
+   "no machine-checkable stop",
+   "no persisted state",
+   "no token bound",
+   "no human on the loop"
+  ],
+  "flagged_independent": 37,
+  "flagged_shared_view": 0,
+  "tokens": 835851,
+  "cost": 1.82,
+  "within_cap": true
+ }
+}

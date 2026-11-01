@@ -1,0 +1,242 @@
+[
+ {
+  "order": [
+   "examples",
+   "form",
+   "state",
+   "endorse"
+  ],
+  "hit_rate": 0.7906644098836,
+  "cost_per_det": 0.07918159500000001
+ },
+ {
+  "order": [
+   "examples",
+   "form",
+   "endorse",
+   "state"
+  ],
+  "hit_rate": 0.7893039234728562,
+  "cost_per_det": 0.07931397937500001
+ },
+ {
+  "order": [
+   "form",
+   "examples",
+   "state",
+   "endorse"
+  ],
+  "hit_rate": 0.7852276668655226,
+  "cost_per_det": 0.07971062625000001
+ },
+ {
+  "order": [
+   "form",
+   "examples",
+   "endorse",
+   "state"
+  ],
+  "hit_rate": 0.7838671804547788,
+  "cost_per_det": 0.07984301062500002
+ },
+ {
+  "order": [
+   "examples",
+   "endorse",
+   "form",
+   "state"
+  ],
+  "hit_rate": 0.7790235366750371,
+  "cost_per_det": 0.080314329375
+ },
+ {
+  "order": [
+   "examples",
+   "state",
+   "form",
+   "endorse"
+  ],
+  "hit_rate": 0.7780202971739342,
+  "cost_per_det": 0.08041195125
+ },
+ {
+  "order": [
+   "form",
+   "endorse",
+   "examples",
+   "state"
+  ],
+  "hit_rate": 0.7779153775718309,
+  "cost_per_det": 0.08042216062500002
+ },
+ {
+  "order": [
+   "form",
+   "state",
+   "examples",
+   "endorse"
+  ],
+  "hit_rate": 0.7759756655891452,
+  "cost_per_det": 0.0806109075
+ },
+ {
+  "order": [
+   "endorse",
+   "examples",
+   "form",
+   "state"
+  ],
+  "hit_rate": 0.7722323769752633,
+  "cost_per_det": 0.080975154375
+ },
+ {
+  "order": [
+   "form",
+   "state",
+   "endorse",
+   "examples"
+  ],
+  "hit_rate": 0.7719887207092219,
+  "cost_per_det": 0.08099886375000001
+ },
+ {
+  "order": [
+   "examples",
+   "state",
+   "endorse",
+   "form"
+  ],
+  "hit_rate": 0.7711337560177028,
+  "cost_per_det": 0.0810820575
+ },
+ {
+  "order": [
+   "form",
+   "endorse",
+   "state",
+   "examples"
+  ],
+  "hit_rate": 0.770628234298478,
+  "cost_per_det": 0.081131248125
+ },
+ {
+  "order": [
+   "state",
+   "examples",
+   "form",
+   "endorse"
+  ],
+  "hit_rate": 0.7689781351017634,
+  "cost_per_det": 0.08129181375
+ },
+ {
+  "order": [
+   "examples",
+   "endorse",
+   "state",
+   "form"
+  ],
+  "hit_rate": 0.768781302459801,
+  "cost_per_det": 0.08131096687500002
+ },
+ {
+  "order": [
+   "endorse",
+   "form",
+   "examples",
+   "state"
+  ],
+  "hit_rate": 0.7676349907740119,
+  "cost_per_det": 0.08142251062500001
+ },
+ {
+  "order": [
+   "state",
+   "form",
+   "examples",
+   "endorse"
+  ],
+  "hit_rate": 0.7633315528794795,
+  "cost_per_det": 0.08184126375
+ },
+ {
+  "order": [
+   "state",
+   "examples",
+   "endorse",
+   "form"
+  ],
+  "hit_rate": 0.7620915939455319,
+  "cost_per_det": 0.08196192
+ },
+ {
+  "order": [
+   "endorse",
+   "examples",
+   "state",
+   "form"
+  ],
+  "hit_rate": 0.7619901427600272,
+  "cost_per_det": 0.08197179187499999
+ },
+ {
+  "order": [
+   "endorse",
+   "form",
+   "state",
+   "examples"
+  ],
+  "hit_rate": 0.760347847500659,
+  "cost_per_det": 0.08213159812500001
+ },
+ {
+  "order": [
+   "state",
+   "form",
+   "endorse",
+   "examples"
+  ],
+  "hit_rate": 0.759344607999556,
+  "cost_per_det": 0.08222922
+ },
+ {
+  "order": [
+   "state",
+   "endorse",
+   "examples",
+   "form"
+  ],
+  "hit_rate": 0.7564259354319566,
+  "cost_per_det": 0.08251322625
+ },
+ {
+  "order": [
+   "endorse",
+   "state",
+   "examples",
+   "form"
+  ],
+  "hit_rate": 0.7540734818740549,
+  "cost_per_det": 0.082742135625
+ },
+ {
+  "order": [
+   "state",
+   "endorse",
+   "form",
+   "examples"
+  ],
+  "hit_rate": 0.7524580668433247,
+  "cost_per_det": 0.08289932625
+ },
+ {
+  "order": [
+   "endorse",
+   "state",
+   "form",
+   "examples"
+  ],
+  "hit_rate": 0.7501056132854229,
+  "cost_per_det": 0.083128235625
+ }
+]

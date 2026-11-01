@@ -1,0 +1,67 @@
+
+== 1. The catalogue
+AP01  Stuff it all in
+AP02  Similarity as truth
+AP03  The unversioned prompt
+AP04  The summary with no provenance
+AP05  The compaction that forgot the rule
+AP06  The pointer that floats
+AP07  The helpful default
+AP08  The filter after the scan
+AP09  The clock in the prefix
+AP10  The cache key that forgets an input
+AP11  The judge as a unit test
+AP12  Tools that read alike
+
+== 2. The audit: lint, month 0
+determination           0 error(s), 0 warning(s)
+policyholder-assistant  0 error(s), 1 warning(s)
+    AP09 warn  policyholder-assistant: volatile field 'today' sits in the cached prefix
+subrogation-agent       0 error(s), 1 warning(s)
+    AP12 warn  subrogation-agent: 'claim_notes' and 'claim_diary' read alike
+
+== 3. Each anti-pattern injected into the clean determination configuration
+rule  caught by lint  metric  per 1,000 cost index
+AP01  AP01            wrong          32        310
+AP02  AP02            wrong          50        100
+AP03  AP03            wrong          17        100
+AP04  AP04            wrong          17        100
+AP05  AP05            broken        245        100
+AP06  AP06            wrong          59        100
+AP07  AP07            wrong          20        100
+AP08  AP08            wrong          20        100
+AP09  AP09            cost            3        260
+AP10  AP10            wrong          19        100
+AP11  AP11            flaky         281        100
+AP12  AP12            wrong           9        135
+
+== 4. The audit: resolve, month 0
+determination           0 error(s), 0 warning(s)
+policyholder-assistant  0 error(s), 0 warning(s)
+subrogation-agent       0 error(s), 0 warning(s)
+
+== 5. Failure injection: the configuration passes, the world moves
+month  lint errors  resolve errors  wrong/1,000  holds broken/1,000
+    0            0               0            3                   0
+    1            0               0            3                   0
+    2            0               1            3                 280
+    3            0               4           12                 205
+    4            0               7           35                 235
+    5            0               7           53                 255
+resolve findings at month 5:
+    AP02 edition 'HO0495-2027' has no precedence entry
+    AP05 pin 'SUBRO-HOLD-01' names no current rule
+    AP10 feed 'bulletins-IL-2' is not in the cache key
+
+== 6. The same months with resolve run on every world change
+month 0: 0 finding(s) on the change, 0 after the fix; wrong 3/1,000, holds broken 0/1,000
+month 1: 0 finding(s) on the change, 0 after the fix; wrong 3/1,000, holds broken 0/1,000
+month 2: 1 finding(s) on the change, 0 after the fix; wrong 3/1,000, holds broken 0/1,000
+month 3: 3 finding(s) on the change, 0 after the fix; wrong 3/1,000, holds broken 0/1,000
+month 4: 3 finding(s) on the change, 0 after the fix; wrong 3/1,000, holds broken 0/1,000
+month 5: 0 finding(s) on the change, 0 after the fix; wrong 3/1,000, holds broken 0/1,000
+
+== 7. Re-audit after the owners' changes
+determination           0 error(s), 0 warning(s)
+policyholder-assistant  0 error(s), 0 warning(s)
+subrogation-agent       0 error(s), 0 warning(s)

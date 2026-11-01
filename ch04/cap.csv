@@ -1,0 +1,13 @@
+model,pipeline,wrong_rate,tokens_per_det,cost_per_det,lookup_min
+sim-large,"current, clean",0.04,1103,0.003993,3.5
+sim-large,injected (look-alikes),0.05,22263,0.067473,3.5
+sim-large,"injected + cap 3,000",0.04,5832,0.01818,3.5
+sim-large,"clean + cap 3,000",0.04,1103,0.003993,3.5
+sim-mid,"current, clean",0.06,1103,0.001331,3.48
+sim-mid,injected (look-alikes),0.23,22264,0.022497,3.63
+sim-mid,"injected + cap 3,000",0.08,5832,0.00606,3.49
+sim-mid,"clean + cap 3,000",0.07,1103,0.001331,3.48
+sim-small,"current, clean",0.06,1103,0.000333,3.5
+sim-small,injected (look-alikes),0.54,22266,0.005627,7.51
+sim-small,"injected + cap 3,000",0.06,5832,0.001515,3.5
+sim-small,"clean + cap 3,000",0.06,1103,0.000333,3.5

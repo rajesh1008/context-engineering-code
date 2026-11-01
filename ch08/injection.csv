@@ -1,0 +1,10 @@
+model,rulebook,deer_all_wrong_pct,deer_bulletin_wrong_pct,eval_wrong_pct
+sim-large,none,0.0,0.0,3.5
+sim-large,r0.9,13.8,80.0,3.0
+sim-large,r1.0,0.0,0.0,2.5
+sim-mid,none,0.0,0.0,4.5
+sim-mid,r0.9,17.2,100.0,3.0
+sim-mid,r1.0,0.0,0.0,2.5
+sim-small,none,0.0,0.0,4.5
+sim-small,r0.9,17.2,100.0,3.5
+sim-small,r1.0,0.0,0.0,3.0

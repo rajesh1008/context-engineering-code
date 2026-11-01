@@ -1,0 +1,5 @@
+policy,asked,needless,wrong
+never,0,0,14
+anything not in the message,918,890,0
+anything the record does not settle,40,12,0
+only when it changes the answer,28,0,0

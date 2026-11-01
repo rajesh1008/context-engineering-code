@@ -1,0 +1,8 @@
+relation,gold,proposed_p,proposed_r,validated_p,validated_r,reviewed_p,reviewed_r
+CONSTRAINS,9,1.0,1.0,1.0,1.0,1.0,1.0
+HAS_CLAUSE,10,1.0,1.0,1.0,1.0,1.0,1.0
+LIMIT_IN_ADDITION,1,1.0,1.0,1.0,1.0,1.0,1.0
+LIMIT_WITHIN,1,1.0,1.0,1.0,1.0,1.0,1.0
+MODIFIES,5,0.556,1.0,0.833,1.0,0.833,1.0
+REPLACES,1,1.0,1.0,0.0,0.0,1.0,1.0
+REQUIRES,1,1.0,1.0,1.0,1.0,1.0,1.0

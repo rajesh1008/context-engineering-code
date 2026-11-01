@@ -1,0 +1,41 @@
+config,template,outcome,n
+ch16 (lexical top-4 + resolver),additional limit,withheld,2
+ch16 (lexical top-4 + resolver),additional limit,wrong,6
+ch16 (lexical top-4 + resolver),endorsement and bulletin,wrong,8
+ch16 (lexical top-4 + resolver),enhancement,withheld,8
+ch16 (lexical top-4 + resolver),programme and bulletin,wrong,8
+ch16 (lexical top-4 + resolver),requirement unmet,withheld,4
+ch16 (lexical top-4 + resolver),requirement unmet,wrong,4
+ch16 (lexical top-4 + resolver),shared limit,wrong,8
+vector reader k=4,additional limit,correct,5
+vector reader k=4,additional limit,wrong,3
+vector reader k=4,endorsement and bulletin,correct,5
+vector reader k=4,endorsement and bulletin,wrong,3
+vector reader k=4,enhancement,correct,8
+vector reader k=4,programme and bulletin,wrong,8
+vector reader k=4,requirement unmet,correct,4
+vector reader k=4,requirement unmet,wrong,4
+vector reader k=4,shared limit,correct,7
+vector reader k=4,shared limit,wrong,1
+vector reader k=8,additional limit,correct,5
+vector reader k=8,additional limit,wrong,3
+vector reader k=8,endorsement and bulletin,correct,8
+vector reader k=8,enhancement,correct,8
+vector reader k=8,programme and bulletin,correct,8
+vector reader k=8,requirement unmet,correct,8
+vector reader k=8,shared limit,correct,7
+vector reader k=8,shared limit,wrong,1
+graph only (coded cause),additional limit,correct,4
+graph only (coded cause),additional limit,wrong,4
+graph only (coded cause),endorsement and bulletin,correct,8
+graph only (coded cause),enhancement,correct,8
+graph only (coded cause),programme and bulletin,correct,8
+graph only (coded cause),requirement unmet,correct,8
+graph only (coded cause),shared limit,correct,4
+graph only (coded cause),shared limit,wrong,4
+hybrid (vector entry + graph chain),additional limit,correct,8
+hybrid (vector entry + graph chain),endorsement and bulletin,correct,8
+hybrid (vector entry + graph chain),enhancement,correct,8
+hybrid (vector entry + graph chain),programme and bulletin,correct,8
+hybrid (vector entry + graph chain),requirement unmet,correct,8
+hybrid (vector entry + graph chain),shared limit,correct,8

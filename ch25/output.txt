@@ -1,0 +1,119 @@
+
+== 1. Index the snapshot
+  91 files, 13,786 lines, 842 symbols, 5,407 reference edges, revision 580e6a87456d
+  edges by confidence: exact 2,395, name-only 615, ambiguous 2,397   (built in 0.4 s)
+
+== 2. Names that mean different things in different modules
+  8 class names are defined in more than one file
+  class Span           defined 6 times: ch04/standin.py, ch13/corpus13.py, ch14/corpus14.py, ch18/corpus18.py, contextlab/policy.py, contextlab/retrieval/corpus.py
+  class Det            defined 3 times: ch09/fullmix.py, ch13/corpus13.py, ch15/corpus15.py
+  class Candidate      defined 2 times: contextlab/graph.py, contextlab/memory.py
+  class Edge           defined 2 times: contextlab/codemap.py, contextlab/graph.py
+  class MemoryRecord   defined 2 times: contextlab/memguard.py, contextlab/memory.py
+  class Policy         defined 2 times: ch18/corpus18.py, contextlab/policy.py
+
+== 3. Change tasks: which packet holds every line that refers to the symbol?
+  166 change tasks: contextlab symbols referenced from 2+ files, 3 to 25 reference lines (jedi); budget 3,000 tokens
+  fresh      vector chunks          sufficient 0.04   reference-line recall 0.32   tokens/packet 2,923
+  fresh      keyword chunks         sufficient 0.05   reference-line recall 0.23   tokens/packet 2,903
+  fresh      grep and read          sufficient 0.74   reference-line recall 0.84   tokens/packet 1,938
+  fresh      symbol index + graph   sufficient 0.89   reference-line recall 0.96   tokens/packet 1,544
+    symbol route misses:  3 tasks, a missed line has no edge in the index
+    symbol route misses: 11 tasks, every missed line has an edge; budget spent first (ambiguous)
+    symbol route misses:  4 tasks, every missed line has an edge; budget spent first (exact)
+    symbol route misses:  1 tasks, every missed line has an edge; budget spent first (name-only)
+
+== 4. Locate questions in plain words (no identifiers)
+  vector chunks          definition in packet 13/16   tokens/packet 2,940
+  keyword chunks         definition in packet 13/16   tokens/packet 2,922
+  grep and read          definition in packet  9/16   tokens/packet 762
+  symbol cards (top 3)   definition in packet 14/16   tokens/packet 458
+
+== 5. The repository map: what fits in a budget
+  # repository map @ 580e6a87456d
+  contextlab/retrieval/fusion.py:
+       9: def rrf(*runs: dict[str, float], k: int=60, depth: int=100) -> dict[str, float]
+       5: def ranked(scores: dict[str, float]) -> list[str]
+      26: def weighted(lexical: dict[str, float], dense: dict[str, float], alpha: float=0.5, depth: int=100, normalise: bool=True) -> dict[str, float]
+      18: def minmax(scores: dict[str, float]) -> dict[str, float]
+  ch12/lab.py:
+      34: def dump(name, header, rows)
+      41: def evaluate(rank_fn, Q)
+  map budget   250  files a change touches that the map lists: plain 0.19   focused on the target 0.83
+  map budget   500  files a change touches that the map lists: plain 0.26   focused on the target 0.94
+  map budget 1,000  files a change touches that the map lists: plain 0.36   focused on the target 0.96
+  map budget 2,000  files a change touches that the map lists: plain 0.58   focused on the target 0.96
+  map budget 4,000  files a change touches that the map lists: plain 0.94   focused on the target 0.96
+  map budget 8,000  files a change touches that the map lists: plain 0.96   focused on the target 0.96
+  whole map, every file: 5,287 tokens; whole snapshot: 203,563 tokens
+
+== 6. A refactor lands; the index does not
+  commit touches 17 files: rename rrf -> reciprocal_rank_fusion (jedi rename), move BM25/VectorStandIn/words/grams to contextlab/rankers.py with a re-export, licence header on 10 modules
+  incremental refresh re-indexed 17 files; with dependents re-linked, 78 files; both finished without error
+  stale       symbol index + graph: sufficient 0.78   line recall 0.93   definition window points at other code: 69
+  naive incr  symbol index + graph: sufficient 0.87   line recall 0.95   definition window points at other code: 0
+  relinked    symbol index + graph: sufficient 0.89   line recall 0.96   definition window points at other code: 0
+  rebuild     symbol index + graph: sufficient 0.89   line recall 0.96   definition window points at other code: 0
+  naive incr  the four moved symbols: reference lines with no caller edge 8
+  relinked    the four moved symbols: reference lines with no caller edge 0
+
+== 7. Resolve before use
+  stale index, every target checked against the refactored tree by file hash:
+    changed, name gone from line   69
+    changed, name still at line    9
+    fresh                          88
+  stale index, definition checked before use:          sufficient 0.85
+  stale index, every span checked before use:          sufficient 0.85; 17 files re-indexed on demand
+
+== 8. Second setting: a dispatcher the static graph cannot see
+  escalate_fraud  static callers 0   called at run time from: dispatch
+  handle_refund   static callers 0   called at run time from: dispatch
+  handle_reship   static callers 0   called at run time from: dispatch
+  rule adds dispatch -> escalate_fraud  confidence convention
+  rule adds dispatch -> handle_refund   confidence convention
+  rule adds dispatch -> handle_reship   confidence convention
+
+== 9. Instruction file check (Listing 6.9 against 04-code)
+  CODEOWNERS                       DOES NOT RESOLVE
+  chNN/instructions_v*.md          DOES NOT RESOLVE
+  chNN/lab.py                      resolves
+  contextlab/instructions.py       DOES NOT RESOLVE
+  fixtures                         DOES NOT RESOLVE
+  fixtures/data                    DOES NOT RESOLVE
+  fixtures/generate.py             DOES NOT RESOLVE
+  1 of 7 references resolve; file costs 195 tokens per session
+
+== 10. A context map for a notebook (sidebar)
+  # notebook map: Basement water claims: loss ratio by state (synthetic)
+  C01 Load claims | defines claims | after - | 3.1s
+  C02 Load premiums | defines premiums | after - | 1.4s
+  C03 Endorsement flag | defines claims | after C01 | 0.2s
+  C04 Join | defines joined | after C02,C03 | 0.9s
+  C05 Loss ratio by state | defines by_state | after C04 | 0.6s
+  C06 Split by endorsement | defines split | after C04 | 0.4s
+  C07 Chart | defines fig | after C05 | 2.2s
+  C08 Outliers | defines outliers | after C05 | 0.1s
+  C09 Export | defines - | after C05 | 0.3s
+  tokens: raw notebook JSON 5,948; all cell sources 231; map 133
+
+== 11. The map as a tool result
+  {
+   "symbol": "contextlab.retrieval.fusion.rrf",
+   "defined_at": "contextlab/retrieval/fusion.py:9-15",
+   "signature": "def rrf(*runs: dict[str, float], k: int=60, depth: int=100) -> dict[str, float]",
+   "callers": [
+    "ch12/lab.py:20",
+    "ch12/lab.py:143",
+    "ch12/lab.py:158",
+    "contextlab/retrieval/__init__.py:10",
+    "contextlab/retrieval/pipeline.py:4",
+    "contextlab/retrieval/pipeline.py:36"
+   ],
+   "callers_total": 8,
+   "caller_confidence": "exact",
+   "unresolved_callers_possible": true,
+   "index_revision": "580e6a87456d",
+   "checked_against_disk": "fresh",
+   "requires_source_read": true
+  }
+  the same call after the refactor commit: checked_against_disk = stale

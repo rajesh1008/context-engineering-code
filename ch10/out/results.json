@@ -1,0 +1,1774 @@
+{
+ "parse": {
+  "text_layer": {
+   "pages": 300,
+   "word_f1": 0.9297384427769045,
+   "order": 0.96,
+   "footer_leak_pages": 288,
+   "empty_pages": 12,
+   "table_rows_intact": 0.46153846153846156,
+   "table_rows": 13,
+   "seconds": 1.423424026000248,
+   "sec_per_page": 0.00474474675333416,
+   "usd": 0.0
+  },
+  "layout": {
+   "pages": 300,
+   "word_f1": 0.96,
+   "order": 0.96,
+   "footer_leak_pages": 0,
+   "empty_pages": 12,
+   "table_rows_intact": 1.0,
+   "table_rows": 13,
+   "seconds": 20.48877627299953,
+   "sec_per_page": 0.06829592090999843,
+   "usd": 0.0
+  },
+  "ocr": {
+   "pages": 300,
+   "word_f1": 0.8190034274918637,
+   "order": 0.8724815441590325,
+   "footer_leak_pages": 14,
+   "empty_pages": 0,
+   "table_rows_intact": 0.6153846153846154,
+   "table_rows": 13,
+   "seconds": 1204.2930584839992,
+   "sec_per_page": 4.014310194946664,
+   "usd": 0.0
+  },
+  "vision": {
+   "pages": 300,
+   "word_f1": 0.9978596740265602,
+   "order": 0.9974190873303197,
+   "footer_leak_pages": 0,
+   "empty_pages": 0,
+   "table_rows_intact": 0.9230769230769231,
+   "table_rows": 13,
+   "seconds": 1050.0,
+   "sec_per_page": 3.5,
+   "usd": 3.6000000000000005
+  },
+  "routed": {
+   "pages": 300,
+   "word_f1": 0.9797468318538535,
+   "order": 0.9775757963155227,
+   "footer_leak_pages": 3,
+   "empty_pages": 0,
+   "table_rows_intact": 1.0,
+   "table_rows": 13,
+   "seconds": 38.72823225099862,
+   "sec_per_page": 0.12909410750332875,
+   "usd": 0.0,
+   "routes": {
+    "layout": 288,
+    "ocr": 12
+   }
+  }
+ },
+ "parse_downstream": {
+  "text_layer": {
+   "hit": {
+    "1": 0.30864197530864196,
+    "3": 0.5061728395061729,
+    "5": 0.5679012345679012,
+    "10": 0.691358024691358
+   },
+   "cite": {
+    "1": 0.30864197530864196,
+    "3": 0.5,
+    "5": 0.5617283950617284,
+    "10": 0.6851851851851852
+   },
+   "groups": {
+    "form": 0.36363636363636365,
+    "frozen-2022": 0.0,
+    "endorsement": 0.5,
+    "bulletin": 0.6428571428571429,
+    "table": 0.0,
+    "generated": 0.23333333333333334,
+    "manual": 0.3
+   },
+   "groups10": {
+    "form": 0.5151515151515151,
+    "frozen-2022": 0.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 0.0,
+    "generated": 0.8833333333333333,
+    "manual": 0.7666666666666667
+   },
+   "chunks": 1655
+  },
+  "layout": {
+   "hit": {
+    "1": 0.5617283950617284,
+    "3": 0.7283950617283951,
+    "5": 0.7592592592592593,
+    "10": 0.808641975308642
+   },
+   "cite": {
+    "1": 0.5617283950617284,
+    "3": 0.7283950617283951,
+    "5": 0.7592592592592593,
+    "10": 0.808641975308642
+   },
+   "groups": {
+    "form": 0.3939393939393939,
+    "frozen-2022": 0.2,
+    "endorsement": 0.5,
+    "bulletin": 0.6428571428571429,
+    "table": 0.75,
+    "generated": 0.6166666666666667,
+    "manual": 0.6333333333333333
+   },
+   "groups10": {
+    "form": 0.5757575757575758,
+    "frozen-2022": 1.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 1.0,
+    "generated": 0.9666666666666667,
+    "manual": 0.7333333333333333
+   },
+   "chunks": 2597
+  },
+  "ocr": {
+   "hit": {
+    "1": 0.19753086419753085,
+    "3": 0.3765432098765432,
+    "5": 0.47530864197530864,
+    "10": 0.5370370370370371
+   },
+   "cite": {
+    "1": 0.18518518518518517,
+    "3": 0.35185185185185186,
+    "5": 0.4506172839506173,
+    "10": 0.5123456790123457
+   },
+   "groups": {
+    "form": 0.3333333333333333,
+    "frozen-2022": 0.4,
+    "endorsement": 0.3333333333333333,
+    "bulletin": 0.21428571428571427,
+    "table": 0.25,
+    "generated": 0.13333333333333333,
+    "manual": 0.06666666666666667
+   },
+   "groups10": {
+    "form": 0.6666666666666666,
+    "frozen-2022": 1.0,
+    "endorsement": 0.4166666666666667,
+    "bulletin": 0.21428571428571427,
+    "table": 0.375,
+    "generated": 0.7,
+    "manual": 0.23333333333333334
+   },
+   "chunks": 1433
+  },
+  "vision": {
+   "hit": {
+    "1": 0.5617283950617284,
+    "3": 0.7222222222222222,
+    "5": 0.7777777777777778,
+    "10": 0.8148148148148148
+   },
+   "cite": {
+    "1": 0.5617283950617284,
+    "3": 0.7222222222222222,
+    "5": 0.7777777777777778,
+    "10": 0.8148148148148148
+   },
+   "groups": {
+    "form": 0.36363636363636365,
+    "frozen-2022": 0.0,
+    "endorsement": 0.6666666666666666,
+    "bulletin": 0.9285714285714286,
+    "table": 0.375,
+    "generated": 0.6166666666666667,
+    "manual": 0.6
+   },
+   "groups10": {
+    "form": 0.5757575757575758,
+    "frozen-2022": 1.0,
+    "endorsement": 0.9166666666666666,
+    "bulletin": 1.0,
+    "table": 0.625,
+    "generated": 0.9333333333333333,
+    "manual": 0.7333333333333333
+   },
+   "chunks": 2602
+  },
+  "routed": {
+   "hit": {
+    "1": 0.5617283950617284,
+    "3": 0.7160493827160493,
+    "5": 0.7592592592592593,
+    "10": 0.808641975308642
+   },
+   "cite": {
+    "1": 0.5617283950617284,
+    "3": 0.7160493827160493,
+    "5": 0.7592592592592593,
+    "10": 0.808641975308642
+   },
+   "groups": {
+    "form": 0.3939393939393939,
+    "frozen-2022": 0.2,
+    "endorsement": 0.5,
+    "bulletin": 0.6428571428571429,
+    "table": 0.75,
+    "generated": 0.6166666666666667,
+    "manual": 0.6333333333333333
+   },
+   "groups10": {
+    "form": 0.5757575757575758,
+    "frozen-2022": 1.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 1.0,
+    "generated": 0.9666666666666667,
+    "manual": 0.7333333333333333
+   },
+   "chunks": 2618
+  }
+ },
+ "sweep": {
+  "fixed-64|bm25": {
+   "hit": {
+    "1": 0.25308641975308643,
+    "3": 0.35802469135802467,
+    "5": 0.4012345679012346,
+    "10": 0.4506172839506173
+   },
+   "cite": {
+    "1": 0.2345679012345679,
+    "3": 0.3271604938271605,
+    "5": 0.37037037037037035,
+    "10": 0.41975308641975306
+   },
+   "packet5": 320.0679012345679,
+   "chunks": 3221,
+   "mean_tokens": 63.80937597019559,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.24242424242424243,
+    "frozen-2022": 0.0,
+    "endorsement": 0.4166666666666667,
+    "bulletin": 0.5714285714285714,
+    "table": 0.0,
+    "generated": 0.3333333333333333,
+    "manual": 0.0
+   },
+   "groups10": {
+    "form": 0.5454545454545454,
+    "frozen-2022": 0.0,
+    "endorsement": 0.75,
+    "bulletin": 0.6428571428571429,
+    "table": 0.0,
+    "generated": 0.5166666666666667,
+    "manual": 0.2
+   }
+  },
+  "fixed-64|vector": {
+   "hit": {
+    "1": 0.2716049382716049,
+    "3": 0.36419753086419754,
+    "5": 0.3888888888888889,
+    "10": 0.4382716049382716
+   },
+   "cite": {
+    "1": 0.24691358024691357,
+    "3": 0.3271604938271605,
+    "5": 0.35185185185185186,
+    "10": 0.4012345679012346
+   },
+   "packet5": 319.11728395061726,
+   "chunks": 3221,
+   "mean_tokens": 63.80937597019559,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.2727272727272727,
+    "frozen-2022": 0.0,
+    "endorsement": 0.4166666666666667,
+    "bulletin": 0.5714285714285714,
+    "table": 0.0,
+    "generated": 0.31666666666666665,
+    "manual": 0.1
+   },
+   "groups10": {
+    "form": 0.5151515151515151,
+    "frozen-2022": 0.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 0.0,
+    "generated": 0.48333333333333334,
+    "manual": 0.2
+   }
+  },
+  "fixed-128|bm25": {
+   "hit": {
+    "1": 0.4691358024691358,
+    "3": 0.6790123456790124,
+    "5": 0.7345679012345679,
+    "10": 0.7839506172839507
+   },
+   "cite": {
+    "1": 0.35185185185185186,
+    "3": 0.5432098765432098,
+    "5": 0.5987654320987654,
+    "10": 0.6481481481481481
+   },
+   "packet5": 638.4753086419753,
+   "chunks": 1619,
+   "mean_tokens": 126.94873378628783,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.36363636363636365,
+    "frozen-2022": 0.4,
+    "endorsement": 0.6666666666666666,
+    "bulletin": 0.7142857142857143,
+    "table": 0.625,
+    "generated": 0.4666666666666667,
+    "manual": 0.36666666666666664
+   },
+   "groups10": {
+    "form": 0.6666666666666666,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.7142857142857143,
+    "table": 0.625,
+    "generated": 0.9166666666666666,
+    "manual": 0.6666666666666666
+   }
+  },
+  "fixed-128|vector": {
+   "hit": {
+    "1": 0.4012345679012346,
+    "3": 0.5925925925925926,
+    "5": 0.691358024691358,
+    "10": 0.7530864197530864
+   },
+   "cite": {
+    "1": 0.2962962962962963,
+    "3": 0.4506172839506173,
+    "5": 0.5493827160493827,
+    "10": 0.6111111111111112
+   },
+   "packet5": 633.1172839506173,
+   "chunks": 1619,
+   "mean_tokens": 126.94873378628783,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.24242424242424243,
+    "frozen-2022": 0.2,
+    "endorsement": 0.6666666666666666,
+    "bulletin": 0.6428571428571429,
+    "table": 0.5,
+    "generated": 0.4166666666666667,
+    "manual": 0.3333333333333333
+   },
+   "groups10": {
+    "form": 0.6363636363636364,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.7857142857142857,
+    "table": 0.625,
+    "generated": 0.95,
+    "manual": 0.43333333333333335
+   }
+  },
+  "fixed-256|bm25": {
+   "hit": {
+    "1": 0.43209876543209874,
+    "3": 0.6419753086419753,
+    "5": 0.7345679012345679,
+    "10": 0.7962962962962963
+   },
+   "cite": {
+    "1": 0.30246913580246915,
+    "3": 0.46296296296296297,
+    "5": 0.5555555555555556,
+    "10": 0.6049382716049383
+   },
+   "packet5": 1261.20987654321,
+   "chunks": 821,
+   "mean_tokens": 250.34104750304508,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.3333333333333333,
+    "frozen-2022": 0.2,
+    "endorsement": 0.6666666666666666,
+    "bulletin": 0.5714285714285714,
+    "table": 0.625,
+    "generated": 0.5,
+    "manual": 0.23333333333333334
+   },
+   "groups10": {
+    "form": 0.696969696969697,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.9166666666666666,
+    "manual": 0.6333333333333333
+   }
+  },
+  "fixed-256|vector": {
+   "hit": {
+    "1": 0.43209876543209874,
+    "3": 0.6172839506172839,
+    "5": 0.6851851851851852,
+    "10": 0.7530864197530864
+   },
+   "cite": {
+    "1": 0.2962962962962963,
+    "3": 0.4444444444444444,
+    "5": 0.5,
+    "10": 0.5555555555555556
+   },
+   "packet5": 1247.5185185185185,
+   "chunks": 821,
+   "mean_tokens": 250.34104750304508,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.2727272727272727,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.7142857142857143,
+    "table": 0.5,
+    "generated": 0.4666666666666667,
+    "manual": 0.3
+   },
+   "groups10": {
+    "form": 0.5757575757575758,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.9,
+    "manual": 0.5666666666666667
+   }
+  },
+  "fixed-512|bm25": {
+   "hit": {
+    "1": 0.35185185185185186,
+    "3": 0.5864197530864198,
+    "5": 0.6666666666666666,
+    "10": 0.7222222222222222
+   },
+   "cite": {
+    "1": 0.19753086419753085,
+    "3": 0.3888888888888889,
+    "5": 0.4691358024691358,
+    "10": 0.5123456790123457
+   },
+   "packet5": 2455.0555555555557,
+   "chunks": 419,
+   "mean_tokens": 490.52505966587114,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.36363636363636365,
+    "frozen-2022": 0.2,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 0.5,
+    "generated": 0.31666666666666665,
+    "manual": 0.06666666666666667
+   },
+   "groups10": {
+    "form": 0.696969696969697,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.7833333333333333,
+    "manual": 0.5
+   }
+  },
+  "fixed-512|vector": {
+   "hit": {
+    "1": 0.2839506172839506,
+    "3": 0.5555555555555556,
+    "5": 0.6419753086419753,
+    "10": 0.7037037037037037
+   },
+   "cite": {
+    "1": 0.13580246913580246,
+    "3": 0.35185185185185186,
+    "5": 0.4382716049382716,
+    "10": 0.49382716049382713
+   },
+   "packet5": 2440.598765432099,
+   "chunks": 419,
+   "mean_tokens": 490.52505966587114,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.2727272727272727,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.7857142857142857,
+    "table": 0.375,
+    "generated": 0.18333333333333332,
+    "manual": 0.06666666666666667
+   },
+   "groups10": {
+    "form": 0.6363636363636364,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.75,
+    "manual": 0.5333333333333333
+   }
+  },
+  "fixed-1024|bm25": {
+   "hit": {
+    "1": 0.2962962962962963,
+    "3": 0.4074074074074074,
+    "5": 0.4876543209876543,
+    "10": 0.5432098765432098
+   },
+   "cite": {
+    "1": 0.14814814814814814,
+    "3": 0.24074074074074073,
+    "5": 0.32098765432098764,
+    "10": 0.345679012345679
+   },
+   "packet5": 4754.950617283951,
+   "chunks": 226,
+   "mean_tokens": 909.4247787610619,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.2727272727272727,
+    "frozen-2022": 0.0,
+    "endorsement": 0.6666666666666666,
+    "bulletin": 0.7142857142857143,
+    "table": 0.5,
+    "generated": 0.26666666666666666,
+    "manual": 0.03333333333333333
+   },
+   "groups10": {
+    "form": 0.42424242424242425,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.6,
+    "manual": 0.36666666666666664
+   }
+  },
+  "fixed-1024|vector": {
+   "hit": {
+    "1": 0.2777777777777778,
+    "3": 0.3765432098765432,
+    "5": 0.4567901234567901,
+    "10": 0.5308641975308642
+   },
+   "cite": {
+    "1": 0.11728395061728394,
+    "3": 0.2037037037037037,
+    "5": 0.2716049382716049,
+    "10": 0.3333333333333333
+   },
+   "packet5": 4624.475308641975,
+   "chunks": 226,
+   "mean_tokens": 909.4247787610619,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.24242424242424243,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.375,
+    "generated": 0.18333333333333332,
+    "manual": 0.03333333333333333
+   },
+   "groups10": {
+    "form": 0.42424242424242425,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.5833333333333334,
+    "manual": 0.3333333333333333
+   }
+  },
+  "fixed-2048|bm25": {
+   "hit": {
+    "1": 0.24691358024691357,
+    "3": 0.3395061728395062,
+    "5": 0.3765432098765432,
+    "10": 0.4444444444444444
+   },
+   "cite": {
+    "1": 0.09259259259259259,
+    "3": 0.16049382716049382,
+    "5": 0.19135802469135801,
+    "10": 0.24691358024691357
+   },
+   "packet5": 9282.111111111111,
+   "chunks": 125,
+   "mean_tokens": 1644.24,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.30303030303030304,
+    "frozen-2022": 0.0,
+    "endorsement": 0.6666666666666666,
+    "bulletin": 0.7142857142857143,
+    "table": 0.25,
+    "generated": 0.13333333333333333,
+    "manual": 0.06666666666666667
+   },
+   "groups10": {
+    "form": 0.42424242424242425,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.25,
+    "generated": 0.48333333333333334,
+    "manual": 0.16666666666666666
+   }
+  },
+  "fixed-2048|vector": {
+   "hit": {
+    "1": 0.25308641975308643,
+    "3": 0.345679012345679,
+    "5": 0.3950617283950617,
+    "10": 0.4506172839506173
+   },
+   "cite": {
+    "1": 0.09876543209876543,
+    "3": 0.15432098765432098,
+    "5": 0.2037037037037037,
+    "10": 0.25308641975308643
+   },
+   "packet5": 8975.061728395061,
+   "chunks": 125,
+   "mean_tokens": 1644.24,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.24242424242424243,
+    "frozen-2022": 0.0,
+    "endorsement": 0.75,
+    "bulletin": 0.8571428571428571,
+    "table": 0.25,
+    "generated": 0.13333333333333333,
+    "manual": 0.06666666666666667
+   },
+   "groups10": {
+    "form": 0.42424242424242425,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.25,
+    "generated": 0.5,
+    "manual": 0.16666666666666666
+   }
+  },
+  "fixed-256/o64|bm25": {
+   "hit": {
+    "1": 0.41358024691358025,
+    "3": 0.654320987654321,
+    "5": 0.7283950617283951,
+    "10": 0.808641975308642
+   },
+   "cite": {
+    "1": 0.30246913580246915,
+    "3": 0.48148148148148145,
+    "5": 0.5493827160493827,
+    "10": 0.6234567901234568
+   },
+   "packet5": 1262.3827160493827,
+   "chunks": 1078,
+   "mean_tokens": 252.75881261595546,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.24242424242424243,
+    "frozen-2022": 0.2,
+    "endorsement": 0.6666666666666666,
+    "bulletin": 0.6428571428571429,
+    "table": 0.625,
+    "generated": 0.48333333333333334,
+    "manual": 0.23333333333333334
+   },
+   "groups10": {
+    "form": 0.7575757575757576,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.7857142857142857,
+    "table": 0.625,
+    "generated": 0.9,
+    "manual": 0.7
+   }
+  },
+  "fixed-256/o64|vector": {
+   "hit": {
+    "1": 0.43209876543209874,
+    "3": 0.6111111111111112,
+    "5": 0.6851851851851852,
+    "10": 0.7469135802469136
+   },
+   "cite": {
+    "1": 0.29012345679012347,
+    "3": 0.4444444444444444,
+    "5": 0.5061728395061729,
+    "10": 0.5555555555555556
+   },
+   "packet5": 1259.70987654321,
+   "chunks": 1078,
+   "mean_tokens": 252.75881261595546,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.3333333333333333,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.7142857142857143,
+    "table": 0.5,
+    "generated": 0.43333333333333335,
+    "manual": 0.3
+   },
+   "groups10": {
+    "form": 0.6060606060606061,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.85,
+    "manual": 0.6
+   }
+  },
+  "recursive-256|bm25": {
+   "hit": {
+    "1": 0.4074074074074074,
+    "3": 0.654320987654321,
+    "5": 0.7469135802469136,
+    "10": 0.8148148148148148
+   },
+   "cite": {
+    "1": 0.2962962962962963,
+    "3": 0.48148148148148145,
+    "5": 0.5740740740740741,
+    "10": 0.6296296296296297
+   },
+   "packet5": 1090.0493827160494,
+   "chunks": 948,
+   "mean_tokens": 216.80379746835442,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.24242424242424243,
+    "frozen-2022": 0.4,
+    "endorsement": 0.6666666666666666,
+    "bulletin": 0.6428571428571429,
+    "table": 0.625,
+    "generated": 0.45,
+    "manual": 0.23333333333333334
+   },
+   "groups10": {
+    "form": 0.696969696969697,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.9166666666666666,
+    "manual": 0.7333333333333333
+   }
+  },
+  "recursive-256|vector": {
+   "hit": {
+    "1": 0.36419753086419754,
+    "3": 0.5925925925925926,
+    "5": 0.6728395061728395,
+    "10": 0.7654320987654321
+   },
+   "cite": {
+    "1": 0.24074074074074073,
+    "3": 0.42592592592592593,
+    "5": 0.5,
+    "10": 0.5740740740740741
+   },
+   "packet5": 1084.0493827160494,
+   "chunks": 948,
+   "mean_tokens": 216.80379746835442,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.21212121212121213,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.6428571428571429,
+    "table": 0.5,
+    "generated": 0.36666666666666664,
+    "manual": 0.23333333333333334
+   },
+   "groups10": {
+    "form": 0.6060606060606061,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.9333333333333333,
+    "manual": 0.5333333333333333
+   }
+  },
+  "recursive-512|bm25": {
+   "hit": {
+    "1": 0.36419753086419754,
+    "3": 0.5370370370370371,
+    "5": 0.6358024691358025,
+    "10": 0.7098765432098766
+   },
+   "cite": {
+    "1": 0.2345679012345679,
+    "3": 0.35802469135802467,
+    "5": 0.4567901234567901,
+    "10": 0.5185185185185185
+   },
+   "packet5": 2302.0308641975307,
+   "chunks": 446,
+   "mean_tokens": 460.82959641255604,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.21212121212121213,
+    "frozen-2022": 0.2,
+    "endorsement": 0.75,
+    "bulletin": 0.6428571428571429,
+    "table": 0.5,
+    "generated": 0.38333333333333336,
+    "manual": 0.2
+   },
+   "groups10": {
+    "form": 0.5454545454545454,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.8,
+    "manual": 0.5666666666666667
+   }
+  },
+  "recursive-512|vector": {
+   "hit": {
+    "1": 0.345679012345679,
+    "3": 0.5123456790123457,
+    "5": 0.6296296296296297,
+    "10": 0.691358024691358
+   },
+   "cite": {
+    "1": 0.18518518518518517,
+    "3": 0.3271604938271605,
+    "5": 0.4444444444444444,
+    "10": 0.49382716049382713
+   },
+   "packet5": 2295.3271604938273,
+   "chunks": 446,
+   "mean_tokens": 460.82959641255604,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.30303030303030304,
+    "frozen-2022": 0.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.375,
+    "generated": 0.26666666666666666,
+    "manual": 0.16666666666666666
+   },
+   "groups10": {
+    "form": 0.5151515151515151,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.75,
+    "manual": 0.6
+   }
+  },
+  "semantic-512|bm25": {
+   "hit": {
+    "1": 0.38271604938271603,
+    "3": 0.5617283950617284,
+    "5": 0.6296296296296297,
+    "10": 0.6790123456790124
+   },
+   "cite": {
+    "1": 0.38271604938271603,
+    "3": 0.5617283950617284,
+    "5": 0.6296296296296297,
+    "10": 0.6790123456790124
+   },
+   "packet5": 329.6604938271605,
+   "chunks": 5696,
+   "mean_tokens": 36.08321629213483,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.36363636363636365,
+    "frozen-2022": 0.4,
+    "endorsement": 0.5,
+    "bulletin": 0.6428571428571429,
+    "table": 0.25,
+    "generated": 0.4666666666666667,
+    "manual": 0.1
+   },
+   "groups10": {
+    "form": 0.5454545454545454,
+    "frozen-2022": 1.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 0.625,
+    "generated": 0.9666666666666667,
+    "manual": 0.16666666666666666
+   }
+  },
+  "semantic-512|vector": {
+   "hit": {
+    "1": 0.41358024691358025,
+    "3": 0.5493827160493827,
+    "5": 0.6172839506172839,
+    "10": 0.7222222222222222
+   },
+   "cite": {
+    "1": 0.41358024691358025,
+    "3": 0.5493827160493827,
+    "5": 0.6172839506172839,
+    "10": 0.7222222222222222
+   },
+   "packet5": 323.91975308641975,
+   "chunks": 5696,
+   "mean_tokens": 36.08321629213483,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.36363636363636365,
+    "frozen-2022": 0.2,
+    "endorsement": 0.5833333333333334,
+    "bulletin": 0.6428571428571429,
+    "table": 0.25,
+    "generated": 0.5,
+    "manual": 0.2
+   },
+   "groups10": {
+    "form": 0.696969696969697,
+    "frozen-2022": 1.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 0.625,
+    "generated": 0.9666666666666667,
+    "manual": 0.23333333333333334
+   }
+  },
+  "structural|bm25": {
+   "hit": {
+    "1": 0.49382716049382713,
+    "3": 0.691358024691358,
+    "5": 0.7407407407407407,
+    "10": 0.7962962962962963
+   },
+   "cite": {
+    "1": 0.49382716049382713,
+    "3": 0.691358024691358,
+    "5": 0.7407407407407407,
+    "10": 0.7962962962962963
+   },
+   "packet5": 293.69135802469134,
+   "chunks": 2618,
+   "mean_tokens": 70.56149732620321,
+   "sectioned": 1.0,
+   "groups": {
+    "form": 0.3333333333333333,
+    "frozen-2022": 0.0,
+    "endorsement": 0.5,
+    "bulletin": 0.6428571428571429,
+    "table": 0.25,
+    "generated": 0.65,
+    "manual": 0.43333333333333335
+   },
+   "groups10": {
+    "form": 0.5757575757575758,
+    "frozen-2022": 1.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 1.0,
+    "generated": 0.9666666666666667,
+    "manual": 0.6666666666666666
+   }
+  },
+  "structural|vector": {
+   "hit": {
+    "1": 0.5493827160493827,
+    "3": 0.6728395061728395,
+    "5": 0.7530864197530864,
+    "10": 0.8024691358024691
+   },
+   "cite": {
+    "1": 0.5493827160493827,
+    "3": 0.6728395061728395,
+    "5": 0.7530864197530864,
+    "10": 0.8024691358024691
+   },
+   "packet5": 282.8703703703704,
+   "chunks": 2618,
+   "mean_tokens": 70.56149732620321,
+   "sectioned": 1.0,
+   "groups": {
+    "form": 0.36363636363636365,
+    "frozen-2022": 0.0,
+    "endorsement": 0.5,
+    "bulletin": 0.6428571428571429,
+    "table": 0.375,
+    "generated": 0.75,
+    "manual": 0.4666666666666667
+   },
+   "groups10": {
+    "form": 0.6060606060606061,
+    "frozen-2022": 1.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 1.0,
+    "generated": 0.9666666666666667,
+    "manual": 0.6666666666666666
+   }
+  },
+  "structural+path|bm25": {
+   "hit": {
+    "1": 0.5617283950617284,
+    "3": 0.7160493827160493,
+    "5": 0.7592592592592593,
+    "10": 0.808641975308642
+   },
+   "cite": {
+    "1": 0.5617283950617284,
+    "3": 0.7160493827160493,
+    "5": 0.7592592592592593,
+    "10": 0.808641975308642
+   },
+   "packet5": 396.5925925925926,
+   "chunks": 2618,
+   "mean_tokens": 70.56149732620321,
+   "sectioned": 1.0,
+   "groups": {
+    "form": 0.3939393939393939,
+    "frozen-2022": 0.2,
+    "endorsement": 0.5,
+    "bulletin": 0.6428571428571429,
+    "table": 0.75,
+    "generated": 0.6166666666666667,
+    "manual": 0.6333333333333333
+   },
+   "groups10": {
+    "form": 0.5757575757575758,
+    "frozen-2022": 1.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 1.0,
+    "generated": 0.9666666666666667,
+    "manual": 0.7333333333333333
+   }
+  },
+  "structural+path|vector": {
+   "hit": {
+    "1": 0.5864197530864198,
+    "3": 0.7160493827160493,
+    "5": 0.7654320987654321,
+    "10": 0.845679012345679
+   },
+   "cite": {
+    "1": 0.5864197530864198,
+    "3": 0.7160493827160493,
+    "5": 0.7654320987654321,
+    "10": 0.845679012345679
+   },
+   "packet5": 387.1358024691358,
+   "chunks": 2618,
+   "mean_tokens": 70.56149732620321,
+   "sectioned": 1.0,
+   "groups": {
+    "form": 0.36363636363636365,
+    "frozen-2022": 0.0,
+    "endorsement": 0.5833333333333334,
+    "bulletin": 0.5714285714285714,
+    "table": 0.75,
+    "generated": 0.7333333333333333,
+    "manual": 0.6
+   },
+   "groups10": {
+    "form": 0.6363636363636364,
+    "frozen-2022": 1.0,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 1.0,
+    "generated": 0.9833333333333333,
+    "manual": 0.8333333333333334
+   }
+  },
+  "fixed-256|late": {
+   "hit": {
+    "1": 0.37037037037037035,
+    "3": 0.5432098765432098,
+    "5": 0.6481481481481481,
+    "10": 0.7345679012345679
+   },
+   "cite": {
+    "1": 0.24691358024691357,
+    "3": 0.37037037037037035,
+    "5": 0.4691358024691358,
+    "10": 0.5432098765432098
+   },
+   "packet5": 1233.567901234568,
+   "chunks": 821,
+   "mean_tokens": 250.34104750304508,
+   "sectioned": 0.0,
+   "groups": {
+    "form": 0.30303030303030304,
+    "frozen-2022": 0.0,
+    "endorsement": 0.75,
+    "bulletin": 0.5714285714285714,
+    "table": 0.25,
+    "generated": 0.45,
+    "manual": 0.13333333333333333
+   },
+   "groups10": {
+    "form": 0.5454545454545454,
+    "frozen-2022": 1.0,
+    "endorsement": 0.8333333333333334,
+    "bulletin": 0.8571428571428571,
+    "table": 0.625,
+    "generated": 0.8666666666666667,
+    "manual": 0.5666666666666667
+   }
+  },
+  "structural+path|late": {
+   "hit": {
+    "1": 0.5617283950617284,
+    "3": 0.6851851851851852,
+    "5": 0.7222222222222222,
+    "10": 0.8209876543209876
+   },
+   "cite": {
+    "1": 0.5617283950617284,
+    "3": 0.6851851851851852,
+    "5": 0.7222222222222222,
+    "10": 0.8209876543209876
+   },
+   "packet5": 401.4691358024691,
+   "chunks": 2618,
+   "mean_tokens": 70.56149732620321,
+   "sectioned": 1.0,
+   "groups": {
+    "form": 0.30303030303030304,
+    "frozen-2022": 0.0,
+    "endorsement": 0.5,
+    "bulletin": 0.5714285714285714,
+    "table": 0.75,
+    "generated": 0.7166666666666667,
+    "manual": 0.6
+   },
+   "groups10": {
+    "form": 0.6060606060606061,
+    "frozen-2022": 0.6,
+    "endorsement": 0.75,
+    "bulletin": 0.7142857142857143,
+    "table": 1.0,
+    "generated": 0.9833333333333333,
+    "manual": 0.8
+   }
+  }
+ },
+ "frozen": {
+  "chapter 2 import (text layer, cut at numbered headings)": {
+   "DET-0022": {
+    "rank": null,
+    "cite_rank": null,
+    "top": "HO-3 (2022-01), Section I Perils Insured Against > 4. Riot Or Civil Commotion, page 1",
+    "top_id": "HO-3_2022-01:structural:0006"
+   },
+   "frozen-2": {
+    "rank": null,
+    "cite_rank": null,
+    "top": "HO-3 (2022-01), Section I Perils Insured Against > 4. Riot Or Civil Commotion, page 1",
+    "top_id": "HO-3_2022-01:structural:0006"
+   },
+   "frozen-3": {
+    "rank": null,
+    "cite_rank": null,
+    "top": "HO-3 (2022-01), Section I Perils Insured Against > 4. Riot Or Civil Commotion, page 1",
+    "top_id": "HO-3_2022-01:structural:0006"
+   },
+   "frozen-4": {
+    "rank": null,
+    "cite_rank": null,
+    "top": "HO-3 (2022-01), Section I Perils Insured Against > 4. Riot Or Civil Commotion, page 1",
+    "top_id": "HO-3_2022-01:structural:0006"
+   },
+   "frozen-5": {
+    "rank": null,
+    "cite_rank": null,
+    "top": "HO-3 (2022-01), Section I Conditions, page 13",
+    "top_id": "HO-3_2022-01:structural:0042"
+   }
+  },
+  "fixed-512 on layout parse": {
+   "DET-0022": {
+    "rank": 2,
+    "cite_rank": 2,
+    "top": "HO-3 (2022-01), no section, page 12",
+    "top_id": "HO-3_2022-01:fixed-512:0021"
+   },
+   "frozen-2": {
+    "rank": 1,
+    "cite_rank": 1,
+    "top": "HO-3 (2022-01), no section, page 2",
+    "top_id": "HO-3_2022-01:fixed-512:0001"
+   },
+   "frozen-3": {
+    "rank": 3,
+    "cite_rank": 3,
+    "top": "HO-3 (2022-01), no section, page 12",
+    "top_id": "HO-3_2022-01:fixed-512:0021"
+   },
+   "frozen-4": {
+    "rank": 2,
+    "cite_rank": 2,
+    "top": "HO-3 (2022-01), no section, page 12",
+    "top_id": "HO-3_2022-01:fixed-512:0021"
+   },
+   "frozen-5": {
+    "rank": 2,
+    "cite_rank": 2,
+    "top": "HO-3 (2022-01), no section, page 12",
+    "top_id": "HO-3_2022-01:fixed-512:0021"
+   }
+  },
+  "structural on layout parse": {
+   "DET-0022": {
+    "rank": 3,
+    "cite_rank": 3,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural:0162"
+   },
+   "frozen-2": {
+    "rank": 2,
+    "cite_rank": 2,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural:0162"
+   },
+   "frozen-3": {
+    "rank": 4,
+    "cite_rank": 4,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural:0162"
+   },
+   "frozen-4": {
+    "rank": 2,
+    "cite_rank": 2,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural:0162"
+   },
+   "frozen-5": {
+    "rank": 2,
+    "cite_rank": 2,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural:0162"
+   }
+  },
+  "structural+path on layout parse": {
+   "DET-0022": {
+    "rank": 4,
+    "cite_rank": 4,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural+path:0162"
+   },
+   "frozen-2": {
+    "rank": 1,
+    "cite_rank": 1,
+    "top": "HO-3 (2022-01), Section I Perils Insured Against > 12. Freezing, page 2",
+    "top_id": "HO-3_2022-01:structural+path:0014"
+   },
+   "frozen-3": {
+    "rank": 4,
+    "cite_rank": 4,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural+path:0162"
+   },
+   "frozen-4": {
+    "rank": 3,
+    "cite_rank": 3,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural+path:0162"
+   },
+   "frozen-5": {
+    "rank": 2,
+    "cite_rank": 2,
+    "top": "HO-3 (2022-01), Section I Conditions > A.4 Vacancy And Unoccupancy, page 13",
+    "top_id": "HO-3_2022-01:structural+path:0162"
+   }
+  }
+ },
+ "frozen_spans": {
+  "before": [
+   {
+    "cid": "HO-3_2022-01:structural:0006",
+    "path": [
+     "Section I Perils Insured Against",
+     "4. Riot Or Civil Commotion"
+    ],
+    "pages": [
+     1,
+     2
+    ],
+    "text": "We insure for loss caused by riot or civil commotion, HOMEOWNERS 3 SPECIAL FORM HO-3 (2022-01)          Lakeshore Mutual Insurance Company          Page 2 of 23 including direct loss from pillage and looting during and at This peril includes the water damage that follows when a the site of the riot.\n\nfrozen pipe, fitting or appliance cracks or bursts, and the cost of tearing out and replacing any part of the building"
+   },
+   {
+    "cid": "HO-3_2022-01:structural:0017",
+    "path": [
+     "Section I Exclusions",
+     "12. Freezing"
+    ],
+    "pages": [
+     2,
+     3
+    ],
+    "text": "A.2 Skylight And Continuous Freezing. We insure for loss caused by freezing of a We do not insure loss to skylight caused by continuous plumbing, heating, air conditioning or automatic fire seepage unless the item is not used for business. The protective sprinkler system or of a household appliance most we will pay for loss to skylight under this provision is only if, while the dwelling is vacant, unoccupied or being $200 for any one loss. If continuous seepage and a constructed, you used reasonable care to maintain heat covered peril both contribute to the loss, we pay only for in the building or to shut off the water supply and drain all the part caused by the covered peril.\n\nsystems and appliances of water.\n\nHOMEOWNERS 3 SPECIAL FORM HO-3 (2022-01)          Lakeshore Mutual Insurance Company          Page 3 of 23 this provision is $1,000 for any one loss. If mechanical A.3 Firearms And Faulty breakdown and a covered peril both contribute to the We do not insure loss to firearms caused by faulty loss, we pay only for the part caused by the covered peril. workmanship unless it is shown in the Declarations. The most we will pay for loss to firearms under this provision A.10 Playground Set And Intentional is 10% of the Coverage A limit for any one loss. If faulty We do not insure loss to playground set caused by workmanship and a covered peril both contribute to the intentional loss unless the limit in the Schedule has not loss, we pay only for the part caused by the covered peril. been exhausted. The most we will pay for loss to This provision does not reduce the limit of liability shown playground set under this provision is $5,000 for any one for Coverage A.\n\nloss. If intentional loss and a covered peril both contribute to the loss, we pay only for the part caused by the A.4 Water Heater And Nuclear covered peril. This provision does not reduce the limit of We do not insure loss to water heater caused by nuclear liability shown for Coverage A."
+   },
+   {
+    "cid": "HO-3_2022-01:structural:0022",
+    "path": [
+     "Section I Exclusions",
+     "12. Freezing"
+    ],
+    "pages": [
+     4,
+     5
+    ],
+    "text": "movement unless it is located on the residence premises. The most we will pay for loss to storage shed under this B.8 Retaining Wall And Freezing provision is $2,500 for any one loss. If earth movement We do not insure loss to retaining wall caused by freezing and a covered peril both contribute to the loss, we pay of a fence unless a licensed contractor did the work. The only for the part caused by the covered peril.\n\nmost we will pay for loss to retaining wall under this provision is 10% of the Coverage A limit for any one loss. B.2 Driveway And Insects We do not insure loss to driveway caused by insects B.9 Air Conditioning Unit And Mechanical unless you kept receipts or photographs. The most we We do not insure loss to air conditioning unit caused by will pay for loss to driveway under this provision is 10% of mechanical breakdown unless the limit in the Schedule the Coverage A limit for any one loss. If insects and a has not been exhausted. The most we will pay for loss to covered peril both contribute to the loss, we pay only for air conditioning unit under this provision is $2,500 for any the part caused by the covered peril. This provision does one loss. If mechanical breakdown and a covered peril not reduce the limit of liability shown for Coverage A. both contribute to the loss, we pay only for the part HOMEOWNERS 3 SPECIAL FORM HO-3 (2022-01)          Lakeshore Mutual Insurance Company          Page 5 of 23 caused by the covered peril.\n\nany one loss. If surface water and a covered peril both contribute to the loss, we pay only for the part caused by B.10 Dock And Governmental the covered peril.\n\nWe do not insure loss to dock caused by governmental action unless the dwelling was occupied at the time of B.17 Securities And Lightning loss. The most we will pay for loss to dock under this We do not insure loss to securities caused by lightning provision is $500 for any one loss. If governmental action surge unless you have taken reasonable steps to protect and a covered peril both contribute to the loss, we pay it. The most we will pay for loss to securities under this only for the part caused by the covered peril.\n\nprovision is $1,000 for any one loss. If lightning surge and a covered peril both contribute to the loss, we pay only for B.11 Watercraft And Surface the part caused by the covered peril."
+   },
+   {
+    "cid": "HO-3_2022-01:structural:0034",
+    "path": [
+     "Section I Exclusions",
+     "12. Freezing"
+    ],
+    "pages": [
+     9,
+     10
+    ],
+    "text": "premises. The most we will pay for loss to swimming pool under this provision is $250 for any one loss. If surface E.19 Hot Tub And Freezing water and a covered peril both contribute to the loss, we We do not insure loss to hot tub caused by freezing of a pay only for the part caused by the covered peril. This fence unless the limit in the Schedule has not been provision does not reduce the limit of liability shown for exhausted. The most we will pay for loss to hot tub under Coverage A.\n\nthis provision is $250 for any one loss. If freezing of a fence and a covered peril both contribute to the loss, we E.12 Lawn And Shrubs And Birds pay only for the part caused by the covered peril. We do not insure loss to lawn and shrubs caused by birds or rodents unless you have taken reasonable steps to E.20 Playground Set And Collapse protect it. The most we will pay for loss to lawn and We do not insure loss to playground set caused by shrubs under this provision is $1,500 for any one loss. collapse unless we have given written consent. The most we will pay for loss to playground set under this provision E.13 Retaining Wall And Governmental is $250 for any one loss. If collapse and a covered peril We do not insure loss to retaining wall caused by both contribute to the loss, we pay only for the part governmental action unless the item is not used for caused by the covered peril. This provision does not business. The most we will pay for loss to retaining wall reduce the limit of liability shown for Coverage A. under this provision is $200 for any one loss.\n\nF.1 Basement Finish And War E.14 Foundation And Surface We do not insure loss to basement finish caused by war We do not insure loss to foundation caused by surface unless a licensed contractor did the work. The most we water unless you kept receipts or photographs. The most will pay for loss to basement finish under this provision is we will pay for loss to foundation under this provision is $1,500 for any one loss. If war and a covered peril both HOMEOWNERS 3 SPECIAL FORM HO-3 (2022-01)          Lakeshore Mutual Insurance Company          Page 10 of 23 contribute to the loss, we pay only for the part caused by provision does not reduce the limit of liability shown for the covered peril. This provision does not reduce the limit Coverage A.\n\nof liability shown for Coverage A."
+   },
+   {
+    "cid": "HO-3_2022-01:structural:0036",
+    "path": [
+     "Section I Exclusions",
+     "12. Freezing"
+    ],
+    "pages": [
+     10
+    ],
+    "text": "F.4 Water Heater And Insects We do not insure loss to water heater caused by insects F.11 Boat And Trailer And Earth unless a licensed contractor did the work. The most we We do not insure loss to boat and trailer caused by earth will pay for loss to water heater under this provision is movement unless the item is not used for business. The $1,500 for any one loss. If insects and a covered peril most we will pay for loss to boat and trailer under this both contribute to the loss, we pay only for the part provision is $250 for any one loss. If earth movement and caused by the covered peril. This provision does not a covered peril both contribute to the loss, we pay only for reduce the limit of liability shown for Coverage A. the part caused by the covered peril. This provision does not reduce the limit of liability shown for Coverage A. F.5 Watercraft And Governmental We do not insure loss to watercraft caused by F.12 Bicycles And Theft governmental action unless the damage was sudden and We do not insure loss to bicycles caused by theft by a accidental. The most we will pay for loss to watercraft tenant unless you have taken reasonable steps to protect under this provision is $500 for any one loss. If it. The most we will pay for loss to bicycles under this governmental action and a covered peril both contribute provision is $1,000 for any one loss. If theft by a tenant to the loss, we pay only for the part caused by the and a covered peril both contribute to the loss, we pay covered peril. This provision does not reduce the limit of only for the part caused by the covered peril. This liability shown for Coverage A.\n\nprovision does not reduce the limit of liability shown for Coverage A.\n\nF.6 Satellite Dish And Birds We do not insure loss to satellite dish caused by birds or F.13 Heat Pump And Freezing rodents unless a police report was filed within 72 hours. We do not insure loss to heat pump caused by freezing of The most we will pay for loss to satellite dish under this a fence unless a police report was filed within 72 hours. provision is $5,000 for any one loss. If birds or rodents The most we will pay for loss to heat pump under this and a covered peril both contribute to the loss, we pay provision is $500 for any one loss. If freezing of a fence only for the part caused by the covered peril."
+   },
+   {
+    "cid": "HO-3_2022-01:structural:0037",
+    "path": [
+     "Section I Exclusions",
+     "12. Freezing"
+    ],
+    "pages": [
+     10,
+     11
+    ],
+    "text": "and a covered peril both contribute to the loss, we pay only for the part caused by the covered peril. This F.7 Trees And Earth provision does not reduce the limit of liability shown for We do not insure loss to trees caused by earth movement Coverage A.\n\nunless the dwelling was occupied at the time of loss. The most we will pay for loss to trees under this provision is F.14 Sprinkler System And Insects $200 for any one loss.\n\nWe do not insure loss to sprinkler system caused by insects unless you kept receipts or photographs. The F.8 Swimming Pool And Nuclear most we will pay for loss to sprinkler system under this We do not insure loss to swimming pool caused by provision is $500 for any one loss. If insects and a nuclear hazard unless we have given written consent. covered peril both contribute to the loss, we pay only for The most we will pay for loss to swimming pool under this the part caused by the covered peril. This provision does provision is $1,000 for any one loss. If nuclear hazard not reduce the limit of liability shown for Coverage A. and a covered peril both contribute to the loss, we pay only for the part caused by the covered peril. This HOMEOWNERS 3 SPECIAL FORM HO-3 (2022-01)          Lakeshore Mutual Insurance Company          Page 11 of 23 the covered peril. This provision does not reduce the limit F.15 Watercraft And Smog of liability shown for Coverage A.\n\nWe do not insure loss to watercraft caused by smog or rust unless the dwelling was occupied at the time of loss. G.2 Electronic Data And Freezing The most we will pay for loss to watercraft under this We do not insure loss to electronic data caused by provision is $1,500 for any one loss.\n\nfreezing of a fence unless it is located on the residence premises. The most we will pay for loss to electronic data F.16 Chimney And Windstorm under this provision is 10% of the Coverage A limit for We do not insure loss to chimney caused by windstorm any one loss.\n\nunless you kept receipts or photographs. The most we will pay for loss to chimney under this provision is $2,500 G.3 Storage Shed And Mechanical for any one loss. If windstorm and a covered peril both We do not insure loss to storage shed caused by contribute to the loss, we pay only for the part caused by mechanical breakdown unless the loss is reported within the covered peril. This provision does not reduce the limit 60 days. The most we will pay for loss to storage shed of liability shown for Coverage A."
+   },
+   {
+    "cid": "HO-3_2022-01:structural:0042",
+    "path": [
+     "Section I Conditions"
+    ],
+    "pages": [
+     13
+    ],
+    "text": "B.2 Swimming Pool And Neglect A.4 Vacancy And Unoccupancy We do not insure loss to swimming pool caused by If the dwelling will be vacant or unoccupied in winter, you neglect unless the dwelling was occupied at the time of should arrange for heat or shut off and drain the water loss. The most we will pay for loss to swimming pool supply. A pipe that has frozen and burst in a vacant under this provision is $250 for any one loss. If neglect dwelling is a common source of loss, and we may inspect and a covered peril both contribute to the loss, we pay the dwelling to confirm that heat was maintained before only for the part caused by the covered peril.\n\nwe pay a claim for burst pipe damage.\n\nB.3 Watercraft And Hail A.5 Gutters And Lightning We do not insure loss to watercraft caused by hail unless We do not insure loss to gutters caused by lightning you kept receipts or photographs. The most we will pay surge unless the dwelling was occupied at the time of for loss to watercraft under this provision is $5,000 for loss. The most we will pay for loss to gutters under this any one loss. If hail and a covered peril both contribute to provision is $1,000 for any one loss. If lightning surge and the loss, we pay only for the part caused by the covered a covered peril both contribute to the loss, we pay only for peril. This provision does not reduce the limit of liability the part caused by the covered peril. This provision does shown for Coverage A.\n\nnot reduce the limit of liability shown for Coverage A. B.4 Foundation And Faulty A.6 Silverware And Wear We do not insure loss to foundation caused by faulty We do not insure loss to silverware caused by wear and workmanship unless the limit in the Schedule has not tear unless a licensed contractor did the work. The most been exhausted. The most we will pay for loss to we will pay for loss to silverware under this provision is foundation under this provision is $500 for any one loss. If $2,500 for any one loss.\n\nfaulty workmanship and a covered peril both contribute to the loss, we pay only for the part caused by the covered A.7 Outdoor Antenna And Freezing peril. This provision does not reduce the limit of liability We do not insure loss to outdoor antenna caused by shown for Coverage A."
+   },
+   {
+    "cid": "HO-3_2022-01:structural:0043",
+    "path": [
+     "Section I Conditions"
+    ],
+    "pages": [
+     13,
+     14
+    ],
+    "text": "freezing of a fence unless you kept receipts or photographs. The most we will pay for loss to outdoor B.5 Rental Unit And Neglect antenna under this provision is $200 for any one loss. We do not insure loss to rental unit caused by neglect unless we have given written consent. The most we will A.8 Fence And Freezing pay for loss to rental unit under this provision is $500 for We do not insure loss to fence caused by freezing of a any one loss. If neglect and a covered peril both fence unless you have taken reasonable steps to protect contribute to the loss, we pay only for the part caused by it. The most we will pay for loss to fence under this the covered peril.\n\nprovision is $500 for any one loss. If freezing of a fence and a covered peril both contribute to the loss, we pay B.6 Heat Pump And Governmental only for the part caused by the covered peril. This We do not insure loss to heat pump caused by provision does not reduce the limit of liability shown for governmental action unless it is shown in the Coverage A.\n\nDeclarations. The most we will pay for loss to heat pump under this provision is 10% of the Coverage A limit for A.9 Swimming Pool And Nuclear any one loss. If governmental action and a covered peril We do not insure loss to swimming pool caused by both contribute to the loss, we pay only for the part nuclear hazard unless the loss is reported within 60 days. caused by the covered peril.\n\nThe most we will pay for loss to swimming pool under this provision is $2,500 for any one loss.\n\nB.7 Silverware And Ice We do not insure loss to silverware caused by ice B.1 Student Dormitory Property And Nuclear damming unless it is located on the residence premises. We do not insure loss to student dormitory property The most we will pay for loss to silverware under this caused by nuclear hazard unless a licensed contractor provision is $5,000 for any one loss. If ice damming and a did the work. The most we will pay for loss to student covered peril both contribute to the loss, we pay only for dormitory property under this provision is $2,500 for any the part caused by the covered peril.\n\none loss. If nuclear hazard and a covered peril both HOMEOWNERS 3 SPECIAL FORM HO-3 (2022-01)          Lakeshore Mutual Insurance Company          Page 14 of 23 liability shown for Coverage A."
+   },
+   {
+    "cid": "HO-3_2022-01:structural:0050",
+    "path": [
+     "Section I Conditions"
+    ],
+    "pages": [
+     16
+    ],
+    "text": "most we will pay for loss to fence under this provision is G.4 Dock And Freezing $1,500 for any one loss. If governmental action and a We do not insure loss to dock caused by freezing of a covered peril both contribute to the loss, we pay only for fence unless it is located on the residence premises. The the part caused by the covered peril. This provision does most we will pay for loss to dock under this provision is not reduce the limit of liability shown for Coverage A. $500 for any one loss. If freezing of a fence and a F.6 Jewellery And Lightning covered peril both contribute to the loss, we pay only for We do not insure loss to jewellery caused by lightning the part caused by the covered peril. This provision does surge unless we have given written consent. The most not reduce the limit of liability shown for Coverage A. we will pay for loss to jewellery under this provision is G.5 Student Dormitory Property And Ice $200 for any one loss.\n\nWe do not insure loss to student dormitory property F.7 Dock And War caused by ice damming unless you kept receipts or We do not insure loss to dock caused by war unless it is photographs. The most we will pay for loss to student located on the residence premises. The most we will pay dormitory property under this provision is $2,500 for any for loss to dock under this provision is $200 for any one one loss. If ice damming and a covered peril both loss.\n\ncontribute to the loss, we pay only for the part caused by the covered peril. This provision does not reduce the limit F.8 Outdoor Antenna And Wear of liability shown for Coverage A.\n\nWe do not insure loss to outdoor antenna caused by wear and tear unless it is shown in the Declarations. The most G.6 Patio Furniture And Earth we will pay for loss to outdoor antenna under this We do not insure loss to patio furniture caused by earth provision is $2,500 for any one loss. If wear and tear and movement unless the loss is reported within 60 days. The a covered peril both contribute to the loss, we pay only for most we will pay for loss to patio furniture under this the part caused by the covered peril.\n\nprovision is $200 for any one loss."
+   }
+  ],
+  "after": [
+   {
+    "cid": "HO-3_2022-01:structural+path:0014",
+    "path": [
+     "Section I Perils Insured Against",
+     "12. Freezing"
+    ],
+    "pages": [
+     2
+    ],
+    "text": "Freezing. We insure for loss caused by freezing of a plumbing, heating, air conditioning or automatic fire protective sprinkler system or of a household appliance only if, while the dwelling is vacant, unoccupied or being constructed, you used reasonable care to maintain heat in the building or to shut off the water supply and drain all systems and appliances of water.\n\nThis peril includes the water damage that follows when a frozen pipe, fitting or appliance cracks or bursts, and the cost of tearing out and replacing any part of the building needed to repair the system, but not the system itself.",
+    "prefix": "HO-3 (2022-01) > Section I Perils Insured Against > 12. Freezing"
+   },
+   {
+    "cid": "HO-3_2022-01:structural+path:0260",
+    "path": [
+     "Section II Liability Coverages",
+     "12. Silverware And Governmental"
+    ],
+    "pages": [
+     20
+    ],
+    "text": "We do not insure liability for damage to silverware caused by governmental action unless it is located on the residence premises. The most we will pay for liability for damage to silverware under this provision is $2,500 for any one loss. If governmental action and a covered peril both contribute to the loss, we pay only for the part caused by the covered peril. This provision does not reduce the limit of liability shown for Coverage A.",
+    "prefix": "HO-3 (2022-01) > Section II Liability Coverages > 12. Silverware And Governmental"
+   }
+  ]
+ },
+ "footer": {
+  "kept": {
+   "1": 0.3220338983050847,
+   "3": 0.5932203389830508,
+   "5": 0.6779661016949152,
+   "10": 0.6779661016949152
+  },
+  "stripped": {
+   "1": 0.3389830508474576,
+   "3": 0.6271186440677966,
+   "5": 0.6610169491525424,
+   "10": 0.6779661016949152
+  },
+  "kept_cite": {
+   "1": 0.3220338983050847,
+   "3": 0.5932203389830508,
+   "5": 0.6779661016949152,
+   "10": 0.6779661016949152
+  },
+  "stripped_cite": {
+   "1": 0.3389830508474576,
+   "3": 0.6271186440677966,
+   "5": 0.6610169491525424,
+   "10": 0.6779661016949152
+  },
+  "kept_groups": {
+   "form": 0.36363636363636365,
+   "frozen-2022": 0.2,
+   "endorsement": 0.5,
+   "declarations": 0.0
+  },
+  "stripped_groups": {
+   "form": 0.3939393939393939,
+   "frozen-2022": 0.2,
+   "endorsement": 0.5,
+   "declarations": 0.0
+  },
+  "n_decl": 9,
+  "chunks_with_footer": 14,
+  "glued": 13,
+  "endorsement_chunks": 26,
+  "flips": [
+   {
+    "qid": "roof-2022-01",
+    "kept": {
+     "rank": 2,
+     "cite_rank": 2,
+     "top": "HO-3 (2022-01), Definitions, page 1",
+     "top_id": "HO-3_2022-01:structural+path:0002"
+    },
+    "stripped": {
+     "rank": 1,
+     "cite_rank": 1,
+     "top": "HO-3 (2022-01), Section I Conditions > D.3 Roof Surfacing, page 14",
+     "top_id": "HO-3_2022-01:structural+path:0188"
+    }
+   }
+  ],
+  "examples": [
+   {
+    "qid": "roof-2022-01",
+    "text": "Insured means you and residents of your household who are your relatives or other persons under the age of 21 in your care.\n\nResidence premises means the one family dwelling where you reside, shown as the residence premises in the Declarations.\n\nOccurrence means an accident, including continuous or repeated exposure to substantially the same general harmful conditions.\n\nActual cash value means the cost to replace damaged property with new property of like kind and quality, less depreciation for age, condition and obsolescence.",
+    "citation": "HO-3 (2022-01), Definitions, page 1",
+    "stripped_top": "HO-3 (2022-01), Section I Conditions > D.3 Roof Surfacing, page 14"
+   }
+  ],
+  "repetition_only": {
+   "split": [
+    0.10014892032762472,
+    269,
+    2686
+   ],
+   "band": [
+    0.01340282948622487,
+    36,
+    2686
+   ],
+   "lines_removed": 901
+  },
+  "glued_example": {
+   "citation": "HO 04 95 (2024-06), Exclusions, page 1",
+   "pages": [
+    1,
+    2
+   ],
+   "text": "We do not pay for loss caused by flood, surface water, waves, tidal water or overflow of a body of water, whether or not driven by wind.\n\nHO 04 95 (2024-06) Coverage under this endorsement applies only when the endorsement is shown in the Declarations. Page 1 of 2 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY."
+  }
+ },
+ "table": {
+  "text_layer": {
+   "Wisconsin": {
+    "read": "1% of Coverage A",
+    "truth": "1% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Illinois": {
+    "read": "1% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": false,
+    "page": 2
+   },
+   "Michigan": {
+    "read": "1% of Coverage A",
+    "truth": "1% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Minnesota": {
+    "read": "2% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": true,
+    "page": 3
+   },
+   "Iowa": {
+    "read": "2% of Coverage A",
+    "truth": "1% of Coverage A",
+    "ok": false,
+    "page": 3
+   },
+   "Indiana": {
+    "read": "2% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": true,
+    "page": 3
+   }
+  },
+  "layout": {
+   "Wisconsin": {
+    "read": "1% of Coverage A",
+    "truth": "1% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Illinois": {
+    "read": "2% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Michigan": {
+    "read": "1% of Coverage A",
+    "truth": "1% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Minnesota": {
+    "read": "2% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": true,
+    "page": 3
+   },
+   "Iowa": {
+    "read": "1% of Coverage A",
+    "truth": "1% of Coverage A",
+    "ok": true,
+    "page": 3
+   },
+   "Indiana": {
+    "read": "2% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": true,
+    "page": 3
+   }
+  },
+  "ocr": {
+   "Wisconsin": {
+    "read": "1% of Coverage A",
+    "truth": "1% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Illinois": {
+    "read": "2% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Michigan": {
+    "read": "1% of Coverage A",
+    "truth": "1% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Minnesota": {
+    "read": "2% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": true,
+    "page": 2
+   },
+   "Iowa": {
+    "read": null,
+    "truth": "1% of Coverage A",
+    "ok": false,
+    "page": null
+   },
+   "Indiana": {
+    "read": "2% of Coverage A",
+    "truth": "2% of Coverage A",
+    "ok": true,
+    "page": 2
+   }
+  },
+  "text_layer_excerpt": " seepage. Minnesota Iowa Indiana $1,500 $1,000 $1,000 2% of Coverage A 1% of Coverage A 2% of Coverage A $3,000 $2,500 $2,000 LAKESHORE MUTUAL DEDUCTIBLE SCHEDULE",
+  "layout_rows": [
+   [
+    [
+     "State",
+     "All other perils",
+     "Wind or hail",
+     "Minimum wind or hail"
+    ],
+    [
+     "Wisconsin",
+     "$1,000",
+     "1% of Coverage A",
+     "$2,500"
+    ],
+    [
+     "Illinois",
+     "$1,000",
+     "2% of Coverage A",
+     "$2,500"
+    ],
+    [
+     "Michigan",
+     "$1,000",
+     "1% of Coverage A",
+     "$2,000"
+    ]
+   ],
+   [
+    [
+     "Minnesota",
+     "$1,500",
+     "2% of Coverage A",
+     "$3,000"
+    ],
+    [
+     "Iowa",
+     "$1,000",
+     "1% of Coverage A",
+     "$2,500"
+    ],
+    [
+     "Indiana",
+     "$1,000",
+     "2% of Coverage A",
+     "$2,000"
+    ]
+   ]
+  ]
+ },
+ "revision": {
+  "fixed-256": {
+   "changed": 26,
+   "total": 90,
+   "share": 0.28888888888888886
+  },
+  "fixed-512": {
+   "changed": 36,
+   "total": 45,
+   "share": 0.8
+  },
+  "fixed-256/o64": {
+   "changed": 6,
+   "total": 119,
+   "share": 0.05042016806722689
+  },
+  "recursive-512": {
+   "changed": 1,
+   "total": 48,
+   "share": 0.020833333333333332
+  },
+  "semantic-512": {
+   "changed": 1,
+   "total": 319,
+   "share": 0.003134796238244514
+  },
+  "structural+path": {
+   "changed": 1,
+   "total": 319,
+   "share": 0.003134796238244514
+  }
+ },
+ "scoreboard": {
+  "ratio": 0.20588235294117646,
+  "split_before": [
+   0.0379746835443038,
+   102,
+   2686
+  ],
+  "split_after": [
+   0.00781831720029784,
+   21,
+   2686
+  ],
+  "frozen_fixed": 5,
+  "eval_wrong": 0,
+  "eval_rate": 0.0,
+  "holdout_wrong": 0,
+  "full_wrong": 40,
+  "full_rate": 0.04,
+  "withheld": 41,
+  "tokens": 1712.8309549274254,
+  "usd": 0.00609500885259889,
+  "ch9_full_rate": 0.05,
+  "ch9_tokens": 1609.08,
+  "ch9_usd": 0.005725817142857142,
+  "path_tokens_per_span": 10.37509549274255,
+  "by_stratum": {
+   "eval:right": 200,
+   "holdout:right": 300,
+   "docstore:wrong": 3,
+   "docstore:right": 157,
+   "policy-admin:right": 120,
+   "policy-admin:wrong": 4,
+   "policy-admin:withheld": 6,
+   "scanned:right": 49,
+   "scanned:withheld": 35,
+   "scanned:wrong": 6,
+   "multi-state:wrong": 24,
+   "multi-state:right": 36,
+   "guidance:right": 38,
+   "guidance:wrong": 2,
+   "third-party:right": 19,
+   "third-party:wrong": 1
+  }
+ },
+ "questions": {
+  "form": 33,
+  "frozen-2022": 5,
+  "endorsement": 12,
+  "bulletin": 14,
+  "table": 8,
+  "generated": 60,
+  "manual": 30
+ },
+ "seconds": 106.56600737571716
+}

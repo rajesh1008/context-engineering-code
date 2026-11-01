@@ -1,0 +1,711 @@
+{
+ "version": "9.8",
+ "calendar": {
+  "found_jobs": 9,
+  "found_gaps": {
+   "nightly ingest and re-index": [
+    "budget",
+    "human"
+   ],
+   "memory consolidation (Ch22)": [
+    "verifier is the assembler"
+   ],
+   "earlier-claim re-validation (Ch23)": [
+    "budget",
+    "human"
+   ],
+   "quarterly re-baseline": [
+    "state"
+   ]
+  },
+  "fixed_jobs": 12,
+  "runs_per_year": 1904
+ },
+ "growth": {
+  "pages": [
+   40070,
+   40218,
+   42494,
+   43175,
+   77853,
+   79197,
+   80287,
+   81479,
+   82633,
+   83767,
+   84837,
+   85873
+  ],
+  "first_stale": "2027-03-13",
+  "headroom_base": 0.0042615766629914426,
+  "alarm_week": "2027-03-15",
+  "weekly_headroom": [
+   [
+    "2026-11-02",
+    0.0038070497603798093
+   ],
+   [
+    "2026-11-09",
+    0.0038072202812863927
+   ],
+   [
+    "2026-11-16",
+    0.004435483870967742
+   ],
+   [
+    "2026-11-23",
+    0.0047005103411227505
+   ],
+   [
+    "2026-11-30",
+    0.00425722608111136
+   ],
+   [
+    "2026-12-07",
+    0.004033523058306817
+   ],
+   [
+    "2026-12-14",
+    0.004211469534050179
+   ],
+   [
+    "2026-12-21",
+    0.004710632570659489
+   ],
+   [
+    "2026-12-28",
+    0.004391074469038444
+   ],
+   [
+    "2027-01-04",
+    0.004844135456380354
+   ],
+   [
+    "2027-01-11",
+    0.005833782085801472
+   ],
+   [
+    "2027-01-18",
+    0.004620491656199533
+   ],
+   [
+    "2027-01-25",
+    0.005425035868005739
+   ],
+   [
+    "2027-02-01",
+    0.004531383193503522
+   ],
+   [
+    "2027-02-08",
+    0.005564280906439309
+   ],
+   [
+    "2027-02-15",
+    0.005431854911115102
+   ],
+   [
+    "2027-02-22",
+    0.004577891477043221
+   ],
+   [
+    "2027-03-01",
+    0.005116466944930658
+   ],
+   [
+    "2027-03-08",
+    0.009326004685528924
+   ],
+   [
+    "2027-03-15",
+    0.017161325564457392
+   ],
+   [
+    "2027-03-22",
+    0.01628605222454736
+   ],
+   [
+    "2027-03-29",
+    0.01611062936424627
+   ],
+   [
+    "2027-04-05",
+    0.016285311376973116
+   ],
+   [
+    "2027-04-12",
+    0.01643074962450503
+   ],
+   [
+    "2027-04-19",
+    0.016982334729557458
+   ],
+   [
+    "2027-04-26",
+    0.01722802060070188
+   ],
+   [
+    "2027-05-03",
+    0.016034985422740525
+   ],
+   [
+    "2027-05-10",
+    0.014197952218430034
+   ],
+   [
+    "2027-05-17",
+    0.0151259738484669
+   ],
+   [
+    "2027-05-24",
+    0.015500704577480795
+   ],
+   [
+    "2027-05-31",
+    0.01780023672949103
+   ],
+   [
+    "2027-06-07",
+    0.01624721248805352
+   ],
+   [
+    "2027-06-14",
+    0.015201165119242672
+   ],
+   [
+    "2027-06-21",
+    0.016814764183185237
+   ],
+   [
+    "2027-06-28",
+    0.015768126509593035
+   ],
+   [
+    "2027-07-05",
+    0.016463525559396033
+   ],
+   [
+    "2027-07-12",
+    0.015547574669273083
+   ],
+   [
+    "2027-07-19",
+    0.016949924818881853
+   ],
+   [
+    "2027-07-26",
+    0.015209471766848816
+   ],
+   [
+    "2027-08-02",
+    0.008832807570977918
+   ],
+   [
+    "2027-08-09",
+    0.005745578597719724
+   ],
+   [
+    "2027-08-16",
+    0.0048447873676655305
+   ],
+   [
+    "2027-08-23",
+    0.00466786355475763
+   ],
+   [
+    "2027-08-30",
+    0.004574196152293825
+   ],
+   [
+    "2027-09-06",
+    0.006639153059393504
+   ],
+   [
+    "2027-09-13",
+    0.005337519623233909
+   ],
+   [
+    "2027-09-20",
+    0.00502828409805154
+   ],
+   [
+    "2027-09-27",
+    0.006285072951739619
+   ],
+   [
+    "2027-10-04",
+    0.005473797559224695
+   ],
+   [
+    "2027-10-11",
+    0.0056991563453599
+   ],
+   [
+    "2027-10-18",
+    0.00560865078296765
+   ]
+  ]
+ },
+ "retune_options": [
+  [
+   "do nothing (K 40, notes in pool)",
+   0.98135,
+   12.7,
+   0.03763323169094685
+  ],
+  [
+   "widen pool to K 80",
+   0.99565,
+   6.3,
+   0.042853231690946854
+  ],
+  [
+   "partition notes (K 40)",
+   0.99435,
+   4.35,
+   0.03739685860027411
+  ],
+  [
+   "partition notes and K 80",
+   0.9992,
+   2.3,
+   0.04261685860027412
+  ]
+ ],
+ "bulletins": {
+  "as run": {
+   "late": 42,
+   "exposure": 2496,
+   "season": 1160,
+   "march": 630,
+   "decided_superseded": 2496,
+   "referred": 0,
+   "median_lag": 4
+  },
+  "as operated": {
+   "late": 37,
+   "exposure": 1925,
+   "season": 750,
+   "march": 382,
+   "decided_superseded": 0,
+   "referred": 1925,
+   "median_lag": 4
+  }
+ },
+ "deprecation": {
+  "left_behind": [
+   "claimant memory index",
+   "near-duplicate threshold 0.97",
+   "withhold floor 0.62",
+   "score-drift alarm baseline"
+  ],
+  "replay_blocks_runbook": 14,
+  "replay_examples": [
+   [
+    "fire",
+    "withheld",
+    0.1362
+   ],
+   [
+    "fire",
+    "memory_present",
+    -0.1362
+   ],
+   [
+    "freeze",
+    "withheld",
+    0.0769
+   ],
+   [
+    "freeze",
+    "memory_present",
+    -0.2308
+   ],
+   [
+    "marine",
+    "withheld",
+    0.1337
+   ],
+   [
+    "marine",
+    "memory_present",
+    -0.1163
+   ]
+  ],
+  "replay_fixed_passed": true,
+  "new_floor": 0.545,
+  "withheld_may": 0.0741,
+  "withheld_jun_run": 0.1421,
+  "withheld_jun_op": 0.0632,
+  "memory_missing_prod": 32133,
+  "memory_days": 64
+ },
+ "drift": {
+  "raw": [
+   0.0706,
+   0.08215,
+   0.08995,
+   0.09245,
+   0.081,
+   0.08075,
+   0.0741,
+   0.1421,
+   0.12045,
+   0.0835,
+   0.0672,
+   0.06995
+  ],
+  "adjusted": [
+   0.07578336931441063,
+   0.07767286201535256,
+   0.07576326640191823,
+   0.07377210531587376,
+   0.07724216639432954,
+   0.08305846317125772,
+   0.08433250255949253,
+   0.13341090280508572,
+   0.1132629619568429,
+   0.07882329258239489,
+   0.07724467722157023,
+   0.07539667513809914
+  ],
+  "fires_raw": [
+   "Jan",
+   "Feb",
+   "Jun",
+   "Jul"
+  ],
+  "fires_adj": [
+   "Jun",
+   "Jul"
+  ],
+  "gold_aged": [
+   0.0028846153846153848,
+   0.0038461538461538464,
+   0.052884615384615384,
+   0.058653846153846154,
+   0.07596153846153846,
+   0.07692307692307693,
+   0.08557692307692308,
+   0.08942307692307692,
+   0.09230769230769231,
+   0.09326923076923077,
+   0.09519230769230769,
+   0.09807692307692308
+  ],
+  "gold_unrelabelled_jul": 0.0958023076923077,
+  "gold_aged_items_jul": 96
+ },
+ "cohort_fixed": {
+  "peak": 12000,
+  "when": "2027-04-03",
+  "hits": 737
+ },
+ "cohort_jitter": {
+  "peak": 0,
+  "when": "None",
+  "hits": 0
+ },
+ "instructions": {
+  "as_run": [
+   47,
+   49,
+   56,
+   61,
+   67,
+   71,
+   75,
+   81,
+   86,
+   92,
+   95,
+   97
+  ],
+  "ledger": [
+   47,
+   49,
+   56,
+   61,
+   60,
+   64,
+   68,
+   67,
+   72,
+   78,
+   72,
+   74
+  ]
+ },
+ "wrong_year_as_run": 10944,
+ "wrong_year_as_operated": 5610,
+ "board": {
+  "as run": [
+   {
+    "month": "Nov 2026",
+    "pages": 40070,
+    "wrong_per_1000": 2.9,
+    "review_wrong": 1,
+    "withheld": 0.0706,
+    "headroom": 0.004,
+    "memory_missing": 0.0,
+    "cost": 0.0349,
+    "instr_lines": 47
+   },
+   {
+    "month": "Dec 2026",
+    "pages": 40218,
+    "wrong_per_1000": 3.4,
+    "review_wrong": 9,
+    "withheld": 0.0822,
+    "headroom": 0.0035,
+    "memory_missing": 0.0,
+    "cost": 0.0351,
+    "instr_lines": 49
+   },
+   {
+    "month": "Jan 2027",
+    "pages": 42494,
+    "wrong_per_1000": 4.4,
+    "review_wrong": 7,
+    "withheld": 0.09,
+    "headroom": 0.0055,
+    "memory_missing": 0.0,
+    "cost": 0.0357,
+    "instr_lines": 56
+   },
+   {
+    "month": "Feb 2027",
+    "pages": 43175,
+    "wrong_per_1000": 4.5,
+    "review_wrong": 8,
+    "withheld": 0.0925,
+    "headroom": 0.0052,
+    "memory_missing": 0.0,
+    "cost": 0.0361,
+    "instr_lines": 61
+   },
+   {
+    "month": "Mar 2027",
+    "pages": 77853,
+    "wrong_per_1000": 12.2,
+    "review_wrong": 7,
+    "withheld": 0.081,
+    "headroom": 0.013,
+    "memory_missing": 0.0,
+    "cost": 0.0369,
+    "instr_lines": 67
+   },
+   {
+    "month": "Apr 2027",
+    "pages": 79197,
+    "wrong_per_1000": 14.8,
+    "review_wrong": 13,
+    "withheld": 0.0808,
+    "headroom": 0.0157,
+    "memory_missing": 0.0,
+    "cost": 0.0373,
+    "instr_lines": 71
+   },
+   {
+    "month": "May 2027",
+    "pages": 80287,
+    "wrong_per_1000": 13.4,
+    "review_wrong": 8,
+    "withheld": 0.0741,
+    "headroom": 0.0153,
+    "memory_missing": 0.0,
+    "cost": 0.0376,
+    "instr_lines": 75
+   },
+   {
+    "month": "Jun 2027",
+    "pages": 81479,
+    "wrong_per_1000": 12.1,
+    "review_wrong": 14,
+    "withheld": 0.1421,
+    "headroom": 0.0166,
+    "memory_missing": 0.0905,
+    "cost": 0.0382,
+    "instr_lines": 81
+   },
+   {
+    "month": "Jul 2027",
+    "pages": 82633,
+    "wrong_per_1000": 13.4,
+    "review_wrong": 13,
+    "withheld": 0.1205,
+    "headroom": 0.0153,
+    "memory_missing": 0.1182,
+    "cost": 0.0386,
+    "instr_lines": 86
+   },
+   {
+    "month": "Aug 2027",
+    "pages": 83767,
+    "wrong_per_1000": 4.5,
+    "review_wrong": 4,
+    "withheld": 0.0835,
+    "headroom": 0.0074,
+    "memory_missing": 0.045,
+    "cost": 0.0389,
+    "instr_lines": 92
+   },
+   {
+    "month": "Sep 2027",
+    "pages": 84837,
+    "wrong_per_1000": 4.0,
+    "review_wrong": 4,
+    "withheld": 0.0672,
+    "headroom": 0.0053,
+    "memory_missing": 0.0,
+    "cost": 0.0391,
+    "instr_lines": 95
+   },
+   {
+    "month": "Oct 2027",
+    "pages": 85873,
+    "wrong_per_1000": 3.9,
+    "review_wrong": 3,
+    "withheld": 0.0699,
+    "headroom": 0.0064,
+    "memory_missing": 0.0,
+    "cost": 0.0393,
+    "instr_lines": 97
+   }
+  ],
+  "as operated": [
+   {
+    "month": "Nov 2026",
+    "pages": 40070,
+    "wrong_per_1000": 2.8,
+    "review_wrong": 1,
+    "withheld": 0.0716,
+    "headroom": 0.004,
+    "memory_missing": 0.0,
+    "cost": 0.0349,
+    "instr_lines": 47
+   },
+   {
+    "month": "Dec 2026",
+    "pages": 40218,
+    "wrong_per_1000": 2.9,
+    "review_wrong": 9,
+    "withheld": 0.0829,
+    "headroom": 0.0035,
+    "memory_missing": 0.0,
+    "cost": 0.0351,
+    "instr_lines": 49
+   },
+   {
+    "month": "Jan 2027",
+    "pages": 42494,
+    "wrong_per_1000": 3.8,
+    "review_wrong": 7,
+    "withheld": 0.0917,
+    "headroom": 0.0055,
+    "memory_missing": 0.0,
+    "cost": 0.0357,
+    "instr_lines": 56
+   },
+   {
+    "month": "Feb 2027",
+    "pages": 43175,
+    "wrong_per_1000": 4.5,
+    "review_wrong": 8,
+    "withheld": 0.0929,
+    "headroom": 0.0052,
+    "memory_missing": 0.0,
+    "cost": 0.0361,
+    "instr_lines": 61
+   },
+   {
+    "month": "Mar 2027",
+    "pages": 77853,
+    "wrong_per_1000": 9.4,
+    "review_wrong": 5,
+    "withheld": 0.0824,
+    "headroom": 0.0105,
+    "memory_missing": 0.0,
+    "cost": 0.0363,
+    "instr_lines": 60
+   },
+   {
+    "month": "Apr 2027",
+    "pages": 79197,
+    "wrong_per_1000": 4.2,
+    "review_wrong": 5,
+    "withheld": 0.0745,
+    "headroom": 0.0068,
+    "memory_missing": 0.0,
+    "cost": 0.0364,
+    "instr_lines": 64
+   },
+   {
+    "month": "May 2027",
+    "pages": 80287,
+    "wrong_per_1000": 4.3,
+    "review_wrong": 2,
+    "withheld": 0.0712,
+    "headroom": 0.0052,
+    "memory_missing": 0.0,
+    "cost": 0.0368,
+    "instr_lines": 68
+   },
+   {
+    "month": "Jun 2027",
+    "pages": 81479,
+    "wrong_per_1000": 3.3,
+    "review_wrong": 5,
+    "withheld": 0.0632,
+    "headroom": 0.0046,
+    "memory_missing": 0.0,
+    "cost": 0.0367,
+    "instr_lines": 67
+   },
+   {
+    "month": "Jul 2027",
+    "pages": 82633,
+    "wrong_per_1000": 3.9,
+    "review_wrong": 4,
+    "withheld": 0.0692,
+    "headroom": 0.0052,
+    "memory_missing": 0.0,
+    "cost": 0.0371,
+    "instr_lines": 72
+   },
+   {
+    "month": "Aug 2027",
+    "pages": 83767,
+    "wrong_per_1000": 3.4,
+    "review_wrong": 3,
+    "withheld": 0.0673,
+    "headroom": 0.0057,
+    "memory_missing": 0.0,
+    "cost": 0.0377,
+    "instr_lines": 78
+   },
+   {
+    "month": "Sep 2027",
+    "pages": 84837,
+    "wrong_per_1000": 4.0,
+    "review_wrong": 4,
+    "withheld": 0.0672,
+    "headroom": 0.0053,
+    "memory_missing": 0.0,
+    "cost": 0.0371,
+    "instr_lines": 72
+   },
+   {
+    "month": "Oct 2027",
+    "pages": 85873,
+    "wrong_per_1000": 3.8,
+    "review_wrong": 3,
+    "withheld": 0.0701,
+    "headroom": 0.0064,
+    "memory_missing": 0.0,
+    "cost": 0.0373,
+    "instr_lines": 74
+   }
+  ]
+ }
+}

@@ -1,0 +1,72 @@
+== 1. Layer cards: which rows each layer declares ==
+  row        Dutch bank  Boston hos  Dublin fir  Austin com  Lakeshore   
+  unit       yes         yes         yes         yes         yes         
+  sources    yes         yes         yes         yes         yes         
+  required   yes         yes         yes         yes         yes         
+  as_of      yes         yes         yes         yes         yes         
+  precedence yes         yes         yes         yes         yes         
+  admission  yes         yes         yes         yes         yes         
+  budget     yes         yes         yes         yes         yes         
+  gate       yes         yes         yes         --          yes         
+  eval       yes         yes         yes         yes         yes         
+  exit       yes         --          --          --          yes         
+  handback   --          yes         yes         yes         --          
+  trace      yes         yes         yes         --          yes         
+  Dutch bank: missing ['handback']
+  Boston hospital: missing ['exit']
+  Dublin firm: missing ['exit']
+  Austin company: missing ['gate', 'exit', 'trace']
+  Lakeshore: missing ['handback']
+
+== 2. Dutch bank: three releases on 600 compliance questions ==
+  topics 48; intents {'now': 339, 'on-date': 206, 'what-changed': 55}
+  v1 publication date    wrong 205/600 (34.2%, 95% CI 30.5-38.1)  deferred   0  by cause {'comply-or-explain': 61, 'on-date': 19, 'pending': 18, 'transposition': 52, 'what-changed': 55}
+  v2 applies-from        wrong 113/600 (18.8%, 95% CI 15.9-22.2)  deferred   0  by cause {'comply-or-explain': 61, 'transposition': 52}
+  v3 layers + dated rank wrong   1/600 (0.2%, 95% CI 0.0-0.9)  deferred   0  by cause {'comply-or-explain': 1}
+
+== 3. Failure injection: Lakeshore's rules transplanted into the Dutch layer ==
+  Lakeshore transplant   wrong 168/600 (28.0%, 95% CI 24.6-31.7)  deferred   0  by cause {'comply-or-explain': 61, 'transposition': 52, 'what-changed': 55}
+  one Lakeshore rule at a time, everything else native:
+    layers=flat          wrong  53/600 (8.8%, 95% CI 6.8-11.4)  deferred   0  by cause {'comply-or-explain': 1, 'transposition': 52}
+    rank=fixed           wrong  61/600 (10.2%, 95% CI 8.0-12.8)  deferred   0  by cause {'comply-or-explain': 61}
+    routing=single       wrong  56/600 (9.3%, 95% CI 7.3-11.9)  deferred   0  by cause {'comply-or-explain': 1, 'what-changed': 55}
+  guidelines 14; ever not complied with in NL: 7
+
+== 4. Exit rule in the unit failures happen in: rule changes ==
+  first replay     hold           25/26 past changes replay clean
+  after fix        human-in-loop  2/6 new changes reviewed
+  six changes later exit           26 replayed, 6 reviewed
+
+== 5. Boston hospital: 1,000 guideline questions ==
+  v1 document, today     wrong 142/1000 (14.2%, 95% CI 12.2-16.5)  deferred   0  by cause {'dose': 42, 'interaction': 28, 'judgement': 48, 'retrospective': 24}
+  v2 section, purpose    wrong   1/1000 (0.1%, 95% CI 0.0-0.6)  deferred   0  by cause {'interaction': 1}
+  one v2 rule at a time on v1:
+    fix as_of            wrong 124/1000 (12.4%, 95% CI 10.5-14.6)  deferred   0  by cause {'dose': 42, 'interaction': 28, 'judgement': 48, 'retrospective': 6}
+    fix budget           wrong 131/1000 (13.1%, 95% CI 11.1-15.3)  deferred   0  by cause {'dose': 42, 'interaction': 17, 'judgement': 48, 'retrospective': 24}
+    fix judgement        wrong  94/1000 (9.4%, 95% CI 7.7-11.4)  deferred   0  by cause {'dose': 42, 'interaction': 28, 'retrospective': 24}
+    fix supersession     wrong  78/1000 (7.8%, 95% CI 6.3-9.6)  deferred   0  by cause {'interaction': 13, 'judgement': 48, 'retrospective': 17}
+
+== 6. Dublin firm: 800 clause questions over 1,400 contracts ==
+  side letters 258; not in the data-room index 115; counterparties 310
+  v1 similarity          wrong  39/800 (4.9%, 95% CI 3.6-6.6)  deferred   0  by cause {'amd': 27, 'sid': 12}
+  v2 key + register      wrong   0/800 (0.0%, 95% CI 0.0-0.5)  deferred  11  by cause {}
+    fix admission        wrong  11/800 (1.4%, 95% CI 0.8-2.4)  deferred   0  by cause {'sid': 11}
+    fix register         wrong  28/800 (3.5%, 95% CI 2.4-5.0)  deferred  11  by cause {'amd': 27, 'sid': 1}
+  document quality gate: 1400 documents, 336 scanned; escalate below 0.55
+  no gate: expected extraction errors 25.3
+    auto at >= 0.80: review load 164, escaped errors 6.1
+    auto at >= 0.85: review load 210, escaped errors 5.1
+    auto at >= 0.90: review load 253, escaped errors 4.5
+    auto at >= 0.95: review load 281, escaped errors 4.3
+    auto at >= 0.98: review load 290, escaped errors 4.3
+  capacity 200 reviews: upper edge 0.80, load 164, escaped 6.1; escalated 46
+
+== 7. Austin company: 900 questions ==
+  customers 600; unknown to the router 194
+  v1 latest, nightly     wrong  91/900 (10.1%, 95% CI 8.3-12.3)  deferred   0  by cause {'code': 17, 'config': 31, 'deploy': 43}
+  v2 record, live, graph wrong   0/900 (0.0%, 95% CI 0.0-0.4)  deferred   2  by cause {}
+
+== 8. What Lakeshore borrowed: judgement rows from the hospital ==
+  1000 gold-sized claims; judgement conditions 53
+  drafts deciding a judgement condition: 53 -> 0
+  extra tokens per determination on average: 3.4; wrong-clause unchanged at 3/1,000 (not touched)

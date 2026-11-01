@@ -1,0 +1,5 @@
+layer,hit_rate,usd_after,wrong,stale_today
+prefix,0.92,0.03446,4,0
+retrieval,0.62,0.03311,4,0
+tool,0.233,0.03307,4,0
+retrieval unversioned,0.714,0.03295,14,38

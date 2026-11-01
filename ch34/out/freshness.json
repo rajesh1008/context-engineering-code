@@ -1,0 +1,20 @@
+{
+ "v7.5 as first built": {
+  "new_state_prefixes": [
+   "07:05 rules WI as of wm-0930",
+   "14:00 rules WI as of wm-1000"
+  ],
+  "alert_fired": true,
+  "stale_wi_determinations": 1050,
+  "stale_backup": 258
+ },
+ "memo keyed on watermark": {
+  "new_state_prefixes": [
+   "07:05 rules WI as of wm-0930",
+   "10:00 rules WI as of wm-1000"
+  ],
+  "alert_fired": false,
+  "stale_wi_determinations": 0,
+  "stale_backup": 0
+ }
+}

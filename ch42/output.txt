@@ -1,0 +1,61 @@
+== 1. Instrument the replay set (1,000 determinations) ==
+wrong clause: 4/1000 (0.4%)
+  D-C650155 WI fz: governing LK3012@2025-03 rank 3 dropped (budget); note 152 tokens; cited HO3-2024-06#fz-exc
+  D-C240294 MN fz: governing LK3012@2025-03 rank 3 dropped (budget); note 153 tokens; cited HO3-2024-06#fz-exc
+  D-C200740 MN wb: governing HO0495@2025-03 rank 3 dropped (budget); note 157 tokens; cited HO3-2024-06#wb-exc
+  D-C300750 IA id: governing LK2107@2025-03 rank 4 dropped (budget); note 139 tokens; cited HO3-2024-06#id-exc
+determinations with any span dropped for budget: 566; spans dropped: {'budget': 1167}; governing span dropped: 5
+bytes per determination: packet text in the record 6,259; refs + stores 3,107 (trace store only, claim file is the system of record: 2,562)
+evidence blobs 69 for 7000 writes; claim-file blobs 1864
+cached share of input tokens: 60.4%; mean input tokens 927
+
+== 2. Reconstruct every determination and check the chain ==
+exact reconstructions: 1000/1000
+rebuilt packet identical to the one sent: 1000/1000
+chain verifies: True
+edit event 500's status -> first bad event: 500
+delete event 700 -> first bad event: 700
+
+== 3. Three ways to log content ==
+  no content (metadata only)     bytes/det      82  reconstructable    0/1000  personal items in telemetry 0
+  full content on the trace      bytes/det   6,259  reconstructable 1000/1000  personal items in telemetry 3983
+  store by reference             bytes/det   2,562  reconstructable 1000/1000  personal items in telemetry 0
+
+== 4. Sampling: is the trace there when the complaint arrives? ==
+  head 10%                   kept   90/1000; denials kept 44/414; wrong determinations kept 0/4
+  head 10% + every denial    kept  479/1000; denials kept 414/414; wrong determinations kept 4/4
+  every determination        kept 1000/1000; denials kept 414/414; wrong determinations kept 4/4
+
+== 5. Redaction: the rule that removed the examiner's span ==
+  no redaction                           exact 1000/1000  telemetry leaks  335  missing: evidence 0, personal 0 []
+  scoped PII rules                       exact 1000/1000  telemetry leaks    0  missing: evidence 0, personal 0 []
+  PII + August rule on every sink        exact    0/1000  telemetry leaks    0  missing: evidence 839, personal 1375 ['HO0495@2025-03', 'LK2107@2025-03', 'LK3012@2025-03']
+  examiner's pick D-C010001: cited HO0495@2025-03; exact False; missing ['claimfile:C010001', 'HO0495@2025-03']
+  stored text now reads: [REDACTED] (2025-03). We cover loss caused by water which backs up through sewer...
+  gate on 200 sampled events with the rule as wired: 0/200 exact -> FAIL
+  PII + August rule scoped to telemetry  exact 1000/1000  telemetry leaks    0  missing: evidence 0, personal 0 []
+  gate on 200 sampled events with the rule scoped: 200/200 exact -> PASS
+
+== 6. The complaint: what the model saw, and what it did not ==
+water back-up claims with an upload: 518; upload after the snapshot (<=48 h): 283; of those, endorsement on policy and inspection said duty not kept: 31
+complaint: D-C090226 (WI, 2026-06-10); status denied; cited HO0495@2025-03
+  snapshot read at 2026-06-10T15:40 (call tc-c9170dc2); upload arrived 3.0 h later
+  spans admitted: ['claimfile:C090226', 'note:C090226', 'HO0495@2025-03', 'HO3-2024-06#wb-exc']
+  dropped: [('KB-0056', 'budget'), ('KB-0004', 'budget'), ('KB-0028', 'budget'), ('KB-0044', 'budget')]
+  replay with the invoice in the claim file: covered under HO0495@2025-03
+
+== 7. Ninety days on the dashboard ==
+  days 0-40   coverage 99.81%  wrong 0.16%  monitor flags 0.16%  canary recall 97.2%  tokens 927  cached 60.4%
+  days 41-49  coverage 97.73%  wrong 2.18%  monitor flags 2.09%  canary recall 97.2%  tokens 926  cached 60.5%
+  days 50-69  coverage 96.98%  wrong 2.84%  monitor flags 2.70%  canary recall 96.0%  tokens 930  cached 40.2%
+  days 70-89  coverage 98.92%  wrong 1.08%  monitor flags 1.06%  canary recall 88.2%  tokens 1210  cached 8.5%
+  MN roof slice coverage: before day 41 100.0%; days 41-49 41.6%; after 51.6%; slice share of traffic 3.6%
+  cache: timestamp in prefix from day 62; cache alert fires on day 62 (cached share day 62: 11.4%)
+  canary recall by packet length: <1000 96.9% (n=1400); 1000-1299 88.3% (n=377); 1300+ 87.0% (n=23)
+
+== 8. Alerting on retrieval drift: three rules, same ninety days ==
+  quiet ninety days (no changes): static 0 alerts, ewma 1, slice alarms 2 across 16 slices
+  static first alert for the bulletin (day 41+): 49; for corpus growth (day 50+): 52; false alerts days 0-40: 0
+  ewma   first alert for the bulletin (day 41+): 41; for corpus growth (day 50+): 50; false alerts days 0-40: 0
+  slice  first alert for the bulletin (day 41+): 42; for corpus growth (day 50+): 59; false alerts days 0-40: 0
+  baseline coverage 99.77% (sd 0.27%); slices watched 16; fired: {'MN-rf': [42, 78], 'MI-fz': [59, 69]}

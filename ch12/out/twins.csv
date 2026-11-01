@@ -1,0 +1,9 @@
+query,rung,rank1,correct
+neg,keyword,HO3-2024-06-mould,1
+neg,dense,LM-HO-2311,0
+neg,hybrid,HO3-2024-06-mould,1
+neg,reranked,HO3-2024-06-mould,1
+pos,keyword,HO3-2024-06-mould,0
+pos,dense,LM-HO-2311,1
+pos,hybrid,HO3-2024-06-mould,0
+pos,reranked,LM-HO-2311,1

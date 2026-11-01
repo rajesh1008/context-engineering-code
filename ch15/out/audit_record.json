@@ -1,0 +1,25 @@
+{
+ "determination": "D0087",
+ "as_of": "2026-09-06",
+ "role": "adjuster",
+ "tenant": "lakeshore",
+ "cause": "roof",
+ "status": "ok",
+ "reason": "governs",
+ "cited": "MN-COM-2025-06@2025-06-02#roof",
+ "governing": {
+  "doc": "MN-COM-2025-06",
+  "edition": "2025-06-02",
+  "page": 1,
+  "jurisdiction": "MN",
+  "effective_from": "2025-06-02",
+  "effective_to": "None"
+ },
+ "beat": [
+  "HO-3@2024-06#roof"
+ ],
+ "excluded": {},
+ "policy": "policy-v1.0#7dab6e0f8e23",
+ "corpus": "corpus-1ee6f8738a",
+ "record": "a95739b015e6"
+}

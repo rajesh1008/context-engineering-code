@@ -1,0 +1,38 @@
+A. One rule, one claim: the table resolves the facts
+  DET-0026 IA loss 2026-06-02 topic tree_debris -> IA-ID-2024-08 (gold IA-ID-2024-08 (2024-08))
+  rendered rule span:
+    Lakeshore claims rulebook r1.0:
+    R8. Tree debris after a windstorm: in Iowa since the August 2024 bulletin, debris removal is owed even if the tree hit nothing; otherwise the HO-3 debris removal provision.
+
+B. Per rule: probes (exception selected) and eval claims, sim-large
+  R1   water_backup          probes  18  adherence  18 ->  18  eval  13  wrong 0 -> 0  -
+  R2   food_spoilage         probes   5  adherence   5 ->   5  eval  13  wrong 0 -> 0  -
+  R3   earth_movement        probes  16  adherence  15 ->  16  eval   6  wrong 1 -> 0  -
+  R4   personal_property_rc  probes  11  adherence  11 ->  11  eval   6  wrong 0 -> 0  -
+  R5   roof_settlement       probes   7  adherence   7 ->   7  eval  11  wrong 0 -> 0  -
+  R6   roof_matching         probes   7  adherence   7 ->   7  eval  10  wrong 0 -> 0  -
+  R7   frozen_pipes          probes   1  adherence   0 ->   1  eval  13  wrong 6 -> 5  DET-0022, DET-0063, DET-0163, DET-0178, DET-0181
+  R8   tree_debris           probes   3  adherence   3 ->   3  eval   8  wrong 0 -> 0  -
+  R9   rental_reimbursement  probes  13  adherence  13 ->  13  eval  12  wrong 0 -> 0  -
+  R10  rideshare             probes  16  adherence  16 ->  16  eval  11  wrong 0 -> 0  -
+  R11  deer_swerve           probes   5  adherence   5 ->   5  eval   9  wrong 0 -> 0  -
+  R12  spoilage              probes   5  adherence   5 ->   5  eval   7  wrong 0 -> 0  -
+
+C. Eval errors, sim-large: without the rulebook and with r1.0
+  none  covered ['DET-0022', 'DET-0061', 'DET-0063', 'DET-0071', 'DET-0163', 'DET-0178', 'DET-0181']  uncovered []
+  r1.0  covered ['DET-0022', 'DET-0063', 'DET-0163', 'DET-0178', 'DET-0181']  uncovered []
+
+D. Two readings of R8 tree debris that differ only in a date
+  No start date: 18/19 agree with the documents
+    DET-0483 (IA, 2024-04-11): rule says IA-ID-2024-08, documents say HO-3 (2022-01), Section I Additional Coverages 1.b, page 9 (form)
+  From 2024-08-15: 19/19 agree with the documents
+
+G. Example A and the Illinois bulletin claim (sim-large, no rulebook)
+  v2.2                     DET-0061 cites HO-3 (2024-06), Section I Perils Insured Against 12, page 2; eval wrong 3.5%
+  v2.2 without Example A   DET-0061 cites IL-DOI-2025-05 (2025-05), Requirements, page 1; eval wrong 3.0%
+
+H. The exclusion two underwriters read differently (R1 water backup)
+  Underwriter A: 27/27 agree with the documents; sim-large wrong on 2019-edition backup claims 0/10; eval 2.5%
+  Underwriter B: 17/27 agree with the documents; sim-large wrong on 2019-edition backup claims 0/10; eval 2.5%
+    DET-0069 (MN, 2023-09-18): rule says HO-3, documents say HO 04 95 (2019-03), Coverage, page 1 (endorsement)
+    DET-0094 (MI, 2024-01-14): rule says HO-3, documents say HO 04 95 (2019-03), Coverage, page 1 (endorsement)

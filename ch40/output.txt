@@ -1,0 +1,93 @@
+
+== 1. Inventory before: checks per layer
+L1 unit                    6  Chapter 2 smoke tests (ten, run as a block); budget never exceeded; edition in force on date of loss; cache key names the watermark; direct-book span visible to every tenant; judge smoke: 20 determinations >= 85%
+L2 gold-set eval           0  
+L3 judge-scored eval       0  
+L4 end-to-end              1  end-to-end: wrong-clause on 1,000
+L5 shadow and production   1  production: 50 determinations reviewed by adjusters
+lint: [('judge smoke: 20 determinations >= 85%', 'L1 must be deterministic'), ('judge smoke: 20 determinations >= 85%', 'L1 must not spend on models'), ('layer 1', 'per-commit layer takes 224 s > 120 s')]
+
+== 2. The pyramid now: checks, time and spend per run of each layer
+L1 unit                   16 checks    0.9 min  US$0.00
+L2 gold-set eval           5 checks    7.3 min  US$1.20
+L3 judge-scored eval       2 checks   17.0 min  US$16.80
+L4 end-to-end              3 checks   61.0 min  US$34.80
+L5 shadow and production   3 checks   one week  US$69.60
+L5 human review: 5 adjuster hours a week
+lint: clean
+
+== 3. Laura's question: the 2025 failure pair (F1 + F6) on today's pipeline
+L1  re-uploaded old scan does not win
+L1  no edition before the first fails closed
+L1  endorsement on the declarations survives dedupe
+L2  gold: governing hit, all 400
+L2  gold: governing hit, edition and conflict slice
+L2  gold: packet sufficiency, schedule slice
+L3  judge: faithfulness, 400 determinations
+L4  end-to-end: wrong-clause on 1,000
+L5  shadow: agreement by case type, 2,000 mirrored
+L5  production: 50 determinations reviewed by adjusters
+first red on the ladder: re-uploaded old scan does not win | also: endorsement on the declarations survives dedupe
+
+== 4. A judge used as a unit test: 20 determinations, pass at 17
+cost per run US$0.846, about 1.46 runs per commit, US$1.23 per commit
+clean fails once  34.0%   fails after three tries   4.5%
+F4    fails once  34.0%   fails after three tries   4.5%
+F9    fails once  64.8%   fails after three tries  31.2%
+lint on the before suite flags: ['L1 must be deterministic', 'L1 must not spend on models']
+the fix, 'budgeter keeps the schedule span': clean passes True, F4 passes False, 1 s, US$0.00
+
+== 5. Fault catch rate by layer (deterministic 1/0; else share of 40 seeds)
+fault    L1    L2    L3    L4    L5  description
+F1     1.00  1.00  0.00  1.00  1.00  edition chosen by upload date (the 2019 scan wins)
+F2     1.00  1.00  0.25  0.00  0.00  page-break join removed from the parser
+F3     1.00  1.00  0.28  0.00  0.00  schedule header only on the first chunk
+F4     0.00  1.00  0.20  0.00  0.00  budgeter ranks by score alone
+F5     0.00  1.00  0.00  1.00  1.00  retriever weights a lookalike edition up
+F6     1.00  1.00  0.35  0.00  0.00  dedupe folds endorsements into the base form
+F7     1.00  1.00  0.57  0.00  0.00  citation checker threshold lowered to 0.65
+F8     1.00  0.00  1.00  0.00  0.00  judge prompt edited (judge-v4)
+F9     0.00  0.00  0.78  0.00  0.00  generic rule appended to the draft prompt
+F10    1.00  1.00  0.00  1.00  1.00  tenant filter skipped on partner spans
+F11    1.00  0.00  0.00  1.00  1.00  cache key without the bulletin version
+F12    0.00  0.00  0.00  0.00  1.00  bulletin feed stalled in production
+false alarm on a clean candidate: judge: faithfulness, 400 determinations: 0.0%
+false alarm on a clean candidate: judge: agreement with 120 adjuster labels: 0.0%
+false alarm on a clean candidate: shadow: agreement by case type, 2,000 mirrored: 0.0%
+false alarm on a clean candidate: production: 50 determinations reviewed by adjusters: 0.0%
+
+== 6. Streams by layers: number of checks
+stream      L1 L2 L3 L4 L5
+evidence     8  4  0  1  1
+grounding    3  1  1  0  0
+entitlement  2  0  0  1  0
+freshness    2  0  0  0  1
+cost         1  0  0  1  0
+human        0  0  1  0  1
+
+== 7. Cost of one two-week release
+every commit        150 runs x US$  0.00 = US$   0.00
+merge                25 runs x US$  1.20 = US$  30.00
+release candidate     3 runs x US$ 51.60 = US$ 154.80
+shadow week           1 runs x US$ 69.60 = US$  69.60
+total US$254.40 plus 10 adjuster hours
+before: every commit US$184.72, release replay US$69.60, production sample US$0.00, total US$254.32
+
+== 8. The gate ladder
+clean candidate: passed all 4 rungs, spent US$122.40
+F9 candidate: stops at rung 2 ['judge: faithfulness, 400 determinations'] spent US$52.80
+merge-time selection for a budgeter change: ['gold: packet sufficiency, schedule slice']
+
+== 9. Time to first red: before and on the ladder
+F1   before: release replay (+72 h)           ladder: every commit (+0 h)                  0.7 min US$0.00
+F2   before: never (smoke red 18%)            ladder: every commit (+0 h)                  0.7 min US$0.00
+F3   before: never                            ladder: every commit (+0 h)                  0.8 min US$0.00
+F4   before: never                            ladder: merge (+2 h)                         3.8 min US$0.00
+F5   before: release replay (+72 h)           ladder: merge (+2 h)                         2.4 min US$0.00
+F6   before: never (smoke red 12%)            ladder: every commit (+0 h)                  0.8 min US$0.00
+F7   before: never (smoke red 20%)            ladder: every commit (+0 h)                  0.9 min US$0.00
+F8   before: never                            ladder: every commit (+0 h)                  0.9 min US$0.00
+F9   before: never (smoke red 30%)            ladder: release candidate, nightly (+14 h)  23.2 min US$17.82
+F10  before: release replay (+72 h)           ladder: every commit (+0 h)                  0.8 min US$0.00
+F11  before: release replay (+72 h)           ladder: every commit (+0 h)                  0.8 min US$0.00
+F12  before: production sample (+168 h)       ladder: production monitor (+1 h)                  - US$0.00

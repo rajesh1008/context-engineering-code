@@ -1,0 +1,35 @@
+{
+ "base_day": 250.50177180000003,
+ "rows": [
+  {
+   "event": "Rulebook deploy 12:30",
+   "extra_usd": 0.10840499999997633,
+   "hit_rate": 0.7997786600719892
+  },
+  {
+   "event": "tool description edit 12:30",
+   "extra_usd": 0.1353131999999846,
+   "hit_rate": 0.7996923042262895
+  },
+  {
+   "event": "WI bulletin 10:00",
+   "extra_usd": 0.036180000000001655,
+   "hit_rate": 0.8000104500451449
+  },
+  {
+   "event": "model change 12:30",
+   "extra_usd": 0.21531959999998662,
+   "hit_rate": 0.799435541591353
+  },
+  {
+   "event": "deploy every 30 min",
+   "extra_usd": 1.879604999999998,
+   "hit_rate": 0.7940943900760964
+  },
+  {
+   "event": "compaction on 30% of call 3",
+   "extra_usd": 0.7848899999999901,
+   "hit_rate": 0.7952205151129663
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+Question (DET-0001, Emily Carter, WI): Basement in Green Bay flooded when the city sewer backed up during heavy rain. Is the water damage covered?
+Gold: HO 04 95 (2024-06) -> covered up to $10,000
+
+A prompt only      tokens=  113 spans= 0  -> - | none (abstained)
+B stuff it all in  tokens=  923 spans= 8  -> covered up to $10,000 | HO 04 95 (2024-06), Coverage, page 1
+C engineered       tokens=1,567 spans=13  -> covered up to $10,000 | HO 04 95 (2024-06), Coverage, page 1
+D no declarations  tokens=1,616 spans=14  -> excluded unless endorsed | HO-3 (2024-06), Section I Exclusions A.3, page 2
+
+Fix on D: missing declared endorsements -> ['HO 04 95 (2024-06)'] -> packet refused, adjuster alerted
+(B with an empty header: governing; E: governing at 36,078 tokens)
+
+assembly           governing  wrong no answer  tokens
+A prompt only           0.0%   0.0%    100.0%     109
+B stuff it all in      87.0%  13.0%      0.0%     848
+C engineered           98.0%   2.0%      0.0%   1,579
+D no declarations      79.8%  20.2%      0.0%   1,587
+D + fix                43.6%   0.0%      0.0%   1,592  refused=282
+
+budget   governing   wrong   no answer   tokens
+   150       90.6%    9.4%        0.0%      420
+   300       95.8%    4.2%        0.0%      660
+   450       96.2%    3.8%        0.0%      896
+   600       97.8%    2.2%        0.0%    1,133
+   900       98.0%    2.0%        0.0%    1,579
+ 1,200       98.0%    2.0%        0.0%    1,908
+ 2,000       98.0%    2.0%        0.0%    2,137
+
+breakdowns (verification: imports the lab without changing it)
+B wrong 65: by what governs form 43, endorsement 17, bulletin 5
+B wrong by what it cited: other document 48, superseded edition 17
+C wrong 10: governing span in packet but another chosen 5; governing span not retrieved 5
+D wrong 101: endorsement 97, form 4
+  D right on 381 of 385 form-governed
+  D right on 0 of 97 endorsement-governed
+  D right on 18 of 18 bulletin-governed
+D + fix refused 282; D had answered 181 of them correctly
+
+E send everything      84.2%  15.8%      0.0%  36,074
+B no header            34.0%  66.0%      0.0%     816
+B + rules              85.8%  14.2%      0.0%     898
+C no rules             95.2%   4.8%      0.0%   1,529
+removing the rules from C changes 14 of 500 determinations from governing to wrong
+instruction span with rules: 103 tokens; corpus 378 spans, 22,326 tokens
+lab time 2.4 s

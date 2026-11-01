@@ -1,0 +1,11 @@
+6. instruction_drift on the homeowners skill file
+  HO-3 (2022-01): superseded by HO-3 (2024-06) on 2024-06-01 -> STALE
+  HO 04 95 (2024-06): in force -> ok
+  `fetch_form_v1`: no such tool -> BROKEN
+
+probe: 20 HO-3 determinations, date of loss after 2024-06-01 (sim-mid stand-in)
+  stale file                         cited HO-3 (2022-01) 18/20   wrong-clause 90%
+  stale file + precedence sentence   cited HO-3 (2022-01)  1/20   wrong-clause 5%
+  file corrected                     cited HO-3 (2022-01)  0/20   wrong-clause 0%
+  probe 7 (stale file): cited HO-3 (2022-01), Section I Perils Insured Against; policy check: edition not in force on date of loss
+  probe 7 (corrected): cited HO-3 (2024-06), Section I Perils Insured Against; policy check: ok

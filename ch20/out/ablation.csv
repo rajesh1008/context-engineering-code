@@ -1,0 +1,9 @@
+config,hit,gov,gov1,leaky,tokens
+rebuilt (all stages),0.968,0.967,0.88,0.0,333
+- structural spans (fixed-256),0.929,0.929,0.803,0.0,792
+- dense (BM25 only),0.916,0.915,0.843,0.0,314
+- BM25 (dense only),0.959,0.958,0.871,0.0,330
+- re-rank,0.952,0.948,0.836,0.0,322
+- authority filter,0.965,0.961,0.668,0.549,325
+- precedence order,0.965,0.964,0.832,0.0,329
+- graph links,0.968,0.967,0.882,0.0,340

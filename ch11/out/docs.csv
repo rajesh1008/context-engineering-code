@@ -1,0 +1,301 @@
+doc,layout,family,q,route,why,pipe,n_fields,fields_ok,crit_wrong_raw,crit_wrong_after,dropped,pages
+DOC-0001,L01,born_digital,0.988,auto,,ocr_text,5,5,0,0,False,1
+DOC-0002,L02,born_digital,0.988,auto,,ocr_text,5,5,0,0,False,1
+DOC-0003,L03,scanned_form,0.929,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0004,L04,scanned_form,0.854,auto,,vision_ocr,10,10,0,0,False,2
+DOC-0005,L05,scanned_form,0.851,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0006,L06,estimate,0.923,auto,,vision_ocr,44,44,0,0,False,6
+DOC-0007,L07,estimate,0.931,auto,,vision_ocr,13,13,0,0,False,2
+DOC-0008,L08,estimate,0.922,auto,,vision_ocr,8,8,0,0,False,1
+DOC-0009,L09,estimate,0.911,auto,,vision_ocr,30,30,0,0,False,2
+DOC-0010,L10,medical_bill,0.858,auto,,vision_ocr,28,28,0,0,False,3
+DOC-0011,L11,medical_bill,0.923,auto,,vision_ocr,8,8,0,0,False,2
+DOC-0012,L12,police_report,0.804,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0013,L13,police_report,0.78,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0014,L14,police_report,0.957,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0015,L15,fax,0.684,auto,,vision_ocr,12,12,0,0,False,1
+DOC-0016,L16,fax,0.619,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0017,L17,handwritten,0.742,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0018,L18,handwritten,0.618,review,unknown layout; claimant_name: 0.47 < 0.67; total_amount: 0.22 < 0.67,vision_ocr,14,11,1,0,False,1
+DOC-0019,L19,phone_photo,0.696,auto,,vision_ocr,9,9,0,0,False,1
+DOC-0020,L20,phone_photo,0.592,auto,,vision_ocr,16,16,0,0,False,1
+DOC-0021,L01,born_digital,0.989,auto,,ocr_text,5,5,0,0,False,2
+DOC-0022,L02,born_digital,0.993,auto,,ocr_text,5,5,0,0,False,1
+DOC-0023,L03,scanned_form,0.895,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0024,L04,scanned_form,0.879,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0025,L05,scanned_form,0.841,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0026,L06,estimate,0.86,auto,,vision_ocr,34,34,0,0,False,6
+DOC-0027,L07,estimate,0.911,auto,,vision_ocr,22,22,0,0,False,1
+DOC-0028,L08,estimate,0.928,auto,,vision_ocr,13,13,0,0,False,2
+DOC-0029,L09,estimate,0.916,auto,,vision_ocr,14,14,0,0,False,1
+DOC-0030,L10,medical_bill,0.831,auto,,vision_ocr,28,28,0,0,False,4
+DOC-0031,L11,medical_bill,0.877,auto,,vision_ocr,8,8,0,0,False,1
+DOC-0032,L12,police_report,0.895,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0033,L13,police_report,0.813,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0034,L14,police_report,0.799,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0035,L15,fax,0.705,auto,,vision_ocr,11,11,0,0,False,1
+DOC-0036,L16,fax,0.666,auto,,vision_ocr,5,4,0,0,False,1
+DOC-0037,L17,handwritten,0.648,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0038,L18,handwritten,0.649,review,date_of_loss: 0.54 < 0.67; total_amount: 0.22 < 0.67,vision_ocr,11,9,1,0,False,2
+DOC-0039,L19,phone_photo,0.707,review,claimant_name: 0.64 < 0.67,vision_ocr,10,9,0,0,False,1
+DOC-0040,L20,phone_photo,0.636,review,policy_number: 0.13 < 0.67; date_of_loss: 0.64 < 0.67; total_amount: 0.67 < 0.67,vision_ocr,18,16,1,0,False,2
+DOC-0041,L01,born_digital,0.988,auto,,ocr_text,5,5,0,0,False,1
+DOC-0042,L02,born_digital,0.995,auto,,ocr_text,5,5,0,0,False,1
+DOC-0043,L03,scanned_form,0.834,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0044,L04,scanned_form,0.813,auto,,vision_ocr,9,9,0,0,False,1
+DOC-0045,L05,scanned_form,0.857,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0046,L06,estimate,0.88,review,total_amount: 0.23 < 0.67,vision_ocr,22,21,0,0,False,5
+DOC-0047,L07,estimate,0.898,auto,,vision_ocr,14,14,0,0,False,2
+DOC-0048,L08,estimate,0.859,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0049,L09,estimate,0.948,auto,,vision_ocr,20,20,0,0,False,3
+DOC-0050,L10,medical_bill,0.839,auto,,vision_ocr,19,19,0,0,False,2
+DOC-0051,L11,medical_bill,0.944,auto,,vision_ocr,13,13,0,0,False,2
+DOC-0052,L12,police_report,0.884,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0053,L13,police_report,0.792,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0054,L14,police_report,0.861,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0055,L15,fax,0.698,auto,,vision_ocr,12,12,0,0,False,2
+DOC-0056,L16,fax,0.613,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0057,L17,handwritten,0.577,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0058,L18,handwritten,0.638,review,total_amount: 0.21 < 0.67,vision_ocr,15,13,0,0,False,3
+DOC-0059,L19,phone_photo,0.652,review,date_of_loss: 0.58 < 0.67; total_amount: 0.20 < 0.67,vision_ocr,13,11,1,0,False,1
+DOC-0060,L20,phone_photo,0.617,review,claimant_name: no confidence; total_amount: 0.22 < 0.67,vision_ocr,10,8,1,0,False,2
+DOC-0061,L01,born_digital,0.983,auto,,ocr_text,5,5,0,0,False,2
+DOC-0062,L02,born_digital,0.977,auto,,ocr_text,5,5,0,0,False,1
+DOC-0063,L03,scanned_form,0.927,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0064,L04,scanned_form,0.894,auto,,vision_ocr,11,11,0,0,False,2
+DOC-0065,L05,scanned_form,0.863,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0066,L06,estimate,0.843,auto,,vision_ocr,40,40,0,0,False,5
+DOC-0067,L07,estimate,0.914,auto,,vision_ocr,12,12,0,0,False,2
+DOC-0068,L08,estimate,0.875,auto,,vision_ocr,10,10,0,0,False,2
+DOC-0069,L09,estimate,0.961,auto,,vision_ocr,13,13,0,0,False,3
+DOC-0070,L10,medical_bill,0.945,auto,,vision_ocr,30,30,0,0,False,2
+DOC-0071,L11,medical_bill,0.949,auto,,vision_ocr,10,10,0,0,False,2
+DOC-0072,L12,police_report,0.769,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0073,L13,police_report,0.819,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0074,L14,police_report,0.969,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0075,L15,fax,0.759,auto,,vision_ocr,11,11,0,0,False,1
+DOC-0076,L16,fax,0.665,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0077,L17,handwritten,0.583,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0078,L18,handwritten,0.554,review,date_of_loss: 0.67 < 0.67; claimant_name: 0.66 < 0.67; total_amount: 0.22 < 0.67,vision_ocr,19,18,0,0,False,1
+DOC-0079,L19,phone_photo,0.661,review,total_amount: 0.20 < 0.67,vision_ocr,11,10,0,0,False,1
+DOC-0080,L20,phone_photo,0.706,auto,,vision_ocr,13,13,0,0,False,2
+DOC-0081,L01,born_digital,0.968,auto,,ocr_text,5,5,0,0,False,1
+DOC-0082,L02,born_digital,0.988,auto,,ocr_text,5,5,0,0,False,1
+DOC-0083,L03,scanned_form,0.914,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0084,L04,scanned_form,0.881,auto,,vision_ocr,11,11,0,0,False,2
+DOC-0085,L05,scanned_form,0.895,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0086,L06,estimate,0.91,auto,,vision_ocr,39,39,0,0,False,5
+DOC-0087,L07,estimate,0.0,refuse,quality 0.00 < 0.35,vision_ocr,10,9,1,0,True,2
+DOC-0088,L08,estimate,0.88,review,total_amount: 0.17 < 0.67,vision_ocr,8,7,1,0,False,2
+DOC-0089,L09,estimate,0.86,auto,,vision_ocr,17,17,0,0,False,2
+DOC-0090,L10,medical_bill,0.876,auto,,vision_ocr,22,22,0,0,False,5
+DOC-0091,L11,medical_bill,0.918,auto,,vision_ocr,13,13,0,0,False,1
+DOC-0092,L12,police_report,0.834,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0093,L13,police_report,0.968,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0094,L14,police_report,0.894,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0095,L15,fax,0.774,auto,,vision_ocr,9,9,0,0,False,2
+DOC-0096,L16,fax,0.732,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0097,L17,handwritten,0.551,review,date_of_loss: 0.65 < 0.67,vision_ocr,5,5,0,0,False,1
+DOC-0098,L18,handwritten,0.654,review,total_amount: 0.17 < 0.67,vision_ocr,21,18,1,0,False,3
+DOC-0099,L19,phone_photo,0.673,review,total_amount: 0.66 < 0.67,vision_ocr,7,7,0,0,False,1
+DOC-0100,L20,phone_photo,0.706,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0101,L01,born_digital,0.99,auto,,ocr_text,5,5,0,0,False,2
+DOC-0102,L02,born_digital,0.996,auto,,ocr_text,5,5,0,0,False,1
+DOC-0103,L03,scanned_form,0.839,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0104,L04,scanned_form,0.842,auto,,vision_ocr,12,12,0,0,False,1
+DOC-0105,L05,scanned_form,0.857,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0106,L06,estimate,0.942,auto,,vision_ocr,44,44,0,0,False,5
+DOC-0107,L07,estimate,0.898,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0108,L08,estimate,0.908,auto,,vision_ocr,8,8,0,0,False,1
+DOC-0109,L09,estimate,0.937,auto,,vision_ocr,26,26,0,0,False,1
+DOC-0110,L10,medical_bill,0.772,auto,,vision_ocr,34,34,0,0,False,4
+DOC-0111,L11,medical_bill,0.941,auto,,vision_ocr,14,14,0,0,False,2
+DOC-0112,L12,police_report,0.8,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0113,L13,police_report,0.915,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0114,L14,police_report,0.863,review,policy_number: 0.19 < 0.67,vision_ocr,5,4,1,0,False,4
+DOC-0115,L15,fax,0.705,auto,,vision_ocr,9,9,0,0,False,2
+DOC-0116,L16,fax,0.725,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0117,L17,handwritten,0.688,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0118,L18,handwritten,0.609,auto,,vision_ocr,12,12,0,0,False,1
+DOC-0119,L19,phone_photo,0.6,auto,,vision_ocr,7,7,0,0,False,1
+DOC-0120,L20,phone_photo,0.633,review,claimant_name: 0.52 < 0.67,vision_ocr,9,8,1,0,False,2
+DOC-0121,L01,born_digital,0.988,auto,,ocr_text,5,5,0,0,False,1
+DOC-0122,L02,born_digital,0.979,auto,,ocr_text,5,5,0,0,False,1
+DOC-0123,L03,scanned_form,0.917,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0124,L04,scanned_form,0.926,auto,,vision_ocr,8,8,0,0,False,2
+DOC-0125,L05,scanned_form,0.885,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0126,L06,estimate,0.836,review,total_amount: 0.23 < 0.67,vision_ocr,22,21,0,0,False,2
+DOC-0127,L07,estimate,0.955,auto,,vision_ocr,19,19,0,0,False,1
+DOC-0128,L08,estimate,0.885,auto,,vision_ocr,11,11,0,0,False,2
+DOC-0129,L09,estimate,0.928,auto,,vision_ocr,16,16,0,0,False,3
+DOC-0130,L10,medical_bill,0.939,auto,,vision_ocr,29,29,0,0,False,5
+DOC-0131,L11,medical_bill,0.896,auto,,vision_ocr,10,10,0,0,False,2
+DOC-0132,L12,police_report,0.814,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0133,L13,police_report,0.855,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0134,L14,police_report,0.825,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0135,L15,fax,0.673,auto,,vision_ocr,12,12,0,0,False,2
+DOC-0136,L16,fax,0.718,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0137,L17,handwritten,0.617,review,policy_number: 0.16 < 0.67,vision_ocr,5,4,1,1,False,2
+DOC-0138,L18,handwritten,0.601,review,total_amount: 0.21 < 0.67,vision_ocr,11,8,0,0,False,2
+DOC-0139,L19,phone_photo,0.691,auto,,vision_ocr,11,11,0,0,False,1
+DOC-0140,L20,phone_photo,0.586,auto,,vision_ocr,12,12,0,0,False,2
+DOC-0141,L01,born_digital,0.98,auto,,ocr_text,5,5,0,0,False,1
+DOC-0142,L02,born_digital,0.995,auto,,ocr_text,5,5,0,0,False,1
+DOC-0143,L03,scanned_form,0.909,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0144,L04,scanned_form,0.803,auto,,vision_ocr,11,11,0,0,False,1
+DOC-0145,L05,scanned_form,0.899,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0146,L06,estimate,0.786,auto,,vision_ocr,25,25,0,0,False,5
+DOC-0147,L07,estimate,0.9,auto,,vision_ocr,15,15,0,0,False,3
+DOC-0148,L08,estimate,0.942,auto,,vision_ocr,9,9,0,0,False,2
+DOC-0149,L09,estimate,0.913,auto,,vision_ocr,25,25,0,0,False,2
+DOC-0150,L10,medical_bill,0.885,review,total_amount: 0.24 < 0.67,vision_ocr,21,20,0,0,False,2
+DOC-0151,L11,medical_bill,0.795,auto,,vision_ocr,13,13,0,0,False,2
+DOC-0152,L12,police_report,0.888,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0153,L13,police_report,0.793,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0154,L14,police_report,0.808,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0155,L15,fax,0.726,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0156,L16,fax,0.754,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0157,L17,handwritten,0.553,review,policy_number: 0.62 < 0.67; date_of_loss: 0.65 < 0.67,vision_ocr,5,5,0,0,False,1
+DOC-0158,L18,handwritten,0.682,auto,,vision_ocr,10,10,0,0,False,3
+DOC-0159,L19,phone_photo,0.683,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0160,L20,phone_photo,0.734,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0161,L01,born_digital,0.991,auto,,ocr_text,5,5,0,0,False,2
+DOC-0162,L02,born_digital,0.962,auto,,ocr_text,5,5,0,0,False,1
+DOC-0163,L03,scanned_form,0.778,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0164,L04,scanned_form,0.88,auto,,vision_ocr,10,10,0,0,False,2
+DOC-0165,L05,scanned_form,0.806,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0166,L06,estimate,0.84,review,total_amount: 0.23 < 0.67,vision_ocr,15,14,0,0,False,6
+DOC-0167,L07,estimate,0.877,auto,,vision_ocr,18,18,0,0,False,1
+DOC-0168,L08,estimate,0.956,auto,,vision_ocr,12,11,0,0,False,1
+DOC-0169,L09,estimate,0.937,auto,,vision_ocr,19,19,0,0,False,2
+DOC-0170,L10,medical_bill,0.838,auto,,vision_ocr,33,33,0,0,False,2
+DOC-0171,L11,medical_bill,0.94,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0172,L12,police_report,0.863,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0173,L13,police_report,0.97,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0174,L14,police_report,0.875,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0175,L15,fax,0.672,auto,,vision_ocr,9,9,0,0,False,1
+DOC-0176,L16,fax,0.684,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0177,L17,handwritten,0.546,review,quality 0.55 < 0.55,vision_ocr,5,5,0,0,False,1
+DOC-0178,L18,handwritten,0.584,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0179,L19,phone_photo,0.61,auto,,vision_ocr,8,8,0,0,False,1
+DOC-0180,L20,phone_photo,0.64,review,policy_number: 0.15 < 0.67,vision_ocr,13,11,1,0,False,2
+DOC-0181,L01,born_digital,0.99,auto,,ocr_text,5,5,0,0,False,1
+DOC-0182,L02,born_digital,0.983,auto,,ocr_text,5,5,0,0,False,1
+DOC-0183,L03,scanned_form,0.875,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0184,L04,scanned_form,0.913,auto,,vision_ocr,11,11,0,0,False,1
+DOC-0185,L05,scanned_form,0.752,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0186,L06,estimate,0.899,review,total_amount: 0.23 < 0.67,vision_ocr,32,31,0,0,False,5
+DOC-0187,L07,estimate,0.913,auto,,vision_ocr,16,16,0,0,False,2
+DOC-0188,L08,estimate,0.949,auto,,vision_ocr,16,16,0,0,False,2
+DOC-0189,L09,estimate,0.962,auto,,vision_ocr,13,13,0,0,False,2
+DOC-0190,L10,medical_bill,0.94,auto,,vision_ocr,31,31,0,0,False,2
+DOC-0191,L11,medical_bill,0.852,auto,,vision_ocr,9,8,0,0,False,1
+DOC-0192,L12,police_report,0.862,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0193,L13,police_report,0.94,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0194,L14,police_report,0.937,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0195,L15,fax,0.724,review,claimant_name: 0.66 < 0.67,vision_ocr,9,8,1,0,False,2
+DOC-0196,L16,fax,0.668,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0197,L17,handwritten,0.684,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0198,L18,handwritten,0.601,review,date_of_loss: 0.67 < 0.67; total_amount: 0.15 < 0.67,vision_ocr,21,20,0,0,False,2
+DOC-0199,L19,phone_photo,0.724,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0200,L20,phone_photo,0.642,auto,,vision_ocr,13,13,0,0,False,2
+DOC-0201,L01,born_digital,0.99,auto,,ocr_text,5,5,0,0,False,2
+DOC-0202,L02,born_digital,0.977,auto,,ocr_text,5,5,0,0,False,1
+DOC-0203,L03,scanned_form,0.851,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0204,L04,scanned_form,0.883,auto,,vision_ocr,11,11,0,0,False,1
+DOC-0205,L05,scanned_form,0.896,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0206,L06,estimate,0.891,auto,,vision_ocr,38,38,0,0,False,2
+DOC-0207,L07,estimate,0.828,auto,,vision_ocr,17,17,0,0,False,2
+DOC-0208,L08,estimate,0.936,auto,,vision_ocr,15,15,0,0,False,2
+DOC-0209,L09,estimate,0.946,review,total_amount: 0.25 < 0.67,vision_ocr,18,17,0,0,False,1
+DOC-0210,L10,medical_bill,0.871,auto,,vision_ocr,26,26,0,0,False,5
+DOC-0211,L11,medical_bill,0.934,auto,,vision_ocr,11,11,0,0,False,1
+DOC-0212,L12,police_report,0.83,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0213,L13,police_report,0.883,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0214,L14,police_report,0.836,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0215,L15,fax,0.699,review,total_amount: 0.15 < 0.67,vision_ocr,9,8,1,0,False,2
+DOC-0216,L16,fax,0.698,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0217,L17,handwritten,0.595,review,date_of_loss: 0.55 < 0.67,vision_ocr,5,4,1,0,False,3
+DOC-0218,L18,handwritten,0.575,review,total_amount: 0.21 < 0.67,vision_ocr,11,10,0,0,False,1
+DOC-0219,L19,phone_photo,0.71,auto,,vision_ocr,8,8,0,0,False,1
+DOC-0220,L20,phone_photo,0.7,auto,,vision_ocr,18,17,0,0,False,2
+DOC-0221,L01,born_digital,0.966,auto,,ocr_text,5,5,0,0,False,2
+DOC-0222,L02,born_digital,0.985,auto,,ocr_text,5,5,0,0,False,1
+DOC-0223,L03,scanned_form,0.848,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0224,L04,scanned_form,0.875,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0225,L05,scanned_form,0.899,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0226,L06,estimate,0.863,auto,,vision_ocr,31,31,0,0,False,4
+DOC-0227,L07,estimate,0.806,auto,,vision_ocr,17,17,0,0,False,3
+DOC-0228,L08,estimate,0.964,auto,,vision_ocr,15,15,0,0,False,2
+DOC-0229,L09,estimate,0.931,auto,,vision_ocr,12,12,0,0,False,2
+DOC-0230,L10,medical_bill,0.862,auto,,vision_ocr,25,25,0,0,False,5
+DOC-0231,L11,medical_bill,0.851,auto,,vision_ocr,9,9,0,0,False,1
+DOC-0232,L12,police_report,0.913,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0233,L13,police_report,0.86,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0234,L14,police_report,0.817,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0235,L15,fax,0.603,review,policy_number: 0.65 < 0.67; total_amount: 0.13 < 0.67,vision_ocr,10,9,1,0,False,2
+DOC-0236,L16,fax,0.699,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0237,L17,handwritten,0.522,review,quality 0.52 < 0.55; policy_number: 0.64 < 0.67,vision_ocr,5,5,0,0,False,2
+DOC-0238,L18,handwritten,0.614,auto,,vision_ocr,12,12,0,0,False,3
+DOC-0239,L19,phone_photo,0.731,auto,,vision_ocr,9,9,0,0,False,1
+DOC-0240,L20,phone_photo,0.708,review,total_amount: 0.22 < 0.67,vision_ocr,15,14,0,0,False,2
+DOC-0241,L01,born_digital,0.99,auto,,ocr_text,5,5,0,0,False,2
+DOC-0242,L02,born_digital,0.975,auto,,ocr_text,5,5,0,0,False,1
+DOC-0243,L03,scanned_form,0.933,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0244,L04,scanned_form,0.888,auto,,vision_ocr,8,8,0,0,False,2
+DOC-0245,L05,scanned_form,0.95,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0246,L06,estimate,0.828,review,date_of_loss: 0.65 < 0.67,vision_ocr,27,26,1,0,False,5
+DOC-0247,L07,estimate,0.861,auto,,vision_ocr,15,15,0,0,False,1
+DOC-0248,L08,estimate,0.925,review,total_amount: 0.15 < 0.67,vision_ocr,16,15,1,0,False,1
+DOC-0249,L09,estimate,0.919,auto,,vision_ocr,17,17,0,0,False,2
+DOC-0250,L10,medical_bill,0.765,auto,,vision_ocr,32,32,0,0,False,4
+DOC-0251,L11,medical_bill,0.798,review,total_amount: 0.23 < 0.67,vision_ocr,11,10,0,0,False,2
+DOC-0252,L12,police_report,0.785,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0253,L13,police_report,0.78,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0254,L14,police_report,0.913,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0255,L15,fax,0.663,review,total_amount: 0.13 < 0.67,vision_ocr,8,6,2,0,False,1
+DOC-0256,L16,fax,0.717,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0257,L17,handwritten,0.62,review,policy_number: 0.15 < 0.67; claimant_name: 0.66 < 0.67,vision_ocr,5,4,1,0,False,3
+DOC-0258,L18,handwritten,0.563,review,date_of_loss: 0.62 < 0.67; total_amount: 0.21 < 0.67,vision_ocr,19,17,0,0,False,1
+DOC-0259,L19,phone_photo,0.607,auto,,vision_ocr,14,14,0,0,False,1
+DOC-0260,L20,phone_photo,0.707,review,policy_number: 0.15 < 0.67,vision_ocr,9,8,1,0,False,2
+DOC-0261,L01,born_digital,0.958,auto,,ocr_text,5,5,0,0,False,1
+DOC-0262,L02,born_digital,0.976,auto,,ocr_text,5,5,0,0,False,1
+DOC-0263,L03,scanned_form,0.893,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0264,L04,scanned_form,0.884,auto,,vision_ocr,12,11,0,0,False,1
+DOC-0265,L05,scanned_form,0.894,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0266,L06,estimate,0.0,refuse,quality 0.00 < 0.35,vision_ocr,20,19,1,0,True,5
+DOC-0267,L07,estimate,0.924,auto,,vision_ocr,22,22,0,0,False,2
+DOC-0268,L08,estimate,0.842,auto,,vision_ocr,9,9,0,0,False,1
+DOC-0269,L09,estimate,0.929,review,total_amount: 0.24 < 0.67,vision_ocr,28,27,0,0,False,3
+DOC-0270,L10,medical_bill,0.957,auto,,vision_ocr,28,28,0,0,False,5
+DOC-0271,L11,medical_bill,0.953,auto,,vision_ocr,10,10,0,0,False,2
+DOC-0272,L12,police_report,0.904,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0273,L13,police_report,0.861,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0274,L14,police_report,0.8,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0275,L15,fax,0.694,review,total_amount: 0.15 < 0.67,vision_ocr,8,5,1,0,False,1
+DOC-0276,L16,fax,0.753,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0277,L17,handwritten,0.67,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0278,L18,handwritten,0.516,review,quality 0.52 < 0.55; policy_number: 0.65 < 0.67; date_of_loss: 0.64 < 0.67; total_amount: 0.19 < 0.67,vision_ocr,19,16,0,0,False,1
+DOC-0279,L19,phone_photo,0.655,auto,,vision_ocr,12,12,0,0,False,1
+DOC-0280,L20,phone_photo,0.624,auto,,vision_ocr,12,12,0,0,False,1
+DOC-0281,L01,born_digital,0.941,auto,,ocr_text,5,5,0,0,False,2
+DOC-0282,L02,born_digital,0.992,auto,,ocr_text,5,5,0,0,False,1
+DOC-0283,L03,scanned_form,0.86,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0284,L04,scanned_form,0.845,auto,,vision_ocr,11,11,0,0,False,2
+DOC-0285,L05,scanned_form,0.914,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0286,L06,estimate,0.945,auto,,vision_ocr,25,25,0,0,False,4
+DOC-0287,L07,estimate,0.95,auto,,vision_ocr,18,18,0,0,False,2
+DOC-0288,L08,estimate,0.822,auto,,vision_ocr,16,16,0,0,False,1
+DOC-0289,L09,estimate,0.922,auto,,vision_ocr,15,15,0,0,False,1
+DOC-0290,L10,medical_bill,0.953,auto,,vision_ocr,25,25,0,0,False,3
+DOC-0291,L11,medical_bill,0.856,auto,,vision_ocr,10,10,0,0,False,1
+DOC-0292,L12,police_report,0.867,auto,,vision_ocr,5,5,0,0,False,2
+DOC-0293,L13,police_report,0.853,auto,,vision_ocr,5,5,0,0,False,4
+DOC-0294,L14,police_report,0.855,auto,,vision_ocr,5,5,0,0,False,3
+DOC-0295,L15,fax,0.744,auto,,vision_ocr,8,8,0,0,False,1
+DOC-0296,L16,fax,0.735,auto,,vision_ocr,5,5,0,0,False,1
+DOC-0297,L17,handwritten,0.598,review,date_of_loss: 0.57 < 0.67,vision_ocr,5,4,1,0,False,1
+DOC-0298,L18,handwritten,0.688,auto,,vision_ocr,19,19,0,0,False,1
+DOC-0299,L19,phone_photo,0.583,auto,,vision_ocr,11,11,0,0,False,1
+DOC-0300,L20,phone_photo,0.623,review,total_amount: 0.21 < 0.67,vision_ocr,15,14,0,0,False,2

@@ -1,0 +1,5 @@
+authority,precedence,gov1,leaky
+False,False,0.83,463
+False,True,0.759,473
+True,False,0.832,0
+True,True,0.882,0

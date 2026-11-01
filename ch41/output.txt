@@ -1,0 +1,73 @@
+== 1. The score and the overrides, July to October
+  week  0 Jul before   gold 94.33%  production right 92.83%  overrides 8.08%
+  week  2 Jul before   gold 94.33%  production right 92.96%  overrides 8.12%
+  week  4 Aug before   gold 94.33%  production right 92.88%  overrides 7.88%
+  week  6 Aug before   gold 94.33%  production right 92.79%  overrides 8.71%
+  week  8 Aug before   gold 94.33%  production right 92.29%  overrides 7.92%
+  week 10 Sep released gold 96.35%  production right 92.75%  overrides 8.12%
+  week 12 Sep released gold 96.35%  production right 91.62%  overrides 8.50%
+  week 14 Oct released gold 96.35%  production right 92.42%  overrides 8.17%
+  week 16 Oct released gold 96.35%  production right 91.46%  overrides 9.17%
+  gold set 94.33% -> 96.35%; overrides 7.97% (Aug) -> 8.67% (Oct)
+== 2. Open coding: 120 overridden determinations from October
+  W14-2247 deductible  acceptable=False Deductible applied twice across the house and the detached garage.
+  W14-1664 multi_peril acceptable=False Two causes on this loss, hail then interior water. Answered the hail part only.
+  W14-0420 deductible  acceptable=False Percentage deductible taken off the loss instead of off the dwelling limit.
+  W13-2006 plain       acceptable=False Read the date of loss wrong from the scanned first notice.
+  pool 832 overrides in four weeks; sample 120; acceptable on reading 23
+== 3. Axial coding: codebook v1 (Chapter 29 lenses) against v2
+  v1: {None: 58, 'missing_evidence': 26, 'wrong_limit_line': 11, 'deductible_misapplied': 9, 'extraction': 7, 'condition_missed': 6, 'superseded_edition': 2, 'precedence_missed': 1}
+  v2: {'second_peril': 55, 'not_a_failure': 23, 'wrong_limit_line': 11, 'deductible_misapplied': 9, 'extraction': 7, 'condition_missed': 6, 'should_withhold': 6, 'superseded_edition': 2, 'precedence_missed': 1}
+  v1 None               -> v2 second_peril       35
+  v1 None               -> v2 not_a_failure      23
+  v1 missing_evidence   -> v2 second_peril       20
+  v1 missing_evidence   -> v2 should_withhold    6
+  v2 matches the reader's intended category on 120/120
+== 4. Counts and severity-weighted counts (v2)
+  second_peril            55  weighted 165
+  wrong_limit_line        11  weighted  33
+  deductible_misapplied    9  weighted  27
+  condition_missed         6  weighted  12
+  should_withhold          6  weighted  12
+  extraction               7  weighted   7
+  superseded_edition       2  weighted   6
+  precedence_missed        1  weighted   2
+  not_a_failure           23  weighted   0
+== 5. Two coders on the same 60 traces, before and after the alignment session
+  before raw agreement 53.3%  kappa 0.46
+  after  raw agreement 91.7%  kappa 0.89
+  per category (before -> after): {'condition_missed': (0.37, 1.0), 'deductible_misapplied': (0.55, 1.0), 'extraction': (0.88, 0.7), 'not_a_failure': (0.58, 0.94), 'second_peril': (0.39, 0.9), 'should_withhold': (0.79, 0.79), 'superseded_edition': (1.0, 1.0), 'wrong_limit_line': (0.74, 1.0)}
+== 6. Saturation: distinct categories against traces read (stop after 30 with nothing new)
+  gold-set failures  read  38  categories 6  stop at None  second peril first seen at None  found after the stop []
+  July overrides     read 120  categories 9  stop at 55  second peril first seen at 6  found after the stop []
+  October overrides  read 120  categories 9  stop at 51  second peril first seen at 2  found after the stop [(52, 'superseded_edition'), (118, 'precedence_missed')]
+== 7. Failure injection: gold-v1.1 (mix close to April) against the production mix
+  Apr: total variation 0.020  production share with no gold items 2%
+  May: total variation 0.030  production share with no gold items 3%
+  Jun: total variation 0.068  production share with no gold items 5%
+  Jul: total variation 0.098  production share with no gold items 7%
+  Aug: total variation 0.128  production share with no gold items 9%
+  Sep: total variation 0.128  production share with no gold items 9%
+  Oct: total variation 0.128  production share with no gold items 9%
+  release effect: gold set +2.02 pts; gold re-weighted to October +2.09 pts (covers 91%); October production -1.11 pts
+    plain       production  97.17 ->  98.94
+    limit       production  93.16 ->  96.54
+    conditions  production  91.94 ->  95.24
+    deductible  production  90.99 ->  92.81
+    withhold    production  95.10 ->  96.14
+    edition     production  92.76 ->  95.96
+    conflict    production  92.99 ->  95.05
+    multi_peril production  80.69 ->  45.71
+== 8. From category to fix: one question per peril, replayed on October
+  released  October right 91.84%  multi-peril wrong 475/875 (upper 95% 57.56%)
+  per_peril October right 96.16%  multi-peril wrong 61/875 (upper 95% 8.85%)
+  segments where any claim got worse: none
+  extended gold set (1144): before 93.18  released 92.13  per-peril 96.24
+  200 un-overridden October determinations read: wrong 4 {'second_peril': 4}
+== 9. The exit rule, written before the replay
+  second_peril           released  475 (upper 5.400%)  per-peril   61 (upper 0.815%)
+  deductible_misapplied  released   99 (upper 1.254%)  per-peril   99 (upper 1.254%)
+  wrong_limit_line       released   43 (upper 0.603%)  per-peril   43 (upper 0.603%)
+  superseded_edition     released   24 (upper 0.372%)  per-peril   24 (upper 0.372%)
+  drift alarm (TVD >= 0.05 or unsupported share >= 5%) first fires: Jun
+  exit rule (multi-peril upper bound <= 10%, no segment worse): PASS

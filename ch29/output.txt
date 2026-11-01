@@ -1,0 +1,93 @@
+== 1. Ten probe families, 40 cases each: wrong before and after the class fix
+  overflow          wrong 24/40 ->  0/40 after: budget the packet; refuse rather than truncate
+  missing_evidence  wrong 40/40 ->  0/40 after: find why retrieval, filter or corpus lost it
+  drift             wrong 40/40 ->  0/40 after: re-sync the copy; watermark it
+  poisoning         wrong 32/40 ->  0/40 after: trace lineage; quarantine; re-extract
+  confusion         wrong 23/40 ->  0/40 after: admit by applicability; label edition, state, authority
+  clash             wrong 27/40 ->  0/40 after: state precedence in the packet
+  fragmentation     wrong 40/40 ->  0/40 after: span by structure; fetch the continuation
+  distraction       wrong 28/40 ->  0/40 after: drop or fence off-question material
+  lost_in_middle    wrong 26/40 ->  0/40 after: put governing spans at the edges
+  rot               wrong 20/40 ->  0/40 after: shorten below the knee
+  diagnosed primary for the wrong cases (injected -> found):
+    overflow          {'overflow': 24}
+    missing_evidence  {'missing_evidence': 40}
+    drift             {'drift': 40}
+    poisoning         {'poisoning': 32}
+    confusion         {'confusion': 23}
+    clash             {'clash': 27}
+    fragmentation     {'fragmentation': 40}
+    distraction       {'distraction': 28}
+    lost_in_middle    {'lost_in_middle': 26}
+    rot               {'rot': 20}
+== 1b. Mixed packets: one causal defect plus harmless signals (100 cases)
+  signals per case (mean) 2.4
+  first signal = injected class: 54/100; counterfactual primary: 100/100; right anyway 0
+== 1c. Which fix flips which family (share of the family's wrong cases)
+                   overf missi drift poiso confu clash fragm distr lost_   rot
+  overflow          1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00
+  missing_evidence  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  drift             0.00  0.00  1.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00
+  poisoning         0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00
+  confusion         0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  clash             0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00
+  fragmentation     0.00  1.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+  distraction       0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00
+  lost_in_middle    0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  1.00
+  rot               0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00
+== 2. Error analysis: the 82 wrong under Chapter 8's configuration
+  determinations 1000, wrong 82; open codes 13
+     24  edition cited is not the edition in force on the date of loss
+     16  another state's bulletin cited
+     11  base form cited; endorsement is a scan never indexed
+     11  governing sentence cut at a span boundary
+      6  another state's bulletin cited; rule needs two spans
+      3  roof age in the claim header wrong (licensed feed)
+      2  endorsement schedule misread in the policy summary
+      2  state's bulletin absent from the packet
+      2  table broken across a column or page
+      2  underwriting guidance cited as governing
+      1  endorsement missing from the policy record
+      1  no defect visible in the trace
+      1  change date in the partner feed wrong
+  symptom-first label agrees with the axial code: 49/82; 'model error' written for 20
+  flowchart primary agrees with hand axial code: 82/82
+  axial classes: {'confusion': 48, 'missing_evidence': 14, 'fragmentation': 13, 'poisoning': 5, 'not_context': 1, 'drift': 1}
+  secondary classes: {'confusion+fragmentation': 6} joint-only fixes 6
+  class x fixing chapter:
+     24  confusion         Ch 9 verified query
+     16  confusion         Ch 15 jurisdiction
+     13  fragmentation     Ch 10 structural spans
+     11  missing_evidence  Ch 9 admission
+      6  confusion         Ch 15 + Ch 17 graph
+      3  poisoning         Ch 9 licence gate
+      2  poisoning         open: policy record
+      2  missing_evidence  Ch 14 embedding model
+      2  confusion         Ch 15 authority
+      1  missing_evidence  open: policy record
+      1  not_context       not recorded
+      1  drift             Ch 24 change log
+== 3. Incidents to date, reclassified
+  I01 Ch 1     missing_evidence  sec confusion,clash              joint True  root: retrieval, no versions | 2025 chatbot cites HO-3 (2019-03) exclusion
+  I02 Ch 2     drift             sec -                            joint False root: unowned copy | current-form pointer never moved
+  I03 Ch 6     clash             sec -                            joint False root: instruction change | v2.3 tidy-up deletes the precedence sentence
+  I04 Ch 7     clash             sec -                            joint False root: instruction against evidence | roof skill: bulletins are 'guidance for complaint handling'
+  I05 Ch 10    fragmentation     sec -                            joint False root: parser | Iowa deductible: 2% read for 1% across a page break
+  I06 Ch 13    missing_evidence  sec -                            joint False root: vector store filter | post-filter: small tenant gets fewer than k rows
+  I07 Ch 14    missing_evidence  sec -                            joint False root: overflow at the embedder | marine spans truncated at 512 tokens; marine retrieval 0.000
+  I08 Ch 16    fragmentation     sec -                            joint False root: summary drops the term | remaining back-up limit US$6,150 for US$10,000
+  I09 Ch 18    missing_evidence  sec -                            joint False root: graph behind the store | Iowa EB bulletin missing from the graph
+  I10 Ch 19    poisoning         sec -                            joint False root: transcription | voice note loses 'No' (conf 0.81, SNR 10.9 dB)
+  I11 Ch 22    poisoning         sec -                            joint False root: memory write | team memory read as a rule (the slow slide)
+  I12 Ch 24    drift             sec -                            joint False root: partner copy | partner feed misdates an endorsement change
+== 4. Failure injection: one case, two classes
+  INJ00: tokens 8290, primary confusion, secondary ['lost_in_middle'], joint False
+  last-signal-wins label (what a symptom-first triage writes): lost_in_middle
+  batch of 40: wrong 33; after reorder only 20; after admission only 0
+== 5. Blast radius on the full mix (exposed, wrong under Chapter 8)
+  pointer edition (confusion)              exposed  37  wrong 24  (65%)
+  unindexed scans (missing evidence)       exposed  90  wrong 11  (12%)
+  multi-state claims (22 confusion, 2 missing) exposed  60  wrong 24  (40%)
+  third-party header (3 poisoning, 1 drift) exposed  20  wrong  4  (20%)
+== 6. Chapter 4's API is unchanged
+   ['rot_curve', 'knee', 'clash', 'confusion', 'distraction', 'rot', 'summary', 'diagnose', 'blast_radius']

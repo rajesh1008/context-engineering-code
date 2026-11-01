@@ -1,0 +1,95 @@
+
+== 1. The calendar: every scheduled job is an unattended loop
+As found, November 2026: 9 jobs, 1904 runs a year, 4 with gaps
+  nightly ingest and re-index            missing: budget, human
+  memory consolidation (Ch22)            missing: verifier is the assembler
+  earlier-claim re-validation (Ch23)     missing: budget, human
+  quarterly re-baseline                  missing: state
+As operated: 12 jobs (3 event-driven added), 1904 scheduled runs a year, 0 with gaps
+
+== 2. Corpus growth: what doubled, and which signal saw it first
+Corpus pages, mid-month: Nov 40,070, Dec 40,218, Jan 42,494, Feb 43,175, Mar 77,853, Apr 79,197, May 80,287, Jun 81,479, Jul 82,633, Aug 83,767, Sep 84,837, Oct 85,873
+Growth over the year: 40,070 -> 85,873 (2.14x); notes migrated on 2027-03-13: 34,000 pages
+Tuned-at manifest: K tuned at 40,000 pages; growth limit 25% first exceeded on 2027-03-13: corpus_pages 40,000 -> 77,752 (+94%)
+Headroom (cited governing span in ranks 31-40 of 40), weekly, label-free: baseline 0.43%; alarm (over 2x baseline two weeks running) in the week of 2027-03-15
+April re-baseline, as run: gold hit@40 on the frozen November snapshot 99.64%; the same measure on the production-built index 97.80%
+Month one (Nov 2026), as run: wrong-clause 2.9/1,000 (reviewed sample 1/1,000), hit@40 99.64%, headroom 0.40%
+Month nine (Jul 2027), as run: wrong-clause 13.4/1,000 (reviewed sample 13/1,000), hit@40 98.08%, headroom 1.53%
+
+== 2b. Re-tune options on the May 2027 corpus (as run had none of them)
+  do nothing (K 40, notes in pool)   hit@K 98.13%  wrong-clause 12.7/1,000  cost US$0.0376
+  widen pool to K 80                 hit@K 99.56%  wrong-clause 6.3/1,000  cost US$0.0429
+  partition notes (K 40)             hit@K 99.44%  wrong-clause 4.3/1,000  cost US$0.0374
+  partition notes and K 80           hit@K 99.92%  wrong-clause 2.3/1,000  cost US$0.0426
+
+== 3. Bulletin season: effective before published
+91 bulletins and editions in the year, 22 emergency (effective on issue); per month: Nov 3, Dec 9, Jan 16, Feb 12, Mar 14, Apr 5, May 8, Jun 7, Jul 6, Aug 4, Sep 3, Oct 4
+  as run       published after effective: 42; median issue-to-publish 4 days; determinations inside a window 2,496 (Dec-Mar 1,160, of which March 630); decided under the superseded rule 2,496; referred by the pending flag 0
+  as operated  published after effective: 37; median issue-to-publish 4 days; determinations inside a window 1,925 (Dec-Mar 750, of which March 382); decided under the superseded rule 0; referred by the pending flag 1,925
+
+== 4. Failure injection: the embedding model is retired mid-quarter
+Notice 2027-05-12; retire date 2027-06-30; cutover 2027-06-09; next quarterly re-baseline 2027-07-05
+Inventory: 8 artefacts derived from open-base@1.3; the Chapter 14 runbook covered 4; left behind: claimant memory index, near-duplicate threshold 0.97, withhold floor 0.62, score-drift alarm baseline
+Per-slice gate on gold, production-built index (as run): passed in every slice (the corpus index was rebuilt correctly)
+As run, June: withhold-and-refer 7.4% in May -> 14.2% in June; repeat-claimant determinations without their memory block 9.0% of all June determinations
+As run: adjusters reported the referral surge in 9 days and the floor was patched by hand to 0.58 on 2027-06-18; the empty memory block was found on 2027-08-12, after 64 days and about 32,133 production determinations
+Upgrade replay, 2,000 May determinations, runbook-only stack: BLOCKED; 14 slice-metric breaches, e.g. fire withheld +13.6%; fire memory_present -13.6%; freeze withheld +7.7%
+Generated plan, in order:
+  claimant memory index (index): re-embed memory store (Ch21) [open-base@1.3 -> open-base@2.0]
+  policy corpus index (index): re-embed, dual index, shadow (Ch14) [open-base@1.3 -> open-base@2.0]
+  underwriting notes index (index): re-embed with corpus [open-base@1.3 -> open-base@2.0]
+  lks-adapter-2 (adapter): retrain on new base -> lks-adapter-3 [open-base@1.3 -> open-base@2.0]
+  fingerprint probe set (probe): re-record probe vectors [open-base@1.3 -> open-base@2.0]
+  near-duplicate threshold 0.97 (threshold): recalibrate on replay [open-base@1.3 -> open-base@2.0]
+  withhold floor 0.62 (threshold): recalibrate on replay by quantile [open-base@1.3 -> open-base@2.0]
+  score-drift alarm baseline (baseline): re-baseline from replay [open-base@1.3 -> open-base@2.0]
+Replay after the plan (floor 0.62 -> 0.545 by quantile, memory re-embedded): passed; largest withhold change in any slice 0.8%
+As operated, June: withhold-and-refer 6.3%; memory block missing in 0 determinations
+
+== 5. Drift and the quarterly re-baseline
+Withhold-and-refer, as run, raw:          Nov 7.1% Dec 8.2% Jan 9.0% Feb 9.2% Mar 8.1% Apr 8.1% May 7.4% Jun 14.2% Jul 12.0% Aug 8.3% Sep 6.7% Oct 7.0%
+Withhold-and-refer, as run, mix-adjusted: Nov 7.6% Dec 7.8% Jan 7.6% Feb 7.4% Mar 7.7% Apr 8.3% May 8.4% Jun 13.3% Jul 11.3% Aug 7.9% Sep 7.7% Oct 7.5%
+Alarm at baseline + 1 point: raw fires in Jan, Feb, Jun, Jul; mix-adjusted fires in Jun, Jul
+Gold set ageing: items whose governing edition was superseded: Nov 0.3%, Jan 5.3%, Apr 7.7%, Jul 9.2%, Oct 9.8%
+Gold scored on the production index in July without relabelling: wrong-clause 9.6% (a correct answer citing the new edition is marked wrong); after relabelling the 96 aged items: 3.9/1,000
+
+== 6. Incidents that need six months to appear
+  Re-validation clock fixed 180 days        : peak backlog 12,000 records on 2027-04-03; repeat-claimant determinations that ran without their earlier-claim record 737
+  Re-validation clock jittered 150-180 days : peak backlog 0 records; repeat-claimant determinations that ran without their earlier-claim record 0
+  Determination instructions, lines at month end, as run:   47 49 56 61 67 71 75 81 86 92 95 97
+  Determination instructions, lines at month end, with ledger: 47 49 56 61 60 64 68 67 72 78 72 74
+  Cost per determination from instruction growth alone, October: as run US$0.0393, with ledger US$0.0373 (entry US$0.0348)
+
+== 7. Twelve months of scoreboard (illustrative; simulated year)
+as run:
+  month     pages   wrong/1k  review  withheld  headroom  cost      lines
+  Nov 2026  40,070    2.9      1       7.1%    0.40%   US$0.0349   47
+  Dec 2026  40,218    3.4      9       8.2%    0.35%   US$0.0351   49
+  Jan 2027  42,494    4.4      7       9.0%    0.55%   US$0.0357   56
+  Feb 2027  43,175    4.5      8       9.2%    0.52%   US$0.0361   61
+  Mar 2027  77,853   12.2      7       8.1%    1.30%   US$0.0369   67
+  Apr 2027  79,197   14.8     13       8.1%    1.57%   US$0.0373   71
+  May 2027  80,287   13.4      8       7.4%    1.53%   US$0.0376   75
+  Jun 2027  81,479   12.1     14      14.2%    1.66%   US$0.0382   81
+  Jul 2027  82,633   13.4     13      12.0%    1.53%   US$0.0386   86
+  Aug 2027  83,767    4.5      4       8.3%    0.74%   US$0.0389   92
+  Sep 2027  84,837    4.0      4       6.7%    0.53%   US$0.0391   95
+  Oct 2027  85,873    3.9      3       7.0%    0.64%   US$0.0393   97
+as operated:
+  month     pages   wrong/1k  review  withheld  headroom  cost      lines
+  Nov 2026  40,070    2.8      1       7.2%    0.40%   US$0.0349   47
+  Dec 2026  40,218    2.9      9       8.3%    0.35%   US$0.0351   49
+  Jan 2027  42,494    3.8      7       9.2%    0.55%   US$0.0357   56
+  Feb 2027  43,175    4.5      8       9.3%    0.52%   US$0.0361   61
+  Mar 2027  77,853    9.4      5       8.2%    1.05%   US$0.0363   60
+  Apr 2027  79,197    4.2      5       7.4%    0.68%   US$0.0364   64
+  May 2027  80,287    4.3      2       7.1%    0.52%   US$0.0368   68
+  Jun 2027  81,479    3.3      5       6.3%    0.46%   US$0.0367   67
+  Jul 2027  82,633    3.9      4       6.9%    0.52%   US$0.0371   72
+  Aug 2027  83,767    3.4      3       6.7%    0.57%   US$0.0377   78
+  Sep 2027  84,837    4.0      4       6.7%    0.53%   US$0.0371   72
+  Oct 2027  85,873    3.8      3       7.0%    0.64%   US$0.0373   74
+Estimated wrong-clause determinations in the year, as run: 10,944 of 1,332,544
+Estimated wrong-clause determinations in the year, as operated: 5,610 of 1,332,544
+
+Note: stand-in year; no hosted or local model was called.

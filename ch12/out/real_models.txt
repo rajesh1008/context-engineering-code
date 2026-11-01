@@ -1,0 +1,28 @@
+== Real-model ladder on the full mix of 1,000 (bge-small-en-v1.5, MiniLM-L6 cross-encoder)
+rung        Hit@1  Hit@5    R@5    MRR eval H@5
+keyword     0.810  0.866  0.811  0.837    0.955
+dense       0.821  0.921  0.885  0.864    0.965
+hybrid      0.823  0.931  0.898  0.866    0.970
+reranked    0.841  0.944  0.912  0.882    0.965
+graph       0.841  0.931  0.911  0.880    0.965
+
+by style: Hit@5 / governing at rank 1
+kw         keyword 1.000/0.958  dense 1.000/0.944  hybrid 1.000/0.961  reranked 1.000/0.967
+lay        keyword 0.391/0.228  dense 0.736/0.437  hybrid 0.706/0.340  reranked 0.716/0.315
+identifier keyword 1.000/0.647  dense 0.588/0.294  hybrid 0.961/0.510  reranked 1.000/0.941
+numeric    keyword 1.000/0.931  dense 1.000/0.948  hybrid 1.000/0.948  reranked 1.000/0.931
+negation   keyword 0.682/0.409  dense 0.864/0.500  hybrid 0.795/0.386  reranked 1.000/0.455
+multihop   keyword 1.000/1.000  dense 1.000/1.000  hybrid 1.000/1.000  reranked 1.000/1.000
+
+cross-encoder: 30264 pairs, 16.84 ms a pair on this box (measured)
+
+== Negated near-twins with real models
+  neg keyword   rank 1 HO3-2024-06-mould      right
+  neg dense     rank 1 HO3-2024-06-mould      right
+  neg hybrid    rank 1 HO3-2024-06-mould      right
+  neg reranked  rank 1 HO3-2024-06-mould      right
+  pos keyword   rank 1 HO3-2024-06-mould      WRONG
+  pos dense     rank 1 HO3-2024-06-mould      WRONG
+  pos hybrid    rank 1 HO3-2024-06-mould      WRONG
+  pos reranked  rank 1 HO3-2024-06-mould      WRONG
+  cosine(neg, pos) with bge-small: 0.949

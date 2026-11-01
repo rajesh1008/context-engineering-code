@@ -1,0 +1,127 @@
+== 1. Shadow run (harness v9.4): candidate sim-large@2026-10 on layer v9.2, 21 Sep - 2 Oct 2026 ==
+exit rule digest 3da435b218c4a8e3 written before the first mirrored claim
+  arrived                32,194
+  eligible               30,262
+  mirrored                2,000
+  candidate answered      1,992
+  citations parsed        1,986
+  final recorded          1,939
+  agree                   1,861
+  disagree                   78
+  both wrong                 59
+  candidate right            10
+  production right            9
+
+== 2. Agreement with the adjuster's final determination ==
+overall: candidate 1861/1939 = 95.98%  production 1871/1939 = 96.49%
+adjudicated wrong (all causes): candidate 68, production 62
+  PA   WI  n  283  cand 97.5% [95.0%,98.8%]  prod 97.2%  b  0  c  1
+  PA   MN  n  169  cand 97.6% [94.1%,99.1%]  prod 97.6%  b  0  c  0
+  PA   MI  n   99  cand 93.9% [87.4%,97.2%]  prod 93.9%  b  0  c  0
+  PA   IL  n   83  cand 98.8% [93.5%,99.8%]  prod 100.0%  b  1  c  0
+  PA   IA  n   78  cand 97.4% [91.1%,99.3%]  prod 100.0%  b  1  c  1
+  PA   IN  n   50  cand 98.0% [89.5%,99.6%]  prod 98.0%  b  0  c  0
+  HO   WI  n  286  cand 96.2% [93.2%,97.8%]  prod 96.5%  b  0  c  1
+  HO   MN  n  155  cand 91.0% [85.4%,94.5%]  prod 95.5%  b  7  c  0
+  HO   MI  n  103  cand 96.1% [90.4%,98.5%]  prod 96.1%  b  0  c  0
+  HO   IL  n   90  cand 96.7% [90.7%,98.9%]  prod 96.7%  b  0  c  0
+  HO   IA  n   86  cand 94.2% [87.1%,97.5%]  prod 94.2%  b  0  c  0
+  HO   IN  n   44  cand 100.0% [92.0%,100.0%]  prod 100.0%  b  0  c  0
+  BOP  WI  n  112  cand 92.0% [85.4%,95.7%]  prod 92.0%  b  0  c  0
+  BOP  MN  n   48  cand 100.0% [92.6%,100.0%]  prod 100.0%  b  0  c  0
+  BOP  MI  n   34  cand 94.1% [80.9%,98.4%]  prod 94.1%  b  0  c  0
+  BOP  IL  n   26  cand 96.2% [81.1%,99.3%]  prod 96.2%  b  0  c  0
+  BOP  IA  n   26  cand 96.2% [81.1%,99.3%]  prod 96.2%  b  0  c  0
+  BOP  IN  n   22  cand 95.5% [78.2%,99.2%]  prod 95.5%  b  0  c  0
+  BOAT WI  n   56  cand 96.4% [87.9%,99.0%]  prod 96.4%  b  0  c  0
+  BOAT MN  n   29  cand 100.0% [88.3%,100.0%]  prod 100.0%  b  0  c  0
+  BOAT MI  n   19  cand 94.7% [75.4%,99.1%]  prod 94.7%  b  0  c  0
+  BOAT IL  n   22  cand 86.4% [66.7%,95.3%]  prod 86.4%  b  0  c  0
+  BOAT IA  n   13  cand 100.0% [77.2%,100.0%]  prod 100.0%  b  0  c  0
+  BOAT IN  n    6  cand 100.0% [61.0%,100.0%]  prod 100.0%  b  0  c  0
+MN homeowners: late-notice determinations whose candidate draft denied under the base condition: 10 ; production: 3
+
+== 3. The exit rule, as written, and the rule proposed the night before ==
+run gates: parse 99.70% ok=True; p95 latency x1.08 ok=True; cost x1.062 ok=True; packs ok=True
+cells: {'release': 10, 'shadow': 13, 'hold: excess wrong': 1}
+  PA-IN: shadow (n 50)
+  HO-MN: hold: excess wrong (n 155)
+  HO-IN: shadow (n 44)
+  BOP-MN: shadow (n 48)
+  BOP-MI: shadow (n 34)
+  BOP-IL: shadow (n 26)
+  BOP-IA: shadow (n 26)
+  BOP-IN: shadow (n 22)
+  BOAT-WI: shadow (n 56)
+  BOAT-MN: shadow (n 29)
+  BOAT-MI: shadow (n 19)
+  BOAT-IL: shadow (n 22)
+  BOAT-IA: shadow (n 13)
+  BOAT-IN: shadow (n 6)
+share of comparable volume in released cells: 71.6%
+pooled rule (overall >=95%, cell floor 90%): overall 95.98%; releases 24 cells, including HO-MN: release
+if HO-MN had been released: about 243 drafts a day, 4.5% excess wrong, so about 11 wrong drafts a day put in front of adjusters
+
+== 4. Pin the amendment with the clause it amends; re-shadow HO-MN ==
+replay of the same 2,000 with the pin: cells whose status changed: ['HO-MN:hold: excess wrong->release']
+fresh week, HO-MN only (7-14 Oct): n 157, cand 96.2%, prod 94.3%, b 0 c 3 -> release
+cells left in shadow: business days to 60 comparable if mirrored at 100% instead of 6.6%:
+  PA-IN: have 50, ~70 a day, 1 more days
+  HO-IN: have 44, ~67 a day, 1 more days
+  BOP-MN: have 48, ~88 a day, 1 more days
+  BOP-MI: have 34, ~61 a day, 1 more days
+  BOP-IL: have 26, ~53 a day, 1 more days
+  BOP-IA: have 26, ~44 a day, 1 more days
+  BOP-IN: have 22, ~26 a day, 2 more days
+  BOAT-WI: have 56, ~78 a day, 1 more days
+  BOAT-MN: have 29, ~41 a day, 1 more days
+  BOAT-MI: have 19, ~29 a day, 2 more days
+  BOAT-IL: have 22, ~25 a day, 2 more days
+  BOAT-IA: have 13, ~20 a day, 3 more days
+  BOAT-IN: have 6, ~12 a day, 5 more days
+
+== 5. After release: visible draft versus 2% blind holdback (10 days) ==
+visible: 28615/29416 = 97.28%; blind: 567/584 = 97.09% (assumption: a wrong visible draft accepted 30% of the time)
+wrong visible drafts accepted by the adjuster (in the visible count as agreement): 72
+blind interval [95.39%, 98.17%]
+
+== 6. Examination: 20 Wisconsin homeowners denials at random, 7-23 Oct ==
+pool 4,680 determinations; endorsement replaced in place: 2026-10-16
+sampling frame (homeowners denials and closed without payment): 1,906
+pool determinations citing LM-HO 0121 WI before the edit: 257; after: 228
+  rebuild by_id    verify 19/20; notes raised 0
+  rebuild by_hash  verify 20/20; notes raised 1
+sampled determinations affected by the edit: ['D-W03093']
+v9.2 behaviour (no seal, document by id): 1 packs would show text the model never saw, with nothing to say so
+write-once store: edit refused -> new edition 2026-10-16; editions of LM-HO 0121 WI: ['2025-03', '2025-03r2']
+  overwrite attempt: LM-HO 0121 WI@2025-03 exists; publish a new edition
+
+== 7. Redaction for the examiner's copy: third-party and payment details ==
+  edit and rehash   redacted 36  refused (quoted evidence) 4  verify 0/20
+  keep commitments  redacted 36  refused (quoted evidence) 4  verify 20/20
+
+== 8. explain() for one sampled determination ==
+Determination D-W03093
+sealed root d27cb83fff278eef
+verifies: yes
+-- request (1)
+   claim: Claim W03093, HO, policyholder K. Moreau, phone 608-555-4892, reported 2026-10-12
+-- output (1)
+   determination: denied; governing LM-HO 0121 WI@2025-03
+-- version (2)
+   stack: contextlab 9.4; prompt claims-v31; Rulebook r12; index snap 2026-10-12; reranker v9; verifier us
+   model: sim-large@2026-10 via gateway, region us-central [record]
+-- span (2)
+   LM-HO 0121 WI@2025-03#p2: Wisconsin amendatory endorsement. Section I conditions. If you fail to give prompt notice, we ma
+   note:D-W03093: Neighbour [REDACTED:third_party] reported water at the property at 06:00.
+-- document (1)
+   LM-HO 0121 WI@2025-03: 53e9eac9b23e0d46 Wisconsin amendatory endorsement. Section I conditions. If you fail to give pro
+-- citation (1)
+   c1: LM-HO 0121 WI@2025-03#p2 checked: supported (0.91)
+-- tool (2)
+   policy_lookup: read 2026-10-12T10:02 forms on policy at loss date
+   payment_lookup: account ****[REDACTED:payment]
+-- review (1)
+   adjuster: adjuster ADJ-122 accepted with edits 2 at 2026-10-12T11:56
+!! LM-HO 0121 WI@2025-03 was replaced in place after this determination; shown as recorded (hash 53e9eac9b23e), recovered from the nightly snapshot
+deterministic: True

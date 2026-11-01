@@ -1,0 +1,47 @@
+1. Sets and the hand-written module
+   dev 100  held-out 400  full mix 1000  train 200
+   faithfulness dev 93.00%  held-out 86.75%  full 87.50%
+   wrong-clause full mix 4/1,000   prompt tokens 1925
+2. Metric as code: what the optimiser reads back
+   D0000: score 0  deductible sentence not supported by cited span (IL, HO 04 95)
+   D0005: score 0  withhold sentence not supported by cited span (MI, HO-3)
+   D0014: score 0  plain sentence not supported by cited span (IL, DP-3)
+   7 failing dev items; metric faithfulness-v2
+3-5. Three optimisers on the dev set
+   bootstrapped few-shot    dev 95.00%  held-out 88.00%  rules 3  demos 3  tokens 3185
+   + evolutionary rules     dev 95.00%  held-out 88.00%  rules 3  demos 3  tokens 3185
+   + reflective             dev 97.00%  held-out 86.50%  rules 5  demos 3  tokens 3235
+   candidates evaluated 59; demos chosen ['D:withhold:T0073', 'D:withhold:T0078', 'D:plain:T0186']
+   rules added ['K:D0000', 'K:D0059']
+6. Failure injection: the eval set was the optimisation set
+   reported on dev   93.00% -> 97.00%  (+4.0 points)
+   held-out, as is   86.75% -> 86.50%  (-0.25)
+   held-out, item-specific rules removed 88.00%  (+1.25)
+   item-specific rules 2: ['Claim D0000: match the rationale to its span.', 'Claim D0059: match the rationale to its span.']
+   paired 95% interval on held-out gain: -0.75 to +3.25 points
+   item transitions held-out: {'recoveries': 11, 'regressions': 6, 'churn': 17, 'net': 5}
+   38 dev draws (seeds 2-39), same optimiser:
+   mean gain dev +3.42  held-out as is +0.62  corrected +1.13
+   draws where held-out fell below the hand-written prompt: 10 of 38
+7. An optimiser allowed to edit the pinned block
+   winner pinned ('P1', 'P2') rules ('G1', 'G2', 'G4', 'N2')
+   winner held-out 85.50% vs hand-written 86.75%
+   dev 94.00%  renewal-mismatch claims in dev 0  in full mix 5
+   full-mix wrong-clause 4 -> 4 per 1,000
+   forced P1r: dev 93.00% vs 93.00%; wrong-clause 9/1,000
+8. A self-evolving playbook over a stream of 600 determinations
+   delta, curator, human stop      held-out after windows 1/6/12: 86.75% 87.75% 87.75%  bullets 4  queued for a human 1  final ['G1', 'G2', 'G4', 'G5']
+   delta, no curator               held-out after windows 1/6/12: 84.50% 83.50% 80.75%  bullets 15  queued for a human 3  final ['G1', 'G2', 'G4', 'G5', 'K:S0455', 'K:S0458', 'K:S0475', 'K:S0487', 'K:S0502', 'K:S0528', 'K:S0531', 'K:S0562', 'K:S0569', 'K:S0585', 'K:S0591']
+   monolithic rewrite (240 chars)  held-out after windows 1/6/12: 86.75% 83.75% 83.75%  bullets 4  queued for a human 1  final ['G2', 'G4', 'G5', 'N4']
+   delta, curator, no human stop   held-out after windows 1/6/12: 86.75% 86.50% 86.25%  bullets 7  queued for a human 0  final ['G1', 'G2', 'G4', 'G5', 'X:MN:limit:10000', 'X:MN:limit:25000', 'X:MN:limit:5000']
+9. When the hand-written prompt wins
+   20-item dev, 38 draws: held-out change mean +0.86  range -0.25 to +1.75  worse in 1
+   100-item dev, 38 draws: held-out change mean +0.62  range -1.25 to +2.50  worse in 10
+   reported dev gain, 20-item dev: mean +6.97  range +0.00 to +15.00
+   adding a generic 'Be concise.': held-out 86.75% -> 85.50%
+10. Gate, manifest and diff
+   raw optimised        adopt=False  ['held-out gain -0.25 points, not positive', 'held-out interval reaches -1.75 points', '2 item-specific rule(s)']
+   item rules removed   adopt=True  []
+   pinned edited (P1r)  adopt=False  ['pinned block edited', 'held-out gain -1.50 points, not positive', 'held-out interval reaches -3.50 points', 'wrong-clause 4 -> 9']
+   {"demos": ["D:withhold:T0073", "D:withhold:T0078", "D:plain:T0186"], "dev": 0.95, "devset": "0fbeb46c93e4", "heldout": "5eb1204dc81f", "heldout_score": 0.88, "metric": "faithfulness-v2", "model": "stand-in-36", "optimiser": "bootstrap(k=3,12)+evolve(6x6)+reflect(12)", "pinned_hash": "cd5da3b5f76b", 
+   diff vs hand-written: {'pinned_changed': False, 'rules_added': [], 'rules_dropped': [], 'demos_added': ['D:withhold:T0073', 'D:withhold:T0078', 'D:plain:T0186']}

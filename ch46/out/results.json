@@ -1,0 +1,448 @@
+{
+ "version": "10.3",
+ "fork": {
+  "calls": 2500,
+  "stale_edition": 318,
+  "staff_guidance": 2500,
+  "other_book": 78,
+  "platform_bad": 0
+ },
+ "api_example": {
+  "included": [
+   [
+    "dec-P0407",
+    "governing",
+    "declarations"
+   ],
+   [
+    "form-T03@2026",
+    "governing",
+    "forms"
+   ],
+   [
+    "pg-T03",
+    "team-note",
+    "producer-guides"
+   ],
+   [
+    "faq-T03",
+    "public",
+    "faq"
+   ]
+  ],
+  "withheld": [
+   [
+    "form-T03@2024",
+    "superseded"
+   ],
+   [
+    "cf-T03",
+    "corpus claim-files is private to claims"
+   ],
+   [
+    "guide-T03",
+    "role agent not permitted"
+   ],
+   [
+    "lt-T03",
+    "corpus letter-templates is private to policyholder"
+   ]
+  ],
+  "packet_id": "2b267a8a3834"
+ },
+ "explain_complete": [
+  970,
+  970
+ ],
+ "load": {
+  "quiet hour": {
+   "claims": 0.406,
+   "policyholder": 0.395,
+   "agency": 0.441,
+   "batch_done_s": 0
+  },
+  "batch, first come first served": {
+   "claims": 56.62,
+   "policyholder": 48.772,
+   "agency": 79.553,
+   "batch_done_s": 146.2
+  },
+  "batch, per-team shares": {
+   "claims": 0.406,
+   "policyholder": 0.395,
+   "agency": 0.444,
+   "batch_done_s": 293.0
+  }
+ },
+ "month": {
+  "day_tokens": {
+   "claims": 1607350,
+   "policyholder": 4545770,
+   "agency": 1491240
+  },
+  "batch_tokens_per_pass": 1789488,
+  "quota": 50000000,
+  "cum": {
+   "soft": [
+    3280728,
+    4771968,
+    6263208,
+    7754448,
+    9245688,
+    10736928,
+    12228168,
+    15508896,
+    17000136,
+    18491376,
+    19982616,
+    21473856,
+    22965096,
+    24456336,
+    27737064,
+    29228304,
+    30719544,
+    32210784,
+    33702024,
+    35193264,
+    36684504,
+    39965232,
+    41456472,
+    42947712,
+    44438952,
+    45930192,
+    47421432,
+    48912672,
+    52193400,
+    53684640
+   ],
+   "hard": [
+    3280728,
+    4771968,
+    6263208,
+    7754448,
+    9245688,
+    10736928,
+    12228168,
+    15508896,
+    17000136,
+    18491376,
+    19982616,
+    21473856,
+    22965096,
+    24456336,
+    27737064,
+    29228304,
+    30719544,
+    32210784,
+    33702024,
+    35193264,
+    36684504,
+    39965232,
+    41456472,
+    42947712,
+    44438952,
+    45930192,
+    47421432,
+    48912672,
+    50403912,
+    51895152
+   ]
+  },
+  "refused_batch_days": {
+   "soft": 0,
+   "hard": 1
+  },
+  "bill_usage": {
+   "agency": {
+    "direct": 484.73856,
+    "shared": 2331.5786557322544,
+    "total": 2936.317215732254,
+    "private": 120.0
+   },
+   "claims": {
+    "direct": 300.882,
+    "shared": 1447.233843113352,
+    "total": 2048.1158431133517,
+    "private": 300.0
+   },
+   "policyholder": {
+    "direct": 1085.4924,
+    "shared": 5221.187501154393,
+    "total": 6366.6799011543935,
+    "private": 60.0
+   }
+  },
+  "bill_even": {
+   "agency": {
+    "direct": 484.73856,
+    "shared": 3000.0,
+    "total": 3604.73856,
+    "private": 120.0
+   },
+   "claims": {
+    "direct": 300.882,
+    "shared": 3000.0,
+    "total": 3600.882,
+    "private": 300.0
+   },
+   "policyholder": {
+    "direct": 1085.4924,
+    "shared": 3000.0,
+    "total": 4145.4924,
+    "private": 60.0
+   }
+  },
+  "soft_crossed_day": 29
+ },
+ "entitlement": {
+  "caller filters": {
+   "probes_leaking": 596,
+   "spans": 691
+  },
+  "platform, identity in body": {
+   "probes_leaking": 200,
+   "spans": 596
+  },
+  "platform, identity from token": {
+   "probes_leaking": 0,
+   "spans": 0
+  }
+ },
+ "injection": {
+  "client cache, no check": {
+   "calls": 2500,
+   "leak_calls": 52,
+   "leaked_spans": 94,
+   "cache_hits": 464,
+   "assembles": 2036,
+   "refused": 72,
+   "reasons": {
+    "leak: revoked user": 14,
+    "leak: policy moved": 38
+   }
+  },
+  "client cache, gateway verifies": {
+   "calls": 2500,
+   "leak_calls": 0,
+   "leaked_spans": 0,
+   "cache_hits": 4,
+   "assembles": 2496,
+   "refused": 86,
+   "reasons": {
+    "audience": 365,
+    "expired": 31,
+    "entitlement epoch": 50,
+    "revoked": 14
+   }
+  },
+  "platform cache by entitlement class": {
+   "calls": 2500,
+   "leak_calls": 0,
+   "leaked_spans": 0,
+   "cache_hits": 176,
+   "assembles": 2238,
+   "refused": 86,
+   "reasons": {}
+  }
+ },
+ "injection_setup": {
+  "revoked_users": 10,
+  "moved_policies": 29,
+  "revoke_at": 11.0,
+  "move_at": 13.0
+ },
+ "private": {
+  "note_topics": 10,
+  "note_above_form_fork": 6,
+  "note_above_form_platform": 0,
+  "claims_packets_with_notes": 0
+ },
+ "contract": {
+  "v1": [
+   [
+    "claims",
+    "every span has sid and tokens",
+    true
+   ],
+   [
+    "claims",
+    "packet id present",
+    true
+   ],
+   [
+    "claims",
+    "span ids unique",
+    true
+   ],
+   [
+    "policyholder",
+    "source names a corpus",
+    true
+   ],
+   [
+    "policyholder",
+    "packet id present",
+    true
+   ],
+   [
+    "agency",
+    "spans sorted by sid",
+    true
+   ],
+   [
+    "agency",
+    "total tokens within 2,000",
+    true
+   ],
+   [
+    "agency",
+    "packet id present",
+    true
+   ]
+  ],
+  "v2": [
+   [
+    "claims",
+    "every span has sid and tokens",
+    true
+   ],
+   [
+    "claims",
+    "packet id present",
+    true
+   ],
+   [
+    "claims",
+    "span ids unique",
+    true
+   ],
+   [
+    "policyholder",
+    "source names a corpus",
+    false
+   ],
+   [
+    "policyholder",
+    "packet id present",
+    true
+   ],
+   [
+    "agency",
+    "spans sorted by sid",
+    false
+   ],
+   [
+    "agency",
+    "total tokens within 2,000",
+    true
+   ],
+   [
+    "agency",
+    "packet id present",
+    true
+   ]
+  ],
+  "v1_share_by_week": [
+   1.0,
+   1.0,
+   0.876,
+   0.876,
+   0.876,
+   0.876,
+   0.258,
+   0.258,
+   0.258,
+   0.258,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "slo": {
+  "evals": [
+   {
+    "slo": "assemble availability (no server error)",
+    "target": 0.999,
+    "good": 271224,
+    "total": 271600,
+    "attained": 0.9986156111929307,
+    "bad": 376,
+    "budget_left": -0.3843888070692182,
+    "met": false
+   },
+   {
+    "slo": "interactive p95 under 0.8 s, per hour",
+    "target": 0.99,
+    "good": 279,
+    "total": 280,
+    "attained": 0.9964285714285714,
+    "bad": 1,
+    "budget_left": 0.6428571428571431,
+    "met": true
+   },
+   {
+    "slo": "bulletin visible within 2 h of publication",
+    "target": 0.95,
+    "good": 25,
+    "total": 26,
+    "attained": 0.9615384615384616,
+    "bad": 1,
+    "budget_left": 0.23076923076923145,
+    "met": true
+   },
+   {
+    "slo": "entitlement correctness",
+    "target": 1.0,
+    "good": 600,
+    "total": 600,
+    "attained": 1.0,
+    "bad": 0,
+    "budget_left": 1.0,
+    "met": true
+   },
+   {
+    "slo": "explain completeness",
+    "target": 1.0,
+    "good": 970,
+    "total": 970,
+    "attained": 1.0,
+    "bad": 0,
+    "budget_left": 1.0,
+    "met": true
+   }
+  ],
+  "error_burn": [
+   9,
+   12,
+   19,
+   27,
+   38,
+   45,
+   56,
+   64,
+   69,
+   80,
+   87,
+   98,
+   98,
+   98,
+   100,
+   105,
+   116,
+   338,
+   342,
+   353,
+   353,
+   355,
+   355,
+   360,
+   363,
+   370,
+   373,
+   376
+  ],
+  "calls_28": 271600,
+  "allowed_errors": 271
+ }
+}

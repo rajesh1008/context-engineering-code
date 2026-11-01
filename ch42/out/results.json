@@ -1,0 +1,207 @@
+{
+ "s1": {
+  "wrong": 4,
+  "wrong_ids": [
+   "D-C650155",
+   "D-C240294",
+   "D-C200740",
+   "D-C300750"
+  ],
+  "drops": 566,
+  "gov_dropped": 5,
+  "bytes_full": 6259,
+  "bytes_refs": 3107,
+  "bytes_trace_only": 2562,
+  "evidence_blobs": 69,
+  "writes": 7000,
+  "cached_share": 0.6036,
+  "mean_tokens": 927
+ },
+ "s2": {
+  "exact": 1000,
+  "identical": 1000,
+  "tamper_edit": 500,
+  "tamper_delete": 700
+ },
+ "s3": [
+  {
+   "name": "no content (metadata only)",
+   "bytes": 82,
+   "reconstructable": 0,
+   "leaks": 0
+  },
+  {
+   "name": "full content on the trace",
+   "bytes": 6259,
+   "reconstructable": 1000,
+   "leaks": 3983
+  },
+  {
+   "name": "store by reference",
+   "bytes": 2562,
+   "reconstructable": 1000,
+   "leaks": 0
+  }
+ ],
+ "s4": {
+  "head 10%": {
+   "kept": 90,
+   "denials": 44,
+   "wrong": 0
+  },
+  "head 10% + every denial": {
+   "kept": 479,
+   "denials": 414,
+   "wrong": 4
+  },
+  "every determination": {
+   "kept": 1000,
+   "denials": 414,
+   "wrong": 4
+  }
+ },
+ "s5": {
+  "no redaction": {
+   "exact": 1000,
+   "leaks": 335,
+   "missing_evidence": {},
+   "missing_personal": 0,
+   "dets_missing_evidence": 0
+  },
+  "scoped PII rules": {
+   "exact": 1000,
+   "leaks": 0,
+   "missing_evidence": {},
+   "missing_personal": 0,
+   "dets_missing_evidence": 0
+  },
+  "PII + August rule on every sink": {
+   "exact": 0,
+   "leaks": 0,
+   "missing_evidence": {
+    "HO0495@2025-03": 403,
+    "LK3012@2025-03": 190,
+    "LK2107@2025-03": 246
+   },
+   "missing_personal": 1375,
+   "dets_missing_evidence": 839
+  },
+  "examiner": {
+   "det": "D-C010001",
+   "cited": "HO0495@2025-03",
+   "stored": "[REDACTED] (2025-03). We cover loss caused by water which backs up through sewer"
+  },
+  "gate_bad": 0,
+  "PII + August rule scoped to telemetry": {
+   "exact": 1000,
+   "leaks": 0,
+   "missing_evidence": {},
+   "missing_personal": 0,
+   "dets_missing_evidence": 0
+  },
+  "gate_fixed": 200
+ },
+ "s6": {
+  "uploads": 518,
+  "late": 283,
+  "flips": 31,
+  "det": "D-C090226",
+  "date": "2026-06-10",
+  "read_at": "2026-06-10T15:40",
+  "lag_h": 3.0,
+  "status": "denied",
+  "cited": "HO0495@2025-03",
+  "replay": "covered"
+ },
+ "s7": {
+  "periods": {
+   "0-40": {
+    "cov": 0.9981,
+    "wrong": 0.0016,
+    "flags": 0.0016,
+    "canary": 0.972,
+    "tokens": 927,
+    "cached": 0.6038
+   },
+   "41-49": {
+    "cov": 0.9773,
+    "wrong": 0.0218,
+    "flags": 0.0209,
+    "canary": 0.9722,
+    "tokens": 926,
+    "cached": 0.6047
+   },
+   "50-69": {
+    "cov": 0.9698,
+    "wrong": 0.0284,
+    "flags": 0.027,
+    "canary": 0.96,
+    "tokens": 930,
+    "cached": 0.4023
+   },
+   "70-89": {
+    "cov": 0.9892,
+    "wrong": 0.0108,
+    "flags": 0.0106,
+    "canary": 0.8825,
+    "tokens": 1210,
+    "cached": 0.0853
+   }
+  },
+  "mnrf": [
+   1.0,
+   0.4156,
+   0.516
+  ],
+  "cache_fix": 62,
+  "bands": {
+   "<1000": [
+    0.9686,
+    1400
+   ],
+   "1000-1299": [
+    0.8833,
+    377
+   ],
+   "1300+": [
+    0.8696,
+    23
+   ]
+  }
+ },
+ "s8": {
+  "baseline": 0.9977,
+  "sd": 0.0027,
+  "static": {
+   "first_e1": 49,
+   "first_e2": 52,
+   "false": 0
+  },
+  "ewma": {
+   "first_e1": 41,
+   "first_e2": 50,
+   "false": 0
+  },
+  "slice": {
+   "first_e1": 42,
+   "first_e2": 59,
+   "false": 0,
+   "slices": 16,
+   "fired": {
+    "MN-rf": [
+     42,
+     78
+    ],
+    "MI-fz": [
+     59,
+     69
+    ]
+   }
+  },
+  "quiet": {
+   "static": 0,
+   "ewma": 1,
+   "slice": 2
+  }
+ }
+}

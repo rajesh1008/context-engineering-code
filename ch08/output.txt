@@ -1,0 +1,56 @@
+1. Elicited rules (r0.9)
+  R1   water_backup          rows 1  default HO-3  eval claims  13
+  R2   food_spoilage         rows 1  default HO-3  eval claims  13
+  R3   earth_movement        rows 1  default HO-3  eval claims   6
+  R4   personal_property_rc  rows 1  default HO-3  eval claims   6
+  R5   roof_settlement       rows 1  default HO-3  eval claims  11
+  R6   roof_matching         rows 2  default HO-3  eval claims  10
+  R7   frozen_pipes          rows 1  default HO-3  eval claims  13
+  R8   tree_debris           rows 1  default HO-3  eval claims   8
+  R9   rental_reimbursement  rows 1  default PAP   eval claims  12
+  R10  rideshare             rows 1  default PAP   eval claims  11
+  R11  deer_swerve           rows 0  default PAP   eval claims   9
+  R12  spoilage              rows 1  default BOP   eval claims   7
+  topics covered: 12; eval claims on covered topics: 119 of 200
+
+2. Expert review against the documents (500 reviewed determinations)
+  r0.9 R11 deer_swerve: 24/29 agree
+    DET-0030 (WI, 2025-11-17): rule says PAP, documents say WI-OCI-2024-11 (2024-11), Requirements, page 1 (bulletin)
+    DET-0252 (WI, 2025-01-11): rule says PAP, documents say WI-OCI-2024-11 (2024-11), Requirements, page 1 (bulletin)
+    DET-0326 (WI, 2025-12-06): rule says PAP, documents say WI-OCI-2024-11 (2024-11), Requirements, page 1 (bulletin)
+    DET-0393 (WI, 2025-12-28): rule says PAP, documents say WI-OCI-2024-11 (2024-11), Requirements, page 1 (bulletin)
+    DET-0415 (WI, 2026-04-04): rule says PAP, documents say WI-OCI-2024-11 (2024-11), Requirements, page 1 (bulletin)
+  r0.9: 291/296 agree; rules with conflicts: 1
+  r1.0: 296/296 agree; rules with conflicts: 0
+
+3. Failure injection: r0.9 ships with R11 as first stated
+  deer-swerve claims (1-500): 29; governed by WI-OCI-2024-11: 5
+  model      rulebook   deer (all)  deer (bulletin)  eval 200
+  sim-large  none             0.0%             0.0%      3.5%
+  sim-large  r0.9            13.8%            80.0%      3.0%
+  sim-large  r1.0             0.0%             0.0%      2.5%
+  sim-mid    none             0.0%             0.0%      4.5%
+  sim-mid    r0.9            17.2%           100.0%      3.0%
+  sim-mid    r1.0             0.0%             0.0%      2.5%
+  sim-small  none             0.0%             0.0%      4.5%
+  sim-small  r0.9            17.2%           100.0%      3.5%
+  sim-small  r1.0             0.0%             0.0%      3.0%
+  example: DET-0030 Grace Morgan, WI, loss 2025-11-17; gold WI-OCI-2024-11 (2024-11)
+    r0.9 cited PAP (2023-01), Part D Definitions, page 2
+    r1.0 cited WI-OCI-2024-11 (2024-11), Requirements, page 1
+
+4. Adherence probes added to the eval (claims where a rule selects an exception)
+  probes: 107 (claims 1-500); eval claims covered 119, uncovered 81
+  model      rulebook   probe adherence  covered wrong  uncovered wrong  eval wrong  prompt tok
+  sim-large  none                 98.1%           5.9%             0.0%        3.5%       1,517
+  sim-large  r1.0                100.0%           4.2%             0.0%        2.5%       1,540
+  sim-mid    none                 96.3%           7.6%             0.0%        4.5%       1,518
+  sim-mid    r1.0                100.0%           4.2%             0.0%        2.5%       1,541
+  sim-small  none                 95.3%           6.7%             1.2%        4.5%       1,518
+  sim-small  r1.0                100.0%           4.2%             1.2%        3.0%       1,541
+
+5. Change control
+  r0.9 fingerprint 02f693109c68
+  r1.0 fingerprint 82bf00cd677a
+  changelog r0.9: twelve rules from the elicitation session
+  changelog r1.0: R11 gains the Wisconsin bulletin row; the bulletin wins the disagreement (reviewed with Tom Brennan)

@@ -1,0 +1,7 @@
+rewrite,rerank,extract,usd,wrong,flagged,support_miss,retries
+large,large,large,0.05126,4,200,16,0
+small,large,large,0.04937,4,200,16,0
+small,small,large,0.04256,4,235,59,0
+small,mid,large,0.04375,4,207,24,0
+small,mid,small,0.03446,4,207,24,181
+small,mid,mid,0.03627,4,207,24,88

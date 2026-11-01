@@ -1,0 +1,9 @@
+family,n,auto,review,refuse
+born_digital,30,30,0,0
+scanned_form,45,45,0,0
+estimate,60,49,9,2
+medical_bill,30,28,2,0
+police_report,45,44,1,0
+fax,30,25,5,0
+handwritten,30,12,18,0
+phone_photo,30,19,11,0

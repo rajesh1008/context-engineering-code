@@ -1,0 +1,41 @@
+{
+ "semantic": [
+  {
+   "threshold": 0.7,
+   "exact": 0.0,
+   "paraphrase": 0.10066666666666667,
+   "wrong": 0.8893333333333333,
+   "wrong_among_hits": 0.8983164983164983
+  },
+  {
+   "threshold": 0.8,
+   "exact": 0.0,
+   "paraphrase": 0.14666666666666667,
+   "wrong": 0.8366666666666667,
+   "wrong_among_hits": 0.8508474576271187
+  },
+  {
+   "threshold": 0.85,
+   "exact": 0.0,
+   "paraphrase": 0.288,
+   "wrong": 0.6773333333333333,
+   "wrong_among_hits": 0.7016574585635359
+  },
+  {
+   "threshold": 0.9,
+   "exact": 0.0026666666666666666,
+   "paraphrase": 0.8726666666666667,
+   "wrong": 0.004666666666666667,
+   "wrong_among_hits": 0.005303030303030303
+  },
+  {
+   "threshold": 0.95,
+   "exact": 0.01,
+   "paraphrase": 0.0,
+   "wrong": 0.0,
+   "wrong_among_hits": 0.0
+  }
+ ],
+ "result_cache_hits": 198,
+ "result_cache_recomputed": 20
+}

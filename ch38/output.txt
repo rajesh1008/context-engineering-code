@@ -1,0 +1,59 @@
+contextlab.gateway v8.4, seed 38
+== 1. What the context layer loses behind the gateway ==
+  Dated model pin (no alias)       ch14  translated=kept      raw=kept
+  Cache routing key from caller    ch34  translated=lost      raw=kept
+  Explicit cache breakpoints       ch34  translated=lost      raw=kept
+  Structured output schema         ch28  translated=degraded  raw=kept
+  Long-context tier (200K)         ch32  translated=lost      raw=lost
+  Per-call region choice           ch38  translated=gateway   raw=gateway
+  Token usage incl. cached         ch34  translated=kept      raw=kept
+  Tool definitions (MCP)           ch26  translated=kept      raw=kept
+  Log probabilities                ch29  translated=lost      raw=lost
+  translated path: {'kept': 3, 'lost': 4, 'degraded': 1, 'gateway': 1}
+  routing key forwarded  token-weighted hit 55.6%  US$0.0285/determination
+  routing key dropped    token-weighted hit 21.4%  US$0.0396/determination
+  cost increase when the key is dropped: 38.9%
+== 2. Residency for embeddings, caches and judges ==
+  outside policy before: ['Citation verifier (judge)', 'Policyholder letter draft']
+  outside policy after: []
+  outage hour, fallback=any       {'calls': 133, 'served': 133, 'outside_region': 133, 'queued_503': 0}
+  outage hour, fallback=in_region {'calls': 133, 'served': 0, 'outside_region': 0, 'queued_503': 133}
+  outage hour, fallback=none      {'calls': 133, 'served': 0, 'outside_region': 0, 'queued_503': 133}
+  one US deployment down, in_region: served by sim-large@2026-04/us-2, fallback=True
+  verifier th=0.40 old P/R 100.0/53.3 (32 flags)  new P/R 100.0/40.0 (24 flags)
+  verifier th=0.45 old P/R 100.0/63.3 (38 flags)  new P/R 97.3/60.0 (37 flags)
+  verifier th=0.50 old P/R 100.0/81.7 (49 flags)  new P/R 90.2/76.7 (51 flags)
+  verifier th=0.55 old P/R 98.1/88.3 (54 flags)  new P/R 74.0/95.0 (77 flags)
+  verifier th=0.60 old P/R 93.4/95.0 (61 flags)  new P/R 53.2/98.3 (111 flags)
+  verifier th=0.65 old P/R 81.1/100.0 (74 flags)  new P/R 36.6/100.0 (164 flags)
+  verifier th=0.70 old P/R 60.0/100.0 (100 flags)  new P/R 26.1/100.0 (230 flags)
+  verifier th=0.75 old P/R 36.6/100.0 (164 flags)  new P/R 20.7/100.0 (290 flags)
+  old verifier at 0.60: P 93.4% R 95.0%; new verifier at 0.60: P 53.2% R 98.3%; new threshold chosen 0.55: P 74.0% R 95.0%
+== 3. Cross-tenant cache-hit test ==
+  cache_mode=pooled     {'probes': 250, 'cross_tenant_hits': 250, 'own_repeat_cached': True}
+  cache_mode=client_key {'probes': 250, 'cross_tenant_hits': 250, 'own_repeat_cached': True}
+  cache_mode=identity   {'probes': 250, 'cross_tenant_hits': 0, 'own_repeat_cached': True}
+  namespace for claims-assistant: ns-25015ddf82b2ed32
+== 4. Seven-day rotation and the embedding job that cached a key ==
+  mode=at_start  failed nights [8, 9, 10, 11] max bulletin lag 108.6 h max watermark lag 119.0 h alarm at hour 201 excess stale determinations 260
+  mode=per_batch failed nights [] max bulletin lag 17.9 h max watermark lag 25.0 h alarm at hour None excess stale determinations 0
+== 5. Deprecation under a pinned name ==
+  hit@10 dense_matched        200/200 (100.0%)
+  hit@10 dense_mismatched     9/200 (4.5%)
+  hit@10 bm25                 150/200 (75.0%)
+  hit@10 dense_after_reembed  200/200 (100.0%)
+  alias_mode=refuse         {'status': 404, 'reported': None, 'record_findings': ['status_404'], 'probe_ok': False, 'probe_min_cos': None, 'caught_by': '404'}
+  alias_mode=forward        {'status': 200, 'reported': 'open-base@1.3', 'record_findings': ['served_differs'], 'probe_ok': False, 'probe_min_cos': -0.11, 'caught_by': 'record'}
+  alias_mode=forward_masked {'status': 200, 'reported': 'open-base@1.2', 'record_findings': [], 'probe_ok': False, 'probe_min_cos': -0.11, 'caught_by': 'probe'}
+== 6. The migration eval for a deprecated generation model ==
+  sim-large@2026-04 {'wrong_clause': 4, 'citation_parse_pct': 100.0, 'input_tokens_rel': 1.0, 'verifier_flags_per_det': 0.3}
+  sim-large@2026-10 {'wrong_clause': 4, 'citation_parse_pct': 96.98, 'input_tokens_rel': 1.062, 'verifier_flags_per_det': 0.31}
+  gates: {'wrong_clause_max': 4, 'citation_parse_min': 99.5, 'tokens_max_pct': 10.0, 'verifier_flags_max': 0.35}
+  verdict: {'wrong_clause': True, 'citation_parse': False, 'tokens': True, 'verifier_flags': True}
+  steady-state request hit rate after 10:00: 75.5
+  cutover-day hit rate by 10-minute bucket from 08:00: [46.7, 63.0, 51.7, 64.7, 74.4, 81.2, 73.0, 66.7, 83.9, 80.6, 69.4, 76.5]
+== 7. Gateway logs as part of the trace ==
+  before: sample of 40, model answerable 29/40, region answerable 0/40 (letters in sample 11)
+  after: {'traces': 10341, 'matched': 10341, 'unmatched': 0, 'answerable': 10341} calls per determination 3.23
+  verify findings: {'undeclared_transform': 9}
+  after: sample of 40 answerable on model and region 40/40

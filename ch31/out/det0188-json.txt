@@ -1,0 +1,90 @@
+{
+  "instructions": "You are the claims assistant for Lakeshore Mutual Insurance. Answer the adjuster's coverage question from the documents provided. After every sentence that states a fact or a policy term, cite the id of the span that supports it.",
+  "spans": [
+    {
+      "id": "HO-3@2024-06/p7/s1#c58612d7",
+      "doc": "HO-3",
+      "edition": "2024-06",
+      "page": 7,
+      "text": "We do not insure for loss caused by water which backs up through sewers or drains or overflows from a sump, unless an endorsement provides that coverage."
+    },
+    {
+      "id": "HO 04 95@2024-06/p1/s2#104f4ac4",
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "text": "We will pay up to $10,000 for direct physical loss caused by water or waterborne material which backs up through sewers or drains or overflows or is discharged from a sump, sump pump or related equipment, even if caused by mechanical breakdown of the sump pump."
+    },
+    {
+      "id": "HO 04 95@2024-06/p1/s3#0daba536",
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "text": "A $1,000 deductible applies."
+    },
+    {
+      "id": "CLM-2026-01187@record/p1/s1#654728c4",
+      "doc": "CLM-2026-01187",
+      "edition": "record",
+      "page": 1,
+      "text": "Reported cause: the sump pump failed during heavy rain and water backed up into the basement."
+    },
+    {
+      "id": "HO-3@2024-06/p7/s2#d8adf866",
+      "doc": "HO-3",
+      "edition": "2024-06",
+      "page": 7,
+      "text": "We do not insure for loss caused by flood, surface water, waves or overflow of a body of water, whether or not driven by wind."
+    },
+    {
+      "id": "HO 04 95@2024-06/p1/s4#f24052cf",
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "text": "We do not pay for loss caused by your negligent failure to maintain the sump pump."
+    },
+    {
+      "id": "HO-3@2024-06/p6/s1#8076e595",
+      "doc": "HO-3",
+      "edition": "2024-06",
+      "page": 6,
+      "text": "We insure for accidental discharge of water from a plumbing or heating system, including the cost to tear out and replace part of the building to reach the system."
+    },
+    {
+      "id": "HO 04 95@2024-06/p1/s1#df362c1f",
+      "doc": "HO 04 95",
+      "edition": "2024-06",
+      "page": 1,
+      "text": "Water Back-Up and Sump Discharge or Overflow. This endorsement changes the policy and modifies the Homeowners 3 Special Form."
+    },
+    {
+      "id": "HO-3@2024-06/p7/s3#586fe04f",
+      "doc": "HO-3",
+      "edition": "2024-06",
+      "page": 7,
+      "text": "We do not insure for loss caused by water below the surface of the ground which seeps through a foundation, wall or floor."
+    },
+    {
+      "id": "HO-3@2024-06/p6/s2#54caec4f",
+      "doc": "HO-3",
+      "edition": "2024-06",
+      "page": 6,
+      "text": "We do not insure for freezing of a plumbing system in an unoccupied dwelling unless you maintained heat in the building or shut off the water supply and drained the system."
+    },
+    {
+      "id": "CLM-2026-01187@record/p1/s2#e0208e8b",
+      "doc": "CLM-2026-01187",
+      "edition": "record",
+      "page": 1,
+      "text": "Dwelling occupied at time of loss: yes."
+    },
+    {
+      "id": "DECS-LMH-WI-0048213@2025-06/p1/s1#4830138a",
+      "doc": "DECS-LMH-WI-0048213",
+      "edition": "2025-06",
+      "page": 1,
+      "text": "Endorsements on this policy: HO 04 95 (2024-06), water back-up limit $10,000."
+    }
+  ],
+  "question": "Is the basement water damage from the sump pump failure covered, and what limit and deductible apply?"
+}
